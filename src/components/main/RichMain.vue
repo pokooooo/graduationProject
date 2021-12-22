@@ -67,49 +67,47 @@
   </div>
 </template>
 
-<script lang="ts">
-import { Component, Prop, Vue } from "vue-property-decorator";
+<script>
+
 import { deleteRich, setRich } from "@/network/rich";
 
-@Component
-export default class RichMain extends Vue {
-  @Prop() private richList: any;
-  private dialogVisible: any = false;
-  private setForm: {
-    nickname: string;
-    worth: number;
-    avatar: string;
-    id: string;
-  } = {
-    nickname: "",
-    worth: 0,
-    avatar: "",
-    id: "",
-  };
 
-  private setFormRules: {
-    nickname: any[];
-    worth: any[];
-  } = {
-    nickname: [{ required: true, message: "请输入名称", trigger: "blur" },
-      { min: 1, max: 20, message: '长度在 1 到 20 个字符', trigger: 'blur' }],
-    worth: [{ required: true, message: "请输入身价", trigger: "blur" },
-      { type: 'number', message: '身价必须为数字'}],
-  };
-
-  public $refs!: {
-    setForm: any;
-  };
-
-  public set(item: any): void {
+export default {
+  name: 'RichMain',
+  props: {
+    richList: {
+      type: Array,
+      default() {
+        return []
+      }
+    }
+  },
+  data() {
+    return {
+      dialogVisible: false,
+      setForm: {
+        nickname: "",
+        worth: 0,
+        avatar: "",
+        id: "",
+      },
+      setFormRules: {
+        nickname: [{ required: true, message: "请输入名称", trigger: "blur" },
+        { min: 1, max: 20, message: '长度在 1 到 20 个字符', trigger: 'blur' }],
+        worth: [{ required: true, message: "请输入身价", trigger: "blur" },
+        { type: 'number', message: '身价必须为数字'}],
+        },
+    }
+  },
+  methods: {
+  set(item) {
     this.dialogVisible = true;
     this.setForm.id = item.id;
     this.setForm.nickname = item.nickname;
     this.setForm.worth = item.worth;
     this.setForm.avatar = item.avatar;
-  }
-
-  handleChange(info: any) {
+  },
+  handleChange(info) {
     if (info.status === "ready") {
       return;
     }
@@ -118,10 +116,9 @@ export default class RichMain extends Vue {
       avatar = "http://localhost:3000" + avatar;
       this.setForm.avatar = avatar;
     }
-  }
-
-  public commitSet(): void {
-    this.$refs.setForm.validate((valid: boolean) => {
+  },
+  commitSet() {
+    this.$refs.setForm.validate((valid) => {
       if (valid) {
         setRich(this.setForm).then((res) => {
           this.dialogVisible = false;
@@ -132,9 +129,8 @@ export default class RichMain extends Vue {
         this.$message.error("输入信息有误！");
       }
     });
-  }
-
-  public remove(id: string): void {
+  },
+  remove(id) {
     this.$confirm("是否删除该富豪?", "提示", {
       confirmButtonText: "确定",
       cancelButtonText: "取消",
@@ -153,6 +149,8 @@ export default class RichMain extends Vue {
         });
       });
   }
+  }
+
 }
 </script>
 

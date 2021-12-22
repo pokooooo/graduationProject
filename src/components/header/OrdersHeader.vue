@@ -8,20 +8,22 @@
   </div>
 </template>
 
-<script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
+<script>
+
 import SelectInput from "../select/SelectInput.vue"
 
-@Component({
+
+export default {
+  name: 'OrdersHeader',
   components: {
     SelectInput
-  }
-})
-export default class OrdersHeader extends Vue {
-
-  public select(text:string): void {
+  },
+  methods: {
+  select(text) {
     this.$emit("select", text);
   }
+  }
+
 }
 </script>
 

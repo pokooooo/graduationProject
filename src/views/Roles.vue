@@ -44,32 +44,26 @@
   </div>
 </template>
 
-<script lang="ts">
-import { Vue, Component } from "vue-property-decorator";
+<script>
 import { selectRich } from "@/network/roles";
 
 
-@Component
-export default class Roles extends Vue {
-  richList: any[] = [];
 
-  private data: {
-    pageIndex: number;
-    pageSize: number;
-    keyword: string;
-  } = {
-    pageIndex: 1,
-    pageSize: 3,
-    keyword: "",
-  };
-
-  private total = 0;
-
-  public created(): void {
-    this.selectRich();
-  }
-
-  public selectRich(): void {
+export default {
+  name: "Roles",
+  data() {
+    return {
+      richList: [],
+      data: {
+        pageIndex: 1,
+        pageSize: 3,
+        keyword: "",
+        },
+      total: 0
+    }
+  },
+  methods: {
+  selectRich() {
     selectRich(this.data).then((res) => {
       if (res.data.data.total === 1) {
         this.$router.push({
@@ -83,30 +77,31 @@ export default class Roles extends Vue {
       this.richList = res.data.data.items;
       this.total = res.data.data.total;
     });
-  }
-
-  public login(id: string): void {
+  },
+  login(id) {
     this.$router.push({
       name: "buy",
       params: {
         id: id,
       },
     });
-  }
-
-  pre(): void {
+  },
+  pre() {
     if (this.data.pageIndex !== 1) {
       this.data.pageIndex--;
       this.selectRich();
     }
-  }
-
-  next(): void {
+  },
+  next() {
     if (this.data.pageIndex !== Math.ceil(this.total / 3)) {
       this.data.pageIndex++;
       this.selectRich();
     }
   }
+  },
+  created() {
+    this.selectRich();
+  },
 }
 </script>
 

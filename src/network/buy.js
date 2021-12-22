@@ -1,6 +1,6 @@
 import {request} from "@/network/request";
 
-export function getRich(id:string) {
+export function getRich(id) {
     return request({
         url: "/web/rich/get",
         method: "post",
@@ -8,7 +8,7 @@ export function getRich(id:string) {
     });
 }
 
-export function searchGoods(data:any) {
+export function searchGoods(data) {
     return request({
         url: "/web/goods/search",
         method: "post",
@@ -16,7 +16,7 @@ export function searchGoods(data:any) {
     });
 }
 
-export function buyGoods(richId:string, goodsIds:any) {
+export function buyGoods(richId, goodsIds) {
     return request({
         url: "/web/order/commit",
         method: "post",

@@ -1,6 +1,6 @@
 import {request} from "@/network/request";
 
-export function selectRich(data:any) {
+export function selectRich(data) {
     return request({
         url: "/web/rich/search",
         method: "post",

@@ -13,55 +13,37 @@
   </div>
 </template>
 
-<script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
+<script>
+
 import Pagination from "@/components/pagination/Pagination.vue";
 import OrdersHeader from "@/components/header/OrdersHeader.vue";
 import OrdersMain from "@/components/main/OrdersMain.vue";
 import { selectOrders } from "@/network/orders";
 
-@Component({
+export default {
+  name: 'Orders',
   components: {
     OrdersHeader,
     OrdersMain,
     Pagination,
   },
-})
-export default class Orders extends Vue {
-  orderList: any[] = [];
-
-  private data: {
-    pageIndex: number;
-    pageSize: number;
-    keyword: string;
-  } = {
-    pageIndex: 1,
-    pageSize: 5,
-    keyword: "",
-  };
-
-  private total = 0;
-
-  public created(): void {
-    this.selectOrders();
+  data() {
+    return {
+      orderList: [],
+      data: {
+        pageIndex: 1,
+        pageSize: 5,
+        keyword: "",
+      },
+      total: 0,
   }
-
-  public selectOrders(): void {
+  },
+  methods: {
+    selectOrders() {
     selectOrders(this.data).then((res) => {
-      let list: {
-        nickname: any;
-        price: number;
-        worth: any;
-        time: string;
-        id: string;
-      }[] = [];
+      let list = [];
       res.data.data.items.forEach(
-        (item: {
-          goods: any[];
-          richer: { nickname: any; worth: any };
-          ctime: any;
-          id: string;
-        }) => {
+        item => {
           let total = 0;
           item.goods.forEach((good) => {
             total += good.count * good.item.price;
@@ -78,9 +60,8 @@ export default class Orders extends Vue {
       this.orderList = list;
       this.total = res.data.data.total;
     });
-  }
-
-  public dataFormat(originVal: any): string {
+  },
+  dataFormat(originVal) {
     const dt = new Date(originVal);
     const y = dt.getFullYear();
     const m = (dt.getMonth() + 1 + "").padStart(2, "0");
@@ -88,26 +69,28 @@ export default class Orders extends Vue {
     const hh = (dt.getHours() + "").padStart(2, "0");
     const mm = (dt.getMinutes() + "").padStart(2, "0");
     const ss = (dt.getSeconds() + "").padStart(2, "0");
-
     return `${y}-${m}-${d} ${hh}:${mm}:${ss}`;
-  }
-
-  refresh(): void {
+  },
+  refresh() {
     this.selectOrders();
-  }
-
-  select(text: string): void {
+  },
+  select(text) {
     this.data.keyword = text;
     this.refresh();
-  }
-  setNewSize(newSize: number): void {
+  },
+  setNewSize(newSize) {
     this.data.pageSize = newSize;
     this.refresh();
-  }
-  setNewPage(newPage: number): void {
+  },
+  setNewPage(newPage) {
     this.data.pageIndex = newPage;
     this.refresh();
   }
+  },
+  created() {
+    this.selectOrders();
+  }
+
 }
 </script>
 

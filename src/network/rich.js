@@ -1,6 +1,6 @@
 import {request} from "@/network/request";
 
-export function addRich(form:any) {
+export function addRich(form) {
     return request({
         url: "/console/rich/add",
         method: "post",
@@ -8,7 +8,7 @@ export function addRich(form:any) {
     });
 }
 
-export function selectRich(data:any) {
+export function selectRich(data) {
     return request({
         url: "/console/rich/search",
         method: "post",
@@ -16,7 +16,7 @@ export function selectRich(data:any) {
     });
 }
 
-export function setRich(form:any) {
+export function setRich(form) {
     return request({
         url: "/console/rich/set",
         method: "post",
@@ -24,7 +24,7 @@ export function setRich(form:any) {
     });
 }
 
-export function deleteRich(id:string) {
+export function deleteRich(id) {
     return request({
         url: "/console/rich/delete",
         method: "post",

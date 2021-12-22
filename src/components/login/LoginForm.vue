@@ -14,7 +14,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                font-size: 20px;
+                font-size: 16px;
               "
               :key="item.username"
             >
@@ -52,41 +52,35 @@
   </div>
 </template>
 
-<script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
+<script>
+
 import { login } from "@/network/login";
 
-@Component
-export default class LoginForm extends Vue {
-  private loginForm: {
-    username: string;
-    password: string;
-  } = {
-    username: "",
-    password: "",
-  };
 
-  private loginFormRules: {
-    username: any[];
-    password: any[];
-  } = {
-    username: [{ required: true, message: "请输入用户名", trigger: "blur" }],
-    password: [{ required: true, message: "请输入密码", trigger: "blur" }],
-  };
-
-  public $refs!: {
-    form: any;
-  };
-
-  private isSave = true;
-  private userList = [];
-
-  public resetLoginForm(): void {
+export default  {
+  name: 'LoginForm',
+  data() {
+    return {
+      loginForm: {
+      username: "",
+      password: "",
+      
+    },
+    loginFormRules: {
+      
+      username: [{ required: true, message: "请输入用户名", trigger: "blur" }],
+      password: [{ required: true, message: "请输入密码", trigger: "blur" }],
+    },
+    isSave: true,
+    userList: []
+    }
+  },
+  methods: {
+  resetLoginForm() {
     this.$refs.form.resetFields();
-  }
-
-  public login(): void {
-    this.$refs.form.validate((valid: boolean) => {
+  },
+  login() {
+    this.$refs.form.validate((valid) => {
       if (valid) {
         login(this.loginForm.username, this.loginForm.password).then((res) => {
           if (res.data.stat === "ok") {
@@ -137,22 +131,20 @@ export default class LoginForm extends Vue {
         this.$message.error("请输入账户密码！");
       }
     });
-  }
-
-  input(item: any): void {
+  },
+  input(item) {
     this.loginForm.username = item.username;
     this.loginForm.password = item.password;
-  }
-
-  remove(item: any): void {
+  },
+  remove(item) {
     for (let index in this.userList) {
       if (this.userList[index] === item) {
         this.userList.splice(parseInt(index), 1);
       }
     }
     window.localStorage.setItem("userList", JSON.stringify(this.userList));
-  }
-
+  },
+  },
   created() {
     let list = window.localStorage.getItem("userList");
     if (list !== null) {

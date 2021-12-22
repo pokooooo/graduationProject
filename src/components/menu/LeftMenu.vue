@@ -30,18 +30,22 @@
   </div>
 </template>
 
-<script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
+<script>
 
-@Component
-export default class LeftMenu extends Vue {
-  public saveActivePath(activePath: string): void {
+export default {
+  name: 'LeftMenu',
+  methods: {
+      saveActivePath(activePath) {
     window.sessionStorage.setItem("activePath", activePath);
   }
-
-  public get ActivePath(): string {
+  },
+  computed: {
+  ActivePath() {
     return window.sessionStorage.getItem("activePath") || "/rich";
   }
+  }
+
+
 }
 </script>
 

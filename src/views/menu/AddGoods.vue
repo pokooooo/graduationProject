@@ -88,69 +88,59 @@
   </div>
 </template>
 
-<script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
+<script>
+
 import { addGoods, setGoods } from "@/network/goods";
 
-@Component
-export default class Goods extends Vue {
-  private addForm: {
-    title: string;
-    price: number;
-    cover: string;
-    limit: number;
-    id?: string;
-  } = {
-    title: "",
-    price: 0,
-    cover: "",
-    limit: 0,
-  };
-
-  private title = "添加商品";
-
-  private limited = false;
-
-  private activeIndex = 0;
-
-  handleChange(info: any): void {
+export default {
+  name: 'Goods',
+  data() {
+    return {
+    addForm: {
+      title: "",
+      price: 0,
+      cover: "",
+      limit: 0,
+    },
+    title: "添加商品",
+    limited: false,
+    activeIndex: 0,
+    }
+  },
+  methods: {
+    handleChange(info) {
     if (info.status === "ready") {
       return;
     }
     if (info.status === "success") {
       let avatar = info.response.data.file;
       avatar = "http://localhost:3000" + avatar;
-      this.addForm.cover = avatar;
+      addForm.cover = avatar;
       this.addForm.title = info.name.slice(0, info.name.indexOf("."));
     }
-  }
-
-  public addGood(): void {
+    },
+    addGood() {
     addGoods(this.addForm).then((res) => {
       this.$message.success("添加成功！");
       this.$router.push("/goods");
     });
-  }
-
-  public setGood(): void {
+    },
+    setGood() {
     this.addForm.id = this.$route.params.id;
     setGoods(this.addForm).then((res) => {
       this.$message.success("修改成功！");
       this.$router.push("/goods");
     });
-  }
-
-  change(): void {
-    if (!this.limited) {
+    },
+    change() {
+    if (!this.limthis.ited) {
       this.addForm.limit = 0;
     }
-  }
-
-  back(): void {
+  },
+    back() {
     this.$router.back();
-  }
-
-  beforeLeave(activeName: string, oldActiveName: any): any {
+  },
+    beforeLeave(activeName, oldActiveName) {
     if (
       activeName === "5" &&
       (this.addForm.title === "" || this.addForm.cover === "")
@@ -159,8 +149,8 @@ export default class Goods extends Vue {
       return false;
     }
   }
-
-  public created(): void {
+  },
+  created() {
     if (this.$route.params.name !== undefined) {
       this.title = this.$route.params.name;
       this.addForm.title = this.$route.params.title;

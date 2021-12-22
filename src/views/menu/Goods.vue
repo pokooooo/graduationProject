@@ -13,62 +13,60 @@
   </div>
 </template>
 
-<script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
+<script>
+
 import GoodsHeader from "@/components/header/GoodsHeader.vue";
 import GoodsMain from "@/components/main/GoodsMain.vue";
 import Pagination from "@/components/pagination/Pagination.vue";
 import { selectGoods } from "@/network/goods";
 
-@Component({
+export default {
+  name: 'Goods',
   components: {
     GoodsHeader,
     GoodsMain,
     Pagination,
   },
-})
-export default class Goods extends Vue {
-  goodsList = [];
-
-  private data: {
-    pageIndex: number;
-    pageSize: number;
-    keyword: string;
-  } = {
-    pageIndex: 1,
-    pageSize: 5,
-    keyword: "",
-  };
-
-  private total = 0;
-
-  public created(): void {
-    this.selectGoods();
-  }
-
-  public selectGoods(): void {
+  data() {
+    return {
+      goodsList: [],
+      data: {
+        pageIndex: 1,
+        pageSize: 5,
+        keyword: "",
+      },
+      total: 0,
+    }
+  },
+  methods: {
+    selectGoods() {
     selectGoods(this.data).then((res) => {
       this.goodsList = res.data.data.items;
       this.total = res.data.data.total;
-    });
-  }
-
-  refresh(): void {
+    })
+  },
+  refresh() {
     this.selectGoods();
-  }
-
-  select(text: string): void {
+  },
+    select(text) {
     this.data.keyword = text;
     this.refresh();
-  }
-  setNewSize(newSize: number): void {
+  },
+  setNewSize(newSize) {
     this.data.pageSize = newSize;
     this.refresh();
-  }
-  setNewPage(newPage: number): void {
+  },
+  setNewPage(newPage) {
     this.data.pageIndex = newPage;
     this.refresh();
   }
+  },
+  created() {
+    this.selectGoods();
+  }
+
+ 
+
 }
 </script>
 

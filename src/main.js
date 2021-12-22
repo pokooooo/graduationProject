@@ -10,7 +10,7 @@ Vue.config.productionTip = false;
 
 Vue.use(ElementUI);
 
-Vue.filter('dataFormat',function(originVal:any) {
+Vue.filter('dataFormat',function(originVal) {
   const dt = new Date(originVal)
   const y = dt.getFullYear()
   const m = (dt.getMonth() + 1 + '').padStart(2,'0')

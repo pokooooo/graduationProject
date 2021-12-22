@@ -15,16 +15,22 @@
     </div>
 </template>
 
-<script lang="ts">
-    import { Component, Vue } from "vue-property-decorator";
+<script>
 
-    @Component
-    export default class SelectInput extends Vue {
-        private text = "";
-
-        public select(): void {
+    export default {
+        name: 'SelectInput',
+        data() {
+            return {
+                text: ""
+            }
+        },
+        methods: {
+        select() {
             this.$emit("select", this.text);
         }
+        }
+
+
     }
 </script>
 

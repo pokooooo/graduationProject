@@ -13,19 +13,35 @@
   </div>
 </template>
 
-<script lang="ts">
-import { Component, Vue, Prop } from "vue-property-decorator";
+<script>
 
-@Component
-export default class Pagination extends Vue {
-  @Prop() private data: any;
-  @Prop() private total: any;
-  public handleSizeChange(newSize: number): void {
+
+
+export default {
+  name: 'Pagination',
+  props: {
+    data: {
+      type: Object,
+      default() {
+        return {}
+      }
+    },
+    total: {
+      type: Number,
+      default() {
+        return 0
+      }
+    },
+  },
+  methods: {
+  handleSizeChange(newSize) {
     this.$emit("setNewSize", newSize);
-  }
-  public handleCurrentChange(newPage: number): void {
+  },
+  handleCurrentChange(newPage) {
     this.$emit("setNewPage", newPage);
   }
+  }
+
 }
 </script>
 

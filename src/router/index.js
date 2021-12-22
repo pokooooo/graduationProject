@@ -6,7 +6,7 @@ import "nprogress/nprogress.css";
 
 Vue.use(VueRouter);
 
-const routes: Array<RouteConfig> = [
+const routes = [
   {
     path: "/",
     redirect: "/login",

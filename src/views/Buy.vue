@@ -112,78 +112,54 @@
   </div>
 </template>
 
-<script lang="ts">
-import { Vue, Component } from "vue-property-decorator";
+<script>
+
 import Scroll from "../components/scroll/Scroll.vue";
 import { getRich, searchGoods, buyGoods } from "@/network/buy";
 
-@Component({
+export default{
+  name: 'Roles',
   components: {
     Scroll,
   },
-})
-export default class Roles extends Vue {
-  private info: any = {};
-
-  private dialogVisible = false;
-
-  goodsList: any[] = [];
-
-  private data: {
-    pageIndex: number;
-    pageSize: number;
-    keyword: string;
-  } = {
+  data() {
+    return {
+    info: {},
+    dialogVisible: false,
+    goodsList: [],
+    data: {
     pageIndex: 1,
     pageSize: 12,
     keyword: "",
-  };
-
-  private total = 0;
-
-  public $refs!: {
-    scroll: any;
-  };
-
-  public searchGoods(): void {
+    },
+    total: 0
+    }
+  },
+  methods: {
+   searchGoods() {
     searchGoods(this.data).then((res) => {
       //如果在实例创建之后添加新的属性到实例上，它不会触发视图更新！！！
-      res.data.data.items.forEach((item: { count: number }) => {
+      res.data.data.items.forEach((item) => {
         item.count = 0;
       });
       this.goodsList.push(...res.data.data.items);
       this.total = res.data.data.total;
       this.$refs.scroll.finishPullUp();
     });
-  }
-
-  refresh(): void {
+  },
+  refresh() {
     this.debounce(this.$refs.scroll.refresh(), 500);
-  }
-
-  debounce(func: any, delay: number) {
-    let timer: any = null;
-    return (...args: any) => {
+  },
+  debounce(func, delay) {
+    let timer = null;
+    return (...args) => {
       clearTimeout(timer);
       timer = setTimeout(() => {
         func.apply(this, args);
       }, delay);
     };
-  }
-
-  public created(): void {
-    if (this.$route.params.id === undefined) {
-      this.$message.error("请先选择您的身份!");
-      this.$router.replace("/roles");
-      return;
-    }
-    getRich(this.$route.params.id).then((res) => {
-      this.info = res.data.data.info;
-    });
-    this.searchGoods();
-  }
-
-  pullUpLoad(): void {
+  },
+  pullUpLoad() {
     if ((this.data.pageIndex + 1) * this.data.pageSize < this.total) {
       this.data.pageIndex++;
       this.searchGoods();
@@ -191,17 +167,14 @@ export default class Roles extends Vue {
       this.$message.warning("没有更多商品了！");
       this.$refs.scroll.finishPullUp();
     }
-  }
-
-  sub(item: any): void {
+  },
+  sub(item) {
     item.count--;
-  }
-
-  add(item: any): void {
+  },
+  add(item) {
     item.count++;
-  }
-
-  input(value: any, item: any): void {
+  },
+  input(value, item) {
     if (value === "") {
       item.count = 0;
       return;
@@ -224,10 +197,9 @@ export default class Roles extends Vue {
             );
     }
     item.count = parseInt(item.count);
-  }
-
-  buy(): void {
-    let goodsIds: { id: string; count: number }[] = [];
+  },
+  buy() {
+    let goodsIds = [];
     this.goodsList.forEach((item) => {
       if (item.count !== 0) {
         goodsIds.push({
@@ -235,8 +207,7 @@ export default class Roles extends Vue {
           count: item.count,
         });
       }
-    });
-
+    }),
     buyGoods(this.$route.params.id, goodsIds).then((res) => {
       this.dialogVisible = false;
       this.$message.success(
@@ -244,26 +215,37 @@ export default class Roles extends Vue {
       );
       this.$router.replace("/roles");
     });
-  }
-
-  public get getTotal(): number {
+  },
+  },
+  computed: {
+   getMoney() {
+    let total = 0;
+    this.goodsList.forEach((item) => {
+      total += item.price * item.count;
+    });
+    return total;
+   },
+   getSurplus() {
+    return this.info.worth - this.getMoney;
+   },
+    getTotal() {
     let total = 0;
     this.goodsList.forEach((item) => {
       if (item.count !== 0) total++;
     });
     return total;
   }
-
-  public get getMoney(): number {
-    let total = 0;
-    this.goodsList.forEach((item) => {
-      total += item.price * item.count;
+  },
+  created() {
+    if (this.$route.params.id === undefined) {
+      this.$message.error("请先选择您的身份!");
+      this.$router.replace("/roles");
+      return;
+    }
+    getRich(this.$route.params.id).then((res) => {
+      this.info = res.data.data.info;
     });
-    return total;
-  }
-
-  public get getSurplus(): number {
-    return this.info.worth - this.getMoney;
+    this.searchGoods();
   }
 }
 </script>

@@ -66,18 +66,50 @@
   </div>
 </template>
 
-<script lang="ts">
-import { Component, Prop, Vue } from "vue-property-decorator";
+<script>
 import { deleteGoods, upGoods, downGoods, setweight } from "@/network/goods";
 
-@Component
-export default class RichMain extends Vue {
-  @Prop() private goodsList: any;
-  private dialogVisible: any = false;
-  private weight: any = 0;
-  private id = "";
-
-  public remove(id: string): void {
+export default {
+  name: 'RichMain',
+  
+  data() {
+    return {
+      dialogVisible: false,
+      weight: 0,
+      id: ""
+    }
+  },
+  props: {
+    goodsList: {
+      type: Array,
+      default() {
+        return []
+      }
+    }
+  },
+  methods: {
+  down(id) {
+    downGoods(id);
+    this.$message.success("下架成功!");
+    this.$emit("refresh");
+  },
+  up(id) {
+    upGoods(id);
+    this.$message.success("上架成功!");
+    this.$emit("refresh");
+  },
+  setweight(item) {
+    this.dialogVisible = true;
+    this.weight = item.weight;
+    this.id = item.id;
+  },
+  setWeight() {
+    setweight(this.id, this.weight)
+    this.$emit("refresh");
+    this.$message.success("设置成功!");
+    this.dialogVisible = false;
+  },
+  remove(id) {
     this.$confirm("是否删除该商品?", "提示", {
       confirmButtonText: "确定",
       cancelButtonText: "取消",
@@ -95,34 +127,8 @@ export default class RichMain extends Vue {
           message: "已取消删除",
         });
       });
-  }
-
-  public down(id: string): void {
-    downGoods(id);
-    this.$message.success("下架成功!");
-    this.$emit("refresh");
-  }
-
-  public up(id: string): void {
-    upGoods(id);
-    this.$message.success("上架成功!");
-    this.$emit("refresh");
-  }
-
-  setweight(item: any): void {
-    this.dialogVisible = true;
-    this.weight = item.weight;
-    this.id = item.id;
-  }
-
-  setWeight(): void {
-    setweight(this.id, this.weight)
-    this.$emit("refresh");
-    this.$message.success("设置成功!");
-    this.dialogVisible = false;
-  }
-
-  set(item: any): void {
+  },
+  set(item) {
     this.$router.push({
       name: "add",
       params: {
@@ -134,7 +140,11 @@ export default class RichMain extends Vue {
         id: item.id,
       },
     });
+  },
   }
+
+
+
 }
 </script>
 

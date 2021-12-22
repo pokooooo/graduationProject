@@ -56,27 +56,38 @@
   </div>
 </template>
 
-<script lang="ts">
-import { Component, Prop, Vue } from "vue-property-decorator";
+<script>
+
 import { getDetail } from "@/network/orders";
 
-@Component
-export default class OrdersMain extends Vue {
-  @Prop() private orderList: any;
 
-  private detail: any = {};
-
-  private currentOrder: any = {};
-
-  private dialogVisible = false;
-
-  getDetail(data: any): void {
+export default {
+  name: 'OrdersMain',
+  props: {
+    orderList: {
+      type: Array,
+      default() {
+        return []
+      }
+    }
+  },
+  data() {
+    return {
+      detail: {},
+      currentOrder: {},
+      dialogVisible: false
+    }
+  },
+  methods: {
+  getDetail(data) {
     this.currentOrder = data;
     getDetail(data.id).then((res) => {
       this.detail = res.data.data.info;
       this.dialogVisible = true;
     });
+  },
   }
+
 }
 </script>
 

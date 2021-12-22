@@ -1,6 +1,6 @@
 import { request } from "@/network/request";
 
-export function login(account: string, pwd: string) {
+export function login(account, pwd) {
   return request({
     url: "/console/auth/login",
     method: "post",
@@ -8,7 +8,7 @@ export function login(account: string, pwd: string) {
   });
 }
 
-export function logout(token:any) {
+export function logout(token) {
   return request({
     url: "/console/auth/logout",
     method: "post",

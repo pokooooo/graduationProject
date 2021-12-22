@@ -1,6 +1,6 @@
 import {request} from "@/network/request";
 
-export function selectOrders(data:any) {
+export function selectOrders(data) {
     return request({
         url: "/console/order/search",
         method: "post",
@@ -8,7 +8,7 @@ export function selectOrders(data:any) {
     });
 }
 
-export function getDetail(id:string) {
+export function getDetail(id) {
     return request({
         url: "/console/order/get",
         method: "post",

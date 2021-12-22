@@ -13,60 +13,58 @@
   </div>
 </template>
 
-<script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
+<script>
+
 import RichHeader from "../../components/header/RichHeader.vue";
 import RichMain from "@/components/main/RichMain.vue";
 import Pagination from "@/components/pagination/Pagination.vue";
 import { selectRich } from "@/network/rich";
 
-@Component({
+
+export default {
+  name: 'Rich',
   components: {
     RichHeader,
     RichMain,
     Pagination,
   },
-})
-export default class Rich extends Vue {
-  richList: any[] = [];
+  data() {
+    return {
+      richList: [],
+      data: {
+        pageIndex: 1,
+        pageSize: 5,
+        keyword: "",
+      },
+      total: 0
+      }
+  },
 
-  private data: {
-    pageIndex: number;
-    pageSize: number;
-    keyword: string;
-  } = {
-    pageIndex: 1,
-    pageSize: 5,
-    keyword: "",
-  };
-
-  private total = 0;
-
-  public created(): void {
+  methods: {
+  refresh() {
     this.selectRich();
-  }
-
-  public selectRich(): void {
+  },
+  select(text) {
+    this.data.keyword = text;
+    this.refresh();
+  },
+  setNewSize(newSize) {
+    this.data.pageSize = newSize;
+    this.refresh();
+  },
+  setNewPage(newPage) {
+    this.data.pageIndex = newPage;
+    this.refresh();
+  },
+  selectRich() {
     selectRich(this.data).then((res) => {
       this.richList = res.data.data.items;
       this.total = res.data.data.total;
     });
   }
-
-  refresh(): void {
+  },
+  created() {
     this.selectRich();
-  }
-  select(text: string): void {
-    this.data.keyword = text;
-    this.refresh();
-  }
-  setNewSize(newSize: number): void {
-    this.data.pageSize = newSize;
-    this.refresh();
-  }
-  setNewPage(newPage: number): void {
-    this.data.pageIndex = newPage;
-    this.refresh();
   }
 }
 </script>

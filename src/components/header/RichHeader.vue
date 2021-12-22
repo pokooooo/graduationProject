@@ -48,48 +48,39 @@
   </div>
 </template>
 
-<script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
+<script>
+
 import { addRich } from "@/network/rich";
 import SelectInput from "../select/SelectInput.vue"
 
-@Component({
-  components: {
+export default {
+  name: 'RichHeader',
+    components: {
     SelectInput
-  }
-})
-export default class RichHeader extends Vue {
-  private dialogVisible = false;
-  private addForm: {
-    nickname: string;
-    worth: number;
-    avatar: string;
-  } = {
-    nickname: "",
-    worth: 0,
-    avatar: "",
-  };
+  },
+  data() {
+    return {
+      dialogVisible: false,
+      addForm: {
+        nickname: "",
+        worth: 0,
+        avatar: "",
+      },
+      addFormRules: {
+        nickname: [{ required: true, message: "请输入名称", trigger: "blur" },
+        { min: 1, max: 20, message: '长度在 1 到 20 个字符', trigger: 'blur' }],
+        worth: [{ required: true, message: "请输入身价", trigger: "blur" },
+        { type: 'number', message: '身价必须为数字', trigger: "blur"}],
+      },
 
-  private addFormRules: {
-    nickname: any[];
-    worth: any[];
-  } = {
-    nickname: [{ required: true, message: "请输入名称", trigger: "blur" },
-      { min: 1, max: 20, message: '长度在 1 到 20 个字符', trigger: 'blur' }],
-    worth: [{ required: true, message: "请输入身价", trigger: "blur" },
-      { type: 'number', message: '身价必须为数字', trigger: "blur"}],
-  };
-
-  public $refs!: {
-    addForm: any;
-  };
-
-  public closeForm(): void {
+    }
+  },
+  methods: {
+  closeForm() {
     this.$refs.addForm.resetFields();
     this.addForm.avatar = "";
-  }
-
-  handleChange = (info: any) => {
+  },
+  handleChange(info) {
     //循环执行，所以要判断，在加载中的话跳过
     if (info.status === "ready") {
       return;
@@ -99,10 +90,9 @@ export default class RichHeader extends Vue {
       avatar = "http://localhost:3000" + avatar;
       this.addForm.avatar = avatar;
     }
-  };
-
-  public addRich(): void {
-    this.$refs.addForm.validate((valid: boolean) => {
+  },
+  addRich() {
+    this.$refs.addForm.validate((valid) => {
       if (valid) {
         addRich(this.addForm).then((res) => {
           this.$message.success("添加成功！");
@@ -113,11 +103,12 @@ export default class RichHeader extends Vue {
         this.$message.error("输入信息有误！");
       }
     });
-  }
-
-  public select(text:string): void {
+  },
+  select(text) {
     this.$emit("select", text);
   }
+  }
+
 }
 </script>
 

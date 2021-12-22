@@ -1,6 +1,6 @@
 import {request} from "@/network/request";
 
-export function addGoods(form:any) {
+export function addGoods(form) {
     return request({
         url: "/console/goods/add",
         method: "post",
@@ -9,7 +9,7 @@ export function addGoods(form:any) {
 }
 
 
-export function selectGoods(data:any) {
+export function selectGoods(data) {
     return request({
         url: "/console/goods/search",
         method: "post",
@@ -17,7 +17,7 @@ export function selectGoods(data:any) {
     });
 }
 
-export function deleteGoods(id:string) {
+export function deleteGoods(id) {
     return request({
         url: "/console/goods/delete",
         method: "post",
@@ -25,7 +25,7 @@ export function deleteGoods(id:string) {
     });
 }
 
-export function downGoods(id:string) {
+export function downGoods(id) {
     return request({
         url: "/console/goods/down",
         method: "post",
@@ -33,7 +33,7 @@ export function downGoods(id:string) {
     });
 }
 
-export function upGoods(id:string) {
+export function upGoods(id) {
     return request({
         url: "/console/goods/up",
         method: "post",
@@ -41,7 +41,7 @@ export function upGoods(id:string) {
     });
 }
 
-export function setweight(id:string,weight:number) {
+export function setweight(id,weight) {
     return request({
         url: "/console/goods/setweight",
         method: "post",
@@ -49,7 +49,7 @@ export function setweight(id:string,weight:number) {
     });
 }
 
-export function setGoods(form:any) {
+export function setGoods(form) {
     return request({
         url: "/console/goods/set",
         method: "post",

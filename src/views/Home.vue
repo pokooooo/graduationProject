@@ -19,25 +19,29 @@
   </div>
 </template>
 
-<script lang="ts">
-import { Vue, Component } from "vue-property-decorator";
+<script>
+
 import LeftMenu from "../components/menu/LeftMenu.vue";
 import { logout } from "@/network/login";
 
-@Component({
+export default {
+  name: 'Home',
   components: {
-    LeftMenu,
+    LeftMenu
   },
-})
-export default class Home extends Vue {
-  private nickname: string = window.sessionStorage.getItem("nickname") || "";
-
-  public logout(): void {
+  data() {
+    return {
+      nickname: window.sessionStorage.getItem("nickname") || ""
+    }
+  },
+  methods: {
+   logout() {
     logout(window.sessionStorage.getItem("token")).then((res) => {
       window.sessionStorage.clear();
       this.$message.success("退出成功！");
       this.$router.replace("/login");
     });
+  }
   }
 }
 </script>
