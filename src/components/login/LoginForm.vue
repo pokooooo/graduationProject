@@ -1,6 +1,6 @@
 <template>
   <div class="login-form">
-    <el-form :model="loginForm" :rules="loginFormRules" ref="form">
+    <el-form v-if="!register" :model="loginForm" :rules="loginFormRules" ref="form">
       <el-form-item style="margin: 30px 20px 20px" prop="username">
         <el-popover
           v-if="userList.length !== 0"
@@ -18,8 +18,8 @@
               "
               :key="item.username"
             >
-              <div class="cursor" @click="input(item)">{{ item.username }}</div>
-              <div class="cursor" @click="remove(item)">x</div>
+              <div :class="item.username === 'admin' ? 'admin cursor' : 'cursor'" @click="input(item)">{{ item.username }}</div>
+              <div class="cursor" @click="remove(item)"> <i class="iconfont icon-guanbi"></i> </div>
             </div>
           </div>
           <el-input
@@ -41,12 +41,39 @@
           type="password"
         ></el-input>
       </el-form-item>
-      <el-checkbox style="margin: 20px" v-model="isSave">保存密码</el-checkbox>
+      <div class="register">
+        <el-checkbox  v-model="isSave">保存密码</el-checkbox>
+        <div class="cursor" @click="register = !register">没有账号？点我注册</div>
+      </div>
       <el-form-item style="position: absolute; left: 20px; bottom: 5px">
         <el-button type="info" @click="resetLoginForm">重置</el-button>
       </el-form-item>
       <el-form-item style="position: absolute; right: 20px; bottom: 5px">
-        <el-button type="primary" @click="login">登录</el-button>
+        <el-button type="primary" @click="toLogin">登录</el-button>
+      </el-form-item>
+    </el-form>
+    <el-form v-if="register" :model="registerForm" :rules="registerFormRules" ref="rform" >
+      <el-form-item style="margin: 30px 20px 20px" prop="username">
+        <el-input
+          prefix-icon="el-icon-user"
+          v-model="registerForm.username"
+        ></el-input>
+      </el-form-item>
+      <el-form-item style="margin: 0 20px" prop="password">
+        <el-input
+          prefix-icon="el-icon-lock"
+          v-model="registerForm.password"
+          type="password"
+        ></el-input>
+      </el-form-item>
+      <div class="register">
+        <div class="cursor" @click="register = !register">返回登录</div>
+      </div>
+      <el-form-item style="position: absolute; left: 20px; bottom: 5px">
+        <el-button type="info" @click="resetregisterForm">重置</el-button>
+      </el-form-item>
+      <el-form-item style="position: absolute; right: 20px; bottom: 5px">
+        <el-button type="primary" @click="toRegister">注册</el-button>
       </el-form-item>
     </el-form>
   </div>
@@ -54,7 +81,7 @@
 
 <script>
 
-import { login } from "@/network/login";
+import { login,register } from "@/network/login";
 
 
 export default  {
@@ -63,26 +90,57 @@ export default  {
     return {
       loginForm: {
       username: "",
-      password: "",
-      
-    },
+      password: ""
+      },
+      registerForm: {
+        username: "",
+        password: ""
+      },
+      registerFormRules: {
+      username: [{ required: true, message: "请输入用户名", trigger: "blur" }],
+      password: [{ required: true, message: "请输入密码", trigger: "blur" }],
+      },
     loginFormRules: {
-      
       username: [{ required: true, message: "请输入用户名", trigger: "blur" }],
       password: [{ required: true, message: "请输入密码", trigger: "blur" }],
     },
     isSave: true,
-    userList: []
+    userList: [],
+    register: false
     }
   },
   methods: {
   resetLoginForm() {
     this.$refs.form.resetFields();
   },
-  login() {
+  resetregisterForm() {
+    this.$refs.rform.resetFields();
+  },
+  toRegister() {
+    this.$refs.rform.validate((valid) => {
+      if(valid) {
+        register(this.registerForm.username, this.registerForm.password).then(res => {
+          if (res.data.stat === "ok") {
+          this.$message.success("注册成功，正在为您登录！")
+          this.loginForm.username = res.data.data.account;
+          this.loginForm.password = res.data.data.pwd;
+          this.login(this.loginForm.username,this.loginForm.password);
+          } else this.$message.error(res.data.msg);
+        })
+      }
+    })
+  },
+  toLogin() {
     this.$refs.form.validate((valid) => {
       if (valid) {
-        login(this.loginForm.username, this.loginForm.password).then((res) => {
+        this.login(this.loginForm.username,this.loginForm.password)
+      } else {
+        this.$message.error("请输入账户密码！");
+      }
+    });
+  },
+  login(username,password) {
+        login(username, password).then((res) => {
           if (res.data.stat === "ok") {
             this.$message.success("登录成功！");
             if (this.isSave) {
@@ -119,18 +177,20 @@ export default  {
                 );
               }
             }
+            if(!!res.data.data.token) {
             window.sessionStorage.setItem("token", res.data.data.token);
             window.sessionStorage.setItem(
               "nickname",
               res.data.data.info.nickname
             );
             this.$router.replace("/home");
-          } else this.$message.error("账户或密码错误！");
+            } else {
+              this.$store.commit('init',res.data.data.data)
+              this.$router.push("/player");
+            }
+
+          } else this.$message.error(res.data.msg);
         });
-      } else {
-        this.$message.error("请输入账户密码！");
-      }
-    });
   },
   input(item) {
     this.loginForm.username = item.username;
@@ -169,4 +229,17 @@ export default  {
 .cursor:hover {
   cursor: pointer;
 }
+
+.register {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #409EFF
+}
+
+.admin {
+    color: #409EFF
+}
+
 </style>

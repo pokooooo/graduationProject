@@ -1,7 +1,7 @@
 <template>
   <div>
     <el-table :data="richList" border stripe>
-      <el-table-column label="富豪名称" prop="nickname"></el-table-column>
+      <el-table-column label="人物名称" prop="nickname"></el-table-column>
       <el-table-column label="身价" prop="worth"></el-table-column>
       <el-table-column label="头像">
         <template slot-scope="scope">
@@ -34,14 +34,14 @@
         </template>
       </el-table-column>
     </el-table>
-    <el-dialog title="编辑富豪" :visible.sync="dialogVisible" width="30%">
+    <el-dialog title="编辑人物" :visible.sync="dialogVisible" width="30%">
       <el-form
         :model="setForm"
         :rules="setFormRules"
         ref="setForm"
         label-width="80px"
       >
-        <el-form-item prop="nickname" label="富豪名称">
+        <el-form-item prop="nickname" label="人物名称">
           <el-input v-model="setForm.nickname"></el-input>
         </el-form-item>
         <el-form-item prop="worth" label="身价">
@@ -131,7 +131,7 @@ export default {
     });
   },
   remove(id) {
-    this.$confirm("是否删除该富豪?", "提示", {
+    this.$confirm("是否删除该人物?", "提示", {
       confirmButtonText: "确定",
       cancelButtonText: "取消",
       type: "warning",

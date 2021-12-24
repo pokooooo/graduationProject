@@ -3,7 +3,7 @@
     <el-container class="home-container">
       <el-header class="header">
         <img src="../assets/image/peko.jpg" alt="" />
-        <div class="title">花光他们的钱管理后台</div>
+        <div class="title">原来你也玩原神后台</div>
         <div class="nickname">你好 , {{ nickname }}</div>
         <el-button type="info" @click="logout">退出</el-button>
       </el-header>

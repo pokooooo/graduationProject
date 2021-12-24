@@ -25,6 +25,11 @@ const routes = [
     component: () => import("../views/Buy.vue"),
   },
   {
+    path: "/player",
+    name: "player",
+    component: () => import("../views/Player.vue"),
+  },
+  {
     path: "/home",
     component: () => import("../views/Home.vue"),
     children: [
@@ -65,6 +70,7 @@ router.beforeEach((to, from, next) => {
   // from 从哪个路径来
   // next 是否放行
   if (to.path === "/login") return next();
+  if (to.path === "/player") return next();
   if (to.path === "/roles" || to.path === "/buy") return next();
   if (window.sessionStorage.getItem("token")) next();
   else next("/login");

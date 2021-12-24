@@ -8,6 +8,15 @@ export function login(account, pwd) {
   });
 }
 
+export function register(account, pwd) {
+  return request({
+    url: "/console/auth/register",
+    method: "post",
+    data: { account, pwd },
+  });
+}
+
+
 export function logout(token) {
   return request({
     url: "/console/auth/logout",

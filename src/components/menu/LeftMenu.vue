@@ -11,7 +11,7 @@
       <el-menu-item index="/rich" @click="saveActivePath('/rich')">
         <template slot="title">
           <i class="el-icon-s-custom"></i>
-          <span>富豪榜</span>
+          <span>人物管理</span>
         </template>
       </el-menu-item>
       <el-menu-item index="/goods" @click="saveActivePath('/goods')">

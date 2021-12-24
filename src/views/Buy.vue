@@ -1,10 +1,9 @@
 <template>
   <div class="buy">
-    <img
+    <i
       id="icon"
+      class="iconfont icon-gouwuche"
       @click="dialogVisible = true"
-      src="../assets/image/_shopping.png"
-      alt=""
     />
     <div class="num">{{ getTotal }}</div>
     <scroll
@@ -261,7 +260,7 @@ export default{
   position: fixed;
   right: 100px;
   margin-top: 40px;
-  height: 40px;
+  font-size: 40px;
   z-index: 999;
 }
 
@@ -273,6 +272,7 @@ export default{
   border: 1px solid #000;
   height: 30px;
   width: 30px;
+  border-radius: 50px;
   text-align: center;
   line-height: 30px;
   font-size: 24px;
@@ -336,8 +336,6 @@ export default{
     right: 100px;
     padding: 15px;
     bottom: 40px;
-    border-radius: 50%;
-    border: 1px solid #000;
   }
 
   .num {

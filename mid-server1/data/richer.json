@@ -1,0 +1,93 @@
+[
+  {
+    "nickname": "荧",
+    "worth": 99900,
+    "avatar": "http://localhost:3000/images/7ffe371a-6306-4bb0-af21-10ee41c8d221.jpg",
+    "id": "7eb405a0-be3d-465f-96b9-4cc3cc3f64d1",
+    "status": 0
+  },
+  {
+    "nickname": "琴",
+    "worth": 99900,
+    "avatar": "http://localhost:3000/images/3f19c491-3ef3-4a4d-b4bf-13530a7beaec.jpg",
+    "id": "b6846633-add9-4c97-9231-5c07267d8b7f",
+    "status": 0
+  },
+  {
+    "nickname": "七七",
+    "worth": 99900,
+    "avatar": "http://localhost:3000/images/7e430e74-0c6b-4618-aa4d-777487e56091.jpg",
+    "id": "063f0dc3-f72f-488b-9a01-bf7a843cc23a",
+    "status": 0
+  },
+  {
+    "nickname": "诺尔艾",
+    "worth": 99900,
+    "avatar": "http://localhost:3000/images/a59f9eb6-3547-474d-aae9-c57b6526f9a9.jpg",
+    "id": "eee62a98-f204-403e-a66b-3ba7d1e792d6",
+    "status": 0
+  },
+  {
+    "nickname": "莫娜",
+    "worth": 99900,
+    "avatar": "http://localhost:3000/images/f902cb78-b25f-4892-b033-d22ee7baf9b0.jpg",
+    "id": "fbd1bede-c971-430f-bc03-59b895a18021",
+    "status": 0
+  },
+  {
+    "nickname": "胡桃",
+    "worth": 99900,
+    "avatar": "http://localhost:3000/images/0a07e7ca-befe-455b-a2ce-e60108105acd.jpg",
+    "id": "ea1cdb52-aca1-49ee-b502-d49ee8800e53",
+    "status": 0
+  },
+  {
+    "nickname": "甘雨",
+    "worth": 99900,
+    "avatar": "http://localhost:3000/images/87dbc29f-2cbe-43cc-a5c2-217a91b660b3.jpg",
+    "id": "133a6659-c806-46ae-ac14-fffdca53476e",
+    "status": 0
+  },
+  {
+    "nickname": "菲谢尔",
+    "worth": 99900,
+    "avatar": "http://localhost:3000/images/c2aca1a0-cf95-4614-bc55-83942626078c.jpg",
+    "id": "c6df32df-8a0f-40d8-b313-27c9af52b721",
+    "status": 0
+  },
+  {
+    "nickname": "温蒂",
+    "worth": 99900,
+    "avatar": "http://localhost:3000/images/36c9ca5c-09c7-4c1f-8e75-6d8c704994f9.jpg",
+    "id": "dbe526c0-4d2e-4c79-b897-fdf582744c11",
+    "status": 0
+  },
+  {
+    "nickname": "空",
+    "worth": 99900,
+    "avatar": "http://localhost:3000/images/75ed4673-0989-4bbd-ac25-4a523a433680.jpg",
+    "id": "7c57c660-4c96-415b-a327-daa1d8319145",
+    "status": -1
+  },
+  {
+    "nickname": "派蒙",
+    "worth": 99900,
+    "avatar": "",
+    "id": "1754d94e-0980-45ce-af79-d64b9ecfd4bf",
+    "status": -1
+  },
+  {
+    "nickname": "派蒙",
+    "worth": 9990000,
+    "avatar": "",
+    "id": "f8aa4f3c-19f3-41dd-934a-527f58d8c35f",
+    "status": 0
+  },
+  {
+    "nickname": "123",
+    "worth": 1200,
+    "avatar": "",
+    "id": "e7dfd85e-cc9d-4cde-9bb7-03f727f1842d",
+    "status": -1
+  }
+]

@@ -6,12 +6,12 @@
       </el-col>
       <el-col :span="4">
         <el-button type="primary" @click="dialogVisible = true"
-          >添加富豪</el-button
+          >添加人物</el-button
         >
       </el-col>
     </el-row>
     <el-dialog
-      title="添加富豪"
+      title="添加人物"
       :visible.sync="dialogVisible"
       width="30%"
       @close="closeForm"
@@ -22,7 +22,7 @@
         ref="addForm"
         label-width="80px"
       >
-        <el-form-item prop="nickname" label="富豪名称">
+        <el-form-item prop="nickname" label="人物名称">
           <el-input v-model="addForm.nickname"></el-input>
         </el-form-item>
         <el-form-item prop="worth" label="身价">
