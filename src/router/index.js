@@ -24,37 +24,51 @@ const routes = [
     name: "buy",
     component: () => import("../views/Buy.vue"),
   },
+
   {
-    path: "/player",
-    name: "player",
-    component: () => import("../views/Player.vue"),
-  },
-  {
-    path: "/home",
-    component: () => import("../views/Home.vue"),
+    path: "/admin",
+    component: () => import("../views/admin/Index.vue"),
     children: [
       {
         path: "/",
-        redirect: "/rich",
+        redirect: "roles",
       },
       {
-        path: "/rich",
-        component: () => import("../views/menu/Rich.vue"),
+        path: "roles",
+        component: () => import("../views/admin/Roles.vue"),
       },
       {
-        path: "/goods",
-        component: () => import("../views/menu/Goods.vue"),
+        path: "goods",
+        component: () => import("../views/admin/Goods.vue"),
       },
       {
-        path: "/orders",
-        component: () => import("../views/menu/Orders.vue"),
+        path: "orders",
+        component: () => import("../views/admin/Orders.vue"),
       },
       {
-        path: "/add",
+        path: "add",
         name: "add",
-        component: () => import("../views/menu/AddGoods.vue"),
+        component: () => import("../views/admin/AddGoods.vue"),
       },
     ],
+  },
+  {
+    path: "/user",
+    component: () => import("../views/user/Index.vue"),
+    children: [
+      {
+        path: "/",
+        redirect: "profile",
+      },
+      {
+        path: "home",
+        component: () => import("../views/user/Home.vue")
+      },
+      {
+        path: "profile",
+        component: () => import("../views/user/Profile.vue")
+      }
+    ]
   },
 ];
 
@@ -69,11 +83,10 @@ router.beforeEach((to, from, next) => {
   // to 要访问的路径
   // from 从哪个路径来
   // next 是否放行
-  if (to.path === "/login") return next();
-  if (to.path === "/player") return next();
-  if (to.path === "/roles" || to.path === "/buy") return next();
-  if (window.sessionStorage.getItem("token")) next();
-  else next("/login");
+  if(to.path.indexOf('admin') !== -1 && !window.sessionStorage.getItem("token")) {
+    next("/login");
+  }
+  next();
 });
 
 router.afterEach(() => {

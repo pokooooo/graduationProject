@@ -8,19 +8,19 @@
       text-color="#fff"
       active-text-color="#409eff"
     >
-      <el-menu-item index="/rich" @click="saveActivePath('/rich')">
+      <el-menu-item index="roles" @click="saveActivePath('roles')">
         <template slot="title">
           <i class="el-icon-s-custom"></i>
           <span>人物管理</span>
         </template>
       </el-menu-item>
-      <el-menu-item index="/goods" @click="saveActivePath('/goods')">
+      <el-menu-item index="goods" @click="saveActivePath('goods')">
         <template slot="title">
           <i class="el-icon-s-goods"></i>
           <span>商品管理</span>
         </template>
       </el-menu-item>
-      <el-menu-item index="/orders" @click="saveActivePath('/orders')">
+      <el-menu-item index="orders" @click="saveActivePath('orders')">
         <template slot="title">
           <i class="el-icon-s-claim"></i>
           <span>订单管理</span>
@@ -36,12 +36,14 @@ export default {
   name: 'LeftMenu',
   methods: {
       saveActivePath(activePath) {
-    window.sessionStorage.setItem("activePath", activePath);
-  }
+        
+        window.sessionStorage.setItem("activePath", activePath);
+        
+        }
   },
   computed: {
   ActivePath() {
-    return window.sessionStorage.getItem("activePath") || "/rich";
+    return window.sessionStorage.getItem("activePath") || "/admin/roles";
   }
   }
 

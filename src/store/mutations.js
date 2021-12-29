@@ -1,6 +1,11 @@
 export default {
     init(state,payload){
         state.userData = payload
-        console.log(state.userData);
+    },
+    updata(state,data) {
+        state.userData = data
+    },
+    logout(state) {
+        state.userData = {}
     }
 }

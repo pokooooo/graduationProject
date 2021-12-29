@@ -7,6 +7,6 @@
 <style>
 #app {
   position: relative;
-  background: url("./assets/image/miko.jpg") center no-repeat;
+
 }
 </style>

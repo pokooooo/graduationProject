@@ -11,7 +11,7 @@
   },
   {
     "title": "护摩之杖",
-    "price": 10000,
+    "price": "10000",
     "cover": "http://localhost:3000/images/486f02f6-7799-4c50-8de8-dd044eadaafb.jpg",
     "id": "1bc45913-3398-45a7-a007-f726d5566dff",
     "status": 1,
@@ -144,7 +144,7 @@
     "price": 10000,
     "cover": "http://localhost:3000/images/82f6c18e-3505-40d7-8535-6fb20df974e7.jpg",
     "id": "e6c0ff69-e259-4cec-ac14-1e49221c3ef8",
-    "status": 1,
+    "status": 2,
     "limit": "1",
     "weight": 5,
     "ctime": 1627440092938

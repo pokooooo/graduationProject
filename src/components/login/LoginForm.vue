@@ -183,10 +183,10 @@ export default  {
               "nickname",
               res.data.data.info.nickname
             );
-            this.$router.replace("/home");
+            this.$router.replace("/admin");
             } else {
               this.$store.commit('init',res.data.data.data)
-              this.$router.push("/player");
+              this.$router.push("/user");
             }
 
           } else this.$message.error(res.data.msg);

@@ -14,8 +14,8 @@ let goods = new Router()
 goods.post('/search', async (ctx) => {
   try {
     let token = ctx.cookies.get('token')
-    check(!!token, 'User_Not_Login')
-    check(hasToken(token), 'User_Login_Outdate')
+    check(!!token, 'Admin_Not_Login','管理员未登录')
+    check(hasToken(token), 'Admin_Login_Outdate', '管理员登录过期')
     let { pageIndex, pageSize, keyword } = ctx.request.body
     check(pageIndex >= 0, 'Params_Is_Not_In_Rules')
     check(pageSize >= 0, 'Params_Is_Not_In_Rules')
@@ -32,8 +32,8 @@ goods.post('/search', async (ctx) => {
 goods.post('/add', async (ctx) => {
   try {
     let token = ctx.cookies.get('token')
-    check(!!token, 'User_Not_Login')
-    check(hasToken(token), 'User_Login_Outdate')
+    check(!!token, 'Admin_Not_Login','管理员未登录')
+    check(hasToken(token), 'Admin_Login_Outdate', '管理员登录过期')
     let { title, price, cover, limit } = ctx.request.body
     check(!!title)
     check(price > 0)
@@ -43,7 +43,7 @@ goods.post('/add', async (ctx) => {
     let ctime = new Date().getTime()
     let obj = {
       title,
-      price: price * 100,
+      price: price ,
       cover,
       id,
       status: 0,
@@ -61,15 +61,15 @@ goods.post('/add', async (ctx) => {
 goods.post('/set', async (ctx) => {
   try {
     let token = ctx.cookies.get('token')
-    check(!!token, 'User_Not_Login')
-    check(hasToken(token), 'User_Login_Outdate')
+    check(!!token, 'Admin_Not_Login','管理员未登录')
+    check(hasToken(token), 'Admin_Login_Outdate', '管理员登录过期')
     let { id, title, price, cover, limit } = ctx.request.body
     check(hasOne(id))
     let goods = getGoods(id)
     let obj = {
       ...goods,
       title,
-      price: price * 100,
+      price: price ,
       cover,
       limit,
     }
@@ -83,8 +83,8 @@ goods.post('/set', async (ctx) => {
 goods.post('/setweight', async (ctx) => {
   try {
     let token = ctx.cookies.get('token')
-    check(!!token, 'User_Not_Login')
-    check(hasToken(token), 'User_Login_Outdate')
+    check(!!token, 'Admin_Not_Login','管理员未登录')
+    check(hasToken(token), 'Admin_Login_Outdate', '管理员登录过期')
     let { id, weight } = ctx.request.body
     check(weight >= 0)
     check(hasOne(id))
@@ -103,8 +103,8 @@ goods.post('/setweight', async (ctx) => {
 goods.post('/up', async (ctx) => {
   try {
     let token = ctx.cookies.get('token')
-    check(!!token, 'User_Not_Login')
-    check(hasToken(token), 'User_Login_Outdate')
+    check(!!token, 'Admin_Not_Login','管理员未登录')
+    check(hasToken(token), 'Admin_Login_Outdate', '管理员登录过期')
     let { id } = ctx.request.body
     check(hasOne(id))
     let goods = getGoods(id)
@@ -122,8 +122,8 @@ goods.post('/up', async (ctx) => {
 goods.post('/down', async (ctx) => {
   try {
     let token = ctx.cookies.get('token')
-    check(!!token, 'User_Not_Login')
-    check(hasToken(token), 'User_Login_Outdate')
+    check(!!token, 'Admin_Not_Login','管理员未登录')
+    check(hasToken(token), 'Admin_Login_Outdate', '管理员登录过期')
     let { id } = ctx.request.body
     check(hasOne(id))
     let goods = getGoods(id)
@@ -141,8 +141,8 @@ goods.post('/down', async (ctx) => {
 goods.post('/delete', async (ctx) => {
   try {
     let token = ctx.cookies.get('token')
-    check(!!token, 'User_Not_Login')
-    check(hasToken(token), 'User_Login_Outdate')
+    check(!!token, 'Admin_Not_Login','管理员未登录')
+    check(hasToken(token), 'Admin_Login_Outdate', '管理员登录过期')
     let { id } = ctx.request.body
     check(hasOne(id))
     deleteGoods(id)

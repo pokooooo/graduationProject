@@ -4,14 +4,7 @@
       <div class="item" v-for="item in richList" :key="item.id">
         <img
                 @click="login(item.id)"
-                v-if="item.avatar"
-                :src="item.avatar"
-                alt=""
-        />
-        <img
-                @click="login(item.id)"
-                v-else
-                src="../assets/image/default.jpg"
+                :src="item.avatar ? item.avatar : imgUrl"
                 alt=""
         />
         <div>{{ item.nickname }}</div>
@@ -53,6 +46,7 @@ export default {
   name: "Roles",
   data() {
     return {
+      imgUrl: require('../assets/image/default.jpg'),
       richList: [],
       data: {
         pageIndex: 1,

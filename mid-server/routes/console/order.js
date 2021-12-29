@@ -8,11 +8,11 @@ let order = new Router()
 order.post('/search', async (ctx) => {
   try {
     let token = ctx.cookies.get('token')
-    check(!!token, 'User_Not_Login')
-    check(hasToken(token), 'User_Login_Outdate')
+    check(!!token, 'Admin_Not_Login','管理员未登录')
+    check(hasToken(token), 'Admin_Login_Outdate', '管理员登录过期')
     let { pageIndex, pageSize, keyword } = ctx.request.body
-    check(pageIndex >= 0, 'Params_Is_Not_In_Rules')
-    check(pageSize >= 0, 'Params_Is_Not_In_Rules')
+    check(pageIndex >= 0, 'Params_Is_Not_In_Rules','查询参数有误')
+    check(pageSize >= 0, 'Params_Is_Not_In_Rules','查询参数有误')
     let data = searchOrder(pageIndex, pageSize, keyword)
     ctx.body = generateOk({
       items: data[0],
@@ -26,8 +26,8 @@ order.post('/search', async (ctx) => {
 order.post('/get', async (ctx) => {
   try {
     let token = ctx.cookies.get('token')
-    check(!!token, 'User_Not_Login')
-    check(hasToken(token), 'User_Login_Outdate')
+    check(!!token, 'Admin_Not_Login','管理员未登录')
+    check(hasToken(token), 'Admin_Login_Outdate', '管理员登录过期')
     let { id } = ctx.request.body
     check(hasOne(id))
     let data = getOrder(id)

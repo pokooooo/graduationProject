@@ -22,7 +22,7 @@ export default {
   },
   methods: {
   addGoods() {
-    this.$router.push("/add");
+    this.$router.push("add");
   },
   select(text) {
     this.$emit("select", text);

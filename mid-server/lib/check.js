@@ -7,9 +7,11 @@ class Error {
   }
 }
 
-function check(bool, stat) {
+function check(bool, stat ,msg) {
   if (!bool) {
-    throw new Error(stat)
+    let error = new Error(stat)
+    error.msg = msg
+    throw error
   }
 }
 
