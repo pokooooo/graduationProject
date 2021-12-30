@@ -34,6 +34,10 @@ const routes = [
         redirect: "roles",
       },
       {
+        path: "users",
+        component: () => import("../views/admin/Users.vue")
+      },
+      {
         path: "roles",
         component: () => import("../views/admin/Roles.vue"),
       },
@@ -58,7 +62,7 @@ const routes = [
     children: [
       {
         path: "/",
-        redirect: "profile",
+        redirect: "home",
       },
       {
         path: "home",

@@ -8,6 +8,12 @@
       text-color="#fff"
       active-text-color="#409eff"
     >
+      <el-menu-item index="users" @click="saveActivePath('users')">
+        <template slot="title">
+          <i class="el-icon-user-solid"></i>
+          <span>用户管理</span>
+        </template>
+      </el-menu-item>
       <el-menu-item index="roles" @click="saveActivePath('roles')">
         <template slot="title">
           <i class="el-icon-s-custom"></i>
@@ -43,7 +49,7 @@ export default {
   },
   computed: {
   ActivePath() {
-    return window.sessionStorage.getItem("activePath") || "/admin/roles";
+    return window.sessionStorage.getItem("activePath") || "roles";
   }
   }
 

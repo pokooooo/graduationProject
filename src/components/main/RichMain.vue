@@ -85,7 +85,18 @@ export default {
   data() {
     return {
       dialogVisible: false,
-
+      setForm: {
+        nickname: "",
+        worth: 0,
+        avatar: "",
+        id: "",
+      },
+      setFormRules: {
+        nickname: [{ required: true, message: "请输入名称", trigger: "blur" },
+        { min: 1, max: 20, message: '长度在 1 到 20 个字符', trigger: 'blur' }],
+        worth: [{ required: true, message: "请输入身价", trigger: "blur" },
+        { type: 'number', message: '身价必须为数字'}],
+        },
     }
   },
   methods: {

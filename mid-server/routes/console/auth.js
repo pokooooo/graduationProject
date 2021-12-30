@@ -1,5 +1,6 @@
 const Router = require('koa-router')
 const uuid = require('uuid')
+const moment = require('moment')
 const { check, catchError, generateOk } = require('../../lib/check')
 const admin = require('../../model/admin')
 const { setUser, getUser, editUser, hasUser } = require('../../model/users')
@@ -32,8 +33,12 @@ auth.post('/login', async (ctx) => {
     } else {
       let data = getUser(account); 
       check(account === data.account,'Password_Error','密码错误');
+      if(new Date().toDateString() !== new Date(data.lastSign).toDateString()) {
+        if(!data.isSign) data.signDay = 0
+        data.isSign = false
+      }
       data.lastSign = new Date().getTime()
-      editUser({id: data.id,lastSign: data.lastSign})
+      editUser(data)
       ctx.body = generateOk({
         data
       })
@@ -61,7 +66,7 @@ auth.post('/register', async (ctx) => {
       diamond: 1000,
       gold: 10000,
       isSign: false,
-      lastSign: null,
+      lastSign: 0,
       signDay: 0
     }
     setUser(obj)

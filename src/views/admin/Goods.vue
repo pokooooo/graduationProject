@@ -41,7 +41,6 @@ export default {
   methods: {
     selectGoods() {
     selectGoods(this.data).then((res) => {
-      console.log(res);
       this.goodsList = res.data.data.items;
       this.total = res.data.data.total;
     })

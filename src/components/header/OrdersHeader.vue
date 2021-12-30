@@ -10,7 +10,7 @@
 
 <script>
 
-import SelectInput from "../select/SelectInput.vue"
+import SelectInput from "../select/Input.vue"
 
 
 export default {

@@ -11,6 +11,9 @@ export default {
     getPwd(state) {
         return state.userData.pwd
     },
+    getUserData(state) {
+        return state.userData
+    }
 
 
 }

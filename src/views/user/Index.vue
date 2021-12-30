@@ -1,6 +1,24 @@
 <template>
   <div>
     <div class="header">
+      <div>
+
+      </div>
+      <div class="tag">
+        <div>
+          <el-tooltip :content="$store.getters.getUserData.isSign ? `今日已签到，您已经连续签到了${$store.getters.getUserData.signDay}天！` 
+          : '您今天还未签到，点击签到可换取奖励！' ">
+            <el-badge :is-dot="!$store.getters.getUserData.isSign" class="item">
+              <i @click="sign" class="iconfont icon-qiandao"></i>
+            </el-badge>
+          </el-tooltip>
+
+          
+        </div>
+        <div>
+          <i class="iconfont icon-tongzhi"></i>
+        </div>
+      </div>
       <el-dropdown placement="bottom" @command="toPath" :show-timeout="50">
         <span class="el-dropdown-link">
           <img :src="!!$store.getters.getAvatar ? $store.getters.getAvatar : imgUrl" alt="">
@@ -43,6 +61,34 @@ export default {
     logout() {
       this.$store.commit('logout')
       this.$router.replace('/login')
+    },
+    sign() {
+      let data = this.$store.getters.getUserData
+      if(data.isSign) {
+        this.$notify({
+          title: '签到失败',
+          message: '您今天已经签到过了！',
+          type: 'warning'
+        });
+        return
+      }
+      let gold = 0;
+      data.isSign = true;
+      data.diamond += 50
+      data.signDay += 1;
+      if(data.signDay <= 7) {
+        gold = 1000 + data.signDay * 500
+      } else {
+        gold = 5000
+      }
+      data.gold += gold
+      this.$store.dispatch('updata',data).then(res => {
+        this.$notify({
+          title: '签到成功',
+          message: `您已连续签到${data.signDay}天,获取${gold}摩拉和50原石！`,
+          type: 'success'
+        });
+      })
     }
   },
   created() {
@@ -53,7 +99,7 @@ export default {
 <style scoped>
 .header {
   margin: 0 auto;
-  background-color: rgb(46, 139, 119);
+  background-color: rgb(96, 128, 136);
   height: 55px;
   display: flex;
   align-items: center;
@@ -71,4 +117,24 @@ export default {
   margin: 0 auto;
   width: 1200px;
 }
+
+.tag {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.tag>div {
+  margin: 0 10px;
+}
+
+.tag i {
+    font-size: 30px;
+}
+
+i:hover {
+  cursor: pointer;
+}
+
+
 </style>
