@@ -6,7 +6,7 @@
         <select-input :typeList="[{label: '昵称',value: 'nickname'},{label: '账号',value: 'account'}]" @select="select"></select-input>
       </el-col>
     </el-row>
-    <users-main :usersList="usersList"></users-main>
+    <users-main :usersList="usersList" :allUsersList="allUsersList"></users-main>
     </el-card>
     <pagination
       :data="data"
@@ -37,6 +37,7 @@ export default {
   data() {
     return {
       usersList: [],
+      allUsersList: [],
       data: {
         pageIndex: 1,
         pageSize: 5,
@@ -69,6 +70,9 @@ export default {
       this.usersList = res.data.data.items;
       this.total = res.data.data.total;
     });
+    searchUsers({pageIndex: 0, pageSize: 0, keyword: "", type: "nickname"}).then(res => {
+      this.allUsersList = res.data.data.items.map(item => item.account)
+    })
   }
   },
   created() {

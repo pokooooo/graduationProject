@@ -7,5 +7,8 @@ export default {
     },
     logout(state) {
         state.userData = {}
+    },
+    updataMail(state,data) {
+        state.message.mail = data
     }
 }

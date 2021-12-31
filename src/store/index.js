@@ -8,7 +8,12 @@ import actions from "./actions";
 Vue.use(Vuex)
 
 const state = {
-    userData: {}
+    userData: {},
+    message: {
+        noticeList: [],
+        mailList: [],
+        chatList: []
+    }
 }
 
 const store = new Vuex.Store({

@@ -1,35 +1,18 @@
 <template>
-  <div>
+  <div style="height: 100%">
     <el-menu
+      style="height: 100%"
       unique-opened
       router
       :default-active="ActivePath"
-      background-color="#333744"
-      text-color="#fff"
+      :background-color="backgroundColor"
+      :text-color="color"
       active-text-color="#409eff"
     >
-      <el-menu-item index="users" @click="saveActivePath('users')">
+      <el-menu-item v-for="item in pathList" :key="item.path" :index="item.path" @click="saveActivePath(item.path)">
         <template slot="title">
-          <i class="el-icon-user-solid"></i>
-          <span>用户管理</span>
-        </template>
-      </el-menu-item>
-      <el-menu-item index="roles" @click="saveActivePath('roles')">
-        <template slot="title">
-          <i class="el-icon-s-custom"></i>
-          <span>人物管理</span>
-        </template>
-      </el-menu-item>
-      <el-menu-item index="goods" @click="saveActivePath('goods')">
-        <template slot="title">
-          <i class="el-icon-s-goods"></i>
-          <span>商品管理</span>
-        </template>
-      </el-menu-item>
-      <el-menu-item index="orders" @click="saveActivePath('orders')">
-        <template slot="title">
-          <i class="el-icon-s-claim"></i>
-          <span>订单管理</span>
+          <i :class="item.icon"></i>
+          <span>{{item.name}}</span>
         </template>
       </el-menu-item>
     </el-menu>
@@ -40,6 +23,26 @@
 
 export default {
   name: 'LeftMenu',
+  props: {
+    pathList: {
+      type: Array,
+      default() {
+        return []
+      }
+    },
+      backgroundColor: {
+        type: String,
+        default() {
+          return ''
+        }
+      },
+      color: {
+        type: String,
+        default() {
+          return '#000'
+        }
+      }
+  },
   methods: {
       saveActivePath(activePath) {
         
@@ -49,7 +52,7 @@ export default {
   },
   computed: {
   ActivePath() {
-    return window.sessionStorage.getItem("activePath") || "roles";
+    return window.sessionStorage.getItem("activePath") || this.pathList[0].path;
   }
   }
 

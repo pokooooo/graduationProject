@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="margin-top: 20px">
       <el-form
         :model="setForm"
         :rules="setFormRules"
@@ -58,10 +58,10 @@ export default {
   },
   methods: {
     updata() {
-      this.setForm.nickname = this.$store.getters.getNickname;
-      this.setForm.avatar = this.$store.getters.getAvatar;
+      this.setForm.nickname = this.$store.getters.userData.nickname;
+      this.setForm.avatar = this.$store.getters.userData.avatar;
       this.setForm.pwd = this.$store.getters.getPwd;
-      this.setForm.account = this.$store.getters.getAccount;
+      this.setForm.account = this.$store.getters.userData.account;
     },
     handleChange(info) {
     if (info.status === "ready") {
@@ -81,7 +81,7 @@ export default {
     }
   },
   created() {
-    console.log(this.$store.getters.getAccount);
+    console.log(this.$store.getters.userData.account);
     this.updata()
   }
 }

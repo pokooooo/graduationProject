@@ -9,9 +9,9 @@
       </el-header>
       <el-container>
         <el-aside width="200px">
-          <left-menu></left-menu>
+          <left-menu :backgroundColor="'#333744'" :color="'#fff'" :pathList="pathList"></left-menu>
         </el-aside>
-        <el-main>
+        <el-main style="height: calc(100vh - 60px)">
           <router-view></router-view>
         </el-main>
       </el-container>
@@ -31,7 +31,29 @@ export default {
   },
   data() {
     return {
-      nickname: window.sessionStorage.getItem("nickname") || ""
+      nickname: window.sessionStorage.getItem("nickname") || "",
+      pathList: [
+        {
+          name: '用户管理',
+          path: 'users',
+          icon: 'el-icon-user-solid'
+        },
+        {
+          name: '人物管理',
+          path: 'roles',
+          icon: 'el-icon-s-custom'
+        },
+                {
+          name: '商品管理',
+          path: 'goods',
+          icon: 'el-icon-s-goods'
+        },
+                {
+          name: '订单管理',
+          path: 'orders',
+          icon: 'el-icon-s-claim'
+        }
+      ]
     }
   },
   methods: {

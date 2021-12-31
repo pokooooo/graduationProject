@@ -1,0 +1,74 @@
+[
+  {
+    "sender": "admin",
+    "receiver": "player",
+    "title": "开服大礼包",
+    "context": "",
+    "gold": 10000,
+    "diamond": 1000,
+    "sendTime": 1640943452874,
+    "id": "551e0e5b-569d-4c36-94b3-09ac43490b39",
+    "isRead": false,
+    "isReceive": false
+  },
+  {
+    "sender": "admin",
+    "receiver": "player2",
+    "title": "开服大礼包",
+    "context": "",
+    "gold": 10000,
+    "diamond": 1000,
+    "sendTime": 1640943452874,
+    "id": "f5f6ea16-407b-4534-a9aa-dd0cf7a3d20b",
+    "isRead": false,
+    "isReceive": false
+  },
+  {
+    "sender": "admin",
+    "receiver": "player1",
+    "title": "开服大礼包",
+    "context": "",
+    "gold": 10000,
+    "diamond": 1000,
+    "sendTime": 1640943452874,
+    "id": "762821d9-a3ea-43eb-8c89-7c18afcf470f",
+    "isRead": false,
+    "isReceive": false
+  },
+  {
+    "sender": "admin",
+    "receiver": "player3",
+    "title": "开服大礼包",
+    "context": "",
+    "gold": 10000,
+    "diamond": 1000,
+    "sendTime": 1640943452874,
+    "id": "f84e3b10-2b0b-4087-bc8e-0d38a2674375",
+    "isRead": false,
+    "isReceive": false
+  },
+  {
+    "sender": "admin",
+    "receiver": "player",
+    "title": "py",
+    "context": "",
+    "gold": 10000,
+    "diamond": 0,
+    "sendTime": 1640943591488,
+    "id": "7618ada8-59d6-40a7-b7b7-77a88d02a72a",
+    "isRead": false,
+    "isReceive": false
+  },
+  {
+    "sender": "admin",
+    "receiver": "player",
+    "title": "兑换码奖励",
+    "context": "",
+    "gold": 0,
+    "diamond": 300,
+    "sendTime": 1640943693873,
+    "id": "115e8bba-b184-4352-a7ba-dc56454164cd",
+    "isRead": false,
+    "isReceive": false
+  }
+]

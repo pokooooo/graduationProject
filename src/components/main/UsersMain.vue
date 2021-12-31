@@ -1,9 +1,13 @@
 <template>
   <div>
-    <el-table :data="usersList" border stripe>
+    <el-table @select="select" @select-all="selectAll" :data="usersList" border stripe>
+      <el-table-column
+      type="selection"
+      width="55">
+    </el-table-column>
       <el-table-column label="账号" prop="account"></el-table-column>
       <el-table-column label="昵称" prop="nickname"></el-table-column>
-      <el-table-column label="头像">
+      <el-table-column label="头像" width="200">
         <template slot-scope="scope">
           <img class="avatar" :src="!!scope.row.avatar ? scope.row.avatar : imgUrl" alt="">
         </template>
@@ -20,24 +24,37 @@
         <template slot-scope="scope">
           <el-button
             type="primary"
-            icon="el-icon-present"
+            icon="el-icon-message"
             @click="set(scope.row)"
           ></el-button>
         </template>
       </el-table-column>
     </el-table>
-    <el-dialog title="赠送" :visible.sync="dialogVisible" width="30%">
+    <el-dialog title="发送给用户" :visible.sync="dialogVisible" width="30%" @close="closeForm">
       <el-form
-        :model="moneyForm"
-        :rules="moneyFormRules"
-        ref="moneyForm"
+        :model="mailForm"
+        :rules="mailFormRules"
+        ref="mailForm"
         label-width="80px"
       >
+        <el-form-item prop="receiver" label="发送对象">
+          <el-select v-model="mailForm.receiver" placeholder="请选择">
+            <el-option label="所有用户" :value="allUsersList"></el-option>
+            <el-option label="选中用户" :value="accountList.map(item => item.account)"></el-option>
+            <el-option label="当前用户" :value="account"></el-option>
+          </el-select>
+        </el-form-item>
+        <el-form-item prop="title" label="标题">
+          <el-input v-model="mailForm.title"></el-input>
+        </el-form-item>
+        <el-form-item prop="context" label="内容">
+          <el-input type="textarea" v-model="mailForm.context"></el-input>
+        </el-form-item>
         <el-form-item prop="gold" label="摩拉">
-          <el-input v-model.number="moneyForm.gold"></el-input>
+          <el-input v-model.number="mailForm.gold"></el-input>
         </el-form-item>
         <el-form-item prop="diamond" label="原石">
-          <el-input v-model.number="moneyForm.diamond"></el-input>
+          <el-input v-model.number="mailForm.diamond"></el-input>
         </el-form-item>
       </el-form>
       <span slot="footer" class="dialog-footer">
@@ -51,12 +68,18 @@
 <script>
 
 
-
+import {sendMail} from '../../network/mail'
 
 export default {
   name: 'UsersMain',
   props: {
     usersList: {
+      type: Array,
+      default() {
+        return []
+      }
+    },
+    allUsersList: {
       type: Array,
       default() {
         return []
@@ -67,31 +90,49 @@ export default {
     return {
       imgUrl: require('../../assets/image/default.jpg'),
       dialogVisible: false,
-      moneyForm: {
-        account: 0,
+      mailForm: {
+        receiver: null,
+        title: '',
+        context: '',
         gold: 0,
-        diamond: 0
+        diamond: 0,
       },
-      moneyFormRules: {
-        gold: [{ required: true, message: "请输入摩拉数额", trigger: "blur" },
-        { type: 'number', message: '数量必须为数字'}],
-        diamond: [{ required: true, message: "请输入原石数额", trigger: "blur" },
-        { type: 'number', message: '数量必须为数字'}],
+      account: [],
+      accountList: [],
+      mailFormRules: {
+        receiver: [{ required: true, message: "请选择发送的对象", trigger: "blur" }],
+        title: [{ required: true, message: "请输入邮件标题", trigger: "blur" }],
+        gold: [{ type: 'number', message: '数量必须为数字'}],
+        diamond: [{ type: 'number', message: '数量必须为数字'}],
         },
     }
   },
   methods: {
+  select(selection) {
+    this.accountList = selection
+  },
+  selectAll(selection) {
+    this.accountList = selection
+  },
+  closeForm() {
+    this.$refs.mailForm.resetFields();
+    this.mailForm.receiver = null
+  },
   commitSet() {
-    this.$refs.moneyForm.validate((valid) => {
+    this.$refs.mailForm.validate((valid) => {
       if (valid) {
-
+        sendMail({sender: window.sessionStorage.getItem("nickname"),...this.mailForm}).then(res => {
+          this.$message.success("发送成功!");
+          this.dialogVisible = false
+          this.closeForm()
+        })
       } else {
 
       }
     });
   },
   set(data) {
-    this.moneyForm.account = data.account
+    this.account = [data.account]
     this.dialogVisible = true
   }
 

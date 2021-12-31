@@ -31,7 +31,7 @@ const routes = [
     children: [
       {
         path: "/",
-        redirect: "roles",
+        redirect: "users",
       },
       {
         path: "users",
@@ -71,9 +71,28 @@ const routes = [
       {
         path: "profile",
         component: () => import("../views/user/Profile.vue")
+      },
+      {
+        path: "message",
+        component: () => import("../views/user/message/Index.vue"),
+        children: [
+          {
+            path: 'notice',
+            component: () => import("../views/user/message/Notice.vue"),
+          },
+          {
+            path: 'mail',
+            component: () => import("../views/user/message/Mail.vue"),
+          },
+          {
+            path: 'chat',
+            component: () => import("../views/user/message/Chat.vue"),
+          }
+        ]
       }
     ]
   },
+
 ];
 
 const router = new VueRouter({

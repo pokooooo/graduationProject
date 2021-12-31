@@ -7,11 +7,11 @@
     "worldLevel": 1,
     "nickname": "1123",
     "avatar": "http://localhost:3000/images/68d753af-af27-4265-9751-9b606ca243bc.jpg",
-    "diamond": 1050,
-    "gold": 15000,
+    "diamond": 1100,
+    "gold": 20000,
     "isSign": true,
-    "lastSign": 1640851264277,
-    "signDay": 11
+    "lastSign": 1640945945141,
+    "signDay": 12
   },
   {
     "account": "player2",
@@ -21,11 +21,11 @@
     "worldLevel": 1,
     "nickname": "1234",
     "avatar": "http://localhost:3000/images/e8267a61-9206-463c-8614-02447f10a024.jpg",
-    "diamond": 1050,
-    "gold": 11500,
+    "diamond": 1100,
+    "gold": 13500,
     "isSign": true,
-    "lastSign": 1640851267935,
-    "signDay": 1
+    "lastSign": 1640933939627,
+    "signDay": 2
   },
   {
     "account": "player1",
@@ -37,8 +37,8 @@
     "avatar": "http://localhost:3000/images/e2f3207d-8e58-4195-a276-db952745ffd5.jpg",
     "diamond": 1100,
     "gold": 16500,
-    "isSign": true,
-    "lastSign": 1640851254677,
+    "isSign": false,
+    "lastSign": 1640917808159,
     "signDay": 1
   },
   {
@@ -49,10 +49,10 @@
     "worldLevel": 1,
     "nickname": "111",
     "avatar": "http://localhost:3000/images/72d45c16-a58f-4f90-9f14-0d560ca004c4.jpg",
-    "diamond": 1050,
-    "gold": 13000,
+    "diamond": 1100,
+    "gold": 16500,
     "isSign": true,
-    "lastSign": 1640848604331,
-    "signDay": 4
+    "lastSign": 1640937221489,
+    "signDay": 5
   }
 ]

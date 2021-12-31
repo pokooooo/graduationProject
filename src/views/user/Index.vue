@@ -16,12 +16,22 @@
           
         </div>
         <div>
+      <el-dropdown placement="bottom" @command="toPath" :show-timeout="50">
+        <span class="el-dropdown-link">
           <i class="iconfont icon-tongzhi"></i>
+        </span>
+        <el-dropdown-menu slot="dropdown">
+          <el-dropdown-item command="/user/message/notice">通知</el-dropdown-item>
+          <el-dropdown-item command="/user/message/mail">邮件</el-dropdown-item>
+          <el-dropdown-item command="/user/message/chat">私聊</el-dropdown-item>
+        </el-dropdown-menu>
+      </el-dropdown>
+          
         </div>
       </div>
       <el-dropdown placement="bottom" @command="toPath" :show-timeout="50">
         <span class="el-dropdown-link">
-          <img :src="!!$store.getters.getAvatar ? $store.getters.getAvatar : imgUrl" alt="">
+          <img :src="!!$store.getters.getUserData.avatar ? $store.getters.getUserData.avatar : imgUrl" alt="">
         </span>
         <el-dropdown-menu slot="dropdown">
           <el-dropdown-item command="home">个人中心</el-dropdown-item>
@@ -51,6 +61,7 @@ export default {
 
   },
   methods: {
+
     toPath(path) {
       if(path === 'logout') {
         this.logout()
@@ -129,7 +140,8 @@ export default {
 }
 
 .tag i {
-    font-size: 30px;
+  color: #000;
+  font-size: 30px;
 }
 
 i:hover {

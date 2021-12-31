@@ -34,11 +34,13 @@
         <el-form>
           <el-form-item>
             <img class="prop" src="../../assets/image/prop/yuanshi.png" alt="">
-            <span>{{$store.getters.getUserData.diamond}}</span>
+            :
+            <span style="margin-left: 5px">{{$store.getters.getUserData.diamond}}</span>
           </el-form-item>
           <el-form-item>
             <img class="prop" src="../../assets/image/prop/mola.png" alt="">
-            <span>{{$store.getters.getUserData.gold}}</span>
+            :
+            <span style="margin-left: 5px" >{{$store.getters.getUserData.gold}}</span>
           </el-form-item>
         </el-form>
       </div>
@@ -99,8 +101,8 @@ export default {
 }
 
 .prop {
+  vertical-align: middle;
   width: 25px;
   height: 25px;
-  margin: auto 0;
 }
 </style>
