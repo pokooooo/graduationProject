@@ -82,6 +82,7 @@
 <script>
 
 import { login,register } from "@/network/login";
+import {getMailByAccount} from "@/network/mail"
 
 
 export default  {
@@ -185,7 +186,11 @@ export default  {
             );
             this.$router.replace("/admin");
             } else {
-              this.$store.commit('init',res.data.data.data)
+              this.$store.commit('updata',res.data.data.data)
+              getMailByAccount({account: res.data.data.data.account}).then(res1 => {
+                console.log(res1);
+                this.$store.commit('updataMail',res1.data.data.data)
+              })
               this.$router.push("/user");
             }
 

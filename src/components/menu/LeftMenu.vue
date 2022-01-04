@@ -41,7 +41,13 @@ export default {
         default() {
           return '#000'
         }
+      },
+    path: {
+      type: String,
+      default() {
+        return this.pathList[0].path
       }
+    }
   },
   methods: {
       saveActivePath(activePath) {
@@ -52,7 +58,7 @@ export default {
   },
   computed: {
   ActivePath() {
-    return window.sessionStorage.getItem("activePath") || this.pathList[0].path;
+    return window.sessionStorage.getItem("activePath") || this.path;
   }
   }
 

@@ -8,7 +8,7 @@
         <div>
           <el-tooltip :content="$store.getters.getUserData.isSign ? `今日已签到，您已经连续签到了${$store.getters.getUserData.signDay}天！` 
           : '您今天还未签到，点击签到可换取奖励！' ">
-            <el-badge :is-dot="!$store.getters.getUserData.isSign" class="item">
+            <el-badge :is-dot="!$store.getters.getUserData.isSign">
               <i @click="sign" class="iconfont icon-qiandao"></i>
             </el-badge>
           </el-tooltip>
@@ -17,13 +17,27 @@
         </div>
         <div>
       <el-dropdown placement="bottom" @command="toPath" :show-timeout="50">
-        <span class="el-dropdown-link">
-          <i class="iconfont icon-tongzhi"></i>
+        <span class="el-dropdown-link">   
+          <el-badge :is-dot="$store.getters.getMessageCount !== 0">
+            <i class="iconfont icon-tongzhi"></i>
+          </el-badge>
         </span>
         <el-dropdown-menu slot="dropdown">
-          <el-dropdown-item command="/user/message/notice">通知</el-dropdown-item>
-          <el-dropdown-item command="/user/message/mail">邮件</el-dropdown-item>
-          <el-dropdown-item command="/user/message/chat">私聊</el-dropdown-item>
+          <el-dropdown-item command="/user/message/notice">
+            <el-badge :value="$store.getters.getNoticeList.filter(item => !item.isRead).length">
+              通知
+            </el-badge>
+          </el-dropdown-item>
+          <el-dropdown-item command="/user/message/mail">
+            <el-badge :value="$store.getters.getMailList.filter(item => !item.isRead).length">
+              邮件
+            </el-badge>  
+          </el-dropdown-item>
+          <el-dropdown-item command="/user/message/chat">
+            <el-badge :value="$store.getters.getChatList.filter(item => !item.isRead).length">
+              私聊
+            </el-badge>
+          </el-dropdown-item>
         </el-dropdown-menu>
       </el-dropdown>
           
@@ -34,8 +48,8 @@
           <img :src="!!$store.getters.getUserData.avatar ? $store.getters.getUserData.avatar : imgUrl" alt="">
         </span>
         <el-dropdown-menu slot="dropdown">
-          <el-dropdown-item command="home">个人中心</el-dropdown-item>
-          <el-dropdown-item command="profile">账号设置</el-dropdown-item>
+          <el-dropdown-item command="/user/home">个人中心</el-dropdown-item>
+          <el-dropdown-item command="/user/profile">账号设置</el-dropdown-item>
           <el-dropdown-item command="logout">退出</el-dropdown-item>
         </el-dropdown-menu>
       </el-dropdown>
@@ -67,10 +81,14 @@ export default {
         this.logout()
         return
       }
+      if(path[6] === 'm' ) {
+        window.sessionStorage.setItem("activePath", path.slice(14,path.length))
+      }
       this.$router.push(path)
     },
     logout() {
       this.$store.commit('logout')
+      window.sessionStorage.clear()
       this.$router.replace('/login')
     },
     sign() {
@@ -103,6 +121,7 @@ export default {
     }
   },
   created() {
+
   }
 }
 </script>

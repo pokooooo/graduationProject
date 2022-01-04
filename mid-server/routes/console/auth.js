@@ -34,7 +34,7 @@ auth.post('/login', async (ctx) => {
       let data = getUser(account); 
       check(account === data.account,'Password_Error','密码错误');
       if(new Date().toDateString() !== new Date(data.lastSign).toDateString()) {
-        if(!data.isSign) data.signDay = 0
+        if(!data.isSign || new Date().getTime() - data.lastSign > 1000 * 60 * 60 * 24 ) data.signDay = 0
         data.isSign = false
       }
       data.lastSign = new Date().getTime()

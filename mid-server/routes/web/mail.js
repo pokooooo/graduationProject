@@ -28,8 +28,9 @@ mail.post('/send', async (ctx) => {
 mail.post('/get', async (ctx) => {
   try {
     let data = ctx.request.body
-    getMailByAccount(data.account)
-    ctx.body = generateOk()
+    ctx.body = generateOk({
+      data: getMailByAccount(data.account)
+    })
   } catch (err) {
     catchError(err, ctx)
   }

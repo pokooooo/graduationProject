@@ -58,10 +58,10 @@ export default {
   },
   methods: {
     updata() {
-      this.setForm.nickname = this.$store.getters.userData.nickname;
-      this.setForm.avatar = this.$store.getters.userData.avatar;
-      this.setForm.pwd = this.$store.getters.getPwd;
-      this.setForm.account = this.$store.getters.userData.account;
+      this.setForm.nickname = this.$store.getters.getUserData.nickname;
+      this.setForm.avatar = this.$store.getters.getUserData.avatar;
+      this.setForm.pwd = this.$store.getters.getUserData.pwd;
+      this.setForm.account = this.$store.getters.getUserData.account;
     },
     handleChange(info) {
     if (info.status === "ready") {
@@ -81,7 +81,6 @@ export default {
     }
   },
   created() {
-    console.log(this.$store.getters.userData.account);
     this.updata()
   }
 }

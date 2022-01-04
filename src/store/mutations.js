@@ -1,7 +1,4 @@
 export default {
-    init(state,payload){
-        state.userData = payload
-    },
     updata(state,data) {
         state.userData = data
     },
@@ -9,6 +6,6 @@ export default {
         state.userData = {}
     },
     updataMail(state,data) {
-        state.message.mail = data
+        state.message.mailList = data
     }
 }
