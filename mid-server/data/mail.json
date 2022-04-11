@@ -8,7 +8,7 @@
     "diamond": 1000,
     "sendTime": 1640943452874,
     "id": "551e0e5b-569d-4c36-94b3-09ac43490b39",
-    "isRead": false,
+    "isRead": true,
     "isReceive": false
   },
   {
@@ -32,7 +32,7 @@
     "diamond": 1000,
     "sendTime": 1640943452874,
     "id": "762821d9-a3ea-43eb-8c89-7c18afcf470f",
-    "isRead": false,
+    "isRead": true,
     "isReceive": false
   },
   {
@@ -56,7 +56,7 @@
     "diamond": 0,
     "sendTime": 1640943591488,
     "id": "7618ada8-59d6-40a7-b7b7-77a88d02a72a",
-    "isRead": false,
+    "isRead": true,
     "isReceive": false
   },
   {
@@ -68,7 +68,7 @@
     "diamond": 300,
     "sendTime": 1640943693873,
     "id": "115e8bba-b184-4352-a7ba-dc56454164cd",
-    "isRead": false,
+    "isRead": true,
     "isReceive": false
   }
 ]

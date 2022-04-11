@@ -1,0 +1,43 @@
+[
+  {
+    "account1": "player",
+    "account2": "player3",
+    "nickname1": "胡桃",
+    "nickname2": "西风骑士团代理团长",
+    "avatar1": "http://localhost:3000/images/68d753af-af27-4265-9751-9b606ca243bc.jpg",
+    "avatar2": "http://localhost:3000/images/4de702fc-59d1-4bcc-b2a2-2fcb572d28c1.jpg",
+    "list": [],
+    "id": "9811700a-1d6e-43e7-8834-07c2a7b5717c"
+  },
+  {
+    "account1": "player",
+    "account2": "player1",
+    "nickname1": "胡桃",
+    "nickname2": "胡桃桃",
+    "avatar1": "http://localhost:3000/images/68d753af-af27-4265-9751-9b606ca243bc.jpg",
+    "avatar2": "http://localhost:3000/images/e2f3207d-8e58-4195-a276-db952745ffd5.jpg",
+    "list": [
+      {
+        "sender": "player",
+        "type": "text",
+        "context": "11"
+      },
+      {
+        "sender": "player",
+        "type": "text",
+        "context": "11"
+      }
+    ],
+    "id": "f6ab65d6-d758-4c99-a813-bf4f49853d64"
+  },
+  {
+    "account1": "player",
+    "account2": "player2",
+    "nickname1": "胡桃",
+    "nickname2": "王小美",
+    "avatar1": "http://localhost:3000/images/68d753af-af27-4265-9751-9b606ca243bc.jpg",
+    "avatar2": "http://localhost:3000/images/e8267a61-9206-463c-8614-02447f10a024.jpg",
+    "list": [],
+    "id": "9d6f070b-49f7-424c-86ad-cdcac8ab4414"
+  }
+]

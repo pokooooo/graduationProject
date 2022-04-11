@@ -36,5 +36,33 @@ mail.post('/get', async (ctx) => {
   }
 })
 
+mail.post('/read', async (ctx) => {
+  try {
+    let data = ctx.request.body
+    let mail = getMail(data.id)
+    mail.isRead = true
+    editMail(mail)
+    ctx.body = generateOk({
+      data: mail
+    })
+  } catch (err) {
+    catchError(err, ctx)
+  }
+})
+
+mail.post('/receive', async (ctx) => {
+  try {
+    let data = ctx.request.body
+    let mail = getMail(data.id)
+    mail.isReceive = true
+    editMail(mail)
+    ctx.body = generateOk({
+      data: mail
+    })
+  } catch (err) {
+    catchError(err, ctx)
+  }
+})
+
 
 module.exports = mail

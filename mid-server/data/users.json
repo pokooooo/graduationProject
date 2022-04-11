@@ -5,13 +5,29 @@
     "level": 2,
     "experience": 50,
     "worldLevel": 1,
-    "nickname": "1123",
+    "nickname": "胡桃",
     "avatar": "http://localhost:3000/images/68d753af-af27-4265-9751-9b606ca243bc.jpg",
-    "diamond": 1150,
-    "gold": 25000,
+    "diamond": 1700,
+    "gold": 43000,
     "isSign": true,
-    "lastSign": 1641279014705,
-    "signDay": 13
+    "lastSign": 1649647543299,
+    "signDay": 3,
+    "friends": [
+      {
+        "account": "player1",
+        "twoWay": true
+      },
+      {
+        "account": "player3",
+        "twoWay": true
+      },
+      {
+        "account": "player2",
+        "twoWay": false
+      }
+    ],
+    "friendRequest": [],
+    "isOnline": true
   },
   {
     "account": "player2",
@@ -19,13 +35,16 @@
     "level": 1,
     "experience": 0,
     "worldLevel": 1,
-    "nickname": "1234",
+    "nickname": "王小美",
     "avatar": "http://localhost:3000/images/e8267a61-9206-463c-8614-02447f10a024.jpg",
     "diamond": 1150,
     "gold": 16000,
-    "isSign": true,
-    "lastSign": 1641277182637,
-    "signDay": 3
+    "isSign": false,
+    "lastSign": 1649646785620,
+    "signDay": 0,
+    "friends": [],
+    "friendRequest": [],
+    "isOnline": true
   },
   {
     "account": "player1",
@@ -33,13 +52,21 @@
     "level": 1,
     "experience": 0,
     "worldLevel": 1,
-    "nickname": "123",
+    "nickname": "胡桃桃",
     "avatar": "http://localhost:3000/images/e2f3207d-8e58-4195-a276-db952745ffd5.jpg",
-    "diamond": 1150,
-    "gold": 18000,
-    "isSign": true,
-    "lastSign": 1641279068793,
-    "signDay": 1
+    "diamond": 1250,
+    "gold": 21000,
+    "isSign": false,
+    "lastSign": 1649565188677,
+    "signDay": 0,
+    "friends": [
+      {
+        "account": "player",
+        "twoWay": true
+      }
+    ],
+    "friendRequest": [],
+    "isOnline": false
   },
   {
     "account": "player3",
@@ -47,12 +74,20 @@
     "level": 1,
     "experience": 0,
     "worldLevel": 1,
-    "nickname": "111",
+    "nickname": "西风骑士团代理团长",
     "avatar": "http://localhost:3000/images/4de702fc-59d1-4bcc-b2a2-2fcb572d28c1.jpg",
-    "diamond": 1150,
-    "gold": 18000,
-    "isSign": true,
-    "lastSign": 1641278852299,
-    "signDay": 1
+    "diamond": 1200,
+    "gold": 19500,
+    "isSign": false,
+    "lastSign": 1649646120353,
+    "signDay": 0,
+    "friends": [
+      {
+        "account": "player",
+        "twoWay": true
+      }
+    ],
+    "friendRequest": [],
+    "isOnline": false
   }
 ]

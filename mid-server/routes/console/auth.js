@@ -27,7 +27,7 @@ auth.post('/login', async (ctx) => {
       ctx.body = generateOk({
         token,
         info: {
-          nickname: 'admin',
+          nickname: 'PAIMON',
         },
       })
     } else {
@@ -38,6 +38,7 @@ auth.post('/login', async (ctx) => {
         data.isSign = false
       }
       data.lastSign = new Date().getTime()
+      data.isOnline = true
       editUser(data)
       ctx.body = generateOk({
         data
@@ -67,7 +68,10 @@ auth.post('/register', async (ctx) => {
       gold: 10000,
       isSign: false,
       lastSign: 0,
-      signDay: 0
+      signDay: 0,
+      friends: [],
+      friendRequest: [],
+      isOnline: false
     }
     setUser(obj)
     ctx.body = generateOk({

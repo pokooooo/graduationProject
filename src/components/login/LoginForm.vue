@@ -188,7 +188,6 @@ export default  {
             } else {
               this.$store.commit('updata',res.data.data.data)
               getMailByAccount({account: res.data.data.data.account}).then(res1 => {
-                console.log(res1);
                 this.$store.commit('updataMail',res1.data.data.data)
               })
               this.$router.push("/user");

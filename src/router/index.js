@@ -86,6 +86,7 @@ const routes = [
           },
           {
             path: 'chat',
+            name: 'chat',
             component: () => import("../views/user/message/Chat.vue"),
           }
         ]

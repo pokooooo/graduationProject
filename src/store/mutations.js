@@ -7,5 +7,9 @@ export default {
     },
     updataMail(state,data) {
         state.message.mailList = data
+    },
+    updataChat(state,data) {
+        state.message.chatList = data
     }
+
 }

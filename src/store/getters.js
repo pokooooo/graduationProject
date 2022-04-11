@@ -12,6 +12,6 @@ export default {
         return state.message.chatList
     },
     getMessageCount(state) {
-        return state.message.noticeList.lenght + state.message.mailList.lenght + state.message.chatList.lenght
+        return state.message.noticeList.filter(item => !item.isRead).length + state.message.mailList.filter(item => !item.isRead).length + state.message.chatList.filter(item => !item.isRead).length
     }
 }
