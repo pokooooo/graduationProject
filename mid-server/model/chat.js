@@ -18,7 +18,7 @@ function editChat(chat) {
 }
 
 function deleteChat(id) {
-    __Chat.filter(item => item.id !== id);
+    __Chat.splice(__Chat.findIndex((item) => item.id == id), 1)
     write(__Chat, USERSURL)
 }
 
@@ -35,20 +35,20 @@ function getChatByAccount(account) {
     let list = []
     __Chat.forEach(item => {
         if(item.account1 === account || item.account2 === account) {
-            list.push(item)
+            if(item.active) list.push(item)
         }
     })
     return list
 }
 
 function getChatByAccount2(account1,account2) {
+    let char = {}
     __Chat.forEach(item => {
         if((item.account1 === account1 && item.account2 === account2) || (item.account1 === account2 && item.account1 === account2)) {
-            return item
+            char = item
         }
     })
-    return false
-
+    return char
 }
 
 function hasChatByAccount2(account1,account2) {

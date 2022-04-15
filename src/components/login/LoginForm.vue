@@ -83,6 +83,7 @@
 
 import { login,register } from "@/network/login";
 import {getMailByAccount} from "@/network/mail"
+import {getChatByAccount} from "@/network/chat";
 
 
 export default  {
@@ -189,6 +190,9 @@ export default  {
               this.$store.commit('updata',res.data.data.data)
               getMailByAccount({account: res.data.data.data.account}).then(res1 => {
                 this.$store.commit('updataMail',res1.data.data.data)
+              })
+              getChatByAccount({account:this.$store.getters.getUserData.account}).then(res => {
+                this.$store.commit('updataChat',res.data.data.data)
               })
               this.$router.push("/user");
             }

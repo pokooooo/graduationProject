@@ -2,7 +2,8 @@
 const Router = require('koa-router')
 const uuid = require('uuid')
 const { catchError, check, generateOk } = require('../../lib/check')
-const { setMail, getMail, editMail, hasMail,getMailByAccount } = require('../../model/mail')
+const { setMail, getMail, editMail, hasMail,getMailByAccount,deleteMail } = require('../../model/mail')
+const { getUser, editUser} = require('../../model/users')
 
 
 let mail = new Router()
@@ -56,8 +57,24 @@ mail.post('/receive', async (ctx) => {
     let mail = getMail(data.id)
     mail.isReceive = true
     editMail(mail)
+    let user = getUser(mail.receiver)
+    user.diamond += mail.diamond
+    user.gold += mail.gold
+    editUser(user)
     ctx.body = generateOk({
       data: mail
+    })
+  } catch (err) {
+    catchError(err, ctx)
+  }
+})
+
+mail.post('/delete', async (ctx) => {
+  try {
+    let data = ctx.request.body
+    deleteMail(data.id)
+    ctx.body = generateOk({
+
     })
   } catch (err) {
     catchError(err, ctx)

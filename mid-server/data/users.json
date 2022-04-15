@@ -7,23 +7,23 @@
     "worldLevel": 1,
     "nickname": "胡桃",
     "avatar": "http://localhost:3000/images/68d753af-af27-4265-9751-9b606ca243bc.jpg",
-    "diamond": 1700,
-    "gold": 43000,
+    "diamond": 3544,
+    "gold": 22246,
     "isSign": true,
-    "lastSign": 1649647543299,
-    "signDay": 3,
+    "lastSign": 1649929430123,
+    "signDay": 2,
     "friends": [
-      {
-        "account": "player1",
-        "twoWay": true
-      },
       {
         "account": "player3",
         "twoWay": true
       },
       {
+        "account": "player1",
+        "twoWay": true
+      },
+      {
         "account": "player2",
-        "twoWay": false
+        "twoWay": true
       }
     ],
     "friendRequest": [],
@@ -37,14 +37,23 @@
     "worldLevel": 1,
     "nickname": "王小美",
     "avatar": "http://localhost:3000/images/e8267a61-9206-463c-8614-02447f10a024.jpg",
-    "diamond": 1150,
-    "gold": 16000,
-    "isSign": false,
-    "lastSign": 1649646785620,
-    "signDay": 0,
-    "friends": [],
+    "diamond": 2200,
+    "gold": 27500,
+    "isSign": true,
+    "lastSign": 1649863344722,
+    "signDay": 1,
+    "friends": [
+      {
+        "account": "player",
+        "twoWay": true
+      },
+      {
+        "account": "player1",
+        "twoWay": true
+      }
+    ],
     "friendRequest": [],
-    "isOnline": true
+    "isOnline": false
   },
   {
     "account": "player1",
@@ -57,16 +66,24 @@
     "diamond": 1250,
     "gold": 21000,
     "isSign": false,
-    "lastSign": 1649565188677,
+    "lastSign": 1649905556356,
     "signDay": 0,
     "friends": [
       {
         "account": "player",
         "twoWay": true
+      },
+      {
+        "account": "player2",
+        "twoWay": true
+      },
+      {
+        "account": "player3",
+        "twoWay": false
       }
     ],
     "friendRequest": [],
-    "isOnline": false
+    "isOnline": true
   },
   {
     "account": "player3",
@@ -87,7 +104,9 @@
         "twoWay": true
       }
     ],
-    "friendRequest": [],
+    "friendRequest": [
+      "player1"
+    ],
     "isOnline": false
   }
 ]

@@ -116,7 +116,8 @@
 
 import {setUser,getUser} from "@/network/user"
 import {friendRequest,friendAccepted,getFriendData,deleteFriend} from "@/network/friend";
-import {newChat} from "@/network/chat";
+import {getChatByAccount, newChat} from "@/network/chat";
+import {logout1} from "@/network/login";
 
 export default {
   name: 'Index',
@@ -127,7 +128,8 @@ export default {
       dialogVisible: false,
       dialogVisible1: false,
       input: '',
-      friendsList: []
+      friendsList: [],
+      interval: {}
     }
   },
   computed: {},
@@ -144,9 +146,7 @@ export default {
       this.$router.push(path)
     },
     logout() {
-      let data = this.$store.getters.getUserData
-      data.isOnline = false
-      setUser(data).then(() => {})
+      logout1({account:this.$store.getters.getUserData.account}).then( () => {})
       this.$store.commit('logout')
       window.sessionStorage.clear()
       this.$router.replace('/login')
@@ -210,11 +210,15 @@ export default {
       account2: account,nickname2: nickname, avatar1: this.$store.getters.getUserData.avatar , avatar2: avatar}).then(res => {
         this.dialogVisible = false
         window.sessionStorage.setItem("activePath", 'chat')
-        this.$router.push({
-          path: "/user/message/chat",
-          name: 'chat',
-          params: {account}
-        })
+        if(this.$route.path.indexOf('/user/message/chat') !== -1) {
+          this.$bus.$emit("changeIndex", account);
+        } else {
+          this.$router.push({
+            path: "/user/message/chat",
+            name: 'chat',
+            params: {account}
+          })
+        }
       })
     },
     sign() {
@@ -247,14 +251,15 @@ export default {
     }
   },
   created() {
-    setInterval(() => {
+    this.interval = setInterval(() => {
       getUser({account: this.$store.getters.getUserData.account}).then(res => {
         this.$store.commit('updata',res.data.data.data)
         this.getFriendData()
       })
     },5000)
-
-
+  },
+  destroyed() {
+    clearInterval(this.interval)
   }
 }
 </script>

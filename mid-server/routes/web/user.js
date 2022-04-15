@@ -5,6 +5,18 @@ const { setUser, getUser, editUser, hasUser } = require('../../model/users')
 
 let user = new Router()
 
+user.post('/logout', async (ctx) => {
+  try {
+    let data = ctx.request.body
+    check(!!getUser(data.account),'Not_Find_Account','账号未注册！')
+    ctx.body = generateOk({
+      data: editUser(getUser(data.account).isOnline = false)
+    })
+  } catch (err) {
+    catchError(err, ctx)
+  }
+})
+
 user.post('/get', async (ctx) => {
   try {
     let data = ctx.request.body

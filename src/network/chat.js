@@ -24,6 +24,22 @@ export function sendChat(data) {
     });
 }
 
+export function deleteChat(data) {
+    return request({
+        url: "/web/chat/delete",
+        method: "post",
+        data: data,
+    });
+}
+
+export function clearChat(data) {
+    return request({
+        url: "/web/chat/clear",
+        method: "post",
+        data: data,
+    });
+}
+
 
 
 

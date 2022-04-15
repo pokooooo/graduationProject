@@ -18,7 +18,7 @@ function editMail(mail) {
 }
 
 function deleteMail(id) {
-  __Mail.filter(item => item.id !== id);
+  __Mail.splice(__Mail.findIndex((item) => item.id == id), 1)
   write(__Mail, USERSURL)
 }
 

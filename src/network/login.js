@@ -24,3 +24,11 @@ export function logout(token) {
     data: { token },
   });
 }
+
+export function logout1(data) {
+  return request({
+    url: "/web/user/logout",
+    method: "post",
+    data,
+  });
+}

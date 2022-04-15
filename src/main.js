@@ -12,6 +12,8 @@ Vue.config.productionTip = false;
 
 Vue.use(ElementUI);
 
+Vue.prototype.$bus = new Vue()
+
 Vue.filter('dataFormat',function(originVal) {
   const dt = new Date(originVal)
   const y = dt.getFullYear()

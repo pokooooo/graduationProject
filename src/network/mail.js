@@ -32,5 +32,13 @@ export function receiveMail(data) {
     });
 }
 
+export function deleteMail(data) {
+    return request({
+        url: "/web/mail/delete",
+        method: "post",
+        data: data,
+    });
+}
+
 
 
