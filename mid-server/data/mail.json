@@ -1,50 +1,111 @@
 [
   {
-    "sender": "admin",
+    "sender": "PAIMON",
     "receiver": "player",
-    "title": "开服大礼包",
-    "context": "",
-    "gold": 10000,
-    "diamond": 1000,
-    "sendTime": 1640943452874,
-    "id": "551e0e5b-569d-4c36-94b3-09ac43490b39",
+    "title": "测试",
+    "context": "测试服资源发放",
+    "materialsList": [
+      {
+        "name": "纠缠之缘",
+        "get": "游戏商城内兑换",
+        "introduction": "连结梦想的命运之种。缘石辉光能让本无交集的命运交错，让彼此的梦想相连，正如这种光辉将群星连成心之所向的图形。",
+        "purpose": "祈愿",
+        "cover": "http://localhost:3000/images/ad0a5810-f1b7-4b0a-9e97-ab4f120cd517.png",
+        "id": "e2e2bcb6-3bed-4034-8d62-7547139271c5",
+        "weight": 21,
+        "num": 999
+      },
+      {
+        "name": "无主的星辉",
+        "get": "祈愿",
+        "introduction": "过剩的命运星之光辉。或许可以点亮宇宙其他角落。",
+        "purpose": "可以在商城兑换珍稀资源的货币。",
+        "cover": "http://localhost:3000/images/9ffcba79-0cfa-4615-bab5-ff8be76a71fe.png",
+        "id": "1b3a5bab-7122-477a-b59c-56455cf48fba",
+        "weight": 20,
+        "num": 999
+      }
+    ],
+    "gold": 1000000,
+    "diamond": 100000,
+    "sendTime": 1650806432541,
+    "id": "fa62e565-c1ac-4f69-a51f-71e70db01254",
     "isRead": true,
     "isReceive": true
   },
   {
-    "sender": "admin",
-    "receiver": "player1",
-    "title": "开服大礼包",
+    "sender": "PAIMON",
+    "receiver": "player2",
+    "title": "预约奖励",
     "context": "",
-    "gold": 10000,
+    "materialsList": [
+      {
+        "name": "纠缠之缘",
+        "get": "游戏商城内兑换",
+        "introduction": "连结梦想的命运之种。缘石辉光能让本无交集的命运交错，让彼此的梦想相连，正如这种光辉将群星连成心之所向的图形。",
+        "purpose": "祈愿",
+        "cover": "http://localhost:3000/images/ad0a5810-f1b7-4b0a-9e97-ab4f120cd517.png",
+        "id": "e2e2bcb6-3bed-4034-8d62-7547139271c5",
+        "status": 2,
+        "weight": 21,
+        "num": 10
+      }
+    ],
+    "gold": 100000,
     "diamond": 1000,
-    "sendTime": 1640943452874,
-    "id": "762821d9-a3ea-43eb-8c89-7c18afcf470f",
-    "isRead": true,
-    "isReceive": false
-  },
-  {
-    "sender": "admin",
-    "receiver": "player3",
-    "title": "开服大礼包",
-    "context": "",
-    "gold": 10000,
-    "diamond": 1000,
-    "sendTime": 1640943452874,
-    "id": "f84e3b10-2b0b-4087-bc8e-0d38a2674375",
+    "sendTime": 1650806888620,
+    "id": "73e89b34-29f0-417d-ab92-b7f38e481375",
     "isRead": false,
     "isReceive": false
   },
   {
-    "sender": "admin",
-    "receiver": "player",
-    "title": "py",
+    "sender": "PAIMON",
+    "receiver": "player1",
+    "title": "预约奖励",
     "context": "",
-    "gold": 10000,
-    "diamond": 0,
-    "sendTime": 1640943591488,
-    "id": "7618ada8-59d6-40a7-b7b7-77a88d02a72a",
-    "isRead": true,
-    "isReceive": true
+    "materialsList": [
+      {
+        "name": "纠缠之缘",
+        "get": "游戏商城内兑换",
+        "introduction": "连结梦想的命运之种。缘石辉光能让本无交集的命运交错，让彼此的梦想相连，正如这种光辉将群星连成心之所向的图形。",
+        "purpose": "祈愿",
+        "cover": "http://localhost:3000/images/ad0a5810-f1b7-4b0a-9e97-ab4f120cd517.png",
+        "id": "e2e2bcb6-3bed-4034-8d62-7547139271c5",
+        "status": 2,
+        "weight": 21,
+        "num": 10
+      }
+    ],
+    "gold": 100000,
+    "diamond": 1000,
+    "sendTime": 1650806888620,
+    "id": "a83df57d-a3f8-4d46-bdab-416b2de1c4bc",
+    "isRead": false,
+    "isReceive": false
+  },
+  {
+    "sender": "PAIMON",
+    "receiver": "player3",
+    "title": "预约奖励",
+    "context": "",
+    "materialsList": [
+      {
+        "name": "纠缠之缘",
+        "get": "游戏商城内兑换",
+        "introduction": "连结梦想的命运之种。缘石辉光能让本无交集的命运交错，让彼此的梦想相连，正如这种光辉将群星连成心之所向的图形。",
+        "purpose": "祈愿",
+        "cover": "http://localhost:3000/images/ad0a5810-f1b7-4b0a-9e97-ab4f120cd517.png",
+        "id": "e2e2bcb6-3bed-4034-8d62-7547139271c5",
+        "status": 2,
+        "weight": 21,
+        "num": 10
+      }
+    ],
+    "gold": 100000,
+    "diamond": 1000,
+    "sendTime": 1650806888620,
+    "id": "38b10220-a39e-4722-97ed-6eee9f4431ea",
+    "isRead": false,
+    "isReceive": false
   }
 ]

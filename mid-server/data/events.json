@@ -1,0 +1,152 @@
+[
+  {
+    "name": "神铸赋形",
+    "type": "weapon",
+    "cover": "http://localhost:3000/images/67aefd81-d389-4efe-8738-8c97ba3eaf75.jpg",
+    "time": [
+      1650556800000,
+      1653148800000
+    ],
+    "id": "96aa686c-af42-414d-91e8-50d49de9dfe4",
+    "status": 1,
+    "star5": [
+      {
+        "id": "adf23f52-e2a7-4c13-b34e-fc946d5611e5",
+        "name": "天空之脊",
+        "cover": "http://localhost:3000/images/afaccd61-c2f5-430d-b2de-c303f5f4c412.png"
+      },
+      {
+        "id": "485b00ef-0d7d-4aba-9049-8735f87365db",
+        "name": "雾切之回光",
+        "cover": "http://localhost:3000/images/e00685e8-d5d2-4c32-bec0-784f3fff9f0e.jpg"
+      }
+    ],
+    "star4": [
+      {
+        "id": "c3ae8e91-352c-4835-878a-a92561d99d1a",
+        "name": "西风大剑",
+        "cover": "http://localhost:3000/images/826eb902-d4b0-4020-8003-178aa113361f.png"
+      },
+      {
+        "id": "2c284300-bd42-4473-bbae-6fa24bab9b20",
+        "name": "西风秘典",
+        "cover": "http://localhost:3000/images/48d8ac35-2f4d-4d90-a3b2-3fa61c212b2e.png"
+      },
+      {
+        "id": "60e5388c-a76b-43ac-84d1-29fc260bfc36",
+        "name": "西风猎弓",
+        "cover": "http://localhost:3000/images/b96f0e58-16ba-428e-bc98-41d0cfddb34d.png"
+      },
+      {
+        "id": "7c23e2e0-ae42-43e6-b98a-d2c0f48cc533",
+        "name": "西风剑",
+        "cover": "http://localhost:3000/images/bf81a9f4-9267-4601-8cb7-289ef7b20041.png"
+      },
+      {
+        "id": "d136b3ae-185b-485d-bc6f-69a07ccdbb30",
+        "name": "西风长枪",
+        "cover": "http://localhost:3000/images/6b41e9b0-d735-4c44-83ae-a1eb07b7a199.png"
+      }
+    ]
+  },
+  {
+    "name": "神铸赋形",
+    "type": "weapon",
+    "cover": "http://localhost:3000/images/5b6d2409-fb68-4898-8c63-601f7287f6b5.jpg",
+    "time": [
+      1650790339697,
+      1653382339697
+    ],
+    "star5": [
+      {
+        "id": "a0536cfc-61e7-4129-9b3f-89629bc40119",
+        "name": "天空之翼",
+        "cover": "http://localhost:3000/images/07361c3a-15e8-4c35-8344-940dbdba00e1.png"
+      },
+      {
+        "id": "683963cc-50f9-413d-ab62-2a4fc73a10f6",
+        "name": "四风原典",
+        "cover": "http://localhost:3000/images/f098f1ad-8ed5-41ca-802f-fc6997ff22cb.png"
+      }
+    ],
+    "star4": [
+      {
+        "id": "a2a03d11-4e4b-43ae-a7ba-0162ba9d4cbd",
+        "name": "宗室大剑",
+        "cover": "http://localhost:3000/images/1806a34f-1c3e-43aa-a5db-4b6e49eddf95.png"
+      },
+      {
+        "id": "c73982fc-8943-4d62-a2ab-1d41291dc99c",
+        "name": "宗室长弓",
+        "cover": "http://localhost:3000/images/cf147a0f-4597-413d-b98b-a8f646a92ca9.png"
+      },
+      {
+        "id": "2c284300-bd42-4473-bbae-6fa24bab9b20",
+        "name": "西风秘典",
+        "cover": "http://localhost:3000/images/48d8ac35-2f4d-4d90-a3b2-3fa61c212b2e.png"
+      },
+      {
+        "id": "7c23e2e0-ae42-43e6-b98a-d2c0f48cc533",
+        "name": "西风剑",
+        "cover": "http://localhost:3000/images/bf81a9f4-9267-4601-8cb7-289ef7b20041.png"
+      },
+      {
+        "id": "d136b3ae-185b-485d-bc6f-69a07ccdbb30",
+        "name": "西风长枪",
+        "cover": "http://localhost:3000/images/6b41e9b0-d735-4c44-83ae-a1eb07b7a199.png"
+      }
+    ],
+    "status": 1,
+    "id": "946398e9-c9a8-4b95-982c-998135b34812"
+  },
+  {
+    "name": "神铸赋形",
+    "type": "weapon",
+    "cover": "http://localhost:3000/images/4ec55ecb-80b8-4b28-92eb-6d7b30417562.jpg",
+    "time": [
+      1650790339697,
+      1653382339697
+    ],
+    "star5": [
+      {
+        "id": "6ad21c8b-2b5b-402a-be64-17c61877ad72",
+        "name": "磐岩结绿",
+        "cover": "http://localhost:3000/images/b052e3af-7d1d-4d60-a6f4-888f4805a0ef.png"
+      },
+      {
+        "id": "638d8803-7468-47d7-ba8d-9fb047821774",
+        "name": "和璞鸢",
+        "cover": "http://localhost:3000/images/8c5023c3-285c-4144-a0bb-ac8152c7d654.png"
+      }
+    ],
+    "star4": [
+      {
+        "id": "d136b3ae-185b-485d-bc6f-69a07ccdbb30",
+        "name": "西风长枪",
+        "cover": "http://localhost:3000/images/6b41e9b0-d735-4c44-83ae-a1eb07b7a199.png"
+      },
+      {
+        "id": "7eeebe37-df86-464c-b67c-c734845d508d",
+        "name": "宗室秘法录",
+        "cover": "http://localhost:3000/images/a18e26cd-7fa4-4e33-bdea-a797087130b4.png"
+      },
+      {
+        "id": "3159b0be-130b-48ed-b708-de0f25014733",
+        "name": "宗室长剑",
+        "cover": "http://localhost:3000/images/dc7a9825-a43f-47ba-92f4-b9481cb5c454.png"
+      },
+      {
+        "id": "a2a03d11-4e4b-43ae-a7ba-0162ba9d4cbd",
+        "name": "宗室大剑",
+        "cover": "http://localhost:3000/images/1806a34f-1c3e-43aa-a5db-4b6e49eddf95.png"
+      },
+      {
+        "id": "c73982fc-8943-4d62-a2ab-1d41291dc99c",
+        "name": "宗室长弓",
+        "cover": "http://localhost:3000/images/cf147a0f-4597-413d-b98b-a8f646a92ca9.png"
+      }
+    ],
+    "status": 1,
+    "id": "011dacc3-1d81-461e-aead-29b9f0e8bd37"
+  }
+]

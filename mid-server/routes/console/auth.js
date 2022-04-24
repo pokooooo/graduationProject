@@ -20,7 +20,7 @@ auth.post('/login', async (ctx) => {
       // 写入头部
       ctx.cookies.set('token', token, {
         maxAge: 10 * 60 * 10000, // cookie有效时长
-        expires: new Date('2022-02-15'), // cookie失效时间
+        expires: new Date('2023-02-15'), // cookie失效时间
         httpOnly: true, // 是否只用于http请求中获取
         overwrite: false, // 是否允许重写
       })

@@ -77,8 +77,8 @@ export default {
   },
   methods: {
   closeForm() {
-    this.$refs.addForm.resetFields();
-    this.addForm.avatar = "";
+    // this.$refs.addForm.resetFields();
+    // this.addForm.avatar = "";
   },
   handleChange(info) {
     //循环执行，所以要判断，在加载中的话跳过

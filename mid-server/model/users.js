@@ -35,6 +35,8 @@ function hasUser(account) {
   return !getUser(account)
 }
 
+
+
 module.exports = {
   users: __Users,
   getAllUser,

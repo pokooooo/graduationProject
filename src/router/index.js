@@ -35,25 +35,51 @@ const routes = [
       },
       {
         path: "users",
-        component: () => import("../views/admin/Users.vue")
+        component: () => import("../views/admin/users/Users.vue")
       },
       {
         path: "roles",
         component: () => import("../views/admin/Roles.vue"),
       },
       {
-        path: "goods",
-        component: () => import("../views/admin/Goods.vue"),
-      },
-      {
         path: "orders",
         component: () => import("../views/admin/Orders.vue"),
       },
       {
-        path: "add",
-        name: "add",
-        component: () => import("../views/admin/AddGoods.vue"),
+        path: "weapons",
+        component: () => import("../views/admin/weapons/Weapons.vue"),
       },
+      {
+        path: "materials",
+        component: () => import("../views/admin/Materials/Materials"),
+      },
+      {
+        path: "events",
+        component: () => import("../views/admin/events/Events"),
+      },
+      {
+        path: "enemies",
+        component: () => import("../views/admin/enemies/Enemies"),
+      },
+      {
+        path: "domains",
+        component: () => import("../views/admin/domains/Domains"),
+      },
+      {
+        path: "artifacts",
+        component: () => import("../views/admin/artifacts/Artifacts"),
+      },
+      {
+        path: "addWeapon",
+        name: "addWeapon",
+        component: () => import("../views/admin/weapons/AddWeapon.vue"),
+      },
+      {
+        path: "addArtifact",
+        name: "addArtifact",
+        component: () => import("../views/admin/artifacts/AddArtifact.vue"),
+      }
+
     ],
   },
   {
@@ -67,6 +93,30 @@ const routes = [
       {
         path: "home",
         component: () => import("../views/user/Home.vue")
+      },
+      {
+        path: "store",
+        component: () => import("../views/user/Store")
+      },
+      {
+        path: "inventory",
+        component: () => import("../views/user/Inventory")
+      },
+      {
+        path: "role",
+        component: () => import("../views/user/Role")
+      },
+      {
+        path: "domain",
+        component: () => import("../views/user/Domain")
+      },
+      {
+        path: "event",
+        component: () => import("../views/user/Event")
+      },
+      {
+        path: "center",
+        component: () => import("../views/user/Center.vue")
       },
       {
         path: "profile",

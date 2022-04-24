@@ -1,7 +1,7 @@
 <template>
   <div>
   <el-container>
-  <el-aside width="400px" style="height:560px">
+  <el-aside width="400px" style="height:645px">
   <el-menu
       :default-active="index + ''"
       @select="select"
@@ -9,7 +9,8 @@
       <el-menu-item v-for="(item,index) in mailList" :key="index" :index="index + ''">
         <div slot="title" class="title">
           <div style="flex: 1">
-            <img v-if="item.diamond !== 0"  style="height: 40px" src="../../../assets/image/prop/yuanshi.png">
+            <img v-if="item.materialsList.length !== 0"  style="height: 40px" :src="item.materialsList[0].cover">
+            <img v-else-if="item.diamond !== 0"  style="height: 40px" src="../../../assets/image/prop/yuanshi.png">
             <img v-else style="height: 40px" src="../../../assets/image/prop/mola.png">
           </div>
           <div style="flex: 5;display: flex;flex-direction: column">
@@ -33,6 +34,12 @@
         <div>{{mailData.context}}</div>
       </div>
       <div style="display: flex;height: 60px">
+        <div v-for="item in mailData.materialsList" :key="item.id" style="margin-right: 10px;position: relative">
+          <img class="prop" :src="item.cover" alt="">
+          <i v-if="mailData.isReceive" style="font-size: 40px;position: absolute;left: 10px;bottom: 13px;color: #72e772" class="iconfont icon-dui"></i>
+          <div style="font-size: 14px;position: absolute;left: 0;bottom: 0;color: #fff;background: #544f4f;width: 60px;text-align: center;
+          border-radius: 0 0 2px 2px">{{item.num}}</div>
+        </div>
         <div v-if="mailData.diamond !== 0" style="margin-right: 10px;position: relative">
           <img class="prop" src="../../../assets/image/prop/yuanshi.png" alt="">
           <i v-if="mailData.isReceive" style="font-size: 40px;position: absolute;left: 10px;bottom: 13px;color: #72e772" class="iconfont icon-dui"></i>
@@ -89,7 +96,7 @@ export default {
       receiveMail({id: this.mailData.id}).then(() => {
         this.$notify({
           title: '领取成功',
-          message: this.mailData.diamond !== 0 ? `获得${this.mailData.diamond}原石和${this.mailData.gold}摩拉！` : `获得${this.mailData.gold}摩拉！`,
+          // message: this.mailData.diamond !== 0 ? `获得${this.mailData.diamond}原石和${this.mailData.gold}摩拉！` : `获得${this.mailData.gold}摩拉！`,
           type: 'success'
         });
         this.getMailByAccount()
@@ -106,6 +113,7 @@ export default {
     getMailByAccount() {
       getMailByAccount({account:this.$store.getters.getUserData.account}).then(res => {
         this.mailList = res.data.data.data
+        console.log(this.mailList)
         this.$store.commit('updataMail',this.mailList)
         this.select(this.index)
       })
@@ -138,5 +146,6 @@ export default {
 img {
   border-radius: 2px;
 }
+
 
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <el-container>
-      <el-aside width="300px" style="height:560px">
+      <el-aside width="300px" style="height:645px">
         <el-menu
             :default-active="index + ''"
             @select="select"

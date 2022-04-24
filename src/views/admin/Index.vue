@@ -8,8 +8,8 @@
         <el-button type="info" @click="logout">退出</el-button>
       </el-header>
       <el-container>
-        <el-aside width="200px">
-          <left-menu :backgroundColor="'#333744'" :color="'#fff'" :pathList="pathList"></left-menu>
+        <el-aside width="207px">
+          <left-menu style="padding-top: 10px" :backgroundColor="'#333744'" :color="'#fff'" :pathList="pathList"></left-menu>
         </el-aside>
         <el-main style="height: calc(100vh - 60px)">
           <router-view></router-view>
@@ -34,24 +34,37 @@ export default {
       nickname: window.sessionStorage.getItem("nickname") || "",
       pathList: [
         {
-          name: '用户管理',
           path: 'users',
-          icon: 'el-icon-user-solid'
+          url: require('../../assets/image/prop/users.png')
         },
         {
-          name: '人物管理',
           path: 'roles',
-          icon: 'el-icon-s-custom'
+          url: require('../../assets/image/prop/roles.png')
         },
-                {
-          name: '商品管理',
-          path: 'goods',
-          icon: 'el-icon-s-goods'
+        {
+          path: 'weapons',
+          url: require('../../assets/image/prop/weapons.png')
         },
-                {
-          name: '订单管理',
-          path: 'orders',
-          icon: 'el-icon-s-claim'
+
+        {
+          path: 'artifacts',
+          url: require('../../assets/image/prop/artifacts.png')
+        },
+        {
+          path: 'materials',
+          url: require('../../assets/image/prop/materials.png')
+        },
+        {
+          path: 'enemies',
+          url: require('../../assets/image/prop/enemies.png')
+        },
+        {
+          path: 'domains',
+          url: require('../../assets/image/prop/domains.png')
+        },
+        {
+          path: 'events',
+          url: require('../../assets/image/prop/events.png')
         }
       ]
     }

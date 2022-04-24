@@ -4,55 +4,31 @@
     "account2": "player1",
     "nickname1": "胡桃",
     "nickname2": "胡桃桃",
-    "avatar1": "http://localhost:3000/images/68d753af-af27-4265-9751-9b606ca243bc.jpg",
-    "avatar2": "http://localhost:3000/images/e2f3207d-8e58-4195-a276-db952745ffd5.jpg",
+    "avatar1": "http://localhost:3000/images/3d704a47-de9f-4f73-8c7f-fa696400a8da.jpg",
+    "avatar2": "http://localhost:3000/images/5290a189-f825-47ef-b576-1c6b3e2773c5.jpg",
     "list": [
       {
         "sender": "player",
         "type": "text",
-        "context": "1"
+        "context": "11"
+      },
+      {
+        "sender": "player",
+        "type": "text",
+        "context": ""
       },
       {
         "sender": "player1",
         "type": "text",
-        "context": "55"
-      }
-    ],
-    "id": "0c7af55b-edaf-4e59-93e7-063fcfe1d703",
-    "active": true
-  },
-  {
-    "account1": "player",
-    "account2": "player3",
-    "nickname1": "胡桃",
-    "nickname2": "西风骑士团代理团长",
-    "avatar1": "http://localhost:3000/images/68d753af-af27-4265-9751-9b606ca243bc.jpg",
-    "avatar2": "http://localhost:3000/images/4de702fc-59d1-4bcc-b2a2-2fcb572d28c1.jpg",
-    "list": [
+        "context": "123"
+      },
       {
-        "sender": "player",
+        "sender": "player1",
         "type": "text",
-        "context": "3"
+        "context": ""
       }
     ],
-    "id": "f0965c0b-9f93-4fc5-a05c-43fbba1c0e70",
-    "active": true
-  },
-  {
-    "account1": "player",
-    "account2": "player2",
-    "nickname1": "胡桃",
-    "nickname2": "王小美",
-    "avatar1": "http://localhost:3000/images/68d753af-af27-4265-9751-9b606ca243bc.jpg",
-    "avatar2": "http://localhost:3000/images/e8267a61-9206-463c-8614-02447f10a024.jpg",
-    "list": [
-      {
-        "sender": "player",
-        "type": "text",
-        "context": "2"
-      }
-    ],
-    "id": "f7c73ef9-6d63-4e17-a363-d4b3233f2999",
+    "id": "1f1da8cf-f0e2-4140-8ec3-2b57c5b4a194",
     "active": true
   }
 ]

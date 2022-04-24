@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="height: 785px">
     <div class="header">
         <div style="margin-left: 20px;font-size: 24px">
             消息中心
@@ -68,7 +68,7 @@ export default {
 }
 
 .main {
-    height: 600px;
+    height: 685px;
 }
 
 </style>

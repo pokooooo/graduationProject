@@ -1,0 +1,626 @@
+[
+  {
+    "name": "雾切之回光",
+    "star": 5,
+    "type": "sword",
+    "introduction": "闪烁着凄烈紫光的太刀。名之为「回光」是因为一度破碎的过去。",
+    "material": "远海夷地的琼枝",
+    "cover": "http://localhost:3000/images/e00685e8-d5d2-4c32-bec0-784f3fff9f0e.jpg",
+    "ATK": 48,
+    "ATKIncrease": 4.47,
+    "secondary": {
+      "type": "CRITDMG",
+      "num": 9.6,
+      "increase": 0.39
+    },
+    "effect": {
+      "type": "elementDMGBonus",
+      "num": 40
+    },
+    "id": "485b00ef-0d7d-4aba-9049-8735f87365db",
+    "status": 2,
+    "weight": 5,
+    "level": 1,
+    "rank": 1
+  },
+  {
+    "name": "西风大剑",
+    "star": 4,
+    "type": "claymore",
+    "introduction": "西风骑士团的重型仪式剑。能轻易导出元素力量，具有卓越的破坏力。",
+    "material": "狮牙斗士的镣铐",
+    "cover": "http://localhost:3000/images/826eb902-d4b0-4020-8003-178aa113361f.png",
+    "ATK": 41,
+    "ATKIncrease": 3.05,
+    "secondary": {
+      "type": "energyRecharge",
+      "num": 13.3,
+      "increase": 0.54
+    },
+    "effect": {
+      "type": "energyRecharge",
+      "num": 20
+    },
+    "id": "c3ae8e91-352c-4835-878a-a92561d99d1a",
+    "status": 2,
+    "weight": 4,
+    "level": 1,
+    "rank": 1
+  },
+  {
+    "name": "西风秘典",
+    "star": 4,
+    "type": "catalyst",
+    "introduction": "西风骑士团的学者间流传的秘典，记载着元素与物质的道理和力量。",
+    "material": "高塔孤王的断片",
+    "cover": "http://localhost:3000/images/48d8ac35-2f4d-4d90-a3b2-3fa61c212b2e.png",
+    "ATK": 42,
+    "ATKIncrease": 3.53,
+    "secondary": {
+      "type": "energyRecharge",
+      "num": 10,
+      "increase": 0.41
+    },
+    "effect": {
+      "type": "energyRecharge",
+      "num": 20
+    },
+    "id": "2c284300-bd42-4473-bbae-6fa24bab9b20",
+    "status": 1,
+    "weight": 4,
+    "level": 1,
+    "rank": 1
+  },
+  {
+    "name": "西风猎弓",
+    "star": 4,
+    "type": "bow",
+    "introduction": "西风骑士团的制式反曲弓，只有杰出的弓手能与它的杰出性能相衬。",
+    "material": "狮牙斗士的镣铐",
+    "cover": "http://localhost:3000/images/b96f0e58-16ba-428e-bc98-41d0cfddb34d.png",
+    "ATK": 41,
+    "ATKIncrease": 3.05,
+    "secondary": {
+      "type": "energyRecharge",
+      "num": 13.3,
+      "increase": 0.54
+    },
+    "effect": {
+      "type": "energyRecharge",
+      "num": 20
+    },
+    "id": "60e5388c-a76b-43ac-84d1-29fc260bfc36",
+    "status": 1,
+    "weight": 4,
+    "level": 1,
+    "rank": 1
+  },
+  {
+    "name": "西风剑",
+    "star": 4,
+    "type": "sword",
+    "introduction": "西风骑士团的制式长剑。轻快锐利之余，也能轻易导出元素力量。",
+    "material": "高塔孤王的断片",
+    "cover": "http://localhost:3000/images/bf81a9f4-9267-4601-8cb7-289ef7b20041.png",
+    "ATK": 41,
+    "ATKIncrease": 3.05,
+    "secondary": {
+      "type": "energyRecharge",
+      "num": 13.3,
+      "increase": 0.54
+    },
+    "effect": {
+      "type": "energyRecharge",
+      "num": 20
+    },
+    "id": "7c23e2e0-ae42-43e6-b98a-d2c0f48cc533",
+    "status": 1,
+    "weight": 4,
+    "level": 1,
+    "rank": 1
+  },
+  {
+    "name": "西风长枪",
+    "star": 4,
+    "type": "polearm",
+    "introduction": "西风骑士团的制式长枪。枪杆直挺，枪尖轻风流溢。",
+    "material": "狮牙斗士的镣铐",
+    "cover": "http://localhost:3000/images/6b41e9b0-d735-4c44-83ae-a1eb07b7a199.png",
+    "ATK": 44,
+    "ATKIncrease": 3.95,
+    "secondary": {
+      "type": "energyRecharge",
+      "num": 6.7,
+      "increase": 0.27
+    },
+    "effect": {
+      "type": "energyRecharge",
+      "num": 20
+    },
+    "id": "d136b3ae-185b-485d-bc6f-69a07ccdbb30",
+    "status": 1,
+    "weight": 4,
+    "level": 1,
+    "rank": 1
+  },
+  {
+    "name": "天空之脊",
+    "star": 5,
+    "type": "polearm",
+    "introduction": "象征风龙坚定决心的长枪。直挺的枪杆直指天穹，蕴含苍空与长风的力量。",
+    "material": "狮牙斗士的镣铐",
+    "cover": "http://localhost:3000/images/afaccd61-c2f5-430d-b2de-c303f5f4c412.png",
+    "ATK": 48,
+    "ATKIncrease": 4.47,
+    "secondary": {
+      "type": "energyRecharge",
+      "num": 8,
+      "increase": 0.32
+    },
+    "effect": {
+      "type": "CRITRate",
+      "num": 16
+    },
+    "id": "adf23f52-e2a7-4c13-b34e-fc946d5611e5",
+    "status": 1,
+    "weight": 5,
+    "level": 1,
+    "rank": 1
+  },
+  {
+    "name": "螭骨剑",
+    "star": 4,
+    "type": "claymore",
+    "introduction": "来自古代大海的稀有兵器，舞剑猎猎宛如太古的涛声。",
+    "material": "漆黑陨铁的一角",
+    "cover": "http://localhost:3000/images/1d705f44-2af0-44c9-8895-ed8433180148.png",
+    "ATK": 42,
+    "ATKIncrease": 3.52,
+    "secondary": {
+      "type": "CRITRate",
+      "num": 6,
+      "increase": 0.42
+    },
+    "effect": {
+      "type": "elementDMGBonus",
+      "num": 20
+    },
+    "id": "29e4ebe9-82cb-4bb9-a920-7502e1c7597e",
+    "status": 2,
+    "weight": 4,
+    "level": 1,
+    "rank": 1
+  },
+  {
+    "name": "苍翠猎弓",
+    "star": 4,
+    "type": "bow",
+    "introduction": "高洁的青绿猎弓，曾属于在林间狩猎的某人。",
+    "material": "高塔孤王的断片",
+    "cover": "http://localhost:3000/images/6540f6e3-6bc9-4f62-b143-ed4cf61261a0.png",
+    "ATK": 42,
+    "ATKIncrease": 3.52,
+    "secondary": {
+      "type": "",
+      "num": 6,
+      "increase": 0.42
+    },
+    "effect": {
+      "type": "ATK",
+      "num": 30
+    },
+    "id": "cce704d2-9324-4f32-aac1-d25ed1773745",
+    "status": 2,
+    "weight": 4,
+    "level": 1,
+    "rank": 1
+  },
+  {
+    "name": "决斗之枪",
+    "star": 4,
+    "type": "polearm",
+    "introduction": "血红色的锋利长枪，过去是某位角斗士无比珍视的宝物。枪芒上曾沾染了无数野兽与人的鲜血。",
+    "material": "凛风奔狼的断牙",
+    "cover": "http://localhost:3000/images/85af09a6-01b8-4b88-819d-a7db89a3f63f.png",
+    "ATK": 41,
+    "ATKIncrease": 3.05,
+    "secondary": {
+      "type": "CRITRate",
+      "num": 8,
+      "increase": 0.32
+    },
+    "effect": {
+      "type": "ATK",
+      "num": 30
+    },
+    "id": "df0160a8-ad54-4ea0-aae8-cce37069540d",
+    "status": 2,
+    "weight": 4,
+    "level": 1,
+    "rank": 1
+  },
+  {
+    "name": "黑剑",
+    "star": 4,
+    "type": "sword",
+    "introduction": "渴求着纷争与砍杀的漆黑长剑，据说会让人沉醉在浴血厮杀的亢奋中。",
+    "material": "凛风奔狼的断牙",
+    "cover": "http://localhost:3000/images/147eac0b-6515-4b48-9779-2c57538c09ba.png",
+    "ATK": 42,
+    "ATKIncrease": 3.52,
+    "secondary": {
+      "type": "CRITRate",
+      "num": 6,
+      "increase": 0.42
+    },
+    "effect": {
+      "type": "physicalDMGBonus",
+      "num": 30
+    },
+    "id": "79008c9a-a68f-4431-aceb-7a8e8162fc76",
+    "status": 2,
+    "weight": 4,
+    "level": 1,
+    "rank": 1
+  },
+  {
+    "name": "匣里日月",
+    "star": 4,
+    "type": "catalyst",
+    "introduction": "材质难解的暗金宝珠，饱含日月天地的光辉，脉动着温暖的力量。",
+    "material": "孤云寒林的圣骸",
+    "cover": "http://localhost:3000/images/d463af9c-2fa5-4852-bbc2-1a1cb4209706.png",
+    "ATK": 42,
+    "ATKIncrease": 3.52,
+    "secondary": {
+      "type": "CRITRate",
+      "num": 6,
+      "increase": 0.42
+    },
+    "effect": {
+      "type": "elementDMGBonus",
+      "num": 20
+    },
+    "id": "00297f65-fcea-477f-af2c-ae702b477ddd",
+    "status": 2,
+    "weight": 4,
+    "level": 1,
+    "rank": 1
+  },
+  {
+    "name": "宗室猎枪",
+    "star": 4,
+    "type": "polearm",
+    "introduction": "某位曾支配蒙德的旧日贵族，曾经珍爱的长枪。过去不曾见过天日，但如今依然尖锐无比。",
+    "material": "雾海云间的金丹",
+    "cover": "http://localhost:3000/images/bc6ba9a3-e8a1-426f-8a34-93c4ce1f947d.png",
+    "ATK": 44,
+    "ATKIncrease": 3.95,
+    "secondary": {
+      "type": "ATK",
+      "num": 6,
+      "increase": 0.24
+    },
+    "effect": {
+      "type": "CRITRate",
+      "num": 10
+    },
+    "id": "a6ab6b3d-a678-4f53-abbc-da66fb8278d6",
+    "status": 2,
+    "weight": 4,
+    "level": 1,
+    "rank": 1
+  },
+  {
+    "name": "宗室秘法录",
+    "star": 4,
+    "type": "catalyst",
+    "introduction": "属于曾支配蒙德的贵族麾下的宫廷魔导师，其中记载的史话与法术同样翔实。",
+    "material": "高塔孤王的断片",
+    "cover": "http://localhost:3000/images/a18e26cd-7fa4-4e33-bdea-a797087130b4.png",
+    "ATK": 44,
+    "ATKIncrease": 3.95,
+    "secondary": {
+      "type": "ATK",
+      "num": 6,
+      "increase": 0.24
+    },
+    "effect": {
+      "type": "CRITRate",
+      "num": 10
+    },
+    "id": "7eeebe37-df86-464c-b67c-c734845d508d",
+    "status": 2,
+    "weight": 4,
+    "level": 1,
+    "rank": 1
+  },
+  {
+    "name": "宗室大剑",
+    "star": "4",
+    "type": "claymore",
+    "introduction": "曾支配蒙德的旧日贵族的大剑。用料极佳，历久犹弥新。是贵族的战斗兵器。",
+    "material": "狮牙斗士的镣铐",
+    "cover": "http://localhost:3000/images/1806a34f-1c3e-43aa-a5db-4b6e49eddf95.png",
+    "ATK": 44,
+    "ATKIncrease": 3.95,
+    "secondary": {
+      "type": "ATK",
+      "num": 6,
+      "increase": 0.24
+    },
+    "effect": {
+      "type": "CRITRate",
+      "num": 10
+    },
+    "id": "a2a03d11-4e4b-43ae-a7ba-0162ba9d4cbd",
+    "status": 2,
+    "weight": "4",
+    "level": 1,
+    "rank": 1
+  },
+  {
+    "name": "宗室长剑",
+    "star": "4",
+    "type": "sword",
+    "introduction": "曾支配蒙德的旧日贵族的佩剑。做工精良，装饰与雕花彰显着挥舞者的身份。",
+    "material": "高塔孤王的断片",
+    "cover": "http://localhost:3000/images/dc7a9825-a43f-47ba-92f4-b9481cb5c454.png",
+    "ATK": 44,
+    "ATKIncrease": 3.95,
+    "secondary": {
+      "type": "ATK",
+      "num": 6,
+      "increase": 0.24
+    },
+    "effect": {
+      "type": "CRITRate",
+      "num": 10
+    },
+    "id": "3159b0be-130b-48ed-b708-de0f25014733",
+    "status": 2,
+    "weight": "4",
+    "level": 1,
+    "rank": 1
+  },
+  {
+    "name": "宗室长弓",
+    "star": "4",
+    "type": "bow",
+    "introduction": "曾支配蒙德的旧日贵族的长弓。经过无数世代，弓弦仍十分有力，击发迅猛。",
+    "material": "狮牙斗士的镣铐",
+    "cover": "http://localhost:3000/images/cf147a0f-4597-413d-b98b-a8f646a92ca9.png",
+    "ATK": 44,
+    "ATKIncrease": 3.95,
+    "secondary": {
+      "type": "ATK",
+      "num": 6,
+      "increase": 0.24
+    },
+    "effect": {
+      "type": "CRITRate",
+      "num": 10
+    },
+    "id": "c73982fc-8943-4d62-a2ab-1d41291dc99c",
+    "status": 2,
+    "weight": "4",
+    "level": 1,
+    "rank": 1
+  },
+  {
+    "name": "黑岩斩刀",
+    "star": "4",
+    "type": "claymore",
+    "introduction": "坚韧无比的黑岩大刀，通体皆为玄赤之色。",
+    "material": "雾海云间的金丹",
+    "cover": "http://localhost:3000/images/460a20af-f080-44a5-b9c1-f2eb8c14787c.png",
+    "ATK": 42,
+    "ATKIncrease": 3.53,
+    "secondary": {
+      "type": "CRITDMG",
+      "num": 12,
+      "increase": 0.48
+    },
+    "effect": {
+      "type": "ATK",
+      "num": 24
+    },
+    "id": "332ab1f3-ca2e-429e-b0ca-fdcab30ec4e2",
+    "status": 2,
+    "weight": "4",
+    "level": 1,
+    "rank": 1
+  },
+  {
+    "name": "黑岩战弓",
+    "star": "4",
+    "type": "bow",
+    "introduction": "以黑岩塑成的弓。弓臂坚硬无比，只有臂力绝人的弓手才能尽所欲的使用。",
+    "material": "孤云寒林的圣骸",
+    "cover": "http://localhost:3000/images/27766f02-c6cc-4068-9952-2984271eb27d.png",
+    "ATK": 42,
+    "ATKIncrease": 3.53,
+    "secondary": {
+      "type": "CRITDMG",
+      "num": 12,
+      "increase": 0.48
+    },
+    "effect": {
+      "type": "ATK",
+      "num": 24
+    },
+    "id": "bd084966-ee9e-4db7-9211-430abcc9d645",
+    "status": 2,
+    "weight": "4",
+    "level": 1,
+    "rank": 1
+  },
+  {
+    "name": "黑岩长剑",
+    "star": "4",
+    "type": "sword",
+    "introduction": "黑岩锻造而成的长剑。玄色的剑身隐隐流露血光。",
+    "material": "孤云寒林的圣骸",
+    "cover": "http://localhost:3000/images/203550d1-f81c-4a0e-9898-8fe9b2736620.png",
+    "ATK": 42,
+    "ATKIncrease": 3.53,
+    "secondary": {
+      "type": "CRITDMG",
+      "num": 12,
+      "increase": 0.48
+    },
+    "effect": {
+      "type": "ATK",
+      "num": 24
+    },
+    "id": "fedcb168-da01-4b12-bc31-3d575a90d542",
+    "status": 2,
+    "weight": "4",
+    "level": 1,
+    "rank": 1
+  },
+  {
+    "name": "黑岩绯玉",
+    "star": "4",
+    "type": "catalyst",
+    "introduction": "由黑岩制成的神秘法器，无常的赤色闪光仿佛大地深处的悸动同调。",
+    "material": "孤云寒林的圣骸",
+    "cover": "http://localhost:3000/images/1d998349-85d6-4a34-94dd-9104fd688647.png",
+    "ATK": 42,
+    "ATKIncrease": 3.53,
+    "secondary": {
+      "type": "CRITDMG",
+      "num": 12,
+      "increase": 0.48
+    },
+    "effect": {
+      "type": "ATK",
+      "num": 24
+    },
+    "id": "831ff7cd-5ac9-4e25-93bd-641b740786e1",
+    "status": 2,
+    "weight": "4",
+    "level": 1,
+    "rank": 1
+  },
+  {
+    "name": "黑岩刺枪",
+    "star": "4",
+    "type": "polearm",
+    "introduction": "以黑岩与陨铁铸成的兵器，玄锋清凛的光泽中仿佛隐隐可见血色。",
+    "material": "雾海云间的金丹",
+    "cover": "http://localhost:3000/images/cd2d1fa8-1259-4fb4-8fa4-2a2a86cd0ce6.png",
+    "ATK": 42,
+    "ATKIncrease": 3.53,
+    "secondary": {
+      "type": "CRITDMG",
+      "num": 12,
+      "increase": 0.48
+    },
+    "effect": {
+      "type": "ATK",
+      "num": 24
+    },
+    "id": "ea483ff3-559c-48e1-b704-9f9609010838",
+    "status": 2,
+    "weight": "4",
+    "level": 1,
+    "rank": 1
+  },
+  {
+    "name": "和璞鸢",
+    "star": 5,
+    "type": "polearm",
+    "introduction": "魔神翡玉化作的长枪，拥有刺杀远古海兽的沉重与锋利。",
+    "material": "孤云寒林的圣骸",
+    "cover": "http://localhost:3000/images/8c5023c3-285c-4144-a0bb-ac8152c7d654.png",
+    "ATK": 48,
+    "ATKIncrease": 4.47,
+    "secondary": {
+      "type": "CRITRate",
+      "num": 4.8,
+      "increase": 0.19
+    },
+    "effect": {
+      "type": "ATK",
+      "num": 50
+    },
+    "id": "638d8803-7468-47d7-ba8d-9fb047821774",
+    "status": 1,
+    "weight": 5,
+    "level": 1,
+    "rank": 1
+  },
+  {
+    "name": "磐岩结绿",
+    "star": 5,
+    "type": "sword",
+    "introduction": "由纯净的翠玉精琢细雕而成的仪礼宝剑，挥舞时剑风中似有叹息之声。",
+    "material": "雾海云间的金丹",
+    "cover": "http://localhost:3000/images/b052e3af-7d1d-4d60-a6f4-888f4805a0ef.png",
+    "ATK": 44,
+    "ATKIncrease": 3.47,
+    "secondary": {
+      "type": "CRITRate",
+      "num": 9.6,
+      "increase": 0.39
+    },
+    "effect": {
+      "type": "ATK",
+      "num": 50
+    },
+    "id": "6ad21c8b-2b5b-402a-be64-17c61877ad72",
+    "status": 2,
+    "weight": 5,
+    "level": 1,
+    "rank": 1
+  },
+  {
+    "name": "天空之翼",
+    "star": 5,
+    "type": "bow",
+    "introduction": "象征风龙身为风之神眷属的大弓。释弦时的鸣声是风之神的偏爱，蕴含苍空与长风的力量。",
+    "material": "凛风奔狼的断牙",
+    "cover": "http://localhost:3000/images/07361c3a-15e8-4c35-8344-940dbdba00e1.png",
+    "ATK": 48,
+    "ATKIncrease": 4.47,
+    "secondary": {
+      "type": "CRITRate",
+      "num": 4.8,
+      "increase": 0.19
+    },
+    "effect": {
+      "type": "CRITDMG",
+      "num": 40
+    },
+    "id": "a0536cfc-61e7-4129-9b3f-89629bc40119",
+    "status": 1,
+    "weight": 5,
+    "level": 1,
+    "rank": 1
+  },
+  {
+    "name": "四风原典",
+    "star": 5,
+    "type": "catalyst",
+    "introduction": "崇信风的无名先民所写的教典珍本。数千年流传的信仰之力得到了风的青睐，饱含祝福与力量。",
+    "material": "狮牙斗士的镣铐",
+    "cover": "http://localhost:3000/images/f098f1ad-8ed5-41ca-802f-fc6997ff22cb.png",
+    "ATK": 46,
+    "ATKIncrease": 4,
+    "secondary": {
+      "type": "CRITRate",
+      "num": 7.2,
+      "increase": 0.29
+    },
+    "effect": {
+      "type": "elementDMGBonus",
+      "num": 20
+    },
+    "id": "683963cc-50f9-413d-ab62-2a4fc73a10f6",
+    "status": 1,
+    "weight": 5,
+    "level": 1,
+    "rank": 1
+  }
+]

@@ -6,28 +6,54 @@
     "experience": 50,
     "worldLevel": 1,
     "nickname": "胡桃",
-    "avatar": "http://localhost:3000/images/68d753af-af27-4265-9751-9b606ca243bc.jpg",
-    "diamond": 3544,
-    "gold": 22246,
-    "isSign": true,
-    "lastSign": 1649929430123,
-    "signDay": 2,
+    "avatar": "http://localhost:3000/images/3d704a47-de9f-4f73-8c7f-fa696400a8da.jpg",
+    "diamond": 205744,
+    "gold": 2238746,
+    "isSign": false,
+    "lastSign": 1650811792338,
+    "signDay": 1,
     "friends": [
       {
-        "account": "player3",
-        "twoWay": true
-      },
-      {
         "account": "player1",
-        "twoWay": true
-      },
-      {
-        "account": "player2",
         "twoWay": true
       }
     ],
     "friendRequest": [],
-    "isOnline": true
+    "isOnline": true,
+    "inventory": {
+      "weapons": [],
+      "artifacts": [],
+      "materials": [
+        {
+          "name": "纠缠之缘",
+          "get": "游戏商城内兑换",
+          "introduction": "连结梦想的命运之种。缘石辉光能让本无交集的命运交错，让彼此的梦想相连，正如这种光辉将群星连成心之所向的图形。",
+          "purpose": "祈愿",
+          "cover": "http://localhost:3000/images/ad0a5810-f1b7-4b0a-9e97-ab4f120cd517.png",
+          "id": "e2e2bcb6-3bed-4034-8d62-7547139271c5",
+          "weight": 21,
+          "num": 1998
+        },
+        {
+          "name": "无主的星辉",
+          "get": "祈愿",
+          "introduction": "过剩的命运星之光辉。或许可以点亮宇宙其他角落。",
+          "purpose": "可以在商城兑换珍稀资源的货币。",
+          "cover": "http://localhost:3000/images/9ffcba79-0cfa-4615-bab5-ff8be76a71fe.png",
+          "id": "1b3a5bab-7122-477a-b59c-56455cf48fba",
+          "weight": 20,
+          "num": 1998
+        }
+      ]
+    },
+    "weaponTime": {
+      "small": 0,
+      "big": 0
+    },
+    "roleTime": {
+      "small": 0,
+      "big": 0
+    }
   },
   {
     "account": "player2",
@@ -36,24 +62,28 @@
     "experience": 0,
     "worldLevel": 1,
     "nickname": "王小美",
-    "avatar": "http://localhost:3000/images/e8267a61-9206-463c-8614-02447f10a024.jpg",
+    "avatar": "http://localhost:3000/images/0c2a6dd7-90be-4e8d-9eee-7fa14e79d04d.jpg",
     "diamond": 2200,
     "gold": 27500,
-    "isSign": true,
-    "lastSign": 1649863344722,
-    "signDay": 1,
-    "friends": [
-      {
-        "account": "player",
-        "twoWay": true
-      },
-      {
-        "account": "player1",
-        "twoWay": true
-      }
-    ],
+    "isSign": false,
+    "lastSign": 1650376922697,
+    "signDay": 0,
+    "friends": [],
     "friendRequest": [],
-    "isOnline": false
+    "isOnline": false,
+    "inventory": {
+      "weapons": [],
+      "artifacts": [],
+      "materials": []
+    },
+    "weaponTime": {
+      "small": 0,
+      "big": 0
+    },
+    "roleTime": {
+      "small": 0,
+      "big": 0
+    }
   },
   {
     "account": "player1",
@@ -62,28 +92,33 @@
     "experience": 0,
     "worldLevel": 1,
     "nickname": "胡桃桃",
-    "avatar": "http://localhost:3000/images/e2f3207d-8e58-4195-a276-db952745ffd5.jpg",
-    "diamond": 1250,
-    "gold": 21000,
-    "isSign": false,
-    "lastSign": 1649905556356,
-    "signDay": 0,
+    "avatar": "http://localhost:3000/images/5290a189-f825-47ef-b576-1c6b3e2773c5.jpg",
+    "diamond": 1300,
+    "gold": 22500,
+    "isSign": true,
+    "lastSign": 1650707331946,
+    "signDay": 1,
     "friends": [
       {
         "account": "player",
         "twoWay": true
-      },
-      {
-        "account": "player2",
-        "twoWay": true
-      },
-      {
-        "account": "player3",
-        "twoWay": false
       }
     ],
     "friendRequest": [],
-    "isOnline": true
+    "isOnline": false,
+    "inventory": {
+      "weapons": [],
+      "artifacts": [],
+      "materials": []
+    },
+    "weaponTime": {
+      "small": 0,
+      "big": 0
+    },
+    "roleTime": {
+      "small": 0,
+      "big": 0
+    }
   },
   {
     "account": "player3",
@@ -92,21 +127,34 @@
     "experience": 0,
     "worldLevel": 1,
     "nickname": "西风骑士团代理团长",
-    "avatar": "http://localhost:3000/images/4de702fc-59d1-4bcc-b2a2-2fcb572d28c1.jpg",
+    "avatar": "http://localhost:3000/images/49243052-a210-425b-adae-f3836f748faf.jpg",
     "diamond": 1200,
     "gold": 19500,
     "isSign": false,
-    "lastSign": 1649646120353,
+    "lastSign": 1650297535238,
     "signDay": 0,
     "friends": [
       {
         "account": "player",
-        "twoWay": true
+        "twoWay": false
       }
     ],
     "friendRequest": [
       "player1"
     ],
-    "isOnline": false
+    "isOnline": false,
+    "inventory": {
+      "weapons": [],
+      "artifacts": [],
+      "materials": []
+    },
+    "weaponTime": {
+      "small": 0,
+      "big": 0
+    },
+    "roleTime": {
+      "small": 0,
+      "big": 0
+    }
   }
 ]

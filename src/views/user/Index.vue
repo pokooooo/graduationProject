@@ -1,6 +1,11 @@
 <template>
   <div>
     <div class="header">
+      <div class="list">
+        <div class="item" @click="toPath(item.path)" v-for="item in list">
+          {{item.label}}
+        </div>
+      </div>
       <div class="tag">
         <div>
           <el-tooltip :content="$store.getters.getUserData.isSign ? `今日已签到，您已经连续签到了${$store.getters.getUserData.signDay}天！` 
@@ -47,7 +52,7 @@
           <img :src="!!$store.getters.getUserData.avatar ? $store.getters.getUserData.avatar : imgUrl" alt="">
         </span>
         <el-dropdown-menu slot="dropdown">
-          <el-dropdown-item command="/user/home">个人中心</el-dropdown-item>
+          <el-dropdown-item command="/user/center">个人中心</el-dropdown-item>
           <el-dropdown-item command="/user/profile">账号设置</el-dropdown-item>
           <el-dropdown-item command="logout">退出</el-dropdown-item>
         </el-dropdown-menu>
@@ -124,6 +129,27 @@ export default {
   components: {},
   data() {
     return {
+      list: [{
+        label: '首页',
+        path: '/user/home'
+      },{
+        label: '商城',
+        path: '/user/store'
+      },{
+        label: '副本',
+        path: '/user/domain'
+      },{
+        label: '人物',
+        path: '/user/role'
+      },{
+        label: '仓库',
+        path: '/user/inventory'
+      },{
+        label: '祈愿',
+        path: '/user/event'
+      },
+
+      ],
       imgUrl: require('../../assets/image/default.jpg'),
       dialogVisible: false,
       dialogVisible1: false,
@@ -272,7 +298,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 1200px;
+
 }
 
 .header img {
@@ -283,7 +309,22 @@ export default {
 
 .main {
   margin: 0 auto;
-  width: 1200px;
+  width: 1300px;
+  height: calc(100vh - 55px);
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  margin-right: 100px;
+}
+
+.item {
+  width: 100px;
+}
+
+.item:hover {
+  cursor:pointer
 }
 
 .tag {

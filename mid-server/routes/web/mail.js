@@ -4,6 +4,8 @@ const uuid = require('uuid')
 const { catchError, check, generateOk } = require('../../lib/check')
 const { setMail, getMail, editMail, hasMail,getMailByAccount,deleteMail } = require('../../model/mail')
 const { getUser, editUser} = require('../../model/users')
+const {addMaterial} = require('../../kit/users')
+
 
 
 let mail = new Router()
@@ -13,7 +15,7 @@ mail.post('/send', async (ctx) => {
     let data = ctx.request.body
     data.sendTime = new Date().getTime()
     data.receiver.forEach(receiver => {
-      item = {...data}
+      let item = {...data}
       item.receiver = receiver
       item.id = uuid.v4()
       item.isRead = false
@@ -61,6 +63,10 @@ mail.post('/receive', async (ctx) => {
     user.diamond += mail.diamond
     user.gold += mail.gold
     editUser(user)
+    mail.materialsList.map(item => {
+      delete item.status
+      addMaterial(user.account, item)
+    })
     ctx.body = generateOk({
       data: mail
     })
