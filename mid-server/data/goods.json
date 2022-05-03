@@ -1,0 +1,54 @@
+[
+  {
+    "seller": "player",
+    "good": {
+      "pieceSet": {
+        "type": "electroDMGBonus",
+        "num": 15
+      },
+      "get": "仲夏庭园",
+      "part": "plume",
+      "name": "雷灾的孑遗",
+      "cover": "http://localhost:3000/images/b1eb4486-3241-4777-aaca-5f98cde6565b.png",
+      "introduction": "信奉雷鸟的部族预告天空的雷之主降临的沙漏。因一族的末路陷入了永远的静止。",
+      "effect": {
+        "type": "ATK",
+        "num": 7,
+        "increase": 2
+      },
+      "effects": [
+        {
+          "type": "CRITDMG",
+          "num": 6.6,
+          "increase": 6.6
+        },
+        {
+          "type": "energyRecharge",
+          "num": 5.5,
+          "increase": 5.5
+        },
+        {
+          "type": "HP",
+          "num": 5,
+          "increase": 5
+        },
+        {
+          "type": "CRITRate",
+          "num": 3.3,
+          "increase": 3.3
+        }
+      ],
+      "name1": "如雷的盛怒",
+      "id": "ace16866-7b7e-4038-8064-3403a06c1798",
+      "role": {
+        "name": "",
+        "id": "",
+        "cover": ""
+      },
+      "level": 0
+    },
+    "price": 9999999,
+    "time": 1651334551610,
+    "id": "d4cdb498-0ac6-4d9f-a111-59e9600719f0"
+  }
+]

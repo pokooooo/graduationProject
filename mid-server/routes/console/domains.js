@@ -9,6 +9,10 @@ const {
     getDomains,
 } = require('../../model/domains')
 const { hasToken } = require('../../model/token')
+const {getArtifacts} = require("../../model/artifacts");
+const {getMaterials} = require("../../model/materials");
+const {getUser} = require("../../model/users");
+const {addArtifact} = require("../../kit/users");
 let domains = new Router()
 let HP = [73,93,114,138,164,192,222,238,262,287,327,369,412,461,511,562,625,680,736,885,932,979,1024,
     1084,1145,1208,1272,1338,1405,1493,1555,1639,1708,2020,2089,2158,2253,2358,2464,2695,2825,2958,3084,
@@ -43,16 +47,37 @@ domains.post('/add', async (ctx) => {
         check(!!token, 'Admin_Not_Login','管理员未登录')
         check(hasToken(token), 'Admin_Login_Outdate', '管理员登录过期')
         let data = ctx.request.body
+        data.list = data.list.map(item => {
+            if(data.type === 'artifact') return getArtifacts(item)
+            else return getMaterials(item)
+        })
         let id = uuid.v4()
         data =  Object.assign(data,{
             id,
-            status: 2,
-            weight: data.star,
-            level: 1,
-            rank: 1
+            status: 1,
+            cost: data.type === 'role' ? 60 : 20
         })
         setDomains(data )
         ctx.body = generateOk()
+    } catch (err) {
+        catchError(err, ctx)
+    }
+})
+
+domains.post('/get', async (ctx) => {
+    try {
+        let {account,id,list,num} = ctx.request.body
+        let user = getUser(account)
+        let domain = getDomains(id)
+        let rewards = []
+        list.map(item => {
+            if(domain.type === 'artifact') {
+                rewards.push(addArtifact(account,domain.list[item].id,num))
+            }
+        })
+        ctx.body = generateOk({
+            data: rewards
+        })
     } catch (err) {
         catchError(err, ctx)
     }

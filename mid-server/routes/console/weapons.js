@@ -13,9 +13,7 @@ let weapons = new Router()
 
 weapons.post('/search', async (ctx) => {
     try {
-        let token = ctx.cookies.get('token')
-        check(!!token, 'Admin_Not_Login','管理员未登录')
-        check(hasToken(token), 'Admin_Login_Outdate', '管理员登录过期')
+
         let { pageIndex, pageSize, keyword } = ctx.request.body
         check(pageIndex >= 0, 'Params_Is_Not_In_Rules')
         check(pageSize >= 0, 'Params_Is_Not_In_Rules')
@@ -36,10 +34,19 @@ weapons.post('/add', async (ctx) => {
         check(hasToken(token), 'Admin_Login_Outdate', '管理员登录过期')
         let data = ctx.request.body
         let id = uuid.v4()
+        let add = 0
+        if(data.star === 5) {
+            add = 5
+        }
+        if(data.type === 'bow') add += 5
+        if(data.type === 'catalyst') add += 4
+        if(data.type === 'sword') add += 1
+        if(data.type === 'claymore') add += 2
+        if(data.type === 'polearm') add += 3
         data =  Object.assign(data,{
             id,
             status: 2,
-            weight: data.star,
+            weight: add,
             level: 1,
             rank: 1
         })

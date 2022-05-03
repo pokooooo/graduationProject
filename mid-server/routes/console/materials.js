@@ -13,9 +13,7 @@ let materials = new Router()
 
 materials.post('/search', async (ctx) => {
     try {
-        let token = ctx.cookies.get('token')
-        check(!!token, 'Admin_Not_Login','管理员未登录')
-        check(hasToken(token), 'Admin_Login_Outdate', '管理员登录过期')
+
         let { pageIndex, pageSize, keyword } = ctx.request.body
         check(pageIndex >= 0, 'Params_Is_Not_In_Rules')
         check(pageSize >= 0, 'Params_Is_Not_In_Rules')

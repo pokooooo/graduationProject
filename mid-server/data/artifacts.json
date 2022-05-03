@@ -3,8 +3,9 @@
     "name": "冰风迷途的勇士",
     "pieceSet": {
       "type": "cryoDMGBonus",
-      "num": 20
+      "num": 15
     },
+    "get": "芬德尼尔之顶",
     "parts": [
       {
         "part": "flower",
@@ -43,8 +44,9 @@
     "name": "炽烈的炎之魔女",
     "pieceSet": {
       "type": "pyroDMGBonus",
-      "num": 20
+      "num": 15
     },
+    "get": "无妄引咎密宫",
     "parts": [
       {
         "part": "flower",
@@ -78,5 +80,415 @@
       }
     ],
     "id": "b3600a72-1909-437c-8232-9bc5bcbc1d44"
+  },
+  {
+    "name": "翠绿之影",
+    "pieceSet": {
+      "type": "anemoDMGBonus",
+      "num": 15
+    },
+    "get": "铭记之谷",
+    "parts": [
+      {
+        "part": "flower",
+        "name": "野花记忆的绿野",
+        "cover": "http://localhost:3000/images/41bf5b95-6f40-4a8d-aafa-448b4597ee81.png",
+        "introduction": "曾经遍布某地的野花，离开了大地，被猎人佩在胸前。"
+      },
+      {
+        "part": "plume",
+        "name": "猎人青翠的箭羽",
+        "cover": "http://localhost:3000/images/87e70c15-fd07-4a8c-8d57-75319c213683.png",
+        "introduction": "曾经一瞬贯穿猎物的箭矢的尾羽，如今依旧平整光洁。"
+      },
+      {
+        "part": "sands",
+        "name": "翠绿猎人的笃定",
+        "cover": "http://localhost:3000/images/3a2a37e2-23f5-43d9-8cbb-296d41193f0f.png",
+        "introduction": "猎人曾经随身携带的奇妙仪器，永远指向自己的猎物。"
+      },
+      {
+        "part": "goblet",
+        "name": "翠绿猎人的容器",
+        "cover": "http://localhost:3000/images/59cf4557-d34b-4b35-87f4-4e2aefd0ac40.png",
+        "introduction": "绿野猎人曾用过的水壶，里面的空间远比想象的更大。"
+      },
+      {
+        "part": "circlet",
+        "name": "翠绿的猎人之冠",
+        "cover": "http://localhost:3000/images/b438ed86-68c7-42aa-9280-8f520840cf0a.png",
+        "introduction": "曾属于绿野猎人的骄傲头冠，如同原野之风一般青翠。"
+      }
+    ],
+    "id": "e2d06122-e2f9-4341-86ac-901f899937e2"
+  },
+  {
+    "name": "沉沦之心",
+    "pieceSet": {
+      "type": "hydroDMGBonus",
+      "num": 15
+    },
+    "get": "芬德尼尔之顶",
+    "parts": [
+      {
+        "part": "flower",
+        "name": "饰金胸花",
+        "cover": "http://localhost:3000/images/b2b125de-6bec-4cb2-814f-ea5f211f2de9.jpg",
+        "introduction": "色泽暗淡的斗篷别针。原本镀上的金色已经被海风磨去。"
+      },
+      {
+        "part": "plume",
+        "name": "追忆之风",
+        "cover": "http://localhost:3000/images/7bed22fd-f804-492c-a184-ec234dbfc319.jpg",
+        "introduction": "随呜咽的海风、腥红的海浪而来的飞羽，年岁改变了它的形状与颜色。"
+      },
+      {
+        "part": "sands",
+        "name": "坚铜罗盘",
+        "cover": "http://localhost:3000/images/362d5bc1-ba6a-4804-b40b-eb705517ec34.jpg",
+        "introduction": "古旧的铜制罗盘，指针始终朝向遥不可及的彼岸，不存在的港湾。"
+      },
+      {
+        "part": "goblet",
+        "name": "沉波之盏",
+        "cover": "http://localhost:3000/images/56ad86dc-6036-4c6e-a5eb-5a05af070465.jpg",
+        "introduction": "无心打捞上来的褪色酒盏，暗淡的外观呢喃着海波之底的往日。"
+      },
+      {
+        "part": "circlet",
+        "name": "酒渍船帽",
+        "cover": "http://localhost:3000/images/e8397a77-2a43-4362-833b-99705771ba4f.jpg",
+        "introduction": "古旧的船帽，缭绕着不散的酒气、浸渍了斑驳的酒痕。"
+      }
+    ],
+    "id": "2ddfbe8c-2340-4fa9-b4aa-2ab1d55d5e33"
+  },
+  {
+    "name": "来歆余响",
+    "pieceSet": {
+      "type": "CRITRate",
+      "num": 12
+    },
+    "get": "山脊守望",
+    "parts": [
+      {
+        "part": "flower",
+        "name": "魂香之花",
+        "cover": "http://localhost:3000/images/cdf12018-63e7-4273-8482-7e8f1a0429ab.png",
+        "introduction": "花型的玉雕。魂香幽幽的气息似有似无地萦绕其中。"
+      },
+      {
+        "part": "plume",
+        "name": "垂玉之叶",
+        "cover": "http://localhost:3000/images/1d6ed4da-38ea-4bb8-ba88-5c2c8f0b418c.png",
+        "introduction": "宛如叶片的玉佩。过去在特定的友人之间， 似乎有着特殊的含义。"
+      },
+      {
+        "part": "sands",
+        "name": "祝祀之凭",
+        "cover": "http://localhost:3000/images/2cc1b0bc-a561-440f-a65f-49b0fb98b5b2.png",
+        "introduction": "圆形的玉佩。在某个传说中，它是何地之祭祀肇始的凭证。"
+      },
+      {
+        "part": "goblet",
+        "name": "涌泉之盏",
+        "cover": "http://localhost:3000/images/45b76c22-58fe-43ea-929a-6c084010c78b.png",
+        "introduction": "能够源源不断涌出清泉的茶盏。或许是仙家的赠礼、遗物或是失物吧。"
+      },
+      {
+        "part": "circlet",
+        "name": "浮溯之珏",
+        "cover": "http://localhost:3000/images/36367571-9bc1-4827-b746-43c799604645.png",
+        "introduction": "由一块美玉制成的对耳环。有着无比温润的感觉。"
+      }
+    ],
+    "id": "3e0dc0ae-97f5-472c-a61f-8844a0a7ecf9"
+  },
+  {
+    "name": "辰砂往生录",
+    "pieceSet": {
+      "type": "ATK",
+      "num": 18
+    },
+    "get": "无妄引咎密宫",
+    "parts": [
+      {
+        "part": "flower",
+        "name": "生灵之华",
+        "cover": "http://localhost:3000/images/1f26eb4c-d303-4cea-9f17-230df31f7b4b.png",
+        "introduction": "古老的纪念物，恰如数百年前将它保存的生灵一般鲜活。"
+      },
+      {
+        "part": "plume",
+        "name": "潜光片羽",
+        "cover": "http://localhost:3000/images/4c400d90-9ce4-4f2e-8d3a-a2ece2626b6d.png",
+        "introduction": "一片光泽暗淡的翎羽，凝聚着浓重的记忆。"
+      },
+      {
+        "part": "sands",
+        "name": "阳辔之遗",
+        "cover": "http://localhost:3000/images/b24cdfae-4bcf-4259-bc5c-c5daa237ce30.png",
+        "introduction": "外观坚实的古代时计，有着晶砂的光泽。"
+      },
+      {
+        "part": "goblet",
+        "name": "结契之刻",
+        "cover": "http://localhost:3000/images/6f3b2b07-5664-4218-9881-2b57cda3839f.png",
+        "introduction": "古老的晶砂之杯，似乎未尝被岁月磨洗暗淡。"
+      },
+      {
+        "part": "circlet",
+        "name": "虺雷之姿",
+        "cover": "http://localhost:3000/images/ce9ccef6-e6ec-4054-a7a7-3c3fc5cd402a.png",
+        "introduction": "据称是山民为夜叉所打造的头冠，外观古朴，但其表面光亮不失润泽。"
+      }
+    ],
+    "id": "23a91149-02ce-465a-b4cb-d7ffd14696f5"
+  },
+  {
+    "name": "绝缘之旗印",
+    "pieceSet": {
+      "type": "energyRecharge",
+      "num": 20
+    },
+    "get": "仲夏庭园",
+    "parts": [
+      {
+        "part": "flower",
+        "name": "明威之镡",
+        "cover": "http://localhost:3000/images/483ca298-f1be-4ef8-a1df-300fe587e28c.png",
+        "introduction": "传说中背叛了将军的鬼人，曾经获赐的刀上的华美宝镡。"
+      },
+      {
+        "part": "plume",
+        "name": "切落之羽",
+        "cover": "http://localhost:3000/images/50e35611-a824-43fa-a965-ba5d3694e08b.png",
+        "introduction": "原本属于某名天狗的黑羽，是过去的剑豪珍惜的纪念品。"
+      },
+      {
+        "part": "sands",
+        "name": "雷云之笼",
+        "cover": "http://localhost:3000/images/733a6266-1e4a-44b4-aeef-d04e9d3f4ada.png",
+        "introduction": "黑地堇漆的考究印笼，其上装饰着发亮的螺钿与精致的金具。"
+      },
+      {
+        "part": "goblet",
+        "name": "绯花之壶",
+        "cover": "http://localhost:3000/images/dccffe13-76c7-45b5-8c1a-2576d2731d5f.png",
+        "introduction": "精致的酒壶，曾经是名震天下的武人载酒的容器。"
+      },
+      {
+        "part": "circlet",
+        "name": "华饰之兜",
+        "cover": "http://localhost:3000/images/6367ae2f-5c0d-4854-929a-5554f3257a35.png",
+        "introduction": "坚实牢固的兜盔，是身份尊贵的武人的护身之物。"
+      }
+    ],
+    "id": "98694e1c-3ed5-42ba-a146-80e17137b9c0"
+  },
+  {
+    "name": "苍白之火",
+    "pieceSet": {
+      "type": "physicalDMGBonus",
+      "num": 25
+    },
+    "get": "山脊守望",
+    "parts": [
+      {
+        "part": "flower",
+        "name": "无垢之花",
+        "cover": "http://localhost:3000/images/56af2495-f620-4c79-80b8-dfb1f94ec64e.png",
+        "introduction": "湛蓝而坚硬,永不凋败、永不褪色的人造花朵。"
+      },
+      {
+        "part": "plume",
+        "name": "贤医之羽",
+        "cover": "http://localhost:3000/images/19dd9a24-133d-475e-bacf-ba9cb893f73c.png",
+        "introduction": "边缘无比锐利的不祥翎羽，或许象征着异类的不羁。"
+      },
+      {
+        "part": "sands",
+        "name": "停摆之刻",
+        "cover": "http://localhost:3000/images/3a884eb9-290e-4e34-a35d-6dbffe50d5a1.png",
+        "introduction": "壳罩无法打开的怀表，会坚定地随着时光流逝而嘀嗒作响。"
+      },
+      {
+        "part": "goblet",
+        "name": "超越之盏",
+        "cover": "http://localhost:3000/images/1a65fe25-a4e4-4822-bcb9-28a7530127f7.png",
+        "introduction": "从外观无从断定经历了多少岁月的精致杯盏。"
+      },
+      {
+        "part": "circlet",
+        "name": "嗤笑之面",
+        "cover": "http://localhost:3000/images/2b8c74e0-f079-4cd6-8a9f-f9d140f22014.png",
+        "introduction": "能将面目遮蔽，让人无从判断表情的面具。"
+      }
+    ],
+    "id": "ca18be17-2190-483e-b6f7-1356ababec2d"
+  },
+  {
+    "name": "悠古的磐岩",
+    "pieceSet": {
+      "type": "geoDMGBonus",
+      "num": 15
+    },
+    "get": "孤云凌霄之处",
+    "parts": [
+      {
+        "part": "flower",
+        "name": "磐陀裂生之花",
+        "cover": "http://localhost:3000/images/647bbd9d-2017-470a-b58c-904fadc43fb0.png",
+        "introduction": "盛开于磐陀巨岩的金石之花。花瓣随风轻摇，似有生机。"
+      },
+      {
+        "part": "plume",
+        "name": "嵯峨群峰之翼",
+        "cover": "http://localhost:3000/images/4217bbe0-beed-4114-90c1-f687b464e42c.png",
+        "introduction": "来自矶岩巨鸢的刚羽，玄石的羽尖有时会凝结有清冷的露珠。"
+      },
+      {
+        "part": "sands",
+        "name": "巉岩琢塑之樽",
+        "cover": "http://localhost:3000/images/ae3e88ba-6532-4800-bfde-afd95ad2f506.png",
+        "introduction": "华丽而不失庄重的酒樽，千年前曾满盛玉露。"
+      },
+      {
+        "part": "goblet",
+        "name": "星罗圭璧之晷",
+        "cover": "http://localhost:3000/images/01cd6ee1-2e6b-4f63-b508-804c555dc095.png",
+        "introduction": "以整块圭璧雕琢而成的日居，纹路层叠星罗，沉默地记录着失去的时间。"
+      },
+      {
+        "part": "circlet",
+        "name": "不动玄石之相",
+        "cover": "http://localhost:3000/images/16154436-9f23-4b6d-bbe7-dee56f300876.png",
+        "introduction": "玄岩精雕而成的庄严面具，空洞的双眼永远冰冷地凝视着前方。"
+      }
+    ],
+    "id": "03a468fc-368a-45c8-8e6f-d8af0a7bd46a"
+  },
+  {
+    "name": "逆飞的流星",
+    "pieceSet": {
+      "type": "shieldStrength",
+      "num": 15
+    },
+    "get": "孤云凌霄之处",
+    "parts": [
+      {
+        "part": "flower",
+        "name": "夏祭之花",
+        "cover": "http://localhost:3000/images/7d9c8d62-818f-4160-8bd1-c0be132572e8.png",
+        "introduction": "永远盛放的人造之花，其中是否具有生命呢。"
+      },
+      {
+        "part": "plume",
+        "name": "夏祭终末",
+        "cover": "http://localhost:3000/images/bfa78eca-726b-40ef-9fae-1a2925e0affe.png",
+        "introduction": "精致的木造飞镖。抵达终点时才会停滞之物。"
+      },
+      {
+        "part": "sands",
+        "name": "夏祭水玉",
+        "cover": "http://localhost:3000/images/b12983e3-3770-474b-aaef-b785ac58b910.png",
+        "introduction": "夏祭时，盛水气球并不罕见。但如此精致的仅此一个。"
+      },
+      {
+        "part": "goblet",
+        "name": "夏祭之刻",
+        "cover": "http://localhost:3000/images/4d412611-94aa-49f0-b9cd-375f4094876f.png",
+        "introduction": "停滞在某一时刻的精致怀钟。"
+      },
+      {
+        "part": "circlet",
+        "name": "夏祭之面",
+        "cover": "http://localhost:3000/images/04616204-a1d7-482a-b8b7-9db3c425ae3b.png",
+        "introduction": "依据传说中的神明形象制作的，十分流行的面具。"
+      }
+    ],
+    "id": "d154c80a-2790-495e-993f-6c9082ebf764"
+  },
+  {
+    "name": "如雷的盛怒",
+    "pieceSet": {
+      "type": "electroDMGBonus",
+      "num": 15
+    },
+    "get": "仲夏庭园",
+    "parts": [
+      {
+        "part": "flower",
+        "name": "雷鸟的怜悯",
+        "cover": "http://localhost:3000/images/37934df0-00af-45c4-9c96-8a03660d4104.png",
+        "introduction": "在劫难之日侥幸免受纷乱的践踏与紫之火的忿恨之摧，于惨象中幸存的雷色之花。"
+      },
+      {
+        "part": "plume",
+        "name": "雷灾的孑遗",
+        "cover": "http://localhost:3000/images/b1eb4486-3241-4777-aaca-5f98cde6565b.png",
+        "introduction": "信奉雷鸟的部族预告天空的雷之主降临的沙漏。因一族的末路陷入了永远的静止。"
+      },
+      {
+        "part": "sands",
+        "name": "雷霆的时计",
+        "cover": "http://localhost:3000/images/7f341d46-f415-4baf-b883-a2d600971665.png",
+        "introduction": "信奉雷鸟的部族预告天空的雷之主降临的沙漏。因一族的末路陷入了永远的静止。"
+      },
+      {
+        "part": "goblet",
+        "name": "降雷的凶兆",
+        "cover": "http://localhost:3000/images/c6c5000e-fd27-44fb-ade8-cf9f6532f37e.png",
+        "introduction": "注入无辜者鲜血的祝圣的仪式之杯，祈愿雷鸣回荡其中。最终溢满了如雷的盛怒。"
+      },
+      {
+        "part": "circlet",
+        "name": "唤雷者的头冠",
+        "cover": "http://localhost:3000/images/e60ddc7a-87ee-482f-9db4-bbb9527733f9.png",
+        "introduction": "古代崇拜雷之魔鸟的萨满曾戴过的头冠，虔诚的信仰却无法打动喜怒无常的魔兽。"
+      }
+    ],
+    "id": "643b6382-b0a2-4450-a245-6fcdca394f83"
+  },
+  {
+    "name": "被怜爱的少女",
+    "pieceSet": {
+      "type": "healingBonus",
+      "num": 15
+    },
+    "get": "铭记之谷",
+    "parts": [
+      {
+        "part": "flower",
+        "name": "远方的少女之心",
+        "cover": "http://localhost:3000/images/398ff8a3-a712-42ea-8e51-2bf05388302c.png",
+        "introduction": "永远娇嫩的鲜花，历经长久时光仍不枯萎地散发着芬芳。"
+      },
+      {
+        "part": "plume",
+        "name": "少女飘摇的思念",
+        "cover": "http://localhost:3000/images/64a0183d-8ac2-4cc4-acfd-50537329ed0f.png",
+        "introduction": "寄托谁人的思念的羽饰， 就如与风一同去往远方的候鸟。"
+      },
+      {
+        "part": "sands",
+        "name": "少女苦短的良辰",
+        "cover": "http://localhost:3000/images/59cb15d8-478f-43ed-bae4-1ddf7dece530.png",
+        "introduction": "指针的旋转不会有尽头，但少女受人宠爱的岁月则相反。"
+      },
+      {
+        "part": "goblet",
+        "name": "少女片刻的闲暇",
+        "cover": "http://localhost:3000/images/a3ba8a1b-9f89-4cdc-9683-34bde19c169f.png",
+        "introduction": "属于红茶而不属于烈酒，属于芳甜而不属于苦涩的杯皿。"
+      },
+      {
+        "part": "circlet",
+        "name": "少女易逝的芳颜",
+        "cover": "http://localhost:3000/images/038faf09-203d-432a-818d-2cc5656e3877.png",
+        "introduction": "精心保养的女士帽，即使是眼角的皱纹也可以完美遮盖。"
+      }
+    ],
+    "id": "e5255656-4aba-4367-8146-bf497179a450"
   }
 ]

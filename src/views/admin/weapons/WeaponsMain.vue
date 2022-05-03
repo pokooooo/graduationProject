@@ -21,12 +21,12 @@
       <el-table-column label="属性">
         <template slot-scope="scope">
           <div>攻击力：{{scope.row.ATK}} + {{scope.row.ATKIncrease}}</div>
-          <div>{{scope.row.secondary.type | effectType}}: {{scope.row.secondary.num}} + {{scope.row.secondary.increase}}</div>
+          <div>{{scope.row.secondary.type | effectType}} : {{scope.row.secondary.num}} + {{scope.row.secondary.increase}}%</div>
         </template>
       </el-table-column>
       <el-table-column label="特效">
         <template slot-scope="scope">
-          <div>{{scope.row.effect.type | effectType}}：{{scope.row.effect.num}}</div>
+          <div>{{scope.row.effect.type | effectType}}：{{scope.row.effect.num}}%</div>
         </template>
       </el-table-column>
       <el-table-column label="权重" width="80" prop="weight"></el-table-column>
@@ -123,7 +123,7 @@ export default {
     this.dialogVisible = false;
   },
   remove(id) {
-    this.$confirm("是否删除该商品?", "提示", {
+    this.$confirm("是否删除该武器?", "提示", {
       confirmButtonText: "确定",
       cancelButtonText: "取消",
       type: "warning",
@@ -145,11 +145,11 @@ export default {
     this.$router.push({
       name: "addWeapon",
       params: {
-        name: "编辑商品",
+        name: "编辑武器",
         data: item
       },
     });
-  },
+  }
   }
 
 

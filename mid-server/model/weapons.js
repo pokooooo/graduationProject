@@ -7,6 +7,21 @@ function setWeapons(weapons) {
     write(__Weapons, WEAPONSURL)
 }
 
+function setWeapons1() {
+    __Weapons.map(item => {
+        let add = 0
+        if(item.star === 5) {
+            add = 5
+        }
+        if(item.type === 'bow') item.weight = add + 5
+        if(item.type === 'catalyst') item.weight = add + 4
+        if(item.type === 'sword') item.weight = add + 1
+        if(item.type === 'claymore') item.weight = add + 2
+        if(item.type === 'polearm') item.weight = add + 3
+    })
+    write(__Weapons, WEAPONSURL)
+}
+
 function editWeapons(weapons) {
     __Weapons.splice(
         __Weapons.findIndex((item) => item.id == weapons.id),
@@ -41,4 +56,5 @@ module.exports = {
     editWeapons,
     deleteWeapons,
     getWeapons,
+    setWeapons1
 }

@@ -17,8 +17,8 @@
             <div style="line-height: 28px;font-size: 16px;font-weight: bolder">{{item.title}}</div>
             <div style="line-height: 28px">{{item.sender}}</div>
           </div>
-          <div v-if="!item.isRead" style="flex: 1">
-            <img style="height: 30px" src="../../../assets/image/prop/new.png">
+          <div style="flex: 1">
+            <img  v-if="!item.isRead" style="height: 30px" src="../../../assets/image/prop/new.png">
           </div>
         </div>
 

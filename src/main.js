@@ -27,7 +27,7 @@ Vue.filter('dataFormat',originVal => {
 })
 
 Vue.filter('weaponType', type => {
-  if(type === 'bow') return '弓箭'
+  if(type === 'bow') return '弓'
   if(type === 'catalyst') return '法器'
   if(type === 'sword') return '单手剑'
   if(type === 'claymore') return '双手剑'
@@ -40,6 +40,14 @@ Vue.filter('enemiesType', type => {
   if(type === 'elite') return '精英'
   if(type === 'boss') return '首领'
 })
+
+Vue.filter('domainsType', type => {
+  if(type === 'artifact') return '圣遗物'
+  if(type === 'role') return '角色突破素材'
+  if(type === 'weapon') return '武器突破素材'
+  if(type === 'talent') return '角色天赋素材'
+})
+
 
 Vue.filter('partsType', type => {
   if(type === 'flower') return '生之花'
@@ -68,6 +76,14 @@ Vue.filter('effectType', type => {
   if(type === 'geoDMGBonus') return '岩元素伤害加成'
 })
 
+Vue.filter('visionType', type => {
+  if(type === 'geo') return '岩'
+  if(type === 'anemo') return '风'
+  if(type === 'cryo') return '冰'
+  if(type === 'electro') return '雷'
+  if(type === 'hydro') return '水'
+  if(type === 'pyro') return '火'
+})
 
 
 //刷新保存状态

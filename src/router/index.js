@@ -16,16 +16,6 @@ const routes = [
     component: () => import("../views/Login.vue"),
   },
   {
-    path: "/roles",
-    component: () => import("../views/Roles.vue"),
-  },
-  {
-    path: "/buy",
-    name: "buy",
-    component: () => import("../views/Buy.vue"),
-  },
-
-  {
     path: "/admin",
     component: () => import("../views/admin/Index.vue"),
     children: [
@@ -39,11 +29,7 @@ const routes = [
       },
       {
         path: "roles",
-        component: () => import("../views/admin/Roles.vue"),
-      },
-      {
-        path: "orders",
-        component: () => import("../views/admin/Orders.vue"),
+        component: () => import("../views/admin/roles/Roles.vue"),
       },
       {
         path: "weapons",
@@ -73,6 +59,11 @@ const routes = [
         path: "addWeapon",
         name: "addWeapon",
         component: () => import("../views/admin/weapons/AddWeapon.vue"),
+      },
+      {
+        path: "addRole",
+        name: "addRole",
+        component: () => import("../views/admin/roles/AddRole.vue"),
       },
       {
         path: "addArtifact",

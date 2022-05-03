@@ -5,7 +5,7 @@
         <select-input @select="select"></select-input>
       </el-col>
       <el-col :span="4">
-        <el-button type="primary" @click="addWeapon">添加材料</el-button>
+        <el-button type="primary" @click="addWeapon">添加武器</el-button>
       </el-col>
     </el-row>
   </div>

@@ -170,9 +170,6 @@ export default {
         }
       },
       starOptions: [{
-        value: 3,
-        label: '三星'
-      }, {
         value: 4,
         label: '四星'
       }, {
@@ -210,6 +207,9 @@ export default {
       }, {
         value: 'CRITDMG',
         label: '暴击伤害'
+      },{
+        value: 'physicalDMGBonus',
+        label: '物理伤害加成'
       }, {
         value: 'energyRecharge',
         label: '充能效率'
@@ -302,7 +302,7 @@ export default {
     }).then(res => {
       console.log(res);
       res.data.data.items.map(item => {
-        if(item.weight === 1) {
+        if(item.weight === 4) {
           this.materialOptions.push({value: item.name,label:item.name})
         }
       })

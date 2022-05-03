@@ -7,11 +7,783 @@
     "worldLevel": 1,
     "nickname": "胡桃",
     "avatar": "http://localhost:3000/images/3d704a47-de9f-4f73-8c7f-fa696400a8da.jpg",
-    "diamond": 205744,
-    "gold": 2238746,
+    "diamond": 172344,
+    "gold": 2290246,
     "isSign": false,
-    "lastSign": 1650811792338,
-    "signDay": 1,
+    "lastSign": 1651555879037,
+    "signDay": 0,
+    "roles": [
+      {
+        "name": "迪奥娜",
+        "star": 4,
+        "vision": "cryo",
+        "type": "bow",
+        "introduction": "遗传了稀薄的「非人]血统的少女，「猫尾酒馆]的超人气调酒师。",
+        "cover": "http://localhost:3000/images/90fabb87-afea-4305-a617-33c5a999f91a.png",
+        "background": "http://localhost:3000/images/d27eaa4f-adc9-4a50-bf5d-92bdb513c649.png",
+        "stats": {
+          "ATk": {
+            "basic": 802,
+            "increase": 99,
+            "num": 0
+          },
+          "HP": {
+            "basic": 18,
+            "increase": 2.2,
+            "num": 0
+          },
+          "DEF": {
+            "basic": 50,
+            "increase": 6.2,
+            "num": 0
+          },
+          "CRITRate": 5,
+          "CRITDMG": 50,
+          "energyRecharge": 100,
+          "healingBonus": 0,
+          "shieldStrength": 0,
+          "physicalDMGBonus": 0,
+          "pyroDMGBonus": 0,
+          "hydroDMGBonus": 0,
+          "electroDMGBonus": 0,
+          "anemoDMGBonus": 0,
+          "cryoDMGBonus": 0,
+          "geoDMGBonus": 0
+        },
+        "ascend": {
+          "material": "哀叙冰玉块",
+          "effect": "cryoDMGBonus",
+          "increase": 6
+        },
+        "weight": 4,
+        "level": 1,
+        "rank": 1,
+        "id": "10a5fd81-0606-4eb7-b16b-8facc5e0831c",
+        "weapon": {},
+        "artifacts": {
+          "flower": {},
+          "plume": {},
+          "sands": {},
+          "goblet": {},
+          "circlet": {}
+        }
+      },
+      {
+        "name": "香菱",
+        "star": 4,
+        "vision": "pyro",
+        "type": "polearm",
+        "introduction": "来自璃月,名声在外的少女厨师,对料理之道极具热情,拿手麻辣菜肴堪称一绝。",
+        "cover": "http://localhost:3000/images/69a39aa4-abb1-43a4-830b-312ce658448e.png",
+        "background": "http://localhost:3000/images/48006e3f-a782-4d4d-99d6-6538385a90c2.png",
+        "stats": {
+          "ATk": {
+            "basic": 912,
+            "increase": 112,
+            "num": 0
+          },
+          "HP": {
+            "basic": 19,
+            "increase": 2.3,
+            "num": 0
+          },
+          "DEF": {
+            "basic": 55,
+            "increase": 6.9,
+            "num": 0
+          },
+          "CRITRate": 5,
+          "CRITDMG": 50,
+          "energyRecharge": 100,
+          "healingBonus": 0,
+          "shieldStrength": 0,
+          "physicalDMGBonus": 0,
+          "pyroDMGBonus": 0,
+          "hydroDMGBonus": 0,
+          "electroDMGBonus": 0,
+          "anemoDMGBonus": 0,
+          "cryoDMGBonus": 0,
+          "geoDMGBonus": 0
+        },
+        "ascend": {
+          "material": "燃愿玛瑙块",
+          "effect": "pyroDMGBonus",
+          "increase": 6
+        },
+        "weight": 1,
+        "level": 1,
+        "rank": 1,
+        "id": "cddd05b0-786a-4643-a625-09a0ab2465c7",
+        "weapon": {},
+        "artifacts": {
+          "flower": {},
+          "plume": {},
+          "sands": {},
+          "goblet": {},
+          "circlet": {}
+        }
+      },
+      {
+        "name": "砂糖",
+        "star": 4,
+        "vision": "anemo",
+        "type": "catalyst",
+        "introduction": "f西风骑士团]的可靠女仆,梦想有一天能成为正式的骑士。",
+        "cover": "http://localhost:3000/images/12cb2e64-27bc-4d61-ba37-f31738c90b8d.png",
+        "background": "http://localhost:3000/images/de6717b5-18bb-48cc-ac6d-32b37b09b599.png",
+        "stats": {
+          "ATk": {
+            "basic": 775,
+            "increase": 95,
+            "num": 0
+          },
+          "HP": {
+            "basic": 14,
+            "increase": 1.8,
+            "num": 0
+          },
+          "DEF": {
+            "basic": 59,
+            "increase": 7.2,
+            "num": 0
+          },
+          "CRITRate": 5,
+          "CRITDMG": 50,
+          "energyRecharge": 100,
+          "healingBonus": 0,
+          "shieldStrength": 0,
+          "physicalDMGBonus": 0,
+          "pyroDMGBonus": 0,
+          "hydroDMGBonus": 0,
+          "electroDMGBonus": 0,
+          "anemoDMGBonus": 0,
+          "cryoDMGBonus": 0,
+          "geoDMGBonus": 0
+        },
+        "ascend": {
+          "material": "自在松石块",
+          "effect": "anemoDMGBonus",
+          "increase": 6
+        },
+        "weight": 5,
+        "level": 1,
+        "rank": 1,
+        "id": "3df69d39-b610-4a35-9697-76e9f8b17878",
+        "weapon": {},
+        "artifacts": {
+          "flower": {},
+          "plume": {},
+          "sands": {},
+          "goblet": {},
+          "circlet": {}
+        }
+      },
+      {
+        "name": "雷电将军",
+        "star": 5,
+        "vision": "electro",
+        "type": "polearm",
+        "introduction": "其身为御建鸣神主尊大御所大人,许稻妻人民以亘古不变之「永恒」。",
+        "cover": "http://localhost:3000/images/ec23b4f6-079c-4bda-a253-c965725079f1.png",
+        "background": "http://localhost:3000/images/46441e32-2d4c-4295-9171-e0db895c69b3.png",
+        "stats": {
+          "ATk": {
+            "basic": 1007,
+            "increase": 134,
+            "num": 0
+          },
+          "HP": {
+            "basic": 26,
+            "increase": 3.5,
+            "num": 0
+          },
+          "DEF": {
+            "basic": 61,
+            "increase": 8.2,
+            "num": 0
+          },
+          "CRITRate": 5,
+          "CRITDMG": 50,
+          "energyRecharge": 100,
+          "healingBonus": 0,
+          "shieldStrength": 0,
+          "physicalDMGBonus": 0,
+          "pyroDMGBonus": 0,
+          "hydroDMGBonus": 0,
+          "electroDMGBonus": 0,
+          "anemoDMGBonus": 0,
+          "cryoDMGBonus": 0,
+          "geoDMGBonus": 0
+        },
+        "ascend": {
+          "material": "最胜紫晶块",
+          "effect": "energyRecharge",
+          "increase": 8
+        },
+        "weight": 9,
+        "level": 1,
+        "rank": 1,
+        "id": "33acb402-8eb8-47a7-8b03-c564c0dbfcfc",
+        "weapon": {},
+        "artifacts": {
+          "flower": {},
+          "plume": {},
+          "sands": {},
+          "goblet": {},
+          "circlet": {}
+        }
+      },
+      {
+        "name": "九条裟罗",
+        "star": 4,
+        "vision": "electro",
+        "type": "bow",
+        "introduction": "「天领奉行]的大将,杀伐果断,骁勇善战。",
+        "cover": "http://localhost:3000/images/9a323ccb-cb37-4484-ac75-4503a9c2dcb6.png",
+        "background": "http://localhost:3000/images/7bd457b0-a133-42f4-a655-bb91b00bf3a0.png",
+        "stats": {
+          "ATk": {
+            "basic": 802,
+            "increase": 99,
+            "num": 0
+          },
+          "HP": {
+            "basic": 16,
+            "increase": 2,
+            "num": 0
+          },
+          "DEF": {
+            "basic": 53,
+            "increase": 6.4,
+            "num": 0
+          },
+          "CRITRate": 5,
+          "CRITDMG": 50,
+          "energyRecharge": 100,
+          "healingBonus": 0,
+          "shieldStrength": 0,
+          "physicalDMGBonus": 0,
+          "pyroDMGBonus": 0,
+          "hydroDMGBonus": 0,
+          "electroDMGBonus": 0,
+          "anemoDMGBonus": 0,
+          "cryoDMGBonus": 0,
+          "geoDMGBonus": 0
+        },
+        "ascend": {
+          "material": "最胜紫晶块",
+          "effect": "ATK",
+          "increase": 6
+        },
+        "weight": 3,
+        "level": 1,
+        "rank": 1,
+        "id": "80ebac20-5f5a-4b0a-ac41-d9d4581816a0",
+        "weapon": {},
+        "artifacts": {
+          "flower": {},
+          "plume": {},
+          "sands": {},
+          "goblet": {},
+          "circlet": {}
+        }
+      },
+      {
+        "name": "芭芭拉",
+        "star": 4,
+        "vision": "hydro",
+        "type": "catalyst",
+        "introduction": "蒙德城的大家都喜欢芭芭拉。「偶像」这个词是她从一本杂志里看到的。",
+        "cover": "http://localhost:3000/images/c461c112-6ad5-4f07-a7cc-b74d29f42c78.png",
+        "background": "http://localhost:3000/images/64b6ab9d-cb6a-4ac3-b114-b7f8e21c8963.png",
+        "stats": {
+          "ATk": {
+            "basic": 824,
+            "increase": 101,
+            "num": 0
+          },
+          "HP": {
+            "basic": 14,
+            "increase": 1.6,
+            "num": 0
+          },
+          "DEF": {
+            "basic": 56,
+            "increase": 6.9,
+            "num": 0
+          },
+          "CRITRate": 5,
+          "CRITDMG": 50,
+          "energyRecharge": 100,
+          "healingBonus": 0,
+          "shieldStrength": 0,
+          "physicalDMGBonus": 0,
+          "pyroDMGBonus": 0,
+          "hydroDMGBonus": 0,
+          "electroDMGBonus": 0,
+          "anemoDMGBonus": 0,
+          "cryoDMGBonus": 0,
+          "geoDMGBonus": 0
+        },
+        "ascend": {
+          "material": "涤净青金块",
+          "effect": "HP",
+          "increase": 6
+        },
+        "weight": 2,
+        "level": 1,
+        "rank": 1,
+        "id": "3e8e8b4f-98bc-4c72-9f56-62ee3f34b9d8",
+        "weapon": {},
+        "artifacts": {
+          "flower": {},
+          "plume": {},
+          "sands": {},
+          "goblet": {},
+          "circlet": {}
+        }
+      },
+      {
+        "name": "凝光",
+        "star": 4,
+        "vision": "geo",
+        "type": "catalyst",
+        "introduction": "「璃月七星」中的「天权」,其名下财富之多,全大陆鲜有人能望其项背。",
+        "cover": "http://localhost:3000/images/086a3da2-02ac-496a-92de-ed95195f37e5.png",
+        "background": "http://localhost:3000/images/e5edb595-9277-4bfc-8efe-a137964810d7.png",
+        "stats": {
+          "ATk": {
+            "basic": 821,
+            "increase": 101,
+            "num": 0
+          },
+          "HP": {
+            "basic": 18,
+            "increase": 2.2,
+            "num": 0
+          },
+          "DEF": {
+            "basic": 48,
+            "increase": 5.9,
+            "num": 0
+          },
+          "CRITRate": 5,
+          "CRITDMG": 50,
+          "energyRecharge": 100,
+          "healingBonus": 0,
+          "shieldStrength": 0,
+          "physicalDMGBonus": 0,
+          "pyroDMGBonus": 0,
+          "hydroDMGBonus": 0,
+          "electroDMGBonus": 0,
+          "anemoDMGBonus": 0,
+          "cryoDMGBonus": 0,
+          "geoDMGBonus": 0
+        },
+        "ascend": {
+          "material": "坚牢黄玉块",
+          "effect": "geoDMGBonus",
+          "increase": 6
+        },
+        "weight": 6,
+        "level": 1,
+        "rank": 1,
+        "id": "82e6ab9a-1da7-4b2c-8d20-d6f303e4fb50",
+        "weapon": {},
+        "artifacts": {
+          "flower": {},
+          "plume": {},
+          "sands": {},
+          "goblet": {},
+          "circlet": {}
+        }
+      },
+      {
+        "name": "重云",
+        "star": 4,
+        "vision": "cryo",
+        "type": "claymore",
+        "introduction": "驱邪世家的年轻方士,为压制自身的『纯阳之体]费尽心机。",
+        "cover": "http://localhost:3000/images/5ed7a18c-38b6-44d4-aa4c-522719b48a8b.png",
+        "background": "http://localhost:3000/images/2622181a-48e3-46bc-952b-81ca437757b6.png",
+        "stats": {
+          "ATk": {
+            "basic": 921,
+            "increase": 113,
+            "num": 0
+          },
+          "HP": {
+            "basic": 19,
+            "increase": 2.3,
+            "num": 0
+          },
+          "DEF": {
+            "basic": 54,
+            "increase": 6.7,
+            "num": 0
+          },
+          "CRITRate": 5,
+          "CRITDMG": 50,
+          "energyRecharge": 100,
+          "healingBonus": 0,
+          "shieldStrength": 0,
+          "physicalDMGBonus": 0,
+          "pyroDMGBonus": 0,
+          "hydroDMGBonus": 0,
+          "electroDMGBonus": 0,
+          "anemoDMGBonus": 0,
+          "cryoDMGBonus": 0,
+          "geoDMGBonus": 0
+        },
+        "ascend": {
+          "material": "哀叙冰玉块",
+          "effect": "ATK",
+          "increase": 6
+        },
+        "weight": 4,
+        "level": 1,
+        "rank": 1,
+        "id": "d41ae0d5-233d-45ac-9ff7-eedf3ef0dc62",
+        "weapon": {},
+        "artifacts": {
+          "flower": {},
+          "plume": {},
+          "sands": {},
+          "goblet": {},
+          "circlet": {}
+        }
+      },
+      {
+        "name": "行秋",
+        "star": 4,
+        "vision": "hydro",
+        "type": "sword",
+        "introduction": "'\n经常能在书摊看到的少年人。手执长剑,胸中常怀侠义之心。",
+        "cover": "http://localhost:3000/images/4856bfa7-f72f-417f-898d-ef6180b9cf21.png",
+        "background": "http://localhost:3000/images/52ca1b9f-a08d-4631-a41b-3d3e434cf391.png",
+        "stats": {
+          "ATk": {
+            "basic": 857,
+            "increase": 105,
+            "num": 0
+          },
+          "HP": {
+            "basic": 17,
+            "increase": 2.1,
+            "num": 0
+          },
+          "DEF": {
+            "basic": 64,
+            "increase": 7.8,
+            "num": 0
+          },
+          "CRITRate": 5,
+          "CRITDMG": 50,
+          "energyRecharge": 100,
+          "healingBonus": 0,
+          "shieldStrength": 0,
+          "physicalDMGBonus": 0,
+          "pyroDMGBonus": 0,
+          "hydroDMGBonus": 0,
+          "electroDMGBonus": 0,
+          "anemoDMGBonus": 0,
+          "cryoDMGBonus": 0,
+          "geoDMGBonus": 0
+        },
+        "ascend": {
+          "material": "涤净青金块",
+          "effect": "ATK",
+          "increase": 6
+        },
+        "weight": 2,
+        "level": 1,
+        "rank": 1,
+        "id": "048b833a-435f-4db4-bb92-2288bcd34757",
+        "weapon": {},
+        "artifacts": {
+          "flower": {},
+          "plume": {},
+          "sands": {},
+          "goblet": {},
+          "circlet": {}
+        }
+      },
+      {
+        "name": "雷泽",
+        "star": 4,
+        "vision": "electro",
+        "type": "claymore",
+        "introduction": "住在蒙德地区奔狼领,远离城市与人群，和狼一同生活的少年。直觉锐利,身姿迅捷。",
+        "cover": "http://localhost:3000/images/75e56ea5-b035-474e-b325-480454450a80.png",
+        "background": "http://localhost:3000/images/da4f884c-b792-4563-adfe-695ab1234ee4.png",
+        "stats": {
+          "ATk": {
+            "basic": 1003,
+            "increase": 123,
+            "num": 0
+          },
+          "HP": {
+            "basic": 20,
+            "increase": 2.4,
+            "num": 0
+          },
+          "DEF": {
+            "basic": 63,
+            "increase": 7.7,
+            "num": 0
+          },
+          "CRITRate": 5,
+          "CRITDMG": 50,
+          "energyRecharge": 100,
+          "healingBonus": 0,
+          "shieldStrength": 0,
+          "physicalDMGBonus": 0,
+          "pyroDMGBonus": 0,
+          "hydroDMGBonus": 0,
+          "electroDMGBonus": 0,
+          "anemoDMGBonus": 0,
+          "cryoDMGBonus": 0,
+          "geoDMGBonus": 0
+        },
+        "ascend": {
+          "material": "最胜紫晶块",
+          "effect": "physicalDMGBonus",
+          "increase": 7.5
+        },
+        "weight": 3,
+        "level": 1,
+        "rank": 1,
+        "id": "b6e1eabd-a653-4c7b-ba13-d9af376b8092",
+        "weapon": {},
+        "artifacts": {
+          "flower": {},
+          "plume": {},
+          "sands": {},
+          "goblet": {},
+          "circlet": {}
+        }
+      },
+      {
+        "name": "烟绯",
+        "star": 4,
+        "vision": "pyro",
+        "type": "catalyst",
+        "introduction": "活跃在璃月港的知名律法咨询师，混有仙兽血脉的精明少女。",
+        "cover": "http://localhost:3000/images/1cd397ba-5e2d-4e6c-9493-8a9613b2cdc6.png",
+        "background": "http://localhost:3000/images/6032bdf9-c014-469b-bfa0-de44e7041ca4.png",
+        "stats": {
+          "ATk": {
+            "basic": 784,
+            "increase": 96,
+            "num": 0
+          },
+          "HP": {
+            "basic": 20,
+            "increase": 2.5,
+            "num": 0
+          },
+          "DEF": {
+            "basic": 49,
+            "increase": 6,
+            "num": 0
+          },
+          "CRITRate": 5,
+          "CRITDMG": 50,
+          "energyRecharge": 100,
+          "healingBonus": 0,
+          "shieldStrength": 0,
+          "physicalDMGBonus": 0,
+          "pyroDMGBonus": 0,
+          "hydroDMGBonus": 0,
+          "electroDMGBonus": 0,
+          "anemoDMGBonus": 0,
+          "cryoDMGBonus": 0,
+          "geoDMGBonus": 0
+        },
+        "ascend": {
+          "material": "燃愿玛瑙块",
+          "effect": "pyroDMGBonus",
+          "increase": 6
+        },
+        "weight": 1,
+        "level": 1,
+        "rank": 1,
+        "id": "2e1dde8f-e267-47d0-a090-a6502783a889",
+        "weapon": {},
+        "artifacts": {
+          "flower": {},
+          "plume": {},
+          "sands": {},
+          "goblet": {},
+          "circlet": {}
+        }
+      },
+      {
+        "name": "刻晴",
+        "star": 5,
+        "vision": "electro",
+        "type": "sword",
+        "introduction": "璃月七星之一,玉衡星。对「帝君一言而决的璃月』颇有微词——但实际上，神挺欣赏她这样的人。",
+        "cover": "http://localhost:3000/images/aec92e36-b7b1-41fa-b6ab-0af249b17978.png",
+        "background": "http://localhost:3000/images/361b46d4-da5b-4176-8ae6-37a5e32129f8.png",
+        "stats": {
+          "ATk": {
+            "basic": 1020,
+            "increase": 136,
+            "num": 0
+          },
+          "HP": {
+            "basic": 25,
+            "increase": 3.4,
+            "num": 0
+          },
+          "DEF": {
+            "basic": 62,
+            "increase": 8.3,
+            "num": 0
+          },
+          "CRITRate": 5,
+          "CRITDMG": 50,
+          "energyRecharge": 100,
+          "healingBonus": 0,
+          "shieldStrength": 0,
+          "physicalDMGBonus": 0,
+          "pyroDMGBonus": 0,
+          "hydroDMGBonus": 0,
+          "electroDMGBonus": 0,
+          "anemoDMGBonus": 0,
+          "cryoDMGBonus": 0,
+          "geoDMGBonus": 0
+        },
+        "ascend": {
+          "material": "最胜紫晶块",
+          "effect": "CRITDMG",
+          "increase": 9.6
+        },
+        "weight": 9,
+        "level": 1,
+        "rank": 1,
+        "id": "b288b203-2780-401a-bec9-4bf1e6e3aca2",
+        "weapon": {},
+        "artifacts": {
+          "flower": {},
+          "plume": {},
+          "sands": {},
+          "goblet": {},
+          "circlet": {}
+        }
+      },
+      {
+        "name": "诺艾尔",
+        "star": 4,
+        "vision": "geo",
+        "type": "claymore",
+        "introduction": "f西风骑士团]的可靠女仆,梦想有一天能成为正式的骑士。",
+        "cover": "http://localhost:3000/images/a34ebf32-9440-4c3c-9344-bebbdccf0b1a.png",
+        "background": "http://localhost:3000/images/e32cd250-edac-4c22-ad3d-4cc338db45d4.png",
+        "stats": {
+          "ATk": {
+            "basic": 1012,
+            "increase": 124,
+            "num": 0
+          },
+          "HP": {
+            "basic": 16,
+            "increase": 2,
+            "num": 0
+          },
+          "DEF": {
+            "basic": 67,
+            "increase": 8.2,
+            "num": 0
+          },
+          "CRITRate": 5,
+          "CRITDMG": 50,
+          "energyRecharge": 100,
+          "healingBonus": 0,
+          "shieldStrength": 0,
+          "physicalDMGBonus": 0,
+          "pyroDMGBonus": 0,
+          "hydroDMGBonus": 0,
+          "electroDMGBonus": 0,
+          "anemoDMGBonus": 0,
+          "cryoDMGBonus": 0,
+          "geoDMGBonus": 0
+        },
+        "ascend": {
+          "material": "坚牢黄玉块",
+          "effect": "DEF",
+          "increase": 7.5
+        },
+        "weight": 6,
+        "level": 1,
+        "rank": 1,
+        "id": "88b4df0f-0fdf-4c9d-9963-ecffe107e771",
+        "weapon": {},
+        "artifacts": {
+          "flower": {},
+          "plume": {},
+          "sands": {},
+          "goblet": {},
+          "circlet": {}
+        }
+      },
+      {
+        "name": "神里绫华",
+        "star": 5,
+        "vision": "cryo",
+        "type": "sword",
+        "introduction": "稻妻「社奉行」神里家的大小姐。端庄而文雅,聪慧又坚韧。",
+        "cover": "http://localhost:3000/images/f2189bb6-d06f-4266-b20a-1de5e5105b48.png",
+        "background": "http://localhost:3000/images/a6456710-1088-4a11-bacc-2259cb033605.png",
+        "stats": {
+          "ATk": {
+            "basic": 1001,
+            "increase": 133,
+            "num": 0
+          },
+          "HP": {
+            "basic": 27,
+            "increase": 3.5,
+            "num": 0
+          },
+          "DEF": {
+            "basic": 61,
+            "increase": 8.1,
+            "num": 0
+          },
+          "CRITRate": 5,
+          "CRITDMG": 50,
+          "energyRecharge": 100,
+          "healingBonus": 0,
+          "shieldStrength": 0,
+          "physicalDMGBonus": 0,
+          "pyroDMGBonus": 0,
+          "hydroDMGBonus": 0,
+          "electroDMGBonus": 0,
+          "anemoDMGBonus": 0,
+          "cryoDMGBonus": 0,
+          "geoDMGBonus": 0
+        },
+        "ascend": {
+          "material": "哀叙冰玉块",
+          "effect": "CRITDMG",
+          "increase": 9.6
+        },
+        "weight": 10,
+        "level": 1,
+        "rank": 1,
+        "id": "8a76f4ab-d780-40ad-beaf-8f9d1d90af88",
+        "weapon": {},
+        "artifacts": {
+          "flower": {},
+          "plume": {},
+          "sands": {},
+          "goblet": {},
+          "circlet": {}
+        }
+      }
+    ],
     "friends": [
       {
         "account": "player1",
@@ -21,8 +793,4364 @@
     "friendRequest": [],
     "isOnline": true,
     "inventory": {
-      "weapons": [],
-      "artifacts": [],
+      "weapons": [
+        {
+          "name": "西风剑",
+          "star": 4,
+          "type": "sword",
+          "introduction": "西风骑士团的制式长剑。轻快锐利之余，也能轻易导出元素力量。",
+          "material": "高塔孤王的断片",
+          "cover": "http://localhost:3000/images/bf81a9f4-9267-4601-8cb7-289ef7b20041.png",
+          "ATK": 41,
+          "ATKIncrease": 3.05,
+          "secondary": {
+            "type": "energyRecharge",
+            "num": 13.3,
+            "increase": 0.54
+          },
+          "effect": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "id": "9daf8830-2e84-444d-b295-9ea3a0eb1df4",
+          "weight": 1,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "西风大剑",
+          "star": 4,
+          "type": "claymore",
+          "introduction": "西风骑士团的重型仪式剑。能轻易导出元素力量，具有卓越的破坏力。",
+          "material": "狮牙斗士的镣铐",
+          "cover": "http://localhost:3000/images/826eb902-d4b0-4020-8003-178aa113361f.png",
+          "ATK": 41,
+          "ATKIncrease": 3.05,
+          "secondary": {
+            "type": "energyRecharge",
+            "num": 13.3,
+            "increase": 0.54
+          },
+          "effect": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "id": "c1c53bb0-f28f-4d1e-9412-386f54a34f4c",
+          "weight": 2,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "西风剑",
+          "star": 4,
+          "type": "sword",
+          "introduction": "西风骑士团的制式长剑。轻快锐利之余，也能轻易导出元素力量。",
+          "material": "高塔孤王的断片",
+          "cover": "http://localhost:3000/images/bf81a9f4-9267-4601-8cb7-289ef7b20041.png",
+          "ATK": 41,
+          "ATKIncrease": 3.05,
+          "secondary": {
+            "type": "energyRecharge",
+            "num": 13.3,
+            "increase": 0.54
+          },
+          "effect": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "id": "e647d834-bf9f-4ca8-bff5-8b284b2378b8",
+          "weight": 1,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "西风秘典",
+          "star": 4,
+          "type": "catalyst",
+          "introduction": "西风骑士团的学者间流传的秘典，记载着元素与物质的道理和力量。",
+          "material": "高塔孤王的断片",
+          "cover": "http://localhost:3000/images/48d8ac35-2f4d-4d90-a3b2-3fa61c212b2e.png",
+          "ATK": 42,
+          "ATKIncrease": 3.53,
+          "secondary": {
+            "type": "energyRecharge",
+            "num": 10,
+            "increase": 0.41
+          },
+          "effect": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "id": "402ace7b-4de1-47e3-b91b-c7d1a2dd5a54",
+          "weight": 4,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "西风剑",
+          "star": 4,
+          "type": "sword",
+          "introduction": "西风骑士团的制式长剑。轻快锐利之余，也能轻易导出元素力量。",
+          "material": "高塔孤王的断片",
+          "cover": "http://localhost:3000/images/bf81a9f4-9267-4601-8cb7-289ef7b20041.png",
+          "ATK": 41,
+          "ATKIncrease": 3.05,
+          "secondary": {
+            "type": "energyRecharge",
+            "num": 13.3,
+            "increase": 0.54
+          },
+          "effect": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "id": "61feceef-1b8c-4c4d-a667-e3bcb5d04b7a",
+          "weight": 1,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "四风原典",
+          "star": 5,
+          "type": "catalyst",
+          "introduction": "崇信风的无名先民所写的教典珍本。数千年流传的信仰之力得到了风的青睐，饱含祝福与力量。",
+          "material": "狮牙斗士的镣铐",
+          "cover": "http://localhost:3000/images/f098f1ad-8ed5-41ca-802f-fc6997ff22cb.png",
+          "ATK": 46,
+          "ATKIncrease": 4,
+          "secondary": {
+            "type": "CRITRate",
+            "num": 7.2,
+            "increase": 0.29
+          },
+          "effect": {
+            "type": "elementDMGBonus",
+            "num": 20
+          },
+          "id": "cd1ee075-f814-4c0d-8eab-eeaed2feb212",
+          "weight": 9,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "雾切之回光",
+          "star": 5,
+          "type": "sword",
+          "introduction": "闪烁着凄烈紫光的太刀。名之为「回光」是因为一度破碎的过去。",
+          "material": "远海夷地的琼枝",
+          "cover": "http://localhost:3000/images/e00685e8-d5d2-4c32-bec0-784f3fff9f0e.jpg",
+          "ATK": 48,
+          "ATKIncrease": 4.47,
+          "secondary": {
+            "type": "CRITDMG",
+            "num": 9.6,
+            "increase": 0.39
+          },
+          "effect": {
+            "type": "elementDMGBonus",
+            "num": 40
+          },
+          "id": "3235a844-458f-46bf-9e10-7a7d98d773a6",
+          "weight": 6,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "西风剑",
+          "star": 4,
+          "type": "sword",
+          "introduction": "西风骑士团的制式长剑。轻快锐利之余，也能轻易导出元素力量。",
+          "material": "高塔孤王的断片",
+          "cover": "http://localhost:3000/images/bf81a9f4-9267-4601-8cb7-289ef7b20041.png",
+          "ATK": 41,
+          "ATKIncrease": 3.05,
+          "secondary": {
+            "type": "energyRecharge",
+            "num": 13.3,
+            "increase": 0.54
+          },
+          "effect": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "id": "df611cc3-b976-4240-a683-787e5b2dbbb9",
+          "weight": 1,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "西风长枪",
+          "star": 4,
+          "type": "polearm",
+          "introduction": "西风骑士团的制式长枪。枪杆直挺，枪尖轻风流溢。",
+          "material": "狮牙斗士的镣铐",
+          "cover": "http://localhost:3000/images/6b41e9b0-d735-4c44-83ae-a1eb07b7a199.png",
+          "ATK": 44,
+          "ATKIncrease": 3.95,
+          "secondary": {
+            "type": "energyRecharge",
+            "num": 6.7,
+            "increase": 0.27
+          },
+          "effect": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "id": "ddabba50-730c-44ac-a1a2-428e70cb5098",
+          "weight": 3,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "宗室猎枪",
+          "star": 4,
+          "type": "polearm",
+          "introduction": "某位曾支配蒙德的旧日贵族，曾经珍爱的长枪。过去不曾见过天日，但如今依然尖锐无比。",
+          "material": "雾海云间的金丹",
+          "cover": "http://localhost:3000/images/bc6ba9a3-e8a1-426f-8a34-93c4ce1f947d.png",
+          "ATK": 44,
+          "ATKIncrease": 3.95,
+          "secondary": {
+            "type": "ATK",
+            "num": 6,
+            "increase": 0.24
+          },
+          "effect": {
+            "type": "CRITRate",
+            "num": 10
+          },
+          "id": "00215df1-3642-4d4b-b7f2-7e68af2ac769",
+          "weight": 3,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "西风秘典",
+          "star": 4,
+          "type": "catalyst",
+          "introduction": "西风骑士团的学者间流传的秘典，记载着元素与物质的道理和力量。",
+          "material": "高塔孤王的断片",
+          "cover": "http://localhost:3000/images/48d8ac35-2f4d-4d90-a3b2-3fa61c212b2e.png",
+          "ATK": 42,
+          "ATKIncrease": 3.53,
+          "secondary": {
+            "type": "energyRecharge",
+            "num": 10,
+            "increase": 0.41
+          },
+          "effect": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "id": "7d4331b4-3a8e-4d89-a08f-bf4229ee82e5",
+          "weight": 4,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "雾切之回光",
+          "star": 5,
+          "type": "sword",
+          "introduction": "闪烁着凄烈紫光的太刀。名之为「回光」是因为一度破碎的过去。",
+          "material": "远海夷地的琼枝",
+          "cover": "http://localhost:3000/images/e00685e8-d5d2-4c32-bec0-784f3fff9f0e.jpg",
+          "ATK": 48,
+          "ATKIncrease": 4.47,
+          "secondary": {
+            "type": "CRITDMG",
+            "num": 9.6,
+            "increase": 0.39
+          },
+          "effect": {
+            "type": "elementDMGBonus",
+            "num": 40
+          },
+          "id": "a12d87f1-3ea8-4d95-badf-390d0c1471c4",
+          "weight": 6,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "西风长枪",
+          "star": 4,
+          "type": "polearm",
+          "introduction": "西风骑士团的制式长枪。枪杆直挺，枪尖轻风流溢。",
+          "material": "狮牙斗士的镣铐",
+          "cover": "http://localhost:3000/images/6b41e9b0-d735-4c44-83ae-a1eb07b7a199.png",
+          "ATK": 44,
+          "ATKIncrease": 3.95,
+          "secondary": {
+            "type": "energyRecharge",
+            "num": 6.7,
+            "increase": 0.27
+          },
+          "effect": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "id": "dad9a14a-3c18-445b-9d43-b8e93d3f5b4d",
+          "weight": 3,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "西风长枪",
+          "star": 4,
+          "type": "polearm",
+          "introduction": "西风骑士团的制式长枪。枪杆直挺，枪尖轻风流溢。",
+          "material": "狮牙斗士的镣铐",
+          "cover": "http://localhost:3000/images/6b41e9b0-d735-4c44-83ae-a1eb07b7a199.png",
+          "ATK": 44,
+          "ATKIncrease": 3.95,
+          "secondary": {
+            "type": "energyRecharge",
+            "num": 6.7,
+            "increase": 0.27
+          },
+          "effect": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "id": "bc1e7db0-0c0a-4e14-b17b-92b42fdab955",
+          "weight": 3,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "和璞鸢",
+          "star": 5,
+          "type": "polearm",
+          "introduction": "魔神翡玉化作的长枪，拥有刺杀远古海兽的沉重与锋利。",
+          "material": "孤云寒林的圣骸",
+          "cover": "http://localhost:3000/images/8c5023c3-285c-4144-a0bb-ac8152c7d654.png",
+          "ATK": 48,
+          "ATKIncrease": 4.47,
+          "secondary": {
+            "type": "CRITRate",
+            "num": 4.8,
+            "increase": 0.19
+          },
+          "effect": {
+            "type": "ATK",
+            "num": 50
+          },
+          "id": "18a97cc8-b6bc-40a6-9314-c853ad4e12c1",
+          "weight": 8,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "西风猎弓",
+          "star": 4,
+          "type": "bow",
+          "introduction": "西风骑士团的制式反曲弓，只有杰出的弓手能与它的杰出性能相衬。",
+          "material": "狮牙斗士的镣铐",
+          "cover": "http://localhost:3000/images/b96f0e58-16ba-428e-bc98-41d0cfddb34d.png",
+          "ATK": 41,
+          "ATKIncrease": 3.05,
+          "secondary": {
+            "type": "energyRecharge",
+            "num": 13.3,
+            "increase": 0.54
+          },
+          "effect": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "id": "9073dbd6-6473-4c19-96b3-cbc775c2fc97",
+          "weight": 5,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "螭骨剑",
+          "star": 4,
+          "type": "claymore",
+          "introduction": "来自古代大海的稀有兵器，舞剑猎猎宛如太古的涛声。",
+          "material": "漆黑陨铁的一角",
+          "cover": "http://localhost:3000/images/1d705f44-2af0-44c9-8895-ed8433180148.png",
+          "ATK": 42,
+          "ATKIncrease": 3.52,
+          "secondary": {
+            "type": "CRITRate",
+            "num": 6,
+            "increase": 0.42
+          },
+          "effect": {
+            "type": "elementDMGBonus",
+            "num": 20
+          },
+          "id": "f01e9eef-69a1-4f35-ac2e-7b9bbf19fa2d",
+          "weight": 2,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "西风剑",
+          "star": 4,
+          "type": "sword",
+          "introduction": "西风骑士团的制式长剑。轻快锐利之余，也能轻易导出元素力量。",
+          "material": "高塔孤王的断片",
+          "cover": "http://localhost:3000/images/bf81a9f4-9267-4601-8cb7-289ef7b20041.png",
+          "ATK": 41,
+          "ATKIncrease": 3.05,
+          "secondary": {
+            "type": "energyRecharge",
+            "num": 13.3,
+            "increase": 0.54
+          },
+          "effect": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "id": "b0b3358d-0832-4e76-8825-02551d81a17f",
+          "weight": 1,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "西风长枪",
+          "star": 4,
+          "type": "polearm",
+          "introduction": "西风骑士团的制式长枪。枪杆直挺，枪尖轻风流溢。",
+          "material": "狮牙斗士的镣铐",
+          "cover": "http://localhost:3000/images/6b41e9b0-d735-4c44-83ae-a1eb07b7a199.png",
+          "ATK": 44,
+          "ATKIncrease": 3.95,
+          "secondary": {
+            "type": "energyRecharge",
+            "num": 6.7,
+            "increase": 0.27
+          },
+          "effect": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "id": "3166f018-d5b4-40ef-a789-f67f197f1bf5",
+          "weight": 3,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "西风大剑",
+          "star": 4,
+          "type": "claymore",
+          "introduction": "西风骑士团的重型仪式剑。能轻易导出元素力量，具有卓越的破坏力。",
+          "material": "狮牙斗士的镣铐",
+          "cover": "http://localhost:3000/images/826eb902-d4b0-4020-8003-178aa113361f.png",
+          "ATK": 41,
+          "ATKIncrease": 3.05,
+          "secondary": {
+            "type": "energyRecharge",
+            "num": 13.3,
+            "increase": 0.54
+          },
+          "effect": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "id": "7972b102-eac2-4877-86e7-02de9db8f3f9",
+          "weight": 2,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "西风长枪",
+          "star": 4,
+          "type": "polearm",
+          "introduction": "西风骑士团的制式长枪。枪杆直挺，枪尖轻风流溢。",
+          "material": "狮牙斗士的镣铐",
+          "cover": "http://localhost:3000/images/6b41e9b0-d735-4c44-83ae-a1eb07b7a199.png",
+          "ATK": 44,
+          "ATKIncrease": 3.95,
+          "secondary": {
+            "type": "energyRecharge",
+            "num": 6.7,
+            "increase": 0.27
+          },
+          "effect": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "id": "aa7e9e7e-9a5c-45a8-bb19-42cbf27bf1f2",
+          "weight": 3,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "雾切之回光",
+          "star": 5,
+          "type": "sword",
+          "introduction": "闪烁着凄烈紫光的太刀。名之为「回光」是因为一度破碎的过去。",
+          "material": "远海夷地的琼枝",
+          "cover": "http://localhost:3000/images/e00685e8-d5d2-4c32-bec0-784f3fff9f0e.jpg",
+          "ATK": 48,
+          "ATKIncrease": 4.47,
+          "secondary": {
+            "type": "CRITDMG",
+            "num": 9.6,
+            "increase": 0.39
+          },
+          "effect": {
+            "type": "elementDMGBonus",
+            "num": 40
+          },
+          "id": "9cd52f9a-d3ce-4942-be8d-84b8442d8d2e",
+          "weight": 6,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "天空之翼",
+          "star": 5,
+          "type": "bow",
+          "introduction": "象征风龙身为风之神眷属的大弓。释弦时的鸣声是风之神的偏爱，蕴含苍空与长风的力量。",
+          "material": "凛风奔狼的断牙",
+          "cover": "http://localhost:3000/images/07361c3a-15e8-4c35-8344-940dbdba00e1.png",
+          "ATK": 48,
+          "ATKIncrease": 4.47,
+          "secondary": {
+            "type": "CRITRate",
+            "num": 4.8,
+            "increase": 0.19
+          },
+          "effect": {
+            "type": "CRITDMG",
+            "num": 40
+          },
+          "id": "935b6f49-4e97-4f28-ac3e-dc371ad9af80",
+          "weight": 10,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "四风原典",
+          "star": 5,
+          "type": "catalyst",
+          "introduction": "崇信风的无名先民所写的教典珍本。数千年流传的信仰之力得到了风的青睐，饱含祝福与力量。",
+          "material": "狮牙斗士的镣铐",
+          "cover": "http://localhost:3000/images/f098f1ad-8ed5-41ca-802f-fc6997ff22cb.png",
+          "ATK": 46,
+          "ATKIncrease": 4,
+          "secondary": {
+            "type": "CRITRate",
+            "num": 7.2,
+            "increase": 0.29
+          },
+          "effect": {
+            "type": "elementDMGBonus",
+            "num": 20
+          },
+          "id": "eb9aaf47-8a71-4d2b-a77e-d3804dd8adff",
+          "weight": 9,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "和璞鸢",
+          "star": 5,
+          "type": "polearm",
+          "introduction": "魔神翡玉化作的长枪，拥有刺杀远古海兽的沉重与锋利。",
+          "material": "孤云寒林的圣骸",
+          "cover": "http://localhost:3000/images/8c5023c3-285c-4144-a0bb-ac8152c7d654.png",
+          "ATK": 48,
+          "ATKIncrease": 4.47,
+          "secondary": {
+            "type": "CRITRate",
+            "num": 4.8,
+            "increase": 0.19
+          },
+          "effect": {
+            "type": "ATK",
+            "num": 50
+          },
+          "id": "515acd1a-4675-4b92-92eb-4d056a18ce53",
+          "weight": 8,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "天空之翼",
+          "star": 5,
+          "type": "bow",
+          "introduction": "象征风龙身为风之神眷属的大弓。释弦时的鸣声是风之神的偏爱，蕴含苍空与长风的力量。",
+          "material": "凛风奔狼的断牙",
+          "cover": "http://localhost:3000/images/07361c3a-15e8-4c35-8344-940dbdba00e1.png",
+          "ATK": 48,
+          "ATKIncrease": 4.47,
+          "secondary": {
+            "type": "CRITRate",
+            "num": 4.8,
+            "increase": 0.19
+          },
+          "effect": {
+            "type": "CRITDMG",
+            "num": 40
+          },
+          "id": "03ff5c1b-93f5-4c99-8727-37b9c024d160",
+          "weight": 10,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "雾切之回光",
+          "star": 5,
+          "type": "sword",
+          "introduction": "闪烁着凄烈紫光的太刀。名之为「回光」是因为一度破碎的过去。",
+          "material": "远海夷地的琼枝",
+          "cover": "http://localhost:3000/images/e00685e8-d5d2-4c32-bec0-784f3fff9f0e.jpg",
+          "ATK": 48,
+          "ATKIncrease": 4.47,
+          "secondary": {
+            "type": "CRITDMG",
+            "num": 9.6,
+            "increase": 0.39
+          },
+          "effect": {
+            "type": "elementDMGBonus",
+            "num": 40
+          },
+          "id": "f0c88187-0f6b-43f0-a3f9-16076438c6f5",
+          "weight": 6,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "天空之翼",
+          "star": 5,
+          "type": "bow",
+          "introduction": "象征风龙身为风之神眷属的大弓。释弦时的鸣声是风之神的偏爱，蕴含苍空与长风的力量。",
+          "material": "凛风奔狼的断牙",
+          "cover": "http://localhost:3000/images/07361c3a-15e8-4c35-8344-940dbdba00e1.png",
+          "ATK": 48,
+          "ATKIncrease": 4.47,
+          "secondary": {
+            "type": "CRITRate",
+            "num": 4.8,
+            "increase": 0.19
+          },
+          "effect": {
+            "type": "CRITDMG",
+            "num": 40
+          },
+          "id": "60bb0089-d75c-4984-8bd2-f06999bc75a7",
+          "weight": 10,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "天空之翼",
+          "star": 5,
+          "type": "bow",
+          "introduction": "象征风龙身为风之神眷属的大弓。释弦时的鸣声是风之神的偏爱，蕴含苍空与长风的力量。",
+          "material": "凛风奔狼的断牙",
+          "cover": "http://localhost:3000/images/07361c3a-15e8-4c35-8344-940dbdba00e1.png",
+          "ATK": 48,
+          "ATKIncrease": 4.47,
+          "secondary": {
+            "type": "CRITRate",
+            "num": 4.8,
+            "increase": 0.19
+          },
+          "effect": {
+            "type": "CRITDMG",
+            "num": 40
+          },
+          "id": "5ce3f2cb-79d3-426d-bcad-34b30500e810",
+          "weight": 10,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "天空之翼",
+          "star": 5,
+          "type": "bow",
+          "introduction": "象征风龙身为风之神眷属的大弓。释弦时的鸣声是风之神的偏爱，蕴含苍空与长风的力量。",
+          "material": "凛风奔狼的断牙",
+          "cover": "http://localhost:3000/images/07361c3a-15e8-4c35-8344-940dbdba00e1.png",
+          "ATK": 48,
+          "ATKIncrease": 4.47,
+          "secondary": {
+            "type": "CRITRate",
+            "num": 4.8,
+            "increase": 0.19
+          },
+          "effect": {
+            "type": "CRITDMG",
+            "num": 40
+          },
+          "id": "6d18249a-a7f1-495d-a422-4c96f37d70f1",
+          "weight": 10,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "天空之翼",
+          "star": 5,
+          "type": "bow",
+          "introduction": "象征风龙身为风之神眷属的大弓。释弦时的鸣声是风之神的偏爱，蕴含苍空与长风的力量。",
+          "material": "凛风奔狼的断牙",
+          "cover": "http://localhost:3000/images/07361c3a-15e8-4c35-8344-940dbdba00e1.png",
+          "ATK": 48,
+          "ATKIncrease": 4.47,
+          "secondary": {
+            "type": "CRITRate",
+            "num": 4.8,
+            "increase": 0.19
+          },
+          "effect": {
+            "type": "CRITDMG",
+            "num": 40
+          },
+          "id": "ebce76c3-f5b1-4cca-ac6a-b7c90b7e67f2",
+          "weight": 10,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "四风原典",
+          "star": 5,
+          "type": "catalyst",
+          "introduction": "崇信风的无名先民所写的教典珍本。数千年流传的信仰之力得到了风的青睐，饱含祝福与力量。",
+          "material": "狮牙斗士的镣铐",
+          "cover": "http://localhost:3000/images/f098f1ad-8ed5-41ca-802f-fc6997ff22cb.png",
+          "ATK": 46,
+          "ATKIncrease": 4,
+          "secondary": {
+            "type": "CRITRate",
+            "num": 7.2,
+            "increase": 0.29
+          },
+          "effect": {
+            "type": "elementDMGBonus",
+            "num": 20
+          },
+          "id": "6f850c1d-6346-4189-b114-9f3bdfd4177b",
+          "weight": 9,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "天空之脊",
+          "star": 5,
+          "type": "polearm",
+          "introduction": "象征风龙坚定决心的长枪。直挺的枪杆直指天穹，蕴含苍空与长风的力量。",
+          "material": "狮牙斗士的镣铐",
+          "cover": "http://localhost:3000/images/afaccd61-c2f5-430d-b2de-c303f5f4c412.png",
+          "ATK": 48,
+          "ATKIncrease": 4.47,
+          "secondary": {
+            "type": "energyRecharge",
+            "num": 8,
+            "increase": 0.32
+          },
+          "effect": {
+            "type": "CRITRate",
+            "num": 16
+          },
+          "id": "c40f7859-a37c-4327-ba10-7d04f45ed751",
+          "weight": 8,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "和璞鸢",
+          "star": 5,
+          "type": "polearm",
+          "introduction": "魔神翡玉化作的长枪，拥有刺杀远古海兽的沉重与锋利。",
+          "material": "孤云寒林的圣骸",
+          "cover": "http://localhost:3000/images/8c5023c3-285c-4144-a0bb-ac8152c7d654.png",
+          "ATK": 48,
+          "ATKIncrease": 4.47,
+          "secondary": {
+            "type": "CRITRate",
+            "num": 4.8,
+            "increase": 0.19
+          },
+          "effect": {
+            "type": "ATK",
+            "num": 50
+          },
+          "id": "23886352-5f37-458e-9505-6e9c240fb27b",
+          "weight": 8,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "雾切之回光",
+          "star": 5,
+          "type": "sword",
+          "introduction": "闪烁着凄烈紫光的太刀。名之为「回光」是因为一度破碎的过去。",
+          "material": "远海夷地的琼枝",
+          "cover": "http://localhost:3000/images/e00685e8-d5d2-4c32-bec0-784f3fff9f0e.jpg",
+          "ATK": 48,
+          "ATKIncrease": 4.47,
+          "secondary": {
+            "type": "CRITDMG",
+            "num": 9.6,
+            "increase": 0.39
+          },
+          "effect": {
+            "type": "elementDMGBonus",
+            "num": 40
+          },
+          "id": "4bffc0a4-ab62-433e-aa3e-7a547d722267",
+          "weight": 6,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "磐岩结绿",
+          "star": 5,
+          "type": "sword",
+          "introduction": "由纯净的翠玉精琢细雕而成的仪礼宝剑，挥舞时剑风中似有叹息之声。",
+          "material": "雾海云间的金丹",
+          "cover": "http://localhost:3000/images/b052e3af-7d1d-4d60-a6f4-888f4805a0ef.png",
+          "ATK": 44,
+          "ATKIncrease": 3.47,
+          "secondary": {
+            "type": "CRITRate",
+            "num": 9.6,
+            "increase": 0.39
+          },
+          "effect": {
+            "type": "ATK",
+            "num": 50
+          },
+          "id": "0e1135ff-98e6-4ae1-8fbd-43b88f736e65",
+          "weight": 6,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "四风原典",
+          "star": 5,
+          "type": "catalyst",
+          "introduction": "崇信风的无名先民所写的教典珍本。数千年流传的信仰之力得到了风的青睐，饱含祝福与力量。",
+          "material": "狮牙斗士的镣铐",
+          "cover": "http://localhost:3000/images/f098f1ad-8ed5-41ca-802f-fc6997ff22cb.png",
+          "ATK": 46,
+          "ATKIncrease": 4,
+          "secondary": {
+            "type": "CRITRate",
+            "num": 7.2,
+            "increase": 0.29
+          },
+          "effect": {
+            "type": "elementDMGBonus",
+            "num": 20
+          },
+          "id": "55207369-d917-4ea0-960b-f38097f34f0c",
+          "weight": 9,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "西风猎弓",
+          "star": 4,
+          "type": "bow",
+          "introduction": "西风骑士团的制式反曲弓，只有杰出的弓手能与它的杰出性能相衬。",
+          "material": "狮牙斗士的镣铐",
+          "cover": "http://localhost:3000/images/b96f0e58-16ba-428e-bc98-41d0cfddb34d.png",
+          "ATK": 41,
+          "ATKIncrease": 3.05,
+          "secondary": {
+            "type": "energyRecharge",
+            "num": 13.3,
+            "increase": 0.54
+          },
+          "effect": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "id": "35f6598a-56ef-4d5e-841d-de44cd6f2bcb",
+          "weight": 5,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "西风猎弓",
+          "star": 4,
+          "type": "bow",
+          "introduction": "西风骑士团的制式反曲弓，只有杰出的弓手能与它的杰出性能相衬。",
+          "material": "狮牙斗士的镣铐",
+          "cover": "http://localhost:3000/images/b96f0e58-16ba-428e-bc98-41d0cfddb34d.png",
+          "ATK": 41,
+          "ATKIncrease": 3.05,
+          "secondary": {
+            "type": "energyRecharge",
+            "num": 13.3,
+            "increase": 0.54
+          },
+          "effect": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "id": "da354596-f0a0-4fdc-915e-dbe136486928",
+          "weight": 5,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "西风长枪",
+          "star": 4,
+          "type": "polearm",
+          "introduction": "西风骑士团的制式长枪。枪杆直挺，枪尖轻风流溢。",
+          "material": "狮牙斗士的镣铐",
+          "cover": "http://localhost:3000/images/6b41e9b0-d735-4c44-83ae-a1eb07b7a199.png",
+          "ATK": 44,
+          "ATKIncrease": 3.95,
+          "secondary": {
+            "type": "energyRecharge",
+            "num": 6.7,
+            "increase": 0.27
+          },
+          "effect": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "id": "6b148892-06db-4915-aa3c-12a04f18f82a",
+          "weight": 3,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "西风猎弓",
+          "star": 4,
+          "type": "bow",
+          "introduction": "西风骑士团的制式反曲弓，只有杰出的弓手能与它的杰出性能相衬。",
+          "material": "狮牙斗士的镣铐",
+          "cover": "http://localhost:3000/images/b96f0e58-16ba-428e-bc98-41d0cfddb34d.png",
+          "ATK": 41,
+          "ATKIncrease": 3.05,
+          "secondary": {
+            "type": "energyRecharge",
+            "num": 13.3,
+            "increase": 0.54
+          },
+          "effect": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "id": "47df23f1-0d8b-4b41-b925-e8511ef94fac",
+          "weight": 5,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "宗室秘法录",
+          "star": 4,
+          "type": "catalyst",
+          "introduction": "属于曾支配蒙德的贵族麾下的宫廷魔导师，其中记载的史话与法术同样翔实。",
+          "material": "高塔孤王的断片",
+          "cover": "http://localhost:3000/images/a18e26cd-7fa4-4e33-bdea-a797087130b4.png",
+          "ATK": 44,
+          "ATKIncrease": 3.95,
+          "secondary": {
+            "type": "ATK",
+            "num": 6,
+            "increase": 0.24
+          },
+          "effect": {
+            "type": "CRITRate",
+            "num": 10
+          },
+          "id": "3bc32b58-7762-40f1-8cfe-40180be1babc",
+          "weight": 4,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "宗室大剑",
+          "star": "4",
+          "type": "claymore",
+          "introduction": "曾支配蒙德的旧日贵族的大剑。用料极佳，历久犹弥新。是贵族的战斗兵器。",
+          "material": "狮牙斗士的镣铐",
+          "cover": "http://localhost:3000/images/1806a34f-1c3e-43aa-a5db-4b6e49eddf95.png",
+          "ATK": 44,
+          "ATKIncrease": 3.95,
+          "secondary": {
+            "type": "ATK",
+            "num": 6,
+            "increase": 0.24
+          },
+          "effect": {
+            "type": "CRITRate",
+            "num": 10
+          },
+          "id": "15b733b7-a9ed-467a-a7a9-a71cc629511f",
+          "weight": 2,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "磐岩结绿",
+          "star": 5,
+          "type": "sword",
+          "introduction": "由纯净的翠玉精琢细雕而成的仪礼宝剑，挥舞时剑风中似有叹息之声。",
+          "material": "雾海云间的金丹",
+          "cover": "http://localhost:3000/images/b052e3af-7d1d-4d60-a6f4-888f4805a0ef.png",
+          "ATK": 44,
+          "ATKIncrease": 3.47,
+          "secondary": {
+            "type": "CRITRate",
+            "num": 9.6,
+            "increase": 0.39
+          },
+          "effect": {
+            "type": "ATK",
+            "num": 50
+          },
+          "id": "54146714-03d6-431b-8662-69c92102d1a2",
+          "weight": 6,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "四风原典",
+          "star": 5,
+          "type": "catalyst",
+          "introduction": "崇信风的无名先民所写的教典珍本。数千年流传的信仰之力得到了风的青睐，饱含祝福与力量。",
+          "material": "狮牙斗士的镣铐",
+          "cover": "http://localhost:3000/images/f098f1ad-8ed5-41ca-802f-fc6997ff22cb.png",
+          "ATK": 46,
+          "ATKIncrease": 4,
+          "secondary": {
+            "type": "CRITRate",
+            "num": 7.2,
+            "increase": 0.29
+          },
+          "effect": {
+            "type": "elementDMGBonus",
+            "num": 20
+          },
+          "id": "2d9fbe4e-47eb-40b4-a45e-93260b922fd4",
+          "weight": 9,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "天空之脊",
+          "star": 5,
+          "type": "polearm",
+          "introduction": "象征风龙坚定决心的长枪。直挺的枪杆直指天穹，蕴含苍空与长风的力量。",
+          "material": "狮牙斗士的镣铐",
+          "cover": "http://localhost:3000/images/afaccd61-c2f5-430d-b2de-c303f5f4c412.png",
+          "ATK": 48,
+          "ATKIncrease": 4.47,
+          "secondary": {
+            "type": "energyRecharge",
+            "num": 8,
+            "increase": 0.32
+          },
+          "effect": {
+            "type": "CRITRate",
+            "num": 16
+          },
+          "id": "1a56eb93-fe4a-4aa9-aa7c-b6710736cc8c",
+          "weight": 8,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "和璞鸢",
+          "star": 5,
+          "type": "polearm",
+          "introduction": "魔神翡玉化作的长枪，拥有刺杀远古海兽的沉重与锋利。",
+          "material": "孤云寒林的圣骸",
+          "cover": "http://localhost:3000/images/8c5023c3-285c-4144-a0bb-ac8152c7d654.png",
+          "ATK": 48,
+          "ATKIncrease": 4.47,
+          "secondary": {
+            "type": "CRITRate",
+            "num": 4.8,
+            "increase": 0.19
+          },
+          "effect": {
+            "type": "ATK",
+            "num": 50
+          },
+          "id": "e86ebf17-1d37-46bc-8cb7-b8dd0d62a4fa",
+          "weight": 8,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "和璞鸢",
+          "star": 5,
+          "type": "polearm",
+          "introduction": "魔神翡玉化作的长枪，拥有刺杀远古海兽的沉重与锋利。",
+          "material": "孤云寒林的圣骸",
+          "cover": "http://localhost:3000/images/8c5023c3-285c-4144-a0bb-ac8152c7d654.png",
+          "ATK": 48,
+          "ATKIncrease": 4.47,
+          "secondary": {
+            "type": "CRITRate",
+            "num": 4.8,
+            "increase": 0.19
+          },
+          "effect": {
+            "type": "ATK",
+            "num": 50
+          },
+          "id": "c27460dd-3dd8-4872-8fe8-e088952a703e",
+          "weight": 8,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "四风原典",
+          "star": 5,
+          "type": "catalyst",
+          "introduction": "崇信风的无名先民所写的教典珍本。数千年流传的信仰之力得到了风的青睐，饱含祝福与力量。",
+          "material": "狮牙斗士的镣铐",
+          "cover": "http://localhost:3000/images/f098f1ad-8ed5-41ca-802f-fc6997ff22cb.png",
+          "ATK": 46,
+          "ATKIncrease": 4,
+          "secondary": {
+            "type": "CRITRate",
+            "num": 7.2,
+            "increase": 0.29
+          },
+          "effect": {
+            "type": "elementDMGBonus",
+            "num": 20
+          },
+          "id": "3139901d-057c-4f00-a211-99c74fbe0869",
+          "weight": 9,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "和璞鸢",
+          "star": 5,
+          "type": "polearm",
+          "introduction": "魔神翡玉化作的长枪，拥有刺杀远古海兽的沉重与锋利。",
+          "material": "孤云寒林的圣骸",
+          "cover": "http://localhost:3000/images/8c5023c3-285c-4144-a0bb-ac8152c7d654.png",
+          "ATK": 48,
+          "ATKIncrease": 4.47,
+          "secondary": {
+            "type": "CRITRate",
+            "num": 4.8,
+            "increase": 0.19
+          },
+          "effect": {
+            "type": "ATK",
+            "num": 50
+          },
+          "id": "67868c95-7b43-4536-814c-3f3a80d5b87a",
+          "weight": 8,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "和璞鸢",
+          "star": 5,
+          "type": "polearm",
+          "introduction": "魔神翡玉化作的长枪，拥有刺杀远古海兽的沉重与锋利。",
+          "material": "孤云寒林的圣骸",
+          "cover": "http://localhost:3000/images/8c5023c3-285c-4144-a0bb-ac8152c7d654.png",
+          "ATK": 48,
+          "ATKIncrease": 4.47,
+          "secondary": {
+            "type": "CRITRate",
+            "num": 4.8,
+            "increase": 0.19
+          },
+          "effect": {
+            "type": "ATK",
+            "num": 50
+          },
+          "id": "a6df829e-75cd-44a2-acec-c3f3fb1a3962",
+          "weight": 8,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        },
+        {
+          "name": "宗室秘法录",
+          "star": 4,
+          "type": "catalyst",
+          "introduction": "属于曾支配蒙德的贵族麾下的宫廷魔导师，其中记载的史话与法术同样翔实。",
+          "material": "高塔孤王的断片",
+          "cover": "http://localhost:3000/images/a18e26cd-7fa4-4e33-bdea-a797087130b4.png",
+          "ATK": 44,
+          "ATKIncrease": 3.95,
+          "secondary": {
+            "type": "ATK",
+            "num": 6,
+            "increase": 0.24
+          },
+          "effect": {
+            "type": "CRITRate",
+            "num": 10
+          },
+          "id": "a8833c65-cd11-4f72-a804-4a48b6e4c9ca",
+          "weight": 4,
+          "level": 1,
+          "rank": 1,
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          }
+        }
+      ],
+      "artifacts": [
+        {
+          "pieceSet": {
+            "type": "electroDMGBonus",
+            "num": 15
+          },
+          "get": "仲夏庭园",
+          "part": "goblet",
+          "name": "降雷的凶兆",
+          "cover": "http://localhost:3000/images/c6c5000e-fd27-44fb-ade8-cf9f6532f37e.png",
+          "introduction": "注入无辜者鲜血的祝圣的仪式之杯，祈愿雷鸣回荡其中。最终溢满了如雷的盛怒。",
+          "effect": {
+            "type": "anemoDMGBonus",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            },
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            }
+          ],
+          "name1": "如雷的盛怒",
+          "id": "370469ee-97d5-4fcf-8925-bdc355682304",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "get": "仲夏庭园",
+          "part": "goblet",
+          "name": "绯花之壶",
+          "cover": "http://localhost:3000/images/dccffe13-76c7-45b5-8c1a-2576d2731d5f.png",
+          "introduction": "精致的酒壶，曾经是名震天下的武人载酒的容器。",
+          "effect": {
+            "type": "geoDMGBonus",
+            "num": 8.7,
+            "increase": 2.5
+          },
+          "effects": [
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            },
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            },
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            }
+          ],
+          "name1": "绝缘之旗印",
+          "id": "48b473f8-61d2-4833-81f4-85372cbd146c",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "electroDMGBonus",
+            "num": 15
+          },
+          "get": "仲夏庭园",
+          "part": "flower",
+          "name": "雷鸟的怜悯",
+          "cover": "http://localhost:3000/images/37934df0-00af-45c4-9c96-8a03660d4104.png",
+          "introduction": "在劫难之日侥幸免受纷乱的践踏与紫之火的忿恨之摧，于惨象中幸存的雷色之花。",
+          "effect": {
+            "type": "HP",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            },
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            },
+            {
+              "type": "energyRecharge",
+              "num": 5.5,
+              "increase": 5.5
+            },
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            }
+          ],
+          "name1": "如雷的盛怒",
+          "id": "c68e66a5-c5a1-40be-b9fc-0dc3e4f5b835",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "get": "仲夏庭园",
+          "part": "flower",
+          "name": "明威之镡",
+          "cover": "http://localhost:3000/images/483ca298-f1be-4ef8-a1df-300fe587e28c.png",
+          "introduction": "传说中背叛了将军的鬼人，曾经获赐的刀上的华美宝镡。",
+          "effect": {
+            "type": "HP",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "energyRecharge",
+              "num": 5.5,
+              "increase": 5.5
+            },
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            },
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            }
+          ],
+          "name1": "绝缘之旗印",
+          "id": "74a3985e-a213-46e6-8bea-5f99e498eb78",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "electroDMGBonus",
+            "num": 15
+          },
+          "get": "仲夏庭园",
+          "part": "goblet",
+          "name": "降雷的凶兆",
+          "cover": "http://localhost:3000/images/c6c5000e-fd27-44fb-ade8-cf9f6532f37e.png",
+          "introduction": "注入无辜者鲜血的祝圣的仪式之杯，祈愿雷鸣回荡其中。最终溢满了如雷的盛怒。",
+          "effect": {
+            "type": "geoDMGBonus",
+            "num": 8.7,
+            "increase": 2.5
+          },
+          "effects": [
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            },
+            {
+              "type": "energyRecharge",
+              "num": 5.5,
+              "increase": 5.5
+            },
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            }
+          ],
+          "name1": "如雷的盛怒",
+          "id": "459aece3-199d-4784-8907-a007f90ea12f",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "get": "仲夏庭园",
+          "part": "plume",
+          "name": "切落之羽",
+          "cover": "http://localhost:3000/images/50e35611-a824-43fa-a965-ba5d3694e08b.png",
+          "introduction": "原本属于某名天狗的黑羽，是过去的剑豪珍惜的纪念品。",
+          "effect": {
+            "type": "ATK",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            },
+            {
+              "type": "energyRecharge",
+              "num": 5.5,
+              "increase": 5.5
+            },
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            }
+          ],
+          "name1": "绝缘之旗印",
+          "id": "cc630790-10e3-49a7-a645-d36d4206a336",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "get": "仲夏庭园",
+          "part": "goblet",
+          "name": "绯花之壶",
+          "cover": "http://localhost:3000/images/dccffe13-76c7-45b5-8c1a-2576d2731d5f.png",
+          "introduction": "精致的酒壶，曾经是名震天下的武人载酒的容器。",
+          "effect": {
+            "type": "pyroDMGBonus",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "energyRecharge",
+              "num": 5.5,
+              "increase": 5.5
+            },
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            },
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            }
+          ],
+          "name1": "绝缘之旗印",
+          "id": "1b02159a-4ead-4685-b0ef-1a3d9817e72d",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "electroDMGBonus",
+            "num": 15
+          },
+          "get": "仲夏庭园",
+          "part": "plume",
+          "name": "雷灾的孑遗",
+          "cover": "http://localhost:3000/images/b1eb4486-3241-4777-aaca-5f98cde6565b.png",
+          "introduction": "信奉雷鸟的部族预告天空的雷之主降临的沙漏。因一族的末路陷入了永远的静止。",
+          "effect": {
+            "type": "ATK",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            },
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            },
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            }
+          ],
+          "name1": "如雷的盛怒",
+          "id": "3b57cde6-fedc-4d96-acd4-1f5d8854ff1a",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "electroDMGBonus",
+            "num": 15
+          },
+          "get": "仲夏庭园",
+          "part": "flower",
+          "name": "雷鸟的怜悯",
+          "cover": "http://localhost:3000/images/37934df0-00af-45c4-9c96-8a03660d4104.png",
+          "introduction": "在劫难之日侥幸免受纷乱的践踏与紫之火的忿恨之摧，于惨象中幸存的雷色之花。",
+          "effect": {
+            "type": "HP",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            },
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            },
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "energyRecharge",
+              "num": 5.5,
+              "increase": 5.5
+            }
+          ],
+          "name1": "如雷的盛怒",
+          "id": "0cf909bd-0fd7-4035-8a62-748899e8b77f",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "get": "仲夏庭园",
+          "part": "circlet",
+          "name": "华饰之兜",
+          "cover": "http://localhost:3000/images/6367ae2f-5c0d-4854-929a-5554f3257a35.png",
+          "introduction": "坚实牢固的兜盔，是身份尊贵的武人的护身之物。",
+          "effect": {
+            "type": "ATK",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            },
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "energyRecharge",
+              "num": 5.5,
+              "increase": 5.5
+            },
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            }
+          ],
+          "name1": "绝缘之旗印",
+          "id": "a6a91e25-ae0d-4b7f-9ce2-88f0616471dc",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "electroDMGBonus",
+            "num": 15
+          },
+          "get": "仲夏庭园",
+          "part": "goblet",
+          "name": "降雷的凶兆",
+          "cover": "http://localhost:3000/images/c6c5000e-fd27-44fb-ade8-cf9f6532f37e.png",
+          "introduction": "注入无辜者鲜血的祝圣的仪式之杯，祈愿雷鸣回荡其中。最终溢满了如雷的盛怒。",
+          "effect": {
+            "type": "electroDMGBonus",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            },
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            },
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            }
+          ],
+          "name1": "如雷的盛怒",
+          "id": "dcbc7b6d-1810-4cfc-bce7-d09f4e32940a",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "get": "仲夏庭园",
+          "part": "circlet",
+          "name": "华饰之兜",
+          "cover": "http://localhost:3000/images/6367ae2f-5c0d-4854-929a-5554f3257a35.png",
+          "introduction": "坚实牢固的兜盔，是身份尊贵的武人的护身之物。",
+          "effect": {
+            "type": "ATK",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            },
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            }
+          ],
+          "name1": "绝缘之旗印",
+          "id": "8d96d582-22fc-479a-99da-f283223a9649",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "electroDMGBonus",
+            "num": 15
+          },
+          "get": "仲夏庭园",
+          "part": "circlet",
+          "name": "唤雷者的头冠",
+          "cover": "http://localhost:3000/images/e60ddc7a-87ee-482f-9db4-bbb9527733f9.png",
+          "introduction": "古代崇拜雷之魔鸟的萨满曾戴过的头冠，虔诚的信仰却无法打动喜怒无常的魔兽。",
+          "effect": {
+            "type": "shieldStrength",
+            "num": 5.4,
+            "increase": 1.5
+          },
+          "effects": [
+            {
+              "type": "energyRecharge",
+              "num": 5.5,
+              "increase": 5.5
+            },
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            },
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            }
+          ],
+          "name1": "如雷的盛怒",
+          "id": "d8294e5b-c084-4326-988a-75c74d7a0b2a",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "electroDMGBonus",
+            "num": 15
+          },
+          "get": "仲夏庭园",
+          "part": "goblet",
+          "name": "降雷的凶兆",
+          "cover": "http://localhost:3000/images/c6c5000e-fd27-44fb-ade8-cf9f6532f37e.png",
+          "introduction": "注入无辜者鲜血的祝圣的仪式之杯，祈愿雷鸣回荡其中。最终溢满了如雷的盛怒。",
+          "effect": {
+            "type": "hydroDMGBonus",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            },
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            },
+            {
+              "type": "energyRecharge",
+              "num": 5.5,
+              "increase": 5.5
+            },
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            }
+          ],
+          "name1": "如雷的盛怒",
+          "id": "1809f64f-5717-4ba1-bf63-1fc9607f1d58",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "get": "仲夏庭园",
+          "part": "plume",
+          "name": "切落之羽",
+          "cover": "http://localhost:3000/images/50e35611-a824-43fa-a965-ba5d3694e08b.png",
+          "introduction": "原本属于某名天狗的黑羽，是过去的剑豪珍惜的纪念品。",
+          "effect": {
+            "type": "ATK",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            },
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            }
+          ],
+          "name1": "绝缘之旗印",
+          "id": "a2889522-9f53-4cd5-a26f-e5e9f330055f",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "electroDMGBonus",
+            "num": 15
+          },
+          "get": "仲夏庭园",
+          "part": "goblet",
+          "name": "降雷的凶兆",
+          "cover": "http://localhost:3000/images/c6c5000e-fd27-44fb-ade8-cf9f6532f37e.png",
+          "introduction": "注入无辜者鲜血的祝圣的仪式之杯，祈愿雷鸣回荡其中。最终溢满了如雷的盛怒。",
+          "effect": {
+            "type": "anemoDMGBonus",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            },
+            {
+              "type": "energyRecharge",
+              "num": 5.5,
+              "increase": 5.5
+            },
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            }
+          ],
+          "name1": "如雷的盛怒",
+          "id": "c6b5d285-edde-4f51-8d38-f9490876cf74",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "get": "仲夏庭园",
+          "part": "sands",
+          "name": "雷云之笼",
+          "cover": "http://localhost:3000/images/733a6266-1e4a-44b4-aeef-d04e9d3f4ada.png",
+          "introduction": "黑地堇漆的考究印笼，其上装饰着发亮的螺钿与精致的金具。",
+          "effect": {
+            "type": "HP",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            },
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            },
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            }
+          ],
+          "name1": "绝缘之旗印",
+          "id": "9d8aa444-2d53-438b-a44b-98ef1250cca1",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "electroDMGBonus",
+            "num": 15
+          },
+          "get": "仲夏庭园",
+          "part": "sands",
+          "name": "雷霆的时计",
+          "cover": "http://localhost:3000/images/7f341d46-f415-4baf-b883-a2d600971665.png",
+          "introduction": "信奉雷鸟的部族预告天空的雷之主降临的沙漏。因一族的末路陷入了永远的静止。",
+          "effect": {
+            "type": "DEF",
+            "num": 8.7,
+            "increase": 2.5
+          },
+          "effects": [
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            },
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            },
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            }
+          ],
+          "name1": "如雷的盛怒",
+          "id": "8fc10117-0ad4-4cfe-9867-243c0ffb1151",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "get": "仲夏庭园",
+          "part": "goblet",
+          "name": "绯花之壶",
+          "cover": "http://localhost:3000/images/dccffe13-76c7-45b5-8c1a-2576d2731d5f.png",
+          "introduction": "精致的酒壶，曾经是名震天下的武人载酒的容器。",
+          "effect": {
+            "type": "anemoDMGBonus",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            },
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            },
+            {
+              "type": "energyRecharge",
+              "num": 5.5,
+              "increase": 5.5
+            },
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            }
+          ],
+          "name1": "绝缘之旗印",
+          "id": "9295ee3f-d640-498f-b339-0410e085cf0f",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "electroDMGBonus",
+            "num": 15
+          },
+          "get": "仲夏庭园",
+          "part": "plume",
+          "name": "雷灾的孑遗",
+          "cover": "http://localhost:3000/images/b1eb4486-3241-4777-aaca-5f98cde6565b.png",
+          "introduction": "信奉雷鸟的部族预告天空的雷之主降临的沙漏。因一族的末路陷入了永远的静止。",
+          "effect": {
+            "type": "ATK",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "energyRecharge",
+              "num": 5.5,
+              "increase": 5.5
+            },
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            },
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            }
+          ],
+          "name1": "如雷的盛怒",
+          "id": "0109f07f-f64a-4496-834e-16b0647d9c71",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "get": "仲夏庭园",
+          "part": "flower",
+          "name": "明威之镡",
+          "cover": "http://localhost:3000/images/483ca298-f1be-4ef8-a1df-300fe587e28c.png",
+          "introduction": "传说中背叛了将军的鬼人，曾经获赐的刀上的华美宝镡。",
+          "effect": {
+            "type": "HP",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "energyRecharge",
+              "num": 5.5,
+              "increase": 5.5
+            },
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            },
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            }
+          ],
+          "name1": "绝缘之旗印",
+          "id": "902d64a7-c36c-4197-b5c5-04ae5cb3a1ed",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "electroDMGBonus",
+            "num": 15
+          },
+          "get": "仲夏庭园",
+          "part": "plume",
+          "name": "雷灾的孑遗",
+          "cover": "http://localhost:3000/images/b1eb4486-3241-4777-aaca-5f98cde6565b.png",
+          "introduction": "信奉雷鸟的部族预告天空的雷之主降临的沙漏。因一族的末路陷入了永远的静止。",
+          "effect": {
+            "type": "ATK",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            },
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            },
+            {
+              "type": "energyRecharge",
+              "num": 5.5,
+              "increase": 5.5
+            },
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            }
+          ],
+          "name1": "如雷的盛怒",
+          "id": "6adfddbf-2f8b-4a83-bf3b-60441b4dd6cc",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "get": "仲夏庭园",
+          "part": "goblet",
+          "name": "绯花之壶",
+          "cover": "http://localhost:3000/images/dccffe13-76c7-45b5-8c1a-2576d2731d5f.png",
+          "introduction": "精致的酒壶，曾经是名震天下的武人载酒的容器。",
+          "effect": {
+            "type": "anemoDMGBonus",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            },
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            }
+          ],
+          "name1": "绝缘之旗印",
+          "id": "046e1745-dd04-4468-8331-13f960e47aed",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "electroDMGBonus",
+            "num": 15
+          },
+          "get": "仲夏庭园",
+          "part": "sands",
+          "name": "雷霆的时计",
+          "cover": "http://localhost:3000/images/7f341d46-f415-4baf-b883-a2d600971665.png",
+          "introduction": "信奉雷鸟的部族预告天空的雷之主降临的沙漏。因一族的末路陷入了永远的静止。",
+          "effect": {
+            "type": "ATK",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            },
+            {
+              "type": "energyRecharge",
+              "num": 5.5,
+              "increase": 5.5
+            },
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            }
+          ],
+          "name1": "如雷的盛怒",
+          "id": "0eaba492-8a67-4288-912e-dcbea498b627",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "get": "仲夏庭园",
+          "part": "goblet",
+          "name": "绯花之壶",
+          "cover": "http://localhost:3000/images/dccffe13-76c7-45b5-8c1a-2576d2731d5f.png",
+          "introduction": "精致的酒壶，曾经是名震天下的武人载酒的容器。",
+          "effect": {
+            "type": "cryoDMGBonus",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            },
+            {
+              "type": "energyRecharge",
+              "num": 5.5,
+              "increase": 5.5
+            },
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            }
+          ],
+          "name1": "绝缘之旗印",
+          "id": "12c8f607-e0f0-4db1-aa15-55198ba430f0",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "electroDMGBonus",
+            "num": 15
+          },
+          "get": "仲夏庭园",
+          "part": "plume",
+          "name": "雷灾的孑遗",
+          "cover": "http://localhost:3000/images/b1eb4486-3241-4777-aaca-5f98cde6565b.png",
+          "introduction": "信奉雷鸟的部族预告天空的雷之主降临的沙漏。因一族的末路陷入了永远的静止。",
+          "effect": {
+            "type": "ATK",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            },
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            },
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            },
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            }
+          ],
+          "name1": "如雷的盛怒",
+          "id": "e6895da9-9b8b-46ff-8811-1aa0c1742d43",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "get": "仲夏庭园",
+          "part": "sands",
+          "name": "雷云之笼",
+          "cover": "http://localhost:3000/images/733a6266-1e4a-44b4-aeef-d04e9d3f4ada.png",
+          "introduction": "黑地堇漆的考究印笼，其上装饰着发亮的螺钿与精致的金具。",
+          "effect": {
+            "type": "ATK",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "energyRecharge",
+              "num": 5.5,
+              "increase": 5.5
+            },
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            },
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            }
+          ],
+          "name1": "绝缘之旗印",
+          "id": "c6f0c233-23d9-4ec4-bef9-69b95b7af693",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "electroDMGBonus",
+            "num": 15
+          },
+          "get": "仲夏庭园",
+          "part": "goblet",
+          "name": "降雷的凶兆",
+          "cover": "http://localhost:3000/images/c6c5000e-fd27-44fb-ade8-cf9f6532f37e.png",
+          "introduction": "注入无辜者鲜血的祝圣的仪式之杯，祈愿雷鸣回荡其中。最终溢满了如雷的盛怒。",
+          "effect": {
+            "type": "physicalDMGBonus",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            },
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            }
+          ],
+          "name1": "如雷的盛怒",
+          "id": "7d7aa596-8fc1-4fba-b088-5937add5f2e3",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "electroDMGBonus",
+            "num": 15
+          },
+          "get": "仲夏庭园",
+          "part": "flower",
+          "name": "雷鸟的怜悯",
+          "cover": "http://localhost:3000/images/37934df0-00af-45c4-9c96-8a03660d4104.png",
+          "introduction": "在劫难之日侥幸免受纷乱的践踏与紫之火的忿恨之摧，于惨象中幸存的雷色之花。",
+          "effect": {
+            "type": "HP",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            },
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            },
+            {
+              "type": "energyRecharge",
+              "num": 5.5,
+              "increase": 5.5
+            }
+          ],
+          "name1": "如雷的盛怒",
+          "id": "27e017cc-eba2-475f-92d9-3125821973e4",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "electroDMGBonus",
+            "num": 15
+          },
+          "get": "仲夏庭园",
+          "part": "goblet",
+          "name": "降雷的凶兆",
+          "cover": "http://localhost:3000/images/c6c5000e-fd27-44fb-ade8-cf9f6532f37e.png",
+          "introduction": "注入无辜者鲜血的祝圣的仪式之杯，祈愿雷鸣回荡其中。最终溢满了如雷的盛怒。",
+          "effect": {
+            "type": "physicalDMGBonus",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            },
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            }
+          ],
+          "name1": "如雷的盛怒",
+          "id": "0ccfa7cf-39ba-48e5-ba25-27f800d56d72",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "electroDMGBonus",
+            "num": 15
+          },
+          "get": "仲夏庭园",
+          "part": "flower",
+          "name": "雷鸟的怜悯",
+          "cover": "http://localhost:3000/images/37934df0-00af-45c4-9c96-8a03660d4104.png",
+          "introduction": "在劫难之日侥幸免受纷乱的践踏与紫之火的忿恨之摧，于惨象中幸存的雷色之花。",
+          "effect": {
+            "type": "HP",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            },
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            }
+          ],
+          "name1": "如雷的盛怒",
+          "id": "72a97c3f-ddd6-47ce-8817-9f6920036a0b",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "electroDMGBonus",
+            "num": 15
+          },
+          "get": "仲夏庭园",
+          "part": "flower",
+          "name": "雷鸟的怜悯",
+          "cover": "http://localhost:3000/images/37934df0-00af-45c4-9c96-8a03660d4104.png",
+          "introduction": "在劫难之日侥幸免受纷乱的践踏与紫之火的忿恨之摧，于惨象中幸存的雷色之花。",
+          "effect": {
+            "type": "HP",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            },
+            {
+              "type": "energyRecharge",
+              "num": 5.5,
+              "increase": 5.5
+            }
+          ],
+          "name1": "如雷的盛怒",
+          "id": "2c7acdda-782d-4366-9309-c5610fab4e44",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "electroDMGBonus",
+            "num": 15
+          },
+          "get": "仲夏庭园",
+          "part": "circlet",
+          "name": "唤雷者的头冠",
+          "cover": "http://localhost:3000/images/e60ddc7a-87ee-482f-9db4-bbb9527733f9.png",
+          "introduction": "古代崇拜雷之魔鸟的萨满曾戴过的头冠，虔诚的信仰却无法打动喜怒无常的魔兽。",
+          "effect": {
+            "type": "healingBonus",
+            "num": 5.4,
+            "increase": 1.5
+          },
+          "effects": [
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            },
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            }
+          ],
+          "name1": "如雷的盛怒",
+          "id": "87cbc942-3bb6-490e-93c8-fda2f64e660f",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "electroDMGBonus",
+            "num": 15
+          },
+          "get": "仲夏庭园",
+          "part": "goblet",
+          "name": "降雷的凶兆",
+          "cover": "http://localhost:3000/images/c6c5000e-fd27-44fb-ade8-cf9f6532f37e.png",
+          "introduction": "注入无辜者鲜血的祝圣的仪式之杯，祈愿雷鸣回荡其中。最终溢满了如雷的盛怒。",
+          "effect": {
+            "type": "geoDMGBonus",
+            "num": 8.7,
+            "increase": 2.5
+          },
+          "effects": [
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            },
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            }
+          ],
+          "name1": "如雷的盛怒",
+          "id": "c0038e04-09d9-4722-b092-66cfebd78f29",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "get": "仲夏庭园",
+          "part": "sands",
+          "name": "雷云之笼",
+          "cover": "http://localhost:3000/images/733a6266-1e4a-44b4-aeef-d04e9d3f4ada.png",
+          "introduction": "黑地堇漆的考究印笼，其上装饰着发亮的螺钿与精致的金具。",
+          "effect": {
+            "type": "ATK",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "energyRecharge",
+              "num": 5.5,
+              "increase": 5.5
+            },
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            },
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            }
+          ],
+          "name1": "绝缘之旗印",
+          "id": "ea4ca460-2418-412d-8515-080e7aa204d2",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "electroDMGBonus",
+            "num": 15
+          },
+          "get": "仲夏庭园",
+          "part": "circlet",
+          "name": "唤雷者的头冠",
+          "cover": "http://localhost:3000/images/e60ddc7a-87ee-482f-9db4-bbb9527733f9.png",
+          "introduction": "古代崇拜雷之魔鸟的萨满曾戴过的头冠，虔诚的信仰却无法打动喜怒无常的魔兽。",
+          "effect": {
+            "type": "healingBonus",
+            "num": 5.4,
+            "increase": 1.5
+          },
+          "effects": [
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            },
+            {
+              "type": "energyRecharge",
+              "num": 5.5,
+              "increase": 5.5
+            },
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            }
+          ],
+          "name1": "如雷的盛怒",
+          "id": "4c116709-8782-449a-9a7b-4fc8cc3d991f",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "get": "仲夏庭园",
+          "part": "flower",
+          "name": "明威之镡",
+          "cover": "http://localhost:3000/images/483ca298-f1be-4ef8-a1df-300fe587e28c.png",
+          "introduction": "传说中背叛了将军的鬼人，曾经获赐的刀上的华美宝镡。",
+          "effect": {
+            "type": "HP",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "energyRecharge",
+              "num": 5.5,
+              "increase": 5.5
+            },
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            },
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            },
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            }
+          ],
+          "name1": "绝缘之旗印",
+          "id": "5c43338a-721d-4d17-98ae-fb9561ea8d78",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "electroDMGBonus",
+            "num": 15
+          },
+          "get": "仲夏庭园",
+          "part": "goblet",
+          "name": "降雷的凶兆",
+          "cover": "http://localhost:3000/images/c6c5000e-fd27-44fb-ade8-cf9f6532f37e.png",
+          "introduction": "注入无辜者鲜血的祝圣的仪式之杯，祈愿雷鸣回荡其中。最终溢满了如雷的盛怒。",
+          "effect": {
+            "type": "pyroDMGBonus",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            },
+            {
+              "type": "energyRecharge",
+              "num": 5.5,
+              "increase": 5.5
+            },
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            }
+          ],
+          "name1": "如雷的盛怒",
+          "id": "285cf31d-a053-49f5-8aac-0dc7f9119ffa",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "get": "仲夏庭园",
+          "part": "goblet",
+          "name": "绯花之壶",
+          "cover": "http://localhost:3000/images/dccffe13-76c7-45b5-8c1a-2576d2731d5f.png",
+          "introduction": "精致的酒壶，曾经是名震天下的武人载酒的容器。",
+          "effect": {
+            "type": "HP",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            },
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            },
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            }
+          ],
+          "name1": "绝缘之旗印",
+          "id": "73e7d04b-d27c-4672-adbf-043a8bb45b87",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "electroDMGBonus",
+            "num": 15
+          },
+          "get": "仲夏庭园",
+          "part": "circlet",
+          "name": "唤雷者的头冠",
+          "cover": "http://localhost:3000/images/e60ddc7a-87ee-482f-9db4-bbb9527733f9.png",
+          "introduction": "古代崇拜雷之魔鸟的萨满曾戴过的头冠，虔诚的信仰却无法打动喜怒无常的魔兽。",
+          "effect": {
+            "type": "DEF",
+            "num": 8.7,
+            "increase": 2.5
+          },
+          "effects": [
+            {
+              "type": "energyRecharge",
+              "num": 5.5,
+              "increase": 5.5
+            },
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            },
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            }
+          ],
+          "name1": "如雷的盛怒",
+          "id": "d9cf5f78-9340-4c9a-a2d6-aa93533c35ba",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "get": "仲夏庭园",
+          "part": "plume",
+          "name": "切落之羽",
+          "cover": "http://localhost:3000/images/50e35611-a824-43fa-a965-ba5d3694e08b.png",
+          "introduction": "原本属于某名天狗的黑羽，是过去的剑豪珍惜的纪念品。",
+          "effect": {
+            "type": "ATK",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            },
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            },
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            }
+          ],
+          "name1": "绝缘之旗印",
+          "id": "a0fe6e3a-6899-4c01-9d37-9275ed9bd62c",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "electroDMGBonus",
+            "num": 15
+          },
+          "get": "仲夏庭园",
+          "part": "circlet",
+          "name": "唤雷者的头冠",
+          "cover": "http://localhost:3000/images/e60ddc7a-87ee-482f-9db4-bbb9527733f9.png",
+          "introduction": "古代崇拜雷之魔鸟的萨满曾戴过的头冠，虔诚的信仰却无法打动喜怒无常的魔兽。",
+          "effect": {
+            "type": "CRITDMG",
+            "num": 9.3,
+            "increase": 2.6
+          },
+          "effects": [
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            },
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            },
+            {
+              "type": "energyRecharge",
+              "num": 5.5,
+              "increase": 5.5
+            }
+          ],
+          "name1": "如雷的盛怒",
+          "id": "d6320318-a7b1-4d82-9cf5-1eedb52c87c8",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "get": "仲夏庭园",
+          "part": "plume",
+          "name": "切落之羽",
+          "cover": "http://localhost:3000/images/50e35611-a824-43fa-a965-ba5d3694e08b.png",
+          "introduction": "原本属于某名天狗的黑羽，是过去的剑豪珍惜的纪念品。",
+          "effect": {
+            "type": "ATK",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            },
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            }
+          ],
+          "name1": "绝缘之旗印",
+          "id": "57868952-35c7-46ff-a7b1-082ceb8bca36",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "electroDMGBonus",
+            "num": 15
+          },
+          "get": "仲夏庭园",
+          "part": "sands",
+          "name": "雷霆的时计",
+          "cover": "http://localhost:3000/images/7f341d46-f415-4baf-b883-a2d600971665.png",
+          "introduction": "信奉雷鸟的部族预告天空的雷之主降临的沙漏。因一族的末路陷入了永远的静止。",
+          "effect": {
+            "type": "HP",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            },
+            {
+              "type": "energyRecharge",
+              "num": 5.5,
+              "increase": 5.5
+            },
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            }
+          ],
+          "name1": "如雷的盛怒",
+          "id": "34083918-69a4-4446-9b87-dcd818d08fe0",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "get": "仲夏庭园",
+          "part": "goblet",
+          "name": "绯花之壶",
+          "cover": "http://localhost:3000/images/dccffe13-76c7-45b5-8c1a-2576d2731d5f.png",
+          "introduction": "精致的酒壶，曾经是名震天下的武人载酒的容器。",
+          "effect": {
+            "type": "HP",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            },
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            },
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "energyRecharge",
+              "num": 5.5,
+              "increase": 5.5
+            }
+          ],
+          "name1": "绝缘之旗印",
+          "id": "b2adc0a6-ae2a-42ab-beb0-202a319a3172",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "electroDMGBonus",
+            "num": 15
+          },
+          "get": "仲夏庭园",
+          "part": "flower",
+          "name": "雷鸟的怜悯",
+          "cover": "http://localhost:3000/images/37934df0-00af-45c4-9c96-8a03660d4104.png",
+          "introduction": "在劫难之日侥幸免受纷乱的践踏与紫之火的忿恨之摧，于惨象中幸存的雷色之花。",
+          "effect": {
+            "type": "HP",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            },
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            },
+            {
+              "type": "energyRecharge",
+              "num": 5.5,
+              "increase": 5.5
+            },
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            }
+          ],
+          "name1": "如雷的盛怒",
+          "id": "9fd3655e-c717-46bd-ae83-72c2ed0d9cd4",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "get": "仲夏庭园",
+          "part": "flower",
+          "name": "明威之镡",
+          "cover": "http://localhost:3000/images/483ca298-f1be-4ef8-a1df-300fe587e28c.png",
+          "introduction": "传说中背叛了将军的鬼人，曾经获赐的刀上的华美宝镡。",
+          "effect": {
+            "type": "HP",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            },
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            },
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            }
+          ],
+          "name1": "绝缘之旗印",
+          "id": "05e2970d-79ed-444b-a8ca-4d14d22d0ee1",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "electroDMGBonus",
+            "num": 15
+          },
+          "get": "仲夏庭园",
+          "part": "circlet",
+          "name": "唤雷者的头冠",
+          "cover": "http://localhost:3000/images/e60ddc7a-87ee-482f-9db4-bbb9527733f9.png",
+          "introduction": "古代崇拜雷之魔鸟的萨满曾戴过的头冠，虔诚的信仰却无法打动喜怒无常的魔兽。",
+          "effect": {
+            "type": "healingBonus",
+            "num": 5.4,
+            "increase": 1.5
+          },
+          "effects": [
+            {
+              "type": "energyRecharge",
+              "num": 5.5,
+              "increase": 5.5
+            },
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            },
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            },
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            }
+          ],
+          "name1": "如雷的盛怒",
+          "id": "1674bd2e-4a9a-4f2f-b351-4025264c5797",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "get": "仲夏庭园",
+          "part": "plume",
+          "name": "切落之羽",
+          "cover": "http://localhost:3000/images/50e35611-a824-43fa-a965-ba5d3694e08b.png",
+          "introduction": "原本属于某名天狗的黑羽，是过去的剑豪珍惜的纪念品。",
+          "effect": {
+            "type": "ATK",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            },
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            },
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            }
+          ],
+          "name1": "绝缘之旗印",
+          "id": "8055d896-21bd-4b1b-8325-de5d5c0e406b",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "electroDMGBonus",
+            "num": 15
+          },
+          "get": "仲夏庭园",
+          "part": "sands",
+          "name": "雷霆的时计",
+          "cover": "http://localhost:3000/images/7f341d46-f415-4baf-b883-a2d600971665.png",
+          "introduction": "信奉雷鸟的部族预告天空的雷之主降临的沙漏。因一族的末路陷入了永远的静止。",
+          "effect": {
+            "type": "energyRecharge",
+            "num": 7.8,
+            "increase": 2.2
+          },
+          "effects": [
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            },
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            },
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            }
+          ],
+          "name1": "如雷的盛怒",
+          "id": "27658106-397a-41d8-8a9e-88a842b43130",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "get": "仲夏庭园",
+          "part": "goblet",
+          "name": "绯花之壶",
+          "cover": "http://localhost:3000/images/dccffe13-76c7-45b5-8c1a-2576d2731d5f.png",
+          "introduction": "精致的酒壶，曾经是名震天下的武人载酒的容器。",
+          "effect": {
+            "type": "geoDMGBonus",
+            "num": 8.7,
+            "increase": 2.5
+          },
+          "effects": [
+            {
+              "type": "energyRecharge",
+              "num": 5.5,
+              "increase": 5.5
+            },
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            },
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            }
+          ],
+          "name1": "绝缘之旗印",
+          "id": "5bb0600d-1d16-4ae4-a0c6-780292e84707",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "electroDMGBonus",
+            "num": 15
+          },
+          "get": "仲夏庭园",
+          "part": "plume",
+          "name": "雷灾的孑遗",
+          "cover": "http://localhost:3000/images/b1eb4486-3241-4777-aaca-5f98cde6565b.png",
+          "introduction": "信奉雷鸟的部族预告天空的雷之主降临的沙漏。因一族的末路陷入了永远的静止。",
+          "effect": {
+            "type": "ATK",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "energyRecharge",
+              "num": 5.5,
+              "increase": 5.5
+            },
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            },
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            },
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            }
+          ],
+          "name1": "如雷的盛怒",
+          "id": "b9b7668a-cb89-493e-b41c-8c727983176a",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "get": "仲夏庭园",
+          "part": "plume",
+          "name": "切落之羽",
+          "cover": "http://localhost:3000/images/50e35611-a824-43fa-a965-ba5d3694e08b.png",
+          "introduction": "原本属于某名天狗的黑羽，是过去的剑豪珍惜的纪念品。",
+          "effect": {
+            "type": "ATK",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "energyRecharge",
+              "num": 5.5,
+              "increase": 5.5
+            },
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            },
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            }
+          ],
+          "name1": "绝缘之旗印",
+          "id": "bcd6ea8a-5a92-468c-a0df-d772b90be08f",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "electroDMGBonus",
+            "num": 15
+          },
+          "get": "仲夏庭园",
+          "part": "plume",
+          "name": "雷灾的孑遗",
+          "cover": "http://localhost:3000/images/b1eb4486-3241-4777-aaca-5f98cde6565b.png",
+          "introduction": "信奉雷鸟的部族预告天空的雷之主降临的沙漏。因一族的末路陷入了永远的静止。",
+          "effect": {
+            "type": "ATK",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            },
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            },
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            },
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            }
+          ],
+          "name1": "如雷的盛怒",
+          "id": "2bcaf02d-2af7-406b-86cf-8e52bfa88e2e",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "get": "仲夏庭园",
+          "part": "sands",
+          "name": "雷云之笼",
+          "cover": "http://localhost:3000/images/733a6266-1e4a-44b4-aeef-d04e9d3f4ada.png",
+          "introduction": "黑地堇漆的考究印笼，其上装饰着发亮的螺钿与精致的金具。",
+          "effect": {
+            "type": "ATK",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            },
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            },
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            }
+          ],
+          "name1": "绝缘之旗印",
+          "id": "367abaa0-4e64-437f-b6d3-0cd0003d2d88",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "electroDMGBonus",
+            "num": 15
+          },
+          "get": "仲夏庭园",
+          "part": "flower",
+          "name": "雷鸟的怜悯",
+          "cover": "http://localhost:3000/images/37934df0-00af-45c4-9c96-8a03660d4104.png",
+          "introduction": "在劫难之日侥幸免受纷乱的践踏与紫之火的忿恨之摧，于惨象中幸存的雷色之花。",
+          "effect": {
+            "type": "HP",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            },
+            {
+              "type": "energyRecharge",
+              "num": 5.5,
+              "increase": 5.5
+            },
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            }
+          ],
+          "name1": "如雷的盛怒",
+          "id": "02d90f4e-c2ed-4229-9340-52293454b752",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "get": "仲夏庭园",
+          "part": "circlet",
+          "name": "华饰之兜",
+          "cover": "http://localhost:3000/images/6367ae2f-5c0d-4854-929a-5554f3257a35.png",
+          "introduction": "坚实牢固的兜盔，是身份尊贵的武人的护身之物。",
+          "effect": {
+            "type": "CRITDMG",
+            "num": 9.3,
+            "increase": 2.6
+          },
+          "effects": [
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            },
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            },
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            },
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            }
+          ],
+          "name1": "绝缘之旗印",
+          "id": "37338faf-0234-4761-a8e3-6b638e42f604",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "electroDMGBonus",
+            "num": 15
+          },
+          "get": "仲夏庭园",
+          "part": "plume",
+          "name": "雷灾的孑遗",
+          "cover": "http://localhost:3000/images/b1eb4486-3241-4777-aaca-5f98cde6565b.png",
+          "introduction": "信奉雷鸟的部族预告天空的雷之主降临的沙漏。因一族的末路陷入了永远的静止。",
+          "effect": {
+            "type": "ATK",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            },
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            },
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "energyRecharge",
+              "num": 5.5,
+              "increase": 5.5
+            }
+          ],
+          "name1": "如雷的盛怒",
+          "id": "eb499164-407b-4624-b0e5-b100efbc9917",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "get": "仲夏庭园",
+          "part": "goblet",
+          "name": "绯花之壶",
+          "cover": "http://localhost:3000/images/dccffe13-76c7-45b5-8c1a-2576d2731d5f.png",
+          "introduction": "精致的酒壶，曾经是名震天下的武人载酒的容器。",
+          "effect": {
+            "type": "ATK",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            },
+            {
+              "type": "energyRecharge",
+              "num": 5.5,
+              "increase": 5.5
+            },
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            }
+          ],
+          "name1": "绝缘之旗印",
+          "id": "d5ff9f28-4558-4c90-8e65-fd5fbd7aa25a",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "electroDMGBonus",
+            "num": 15
+          },
+          "get": "仲夏庭园",
+          "part": "flower",
+          "name": "雷鸟的怜悯",
+          "cover": "http://localhost:3000/images/37934df0-00af-45c4-9c96-8a03660d4104.png",
+          "introduction": "在劫难之日侥幸免受纷乱的践踏与紫之火的忿恨之摧，于惨象中幸存的雷色之花。",
+          "effect": {
+            "type": "HP",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "energyRecharge",
+              "num": 5.5,
+              "increase": 5.5
+            },
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            },
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            }
+          ],
+          "name1": "如雷的盛怒",
+          "id": "e197cd3e-8224-41ea-ba29-a435763a13b5",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "get": "仲夏庭园",
+          "part": "flower",
+          "name": "明威之镡",
+          "cover": "http://localhost:3000/images/483ca298-f1be-4ef8-a1df-300fe587e28c.png",
+          "introduction": "传说中背叛了将军的鬼人，曾经获赐的刀上的华美宝镡。",
+          "effect": {
+            "type": "HP",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            },
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            },
+            {
+              "type": "energyRecharge",
+              "num": 5.5,
+              "increase": 5.5
+            },
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            }
+          ],
+          "name1": "绝缘之旗印",
+          "id": "bb362438-d253-46c2-a57c-81ece4b47cdb",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "electroDMGBonus",
+            "num": 15
+          },
+          "get": "仲夏庭园",
+          "part": "plume",
+          "name": "雷灾的孑遗",
+          "cover": "http://localhost:3000/images/b1eb4486-3241-4777-aaca-5f98cde6565b.png",
+          "introduction": "信奉雷鸟的部族预告天空的雷之主降临的沙漏。因一族的末路陷入了永远的静止。",
+          "effect": {
+            "type": "ATK",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            },
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            }
+          ],
+          "name1": "如雷的盛怒",
+          "id": "9d1efafb-11cb-42e1-9b47-62b03e78d230",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "get": "仲夏庭园",
+          "part": "goblet",
+          "name": "绯花之壶",
+          "cover": "http://localhost:3000/images/dccffe13-76c7-45b5-8c1a-2576d2731d5f.png",
+          "introduction": "精致的酒壶，曾经是名震天下的武人载酒的容器。",
+          "effect": {
+            "type": "pyroDMGBonus",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            },
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            }
+          ],
+          "name1": "绝缘之旗印",
+          "id": "c0036dca-89cd-448b-989d-a8f9f8fb8f44",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        }
+      ],
       "materials": [
         {
           "name": "纠缠之缘",
@@ -32,7 +5160,7 @@
           "cover": "http://localhost:3000/images/ad0a5810-f1b7-4b0a-9e97-ab4f120cd517.png",
           "id": "e2e2bcb6-3bed-4034-8d62-7547139271c5",
           "weight": 21,
-          "num": 1998
+          "num": 409
         },
         {
           "name": "无主的星辉",
@@ -42,17 +5170,293 @@
           "cover": "http://localhost:3000/images/9ffcba79-0cfa-4615-bab5-ff8be76a71fe.png",
           "id": "1b3a5bab-7122-477a-b59c-56455cf48fba",
           "weight": 20,
-          "num": 1998
+          "num": 2972
+        },
+        {
+          "name": "无主的星尘",
+          "get": "祈愿",
+          "introduction": "过剩的命运星之晶尘。累积起来，或许可以创造新的命运。",
+          "purpose": "可以在商城兑换珍稀资源的货币。",
+          "cover": "http://localhost:3000/images/06e9918d-6b20-4f59-b793-a4093cbed47a.png",
+          "id": "4c20a362-0bc0-4ddc-b7d1-4d9f75bf58e1",
+          "weight": 19,
+          "num": 32146
+        },
+        {
+          "name": "凛风奔狼的断牙",
+          "get": "塞西莉亚苗圃",
+          "introduction": "狼群也充分理解，人如果没有同类会感到孤独。光荣的断牙是狼们离别的赠礼，据说真的有保护平安的魔力。 在遥远世界的传说里，有一只母狼领养了伟大的双子。狼与人所同住的「家」则被称为「狼之洞」，也就是「卢佩卡」，与这个世界的「卢皮卡」同义。",
+          "purpose": "武器突破素材",
+          "cover": "http://localhost:3000/images/711d5cfe-3331-4d93-a5a2-4ef4af92b042.png",
+          "id": "3eec7066-4edd-4ae5-aea2-d81524abc1e9",
+          "weight": 1,
+          "num": 99
+        },
+        {
+          "name": "狮牙斗士的镣铐",
+          "get": "塞西莉亚苗圃",
+          "introduction": "描述：温妮莎并不是被镣铐或者锁链困住的，她想要挣脱枷锁和镣铐的话，随时都能击碎蒙德融造的普通金属。毕竟这里既没有优秀的矿石，也没有故乡的神火。锁住她的，是守护族人的责任。",
+          "purpose": "武器突破素材",
+          "cover": "http://localhost:3000/images/40b1be43-e2d3-4977-8c54-23bc677e381a.png",
+          "id": "51ad552f-9476-44e1-bec0-8632ec5495f5",
+          "weight": 1,
+          "num": 99
+        },
+        {
+          "name": "高塔孤王的断片",
+          "get": "塞西莉亚苗圃",
+          "introduction": "「安德留斯」曾经对高塔的孤王宣战，却也无法损伤王都分毫。若不是「自由」高歌的瞬间让这座城市土崩瓦解，这一切都会继续永远之梦。",
+          "purpose": "武器突破素材",
+          "cover": "http://localhost:3000/images/d8578e29-ad1d-47f3-8717-1c9b3d140fd7.png",
+          "id": "d84c7c98-e394-4b95-8bc9-21e49ac23dd2",
+          "weight": 1,
+          "num": 99
+        },
+        {
+          "name": "雾海云间的金丹",
+          "get": "震雷连山密宫",
+          "introduction": "其实所谓金丹，真的是字面意思的金属之丹。这些都是仙人们制造的合金，融合了神通之力，可以给与武器超越的力量。武人似乎都觉得武道优于仙道，不怎么访神问仙。所以金丹并没什么机会给出去。",
+          "purpose": "武器突破素材",
+          "cover": "http://localhost:3000/images/1cd14938-63dd-41c1-b23e-83c0f72edd59.png",
+          "id": "19475f8d-9c46-4998-a9ae-ceb41539705e",
+          "weight": 1,
+          "num": 99
+        },
+        {
+          "name": "孤云寒林的圣骸",
+          "get": "震雷连山密宫",
+          "introduction": "岩枪的核心是发着暗淡光辉的核心，那是战败魔神的力量深入岩石形成的。他们的怨恨并不针对摩拉克斯，因为他们早就已经没有自我了，不可能还残留私怨。",
+          "purpose": "武器突破素材",
+          "cover": "http://localhost:3000/images/73a1ac43-e31d-4de2-a3de-3393a570ae1f.png",
+          "id": "01bf28e2-db9e-4b1b-a544-ffffc6d7037c",
+          "weight": 1,
+          "num": 99
+        },
+        {
+          "name": "漆黑陨铁的一角",
+          "get": "震雷连山密宫",
+          "introduction": "提瓦特沿海的诸国把超越七神庇护的外部称之为「暗之外海」，据说许多战败的魔神不愿意活在新的七神秩序之下，于是逃到了远岛，化作了邪神。不过它们的力量和岩王帝君的力量本就同源，和这个吞噬一切的漆黑并不一样。",
+          "purpose": "武器突破素材",
+          "cover": "http://localhost:3000/images/3cc8d113-ad3a-4aa4-af9f-1fdb6806a4f0.png",
+          "id": "9fa3fc6d-e72b-47ab-8c65-92285ff3bc9e",
+          "weight": 1,
+          "num": 99
+        },
+        {
+          "name": "远海夷地的琼枝",
+          "get": "砂流之庭",
+          "introduction": "失去了一切、逃向暗之外海的魔神在海渊中，见到了什么都没有的弃民。于是它决定留下来，成为他们的「远吕羽氏尊」、「海祇大御神」。",
+          "purpose": "武器突破素材",
+          "cover": "http://localhost:3000/images/4417c0be-a152-452f-a6da-5285c06fb9e3.png",
+          "id": "178dbc96-4c9d-4f28-a90b-81a1cfbf6e0b",
+          "weight": 1,
+          "num": 99
+        },
+        {
+          "name": "今昔剧画之一角",
+          "get": "砂流之庭",
+          "introduction": "在鬼族失落的子守奉公子守歌中，鬼人「虎千代」是一位翩翩少年，拥有优雅勇健的身姿与华丽的容貌。他原本是将军麾下的爱将，曾忠心追随她深入漆黑的渊薮，击退邪秽之物，为血脉日渐稀薄的鬼族争取功绩。纵使如今这样的歌谣已经无人传唱了，以另一种形象流传下来的有角鬼面形象仍然有着非凡的力量。",
+          "purpose": "武器突破素材",
+          "cover": "http://localhost:3000/images/bb446cee-9186-415a-9476-c02eda0cda2e.png",
+          "id": "b8f74f4d-171a-45bb-8476-22dec1823218",
+          "weight": 1,
+          "num": 99
+        },
+        {
+          "name": "鸣神御灵的亲爱",
+          "get": "砂流之庭",
+          "introduction": "漫游在荒野中，或是与人一同生活的妖物都会被「雷之三重巴」所代表的御建鸣神主尊所吸引。纵使他们的寿命远远久于万物灵长，也有终结的一日。要在有限的寿命中求得永恒与无限，就只能犊望于「永恒」能记住他们了。而她也回应了他们的愿望，将所有的敌手与友人铭记于心。据说，无论是栖息在迷雾当中、撕裂天空的魔性之枭，胆敢擅闯御苑的怪化狸，还是那位武艺高强容貌如月、最终却对自己露出尖牙的鬼族少女；无论是曾经展开黑翼自在空行的天狗，抑或是与她同行，最终又永远消失的「狐斋宫大人」…",
+          "purpose": "武器突破素材",
+          "cover": "http://localhost:3000/images/3d026e55-a88e-46bb-b22c-c32ef3705485.png",
+          "id": "51605d1f-6465-402b-a7ee-37d5698df983",
+          "weight": 1,
+          "num": 99
+        },
+        {
+          "name": "脆弱树脂",
+          "get": "系统邮件领取",
+          "introduction": "蕴含着少许能量的晶体，可以被原粹树脂吸收。种种能量的流动构成了这个世界的诸多美好与挑战。这枚晶体中也蕴含着这些能量。",
+          "purpose": "可以补充原粹树脂的道具，一个能补充60点。",
+          "cover": "http://localhost:3000/images/3f938e1d-63be-49b7-8c46-b6cff37c295c.png",
+          "id": "b35af67b-f3f7-4441-8a46-aaa54da51f17",
+          "weight": 15,
+          "num": 21
+        },
+        {
+          "name": "燃愿玛瑙块",
+          "get": "鸣神岛·天守",
+          "introduction": "「为了愿望而步上巡礼，为了最强之名而云聚争斗...\n「最后为了梦在劫火中燃尽。」",
+          "purpose": "角色突破素材",
+          "cover": "http://localhost:3000/images/b5ba2946-25f7-48e8-970f-188c0158668b.png",
+          "id": "34541b67-a43d-46ad-b709-6aca9205c8b1",
+          "weight": 5,
+          "num": 10
+        },
+        {
+          "name": "大英雄的经验",
+          "get": "地脉衍出·启示之花",
+          "introduction": "经验素材。含有20000点经验值。如果向往着天空岛而在大陆开始巡礼，这些经验可称得上弥足珍贵。",
+          "purpose": "升级经验",
+          "cover": "http://localhost:3000/images/85080753-0eed-4f90-b419-0b5022e06584.png",
+          "id": "39414f02-33f6-4f6b-bf5e-c27582a13b86",
+          "weight": 10,
+          "num": 24
+        },
+        {
+          "name": "坚牢黄玉块",
+          "get": "「伏龙树」之底",
+          "introduction": "「大陆所流通的一切银钱皆是我的血肉。\n「我在以这样的方式，为人类一切的汗水、智慧和未来做担保。」",
+          "purpose": "角色突破素材",
+          "cover": "http://localhost:3000/images/82fde010-a97a-4c8f-9272-506aa7b3dc62.png",
+          "id": "05029476-ddac-421e-b37e-183f6f858a7f",
+          "weight": 5,
+          "num": 10
+        },
+        {
+          "name": "涤净青金块",
+          "get": "进入「黄金屋」",
+          "introduction": "「我的理想之内并没有一丝污浊。\n「我要纠正你，在这里，人并不对神背负罪孽.......」",
+          "purpose": "角色突破素材",
+          "cover": "http://localhost:3000/images/93206fb0-93d9-43a5-9eb4-78b1cafdac55.png",
+          "id": "d4c6563b-3bac-4c0d-a7c8-0e1a93bf842f",
+          "weight": 5,
+          "num": 10
         }
       ]
     },
-    "weaponTime": {
-      "small": 0,
-      "big": 0
+    "weaponEvent": {
+      "history": [
+        {
+          "name": "西风长枪",
+          "star": 4,
+          "time": 1651070522628,
+          "num": 9
+        },
+        {
+          "name": "雾切之回光",
+          "star": 5,
+          "time": 1651070522629,
+          "num": 43
+        },
+        {
+          "name": "西风猎弓",
+          "star": 4,
+          "time": 1651137742902,
+          "num": 10
+        },
+        {
+          "name": "西风猎弓",
+          "star": 4,
+          "time": 1651137745571,
+          "num": 4
+        },
+        {
+          "name": "西风长枪",
+          "star": 4,
+          "time": 1651137745576,
+          "num": 2
+        },
+        {
+          "name": "西风猎弓",
+          "star": 4,
+          "time": 1651137745581,
+          "num": 4
+        },
+        {
+          "name": "宗室秘法录",
+          "star": 4,
+          "time": 1651138007656,
+          "num": 10
+        },
+        {
+          "name": "宗室大剑",
+          "star": "4",
+          "time": 1651138018631,
+          "num": 10
+        },
+        {
+          "name": "磐岩结绿",
+          "star": 5,
+          "time": 1651138018632,
+          "num": 41
+        },
+        {
+          "name": "宗室秘法录",
+          "star": 4,
+          "time": 1651140616661,
+          "num": 7
+        }
+      ],
+      "buff": false,
+      "small": 5,
+      "big": 13
     },
-    "roleTime": {
+    "roleEvent": {
+      "history": [
+        {
+          "name": "九条裟罗",
+          "star": 4,
+          "time": 1651507236055,
+          "num": 8
+        },
+        {
+          "name": "芭芭拉",
+          "star": 4,
+          "time": 1651507238996,
+          "num": 4
+        },
+        {
+          "name": "凝光",
+          "star": 4,
+          "time": 1651507261231,
+          "num": 10
+        },
+        {
+          "name": "重云",
+          "star": 4,
+          "time": 1651507261236,
+          "num": 3
+        },
+        {
+          "name": "行秋",
+          "star": 4,
+          "time": 1651507263976,
+          "num": 10
+        },
+        {
+          "name": "雷泽",
+          "star": 4,
+          "time": 1651507263980,
+          "num": 1
+        },
+        {
+          "name": "烟绯",
+          "star": 4,
+          "time": 1651507266913,
+          "num": 3
+        },
+        {
+          "name": "刻晴",
+          "star": 5,
+          "time": 1651507269457,
+          "num": 43
+        },
+        {
+          "name": "诺艾尔",
+          "star": 4,
+          "time": 1651507275480,
+          "num": 10
+        },
+        {
+          "name": "神里绫华",
+          "star": 5,
+          "time": 1651507275484,
+          "num": 17
+        }
+      ],
+      "buff": false,
       "small": 0,
-      "big": 0
+      "big": 4
     }
   },
   {
@@ -68,6 +5472,7 @@
     "isSign": false,
     "lastSign": 1650376922697,
     "signDay": 0,
+    "roles": [],
     "friends": [],
     "friendRequest": [],
     "isOnline": false,
@@ -76,11 +5481,15 @@
       "artifacts": [],
       "materials": []
     },
-    "weaponTime": {
+    "weaponEvent": {
+      "history": [],
+      "buff": false,
       "small": 0,
       "big": 0
     },
-    "roleTime": {
+    "roleEvent": {
+      "history": [],
+      "buff": false,
       "small": 0,
       "big": 0
     }
@@ -93,11 +5502,12 @@
     "worldLevel": 1,
     "nickname": "胡桃桃",
     "avatar": "http://localhost:3000/images/5290a189-f825-47ef-b576-1c6b3e2773c5.jpg",
-    "diamond": 1300,
-    "gold": 22500,
-    "isSign": true,
-    "lastSign": 1650707331946,
-    "signDay": 1,
+    "diamond": 2350,
+    "gold": 69001,
+    "isSign": false,
+    "lastSign": 1651481868928,
+    "signDay": 0,
+    "roles": [],
     "friends": [
       {
         "account": "player",
@@ -105,17 +5515,629 @@
       }
     ],
     "friendRequest": [],
-    "isOnline": false,
+    "isOnline": true,
     "inventory": {
-      "weapons": [],
-      "artifacts": [],
-      "materials": []
+      "weapons": [
+        {
+          "name": "西风秘典",
+          "star": 4,
+          "type": "catalyst",
+          "introduction": "西风骑士团的学者间流传的秘典，记载着元素与物质的道理和力量。",
+          "material": "高塔孤王的断片",
+          "cover": "http://localhost:3000/images/48d8ac35-2f4d-4d90-a3b2-3fa61c212b2e.png",
+          "ATK": 42,
+          "ATKIncrease": 3.53,
+          "secondary": {
+            "type": "energyRecharge",
+            "num": 10,
+            "increase": 0.41
+          },
+          "effect": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "rank": 1,
+          "level": 1,
+          "role": "",
+          "id": "93b4e956-ce7c-4517-8f04-3cd6a6f68c21"
+        }
+      ],
+      "artifacts": [
+        {
+          "pieceSet": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "get": "仲夏庭园",
+          "part": "flower",
+          "name": "明威之镡",
+          "cover": "http://localhost:3000/images/483ca298-f1be-4ef8-a1df-300fe587e28c.png",
+          "introduction": "传说中背叛了将军的鬼人，曾经获赐的刀上的华美宝镡。",
+          "effect": {
+            "type": "HP",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "energyRecharge",
+              "num": 5.5,
+              "increase": 5.5
+            },
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            },
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            }
+          ],
+          "name1": "绝缘之旗印",
+          "id": "a7ddab85-e821-4afc-8578-b090c6cb802b",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "electroDMGBonus",
+            "num": 15
+          },
+          "get": "仲夏庭园",
+          "part": "goblet",
+          "name": "降雷的凶兆",
+          "cover": "http://localhost:3000/images/c6c5000e-fd27-44fb-ade8-cf9f6532f37e.png",
+          "introduction": "注入无辜者鲜血的祝圣的仪式之杯，祈愿雷鸣回荡其中。最终溢满了如雷的盛怒。",
+          "effect": {
+            "type": "anemoDMGBonus",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            },
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            }
+          ],
+          "name1": "如雷的盛怒",
+          "id": "2339c177-6051-4e6a-8fe4-43b8aec1e92c",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "get": "仲夏庭园",
+          "part": "circlet",
+          "name": "华饰之兜",
+          "cover": "http://localhost:3000/images/6367ae2f-5c0d-4854-929a-5554f3257a35.png",
+          "introduction": "坚实牢固的兜盔，是身份尊贵的武人的护身之物。",
+          "effect": {
+            "type": "healingBonus",
+            "num": 5.4,
+            "increase": 1.5
+          },
+          "effects": [
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            },
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            },
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            }
+          ],
+          "name1": "绝缘之旗印",
+          "id": "ccee0f05-9930-4b2e-b13c-9b6a7ccac4ee",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "electroDMGBonus",
+            "num": 15
+          },
+          "get": "仲夏庭园",
+          "part": "circlet",
+          "name": "唤雷者的头冠",
+          "cover": "http://localhost:3000/images/e60ddc7a-87ee-482f-9db4-bbb9527733f9.png",
+          "introduction": "古代崇拜雷之魔鸟的萨满曾戴过的头冠，虔诚的信仰却无法打动喜怒无常的魔兽。",
+          "effect": {
+            "type": "shieldStrength",
+            "num": 5.4,
+            "increase": 1.5
+          },
+          "effects": [
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            },
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            },
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            },
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            }
+          ],
+          "name1": "如雷的盛怒",
+          "id": "9ed4761b-982d-42db-a9e1-a501a17066bc",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "get": "仲夏庭园",
+          "part": "goblet",
+          "name": "绯花之壶",
+          "cover": "http://localhost:3000/images/dccffe13-76c7-45b5-8c1a-2576d2731d5f.png",
+          "introduction": "精致的酒壶，曾经是名震天下的武人载酒的容器。",
+          "effect": {
+            "type": "electroDMGBonus",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            },
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            }
+          ],
+          "name1": "绝缘之旗印",
+          "id": "04b6c2b8-ef55-41b5-a9d6-3fc2b4e161d6",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "get": "仲夏庭园",
+          "part": "plume",
+          "name": "切落之羽",
+          "cover": "http://localhost:3000/images/50e35611-a824-43fa-a965-ba5d3694e08b.png",
+          "introduction": "原本属于某名天狗的黑羽，是过去的剑豪珍惜的纪念品。",
+          "effect": {
+            "type": "ATK",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "energyRecharge",
+              "num": 5.5,
+              "increase": 5.5
+            },
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            },
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            },
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            }
+          ],
+          "name1": "绝缘之旗印",
+          "id": "c57a837f-acd4-47b2-b710-807acab0bdb2",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "get": "仲夏庭园",
+          "part": "plume",
+          "name": "切落之羽",
+          "cover": "http://localhost:3000/images/50e35611-a824-43fa-a965-ba5d3694e08b.png",
+          "introduction": "原本属于某名天狗的黑羽，是过去的剑豪珍惜的纪念品。",
+          "effect": {
+            "type": "ATK",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "energyRecharge",
+              "num": 5.5,
+              "increase": 5.5
+            },
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            },
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            }
+          ],
+          "name1": "绝缘之旗印",
+          "id": "86f22e3c-6eca-4380-a7aa-622cd4b6dfdf",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "get": "仲夏庭园",
+          "part": "plume",
+          "name": "切落之羽",
+          "cover": "http://localhost:3000/images/50e35611-a824-43fa-a965-ba5d3694e08b.png",
+          "introduction": "原本属于某名天狗的黑羽，是过去的剑豪珍惜的纪念品。",
+          "effect": {
+            "type": "ATK",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            },
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            },
+            {
+              "type": "energyRecharge",
+              "num": 5.5,
+              "increase": 5.5
+            }
+          ],
+          "name1": "绝缘之旗印",
+          "id": "037a5532-c979-4754-876e-48eae8be08c6",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "get": "仲夏庭园",
+          "part": "plume",
+          "name": "切落之羽",
+          "cover": "http://localhost:3000/images/50e35611-a824-43fa-a965-ba5d3694e08b.png",
+          "introduction": "原本属于某名天狗的黑羽，是过去的剑豪珍惜的纪念品。",
+          "effect": {
+            "type": "ATK",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            },
+            {
+              "type": "energyRecharge",
+              "num": 5.5,
+              "increase": 5.5
+            },
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            }
+          ],
+          "name1": "绝缘之旗印",
+          "id": "a9eb854e-cd8c-4ebb-986d-f2f0b408931d",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "electroDMGBonus",
+            "num": 15
+          },
+          "get": "仲夏庭园",
+          "part": "circlet",
+          "name": "唤雷者的头冠",
+          "cover": "http://localhost:3000/images/e60ddc7a-87ee-482f-9db4-bbb9527733f9.png",
+          "introduction": "古代崇拜雷之魔鸟的萨满曾戴过的头冠，虔诚的信仰却无法打动喜怒无常的魔兽。",
+          "effect": {
+            "type": "CRITRate",
+            "num": 4.7,
+            "increase": 1.3
+          },
+          "effects": [
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            },
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            },
+            {
+              "type": "energyRecharge",
+              "num": 5.5,
+              "increase": 5.5
+            },
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            }
+          ],
+          "name1": "如雷的盛怒",
+          "id": "2685f3be-5217-41db-9c48-d7efb988230d",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "get": "仲夏庭园",
+          "part": "goblet",
+          "name": "绯花之壶",
+          "cover": "http://localhost:3000/images/dccffe13-76c7-45b5-8c1a-2576d2731d5f.png",
+          "introduction": "精致的酒壶，曾经是名震天下的武人载酒的容器。",
+          "effect": {
+            "type": "cryoDMGBonus",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            },
+            {
+              "type": "CRITDMG",
+              "num": 6.6,
+              "increase": 6.6
+            },
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "HP",
+              "num": 5,
+              "increase": 5
+            }
+          ],
+          "name1": "绝缘之旗印",
+          "id": "bcedee42-194e-4b7e-a0cc-8c8149a47ca2",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        },
+        {
+          "pieceSet": {
+            "type": "energyRecharge",
+            "num": 20
+          },
+          "get": "仲夏庭园",
+          "part": "sands",
+          "name": "雷云之笼",
+          "cover": "http://localhost:3000/images/733a6266-1e4a-44b4-aeef-d04e9d3f4ada.png",
+          "introduction": "黑地堇漆的考究印笼，其上装饰着发亮的螺钿与精致的金具。",
+          "effect": {
+            "type": "HP",
+            "num": 7,
+            "increase": 2
+          },
+          "effects": [
+            {
+              "type": "ATK",
+              "num": 5,
+              "increase": 5
+            },
+            {
+              "type": "energyRecharge",
+              "num": 5.5,
+              "increase": 5.5
+            },
+            {
+              "type": "CRITRate",
+              "num": 3.3,
+              "increase": 3.3
+            },
+            {
+              "type": "DEF",
+              "num": 6.2,
+              "increase": 6.2
+            }
+          ],
+          "name1": "绝缘之旗印",
+          "id": "77459f22-285c-4680-b0ed-89f8b2fbd6cf",
+          "role": {
+            "name": "",
+            "id": "",
+            "cover": ""
+          },
+          "level": 0
+        }
+      ],
+      "materials": [
+        {
+          "name": "纠缠之缘",
+          "get": "游戏商城内兑换",
+          "introduction": "连结梦想的命运之种。缘石辉光能让本无交集的命运交错，让彼此的梦想相连，正如这种光辉将群星连成心之所向的图形。",
+          "purpose": "祈愿",
+          "cover": "http://localhost:3000/images/ad0a5810-f1b7-4b0a-9e97-ab4f120cd517.png",
+          "id": "e2e2bcb6-3bed-4034-8d62-7547139271c5",
+          "weight": 21,
+          "num": 0
+        },
+        {
+          "name": "无主的星辉",
+          "get": "祈愿",
+          "introduction": "过剩的命运星之光辉。或许可以点亮宇宙其他角落。",
+          "purpose": "可以在商城兑换珍稀资源的货币。",
+          "cover": "http://localhost:3000/images/9ffcba79-0cfa-4615-bab5-ff8be76a71fe.png",
+          "id": "1b3a5bab-7122-477a-b59c-56455cf48fba",
+          "weight": 20,
+          "num": 12
+        },
+        {
+          "name": "无主的星尘",
+          "get": "祈愿",
+          "introduction": "过剩的命运星之晶尘。累积起来，或许可以创造新的命运。",
+          "purpose": "可以在商城兑换珍稀资源的货币。",
+          "cover": "http://localhost:3000/images/06e9918d-6b20-4f59-b793-a4093cbed47a.png",
+          "id": "4c20a362-0bc0-4ddc-b7d1-4d9f75bf58e1",
+          "weight": 19,
+          "num": 235
+        }
+      ]
     },
-    "weaponTime": {
+    "weaponEvent": {
+      "history": [],
+      "buff": false,
       "small": 0,
-      "big": 0
+      "big": 10
     },
-    "roleTime": {
+    "roleEvent": {
+      "history": [],
+      "buff": false,
       "small": 0,
       "big": 0
     }
@@ -133,6 +6155,7 @@
     "isSign": false,
     "lastSign": 1650297535238,
     "signDay": 0,
+    "roles": [],
     "friends": [
       {
         "account": "player",
@@ -148,11 +6171,15 @@
       "artifacts": [],
       "materials": []
     },
-    "weaponTime": {
+    "weaponEvent": {
+      "history": [],
+      "buff": false,
       "small": 0,
       "big": 0
     },
-    "roleTime": {
+    "roleEvent": {
+      "history": [],
+      "buff": false,
       "small": 0,
       "big": 0
     }

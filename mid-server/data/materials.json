@@ -6,8 +6,8 @@
     "purpose": "可以在商城兑换珍稀资源的货币。",
     "cover": "http://localhost:3000/images/9ffcba79-0cfa-4615-bab5-ff8be76a71fe.png",
     "id": "1b3a5bab-7122-477a-b59c-56455cf48fba",
-    "status": 2,
-    "weight": 20
+    "weight": 20,
+    "status": 2
   },
   {
     "name": "凛风奔狼的断牙",
@@ -16,8 +16,8 @@
     "purpose": "武器突破素材",
     "cover": "http://localhost:3000/images/711d5cfe-3331-4d93-a5a2-4ef4af92b042.png",
     "id": "3eec7066-4edd-4ae5-aea2-d81524abc1e9",
-    "status": 2,
-    "weight": 1
+    "status": 1,
+    "weight": 4
   },
   {
     "name": "狮牙斗士的镣铐",
@@ -26,8 +26,8 @@
     "purpose": "武器突破素材",
     "cover": "http://localhost:3000/images/40b1be43-e2d3-4977-8c54-23bc677e381a.png",
     "id": "51ad552f-9476-44e1-bec0-8632ec5495f5",
-    "status": 2,
-    "weight": 1
+    "status": 1,
+    "weight": 4
   },
   {
     "name": "高塔孤王的断片",
@@ -36,8 +36,8 @@
     "purpose": "武器突破素材",
     "cover": "http://localhost:3000/images/d8578e29-ad1d-47f3-8717-1c9b3d140fd7.png",
     "id": "d84c7c98-e394-4b95-8bc9-21e49ac23dd2",
-    "status": 2,
-    "weight": 1
+    "status": 1,
+    "weight": 4
   },
   {
     "name": "雾海云间的金丹",
@@ -46,8 +46,8 @@
     "purpose": "武器突破素材",
     "cover": "http://localhost:3000/images/1cd14938-63dd-41c1-b23e-83c0f72edd59.png",
     "id": "19475f8d-9c46-4998-a9ae-ceb41539705e",
-    "status": 2,
-    "weight": 1
+    "status": 1,
+    "weight": 4
   },
   {
     "name": "孤云寒林的圣骸",
@@ -56,8 +56,8 @@
     "purpose": "武器突破素材",
     "cover": "http://localhost:3000/images/73a1ac43-e31d-4de2-a3de-3393a570ae1f.png",
     "id": "01bf28e2-db9e-4b1b-a544-ffffc6d7037c",
-    "status": 2,
-    "weight": 1
+    "status": 1,
+    "weight": 4
   },
   {
     "name": "漆黑陨铁的一角",
@@ -66,8 +66,8 @@
     "purpose": "武器突破素材",
     "cover": "http://localhost:3000/images/3cc8d113-ad3a-4aa4-af9f-1fdb6806a4f0.png",
     "id": "9fa3fc6d-e72b-47ab-8c65-92285ff3bc9e",
-    "status": 2,
-    "weight": 1
+    "status": 1,
+    "weight": 4
   },
   {
     "name": "远海夷地的琼枝",
@@ -76,8 +76,8 @@
     "purpose": "武器突破素材",
     "cover": "http://localhost:3000/images/4417c0be-a152-452f-a6da-5285c06fb9e3.png",
     "id": "178dbc96-4c9d-4f28-a90b-81a1cfbf6e0b",
-    "status": 2,
-    "weight": 1
+    "status": 1,
+    "weight": 4
   },
   {
     "name": "今昔剧画之一角",
@@ -86,8 +86,8 @@
     "purpose": "武器突破素材",
     "cover": "http://localhost:3000/images/bb446cee-9186-415a-9476-c02eda0cda2e.png",
     "id": "b8f74f4d-171a-45bb-8476-22dec1823218",
-    "status": 2,
-    "weight": 1
+    "status": 1,
+    "weight": 4
   },
   {
     "name": "鸣神御灵的亲爱",
@@ -96,8 +96,8 @@
     "purpose": "武器突破素材",
     "cover": "http://localhost:3000/images/3d026e55-a88e-46bb-b22c-c32ef3705485.png",
     "id": "51605d1f-6465-402b-a7ee-37d5698df983",
-    "status": 2,
-    "weight": 1
+    "status": 1,
+    "weight": 4
   },
   {
     "name": "纠缠之缘",
@@ -106,8 +106,8 @@
     "purpose": "祈愿",
     "cover": "http://localhost:3000/images/ad0a5810-f1b7-4b0a-9e97-ab4f120cd517.png",
     "id": "e2e2bcb6-3bed-4034-8d62-7547139271c5",
-    "status": 2,
-    "weight": 21
+    "weight": 21,
+    "status": 2
   },
   {
     "name": "无主的星尘",
@@ -116,7 +116,177 @@
     "purpose": "可以在商城兑换珍稀资源的货币。",
     "cover": "http://localhost:3000/images/06e9918d-6b20-4f59-b793-a4093cbed47a.png",
     "id": "4c20a362-0bc0-4ddc-b7d1-4d9f75bf58e1",
-    "status": 2,
-    "weight": 19
+    "weight": 19,
+    "status": 2
+  },
+  {
+    "name": "大英雄的经验",
+    "get": "地脉衍出·启示之花",
+    "introduction": "经验素材。含有20000点经验值。如果向往着天空岛而在大陆开始巡礼，这些经验可称得上弥足珍贵。",
+    "purpose": "升级经验",
+    "cover": "http://localhost:3000/images/85080753-0eed-4f90-b419-0b5022e06584.png",
+    "id": "39414f02-33f6-4f6b-bf5e-c27582a13b86",
+    "status": 1,
+    "weight": 10
+  },
+  {
+    "name": "燃愿玛瑙块",
+    "get": "鸣神岛·天守",
+    "introduction": "「为了愿望而步上巡礼，为了最强之名而云聚争斗...\n「最后为了梦在劫火中燃尽。」",
+    "purpose": "角色突破素材",
+    "cover": "http://localhost:3000/images/b5ba2946-25f7-48e8-970f-188c0158668b.png",
+    "id": "34541b67-a43d-46ad-b709-6aca9205c8b1",
+    "status": 1,
+    "weight": 5
+  },
+  {
+    "name": "哀叙冰玉块",
+    "get": "进入「黄金屋」",
+    "introduction": "「...抱歉...\n「让你们一起和我背负了整个世界的哀思。」",
+    "purpose": "角色突破素材",
+    "cover": "http://localhost:3000/images/80b67778-ff82-4a7d-9eb4-39c0c51bd514.png",
+    "id": "97e1a9de-6986-414d-b2b7-2596275a5816",
+    "status": 1,
+    "weight": 5
+  },
+  {
+    "name": "涤净青金块",
+    "get": "进入「黄金屋」",
+    "introduction": "「我的理想之内并没有一丝污浊。\n「我要纠正你，在这里，人并不对神背负罪孽.......」",
+    "purpose": "角色突破素材",
+    "cover": "http://localhost:3000/images/93206fb0-93d9-43a5-9eb4-78b1cafdac55.png",
+    "id": "d4c6563b-3bac-4c0d-a7c8-0e1a93bf842f",
+    "status": 1,
+    "weight": 5
+  },
+  {
+    "name": "坚牢黄玉块",
+    "get": "「伏龙树」之底",
+    "introduction": "「大陆所流通的一切银钱皆是我的血肉。\n「我在以这样的方式，为人类一切的汗水、智慧和未来做担保。」",
+    "purpose": "角色突破素材",
+    "cover": "http://localhost:3000/images/82fde010-a97a-4c8f-9272-506aa7b3dc62.png",
+    "id": "05029476-ddac-421e-b37e-183f6f858a7f",
+    "status": 1,
+    "weight": 5
+  },
+  {
+    "name": "最胜紫晶块",
+    "get": "梦想乐土之殁",
+    "introduction": "「此身即是尘世最为殊胜尊贵之身。\n「应持天下之大权。」",
+    "purpose": "角色突破素材",
+    "cover": "http://localhost:3000/images/179d5614-0625-4e55-9a3c-b153d8c6e56a.png",
+    "id": "ac9b9852-a28e-4336-b135-858f2aea67c7",
+    "status": 1,
+    "weight": 5
+  },
+  {
+    "name": "自在松石块",
+    "get": "深入风龙废墟",
+    "introduction": "「但风向是会转变的。\n「终有一天，会吹向更有光亮的方向。」",
+    "purpose": "角色突破素材",
+    "cover": "http://localhost:3000/images/c8aaae28-d35b-4d20-8afd-547260a602e0.png",
+    "id": "b6ff8daa-2f2e-4497-bf69-4ffc5833e755",
+    "status": 1,
+    "weight": 5
+  },
+  {
+    "name": "脆弱树脂",
+    "get": "系统邮件领取",
+    "introduction": "蕴含着少许能量的晶体，可以被原粹树脂吸收。种种能量的流动构成了这个世界的诸多美好与挑战。这枚晶体中也蕴含着这些能量。",
+    "purpose": "可以补充原粹树脂的道具，一个能补充60点。",
+    "cover": "http://localhost:3000/images/3f938e1d-63be-49b7-8c46-b6cff37c295c.png",
+    "id": "b35af67b-f3f7-4441-8a46-aaa54da51f17",
+    "status": 1,
+    "weight": 15
+  },
+  {
+    "name": "「自由」的哲学",
+    "get": "忘却之峡",
+    "introduction": "风之国土的精神是自由。\n自由其三，是歌唱的自由，即是能在风之神塑造的美好土地上歌唱，让自己的心与歌一同随风而去的自由。",
+    "purpose": "角色天赋素材",
+    "cover": "http://localhost:3000/images/7ee892b7-cf43-4e9a-9dbb-0143f544fa41.png",
+    "id": "dda3267d-cfe1-4a13-9273-bf91ca4ff191",
+    "status": 1,
+    "weight": 3
+  },
+  {
+    "name": "「抗争」的哲学",
+    "get": "忘却之峡",
+    "introduction": "风之国土的脊梁是抗争。\n蒙德的历史即是抗争的历史。抗争是为了蒙德未来的诗文，也能自由地随着眷顾的风，传到远方。",
+    "purpose": "角色天赋素材",
+    "cover": "http://localhost:3000/images/51c3899c-3e11-4e76-bd13-ab62a0228d60.png",
+    "id": "1e9054ee-7a0f-4450-b093-cd526872e33c",
+    "status": 1,
+    "weight": 3
+  },
+  {
+    "name": "「诗文」的哲学",
+    "get": "忘却之峡",
+    "introduction": "风之国土的灵魂是诗文。\n诗文是传颂的心意。即使一切都将逝去，即使一切都将不再，随风而行的诗歌，仍会将此世间一切美好传遍天空、大地与海洋的一切角落。",
+    "purpose": "角色天赋素材",
+    "cover": "http://localhost:3000/images/dbe2736c-0218-41ca-9c1e-12bb705e51a9.png",
+    "id": "6dfd4995-2b96-4e70-b810-ebe69adb7e79",
+    "status": 1,
+    "weight": 3
+  },
+  {
+    "name": "「勤劳」的哲学",
+    "get": "太山府",
+    "introduction": "岩之国土的根基是勤劳。\n勤劳即为相信自己，即为相信通过汗水、智慧与力量，在诸神的土地上，人人都可以拥有自己的一席之地。",
+    "purpose": "角色天赋素材",
+    "cover": "http://localhost:3000/images/29e4603f-9874-4ef8-b7e8-e2829e57ef9c.png",
+    "id": "3b412eeb-d6ab-4487-881e-6f9301868c2b",
+    "status": 1,
+    "weight": 3
+  },
+  {
+    "name": "「黄金」的哲学",
+    "get": "太山府",
+    "introduction": "岩之国土的象征是黄金。\n黄金是璃月的财富。但璃月真正的财富，是璃月的人们那如黄金般闪耀的心灵。",
+    "purpose": "角色天赋素材",
+    "cover": "http://localhost:3000/images/17cd4b6e-663f-401f-a748-24f4715409b1.png",
+    "id": "f442b61e-8b61-45a5-944c-ad27a873a98a",
+    "status": 1,
+    "weight": 3
+  },
+  {
+    "name": "「繁荣」的哲学",
+    "get": "太山府",
+    "introduction": "岩之国土的追求是繁荣。\n繁荣是璃月的过去、现在与未来。在此世间一切国度都无法企及的繁荣，均归于璃月，以及璃月的子女。",
+    "purpose": "角色天赋素材",
+    "cover": "http://localhost:3000/images/d9d54645-be2b-4805-82c9-620839e8dbcc.png",
+    "id": "69ae2e09-98a5-4762-9ab6-7596d2842909",
+    "status": 1,
+    "weight": 3
+  },
+  {
+    "name": "「风雅」的哲学",
+    "get": "菫色之庭",
+    "introduction": "雷之国土的姿容是风雅。\n风雅是不庸俗。风雅之人永远是独行的。不屈于平庸之恶，不感动于平庸之爱，不逃避于平庸的无知，\n才可能明辨何为雅致与鄙陋。",
+    "purpose": "角色天赋素材",
+    "cover": "http://localhost:3000/images/f09d0102-dcf3-4686-b82e-e2fe3e5332cd.png",
+    "id": "3890a657-80e8-4408-9b25-1934f4e08e3a",
+    "status": 1,
+    "weight": 3
+  },
+  {
+    "name": "「天光」的哲学",
+    "get": "菫色之庭",
+    "introduction": "雷之国土的愿望是天光。\n即使永远生活在地下，人也会不屈地祈求天光。人总是追逐超越，无可止步。静止封闭的永恒亦固然壮丽，但其本质终究是死亡。",
+    "purpose": "角色天赋素材",
+    "cover": "http://localhost:3000/images/853d09ab-cc62-471c-ae9e-13301ff8a4c8.png",
+    "id": "19f6cd09-0f75-4e8c-9288-33bff82b2c4a",
+    "status": 1,
+    "weight": 3
+  },
+  {
+    "name": "「浮世」的哲学",
+    "get": "菫色之庭",
+    "introduction": "雷之国土的梦想是浮世。\n浮世之短暂乃是人之美的本性所在。人之在世岂不与稻光相近?神威显现的刹那恍若隽永，而永恒的威鸣又有谁人能够承受?",
+    "purpose": "角色天赋素材",
+    "cover": "http://localhost:3000/images/f52fa786-1837-42f8-93d7-36809499708a.png",
+    "id": "0cd86d24-8c4f-4c02-a170-7b894b16a0db",
+    "status": 1,
+    "weight": 3
   }
 ]

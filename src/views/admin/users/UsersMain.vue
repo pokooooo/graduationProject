@@ -75,7 +75,6 @@
             :label="item.label"
             :value="item.value">
         </el-option>
-
       </el-select>
       <el-input style="margin-top: 10px" v-model.number="num"></el-input>
       <span slot="footer" class="dialog-footer">

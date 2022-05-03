@@ -1,6 +1,14 @@
 
 import {request} from "@/network/request";
 
+export function draw(data) {
+    return request({
+        url: "/console/events/draw",
+        method: "post",
+        data,
+    });
+}
+
 export function addEvent(data) {
     return request({
         url: "/console/events/add",

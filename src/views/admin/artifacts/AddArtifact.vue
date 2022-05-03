@@ -153,6 +153,10 @@ export default {
         value: 'CRITDMG',
         label: '暴击伤害'
       },{
+        value: 'energyRecharge',
+        label: '充能效率'
+      },
+        {
         value: 'pyroDMGBonus',
         label: '火元素伤害加成'
       },{

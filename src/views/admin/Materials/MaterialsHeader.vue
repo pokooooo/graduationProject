@@ -70,9 +70,9 @@ export default {
       dialogVisible: false,
       addForm: {
         name: "",
-        get: "震雷连山密宫",
+        get: "菫色之庭",
         introduction: "",
-        purpose: "武器突破素材",
+        purpose: "角色天赋素材",
         cover: "",
       },
       addFormRules: {

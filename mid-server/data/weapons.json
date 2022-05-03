@@ -18,9 +18,9 @@
       "num": 40
     },
     "id": "485b00ef-0d7d-4aba-9049-8735f87365db",
-    "status": 2,
-    "weight": 5,
+    "weight": 6,
     "level": 1,
+    "status": 2,
     "rank": 1
   },
   {
@@ -42,9 +42,9 @@
       "num": 20
     },
     "id": "c3ae8e91-352c-4835-878a-a92561d99d1a",
-    "status": 2,
-    "weight": 4,
+    "weight": 2,
     "level": 1,
+    "status": 1,
     "rank": 1
   },
   {
@@ -66,9 +66,9 @@
       "num": 20
     },
     "id": "2c284300-bd42-4473-bbae-6fa24bab9b20",
-    "status": 1,
     "weight": 4,
     "level": 1,
+    "status": 1,
     "rank": 1
   },
   {
@@ -90,9 +90,9 @@
       "num": 20
     },
     "id": "60e5388c-a76b-43ac-84d1-29fc260bfc36",
-    "status": 1,
-    "weight": 4,
+    "weight": 5,
     "level": 1,
+    "status": 1,
     "rank": 1
   },
   {
@@ -114,9 +114,9 @@
       "num": 20
     },
     "id": "7c23e2e0-ae42-43e6-b98a-d2c0f48cc533",
-    "status": 1,
-    "weight": 4,
+    "weight": 1,
     "level": 1,
+    "status": 1,
     "rank": 1
   },
   {
@@ -138,9 +138,9 @@
       "num": 20
     },
     "id": "d136b3ae-185b-485d-bc6f-69a07ccdbb30",
-    "status": 1,
-    "weight": 4,
+    "weight": 3,
     "level": 1,
+    "status": 1,
     "rank": 1
   },
   {
@@ -162,9 +162,9 @@
       "num": 16
     },
     "id": "adf23f52-e2a7-4c13-b34e-fc946d5611e5",
-    "status": 1,
-    "weight": 5,
+    "weight": 8,
     "level": 1,
+    "status": 1,
     "rank": 1
   },
   {
@@ -186,9 +186,9 @@
       "num": 20
     },
     "id": "29e4ebe9-82cb-4bb9-a920-7502e1c7597e",
-    "status": 2,
-    "weight": 4,
+    "weight": 2,
     "level": 1,
+    "status": 1,
     "rank": 1
   },
   {
@@ -210,9 +210,9 @@
       "num": 30
     },
     "id": "cce704d2-9324-4f32-aac1-d25ed1773745",
-    "status": 2,
-    "weight": 4,
+    "weight": 5,
     "level": 1,
+    "status": 1,
     "rank": 1
   },
   {
@@ -234,9 +234,9 @@
       "num": 30
     },
     "id": "df0160a8-ad54-4ea0-aae8-cce37069540d",
-    "status": 2,
-    "weight": 4,
+    "weight": 3,
     "level": 1,
+    "status": 1,
     "rank": 1
   },
   {
@@ -258,9 +258,9 @@
       "num": 30
     },
     "id": "79008c9a-a68f-4431-aceb-7a8e8162fc76",
-    "status": 2,
-    "weight": 4,
+    "weight": 1,
     "level": 1,
+    "status": 1,
     "rank": 1
   },
   {
@@ -282,9 +282,9 @@
       "num": 20
     },
     "id": "00297f65-fcea-477f-af2c-ae702b477ddd",
-    "status": 2,
     "weight": 4,
     "level": 1,
+    "status": 1,
     "rank": 1
   },
   {
@@ -306,9 +306,9 @@
       "num": 10
     },
     "id": "a6ab6b3d-a678-4f53-abbc-da66fb8278d6",
-    "status": 2,
-    "weight": 4,
+    "weight": 3,
     "level": 1,
+    "status": 1,
     "rank": 1
   },
   {
@@ -330,9 +330,9 @@
       "num": 10
     },
     "id": "7eeebe37-df86-464c-b67c-c734845d508d",
-    "status": 2,
     "weight": 4,
     "level": 1,
+    "status": 1,
     "rank": 1
   },
   {
@@ -354,9 +354,9 @@
       "num": 10
     },
     "id": "a2a03d11-4e4b-43ae-a7ba-0162ba9d4cbd",
-    "status": 2,
-    "weight": "4",
+    "weight": 2,
     "level": 1,
+    "status": 1,
     "rank": 1
   },
   {
@@ -378,9 +378,9 @@
       "num": 10
     },
     "id": "3159b0be-130b-48ed-b708-de0f25014733",
-    "status": 2,
-    "weight": "4",
+    "weight": 1,
     "level": 1,
+    "status": 1,
     "rank": 1
   },
   {
@@ -402,9 +402,9 @@
       "num": 10
     },
     "id": "c73982fc-8943-4d62-a2ab-1d41291dc99c",
-    "status": 2,
-    "weight": "4",
+    "weight": 5,
     "level": 1,
+    "status": 1,
     "rank": 1
   },
   {
@@ -426,9 +426,9 @@
       "num": 24
     },
     "id": "332ab1f3-ca2e-429e-b0ca-fdcab30ec4e2",
-    "status": 2,
-    "weight": "4",
+    "weight": 2,
     "level": 1,
+    "status": 1,
     "rank": 1
   },
   {
@@ -450,9 +450,9 @@
       "num": 24
     },
     "id": "bd084966-ee9e-4db7-9211-430abcc9d645",
-    "status": 2,
-    "weight": "4",
+    "weight": 5,
     "level": 1,
+    "status": 1,
     "rank": 1
   },
   {
@@ -474,9 +474,9 @@
       "num": 24
     },
     "id": "fedcb168-da01-4b12-bc31-3d575a90d542",
-    "status": 2,
-    "weight": "4",
+    "weight": 1,
     "level": 1,
+    "status": 1,
     "rank": 1
   },
   {
@@ -498,9 +498,9 @@
       "num": 24
     },
     "id": "831ff7cd-5ac9-4e25-93bd-641b740786e1",
-    "status": 2,
-    "weight": "4",
+    "weight": 4,
     "level": 1,
+    "status": 1,
     "rank": 1
   },
   {
@@ -522,9 +522,9 @@
       "num": 24
     },
     "id": "ea483ff3-559c-48e1-b704-9f9609010838",
-    "status": 2,
-    "weight": "4",
+    "weight": 3,
     "level": 1,
+    "status": 1,
     "rank": 1
   },
   {
@@ -546,9 +546,9 @@
       "num": 50
     },
     "id": "638d8803-7468-47d7-ba8d-9fb047821774",
-    "status": 1,
-    "weight": 5,
+    "weight": 8,
     "level": 1,
+    "status": 1,
     "rank": 1
   },
   {
@@ -570,9 +570,9 @@
       "num": 50
     },
     "id": "6ad21c8b-2b5b-402a-be64-17c61877ad72",
-    "status": 2,
-    "weight": 5,
+    "weight": 6,
     "level": 1,
+    "status": 2,
     "rank": 1
   },
   {
@@ -594,9 +594,9 @@
       "num": 40
     },
     "id": "a0536cfc-61e7-4129-9b3f-89629bc40119",
-    "status": 1,
-    "weight": 5,
+    "weight": 10,
     "level": 1,
+    "status": 1,
     "rank": 1
   },
   {
@@ -615,11 +615,299 @@
     },
     "effect": {
       "type": "elementDMGBonus",
-      "num": 20
+      "num": 30
     },
     "id": "683963cc-50f9-413d-ab62-2a4fc73a10f6",
+    "weight": 9,
+    "level": 1,
     "status": 1,
-    "weight": 5,
+    "rank": 1
+  },
+  {
+    "name": "天空之刃",
+    "star": 5,
+    "type": "sword",
+    "introduction": "象征风龙的荣誉的骑士剑，如今失而复得。剑脊上吹息着风之神的赐福，蕴含苍空与长风的力量。",
+    "material": "凛风奔狼的断牙",
+    "cover": "http://localhost:3000/images/70b3738b-45c6-41ef-bdb3-8bc4d60261c8.png",
+    "ATK": 46,
+    "ATKIncrease": 4,
+    "secondary": {
+      "type": "energyRecharge",
+      "num": 12,
+      "increase": 0.48
+    },
+    "effect": {
+      "type": "CRITRate",
+      "num": 16
+    },
+    "id": "64de41cd-6b1f-45a2-aa4b-eea06b3014a8",
+    "status": 1,
+    "weight": 6,
+    "level": 1,
+    "rank": 1
+  },
+  {
+    "name": "天空之卷",
+    "star": 5,
+    "type": "catalyst",
+    "introduction": "象征风龙与其主风之神的云图集。细致记载了北地天空的风与云，蕴含苍空与长风的力量。",
+    "material": "凛风奔狼的断牙",
+    "cover": "http://localhost:3000/images/67130216-a414-40ee-888b-f5e441677429.png",
+    "ATK": 48,
+    "ATKIncrease": 4.47,
+    "secondary": {
+      "type": "ATK",
+      "num": 7.2,
+      "increase": 0.29
+    },
+    "effect": {
+      "type": "elementDMGBonus",
+      "num": 30
+    },
+    "id": "1435bb29-ceee-4917-a4f3-2d396be52da2",
+    "status": 1,
+    "weight": 9,
+    "level": 1,
+    "rank": 1
+  },
+  {
+    "name": "风鹰剑",
+    "star": 5,
+    "type": "sword",
+    "introduction": "西风骑士团的灵魂。历经千年仍在呼唤你卷起正义之风，祓除奸邪，一如上一位挥舞此剑的女杰。",
+    "material": "高塔孤王的断片",
+    "cover": "http://localhost:3000/images/1dff540a-da86-423b-ad67-620be3651ce5.png",
+    "ATK": 48,
+    "ATKIncrease": 4.47,
+    "secondary": {
+      "type": "physicalDMGBonus",
+      "num": 9,
+      "increase": 0.36
+    },
+    "effect": {
+      "type": "ATK",
+      "num": 40
+    },
+    "id": "033df14f-8bc1-4c06-ba12-a0a76d7fa359",
+    "status": 1,
+    "weight": 6,
+    "level": 1,
+    "rank": 1
+  },
+  {
+    "name": "天空之傲",
+    "star": 5,
+    "type": "claymore",
+    "introduction": "象征风龙的骄傲广布长空的双手剑。挥舞时的低吟是风龙的气势，蕴含苍空与长风的力量。",
+    "material": "凛风奔狼的断牙",
+    "cover": "http://localhost:3000/images/e53ac7b1-5687-4e86-865c-7623da4140d2.png",
+    "ATK": 48,
+    "ATKIncrease": 4.47,
+    "secondary": {
+      "type": "energyRecharge",
+      "num": 8,
+      "increase": 0.32
+    },
+    "effect": {
+      "type": "elementDMGBonus",
+      "num": 30
+    },
+    "id": "d74c26b7-462d-4f49-982d-ac425d41af4e",
+    "status": 1,
+    "weight": 7,
+    "level": 1,
+    "rank": 1
+  },
+  {
+    "name": "阿莫斯之弓",
+    "star": 5,
+    "type": "bow",
+    "introduction": "极为古老的弓。即使原主不复存在，其中蕴藏之力依旧——那种力量无主，却在万物当中。距离心系之物越是遥远，那种力量愈是剧烈。",
+    "material": "狮牙斗士的镣铐",
+    "cover": "http://localhost:3000/images/1b463902-0443-47e6-b5cb-1384971e90b9.png",
+    "ATK": 46,
+    "ATKIncrease": 4,
+    "secondary": {
+      "type": "ATK",
+      "num": 10.8,
+      "increase": 0.44
+    },
+    "effect": {
+      "type": "elementDMGBonus",
+      "num": 60
+    },
+    "id": "48810393-5174-4ea7-87a8-b772a6a89de2",
+    "status": 1,
+    "weight": 10,
+    "level": 1,
+    "rank": 1
+  },
+  {
+    "name": "狼的末路",
+    "star": 5,
+    "type": "claymore",
+    "introduction": "狼的骑士所使的大剑。原本只是城中铁匠赠予的厚重的铁片，却在他与狼的情谊中，获得神话般的力量。",
+    "material": "狮牙斗士的镣铐",
+    "cover": "http://localhost:3000/images/2d8ebbcb-f5e4-4360-99fb-705dac9ad656.png",
+    "ATK": 46,
+    "ATKIncrease": 4,
+    "secondary": {
+      "type": "ATK",
+      "num": 10.8,
+      "increase": 0.44
+    },
+    "effect": {
+      "type": "ATK",
+      "num": 60
+    },
+    "id": "820eeb50-b05e-4d74-bbb1-f914391a4aaf",
+    "status": 1,
+    "weight": 7,
+    "level": 1,
+    "rank": 1
+  },
+  {
+    "name": "不灭月华",
+    "star": 5,
+    "type": "catalyst",
+    "introduction": "出自深海的美玉之环，闪烁着清澈如月的光泽，一如遥远往昔。",
+    "material": "远海夷地的琼枝",
+    "cover": "http://localhost:3000/images/eace7dde-6f2a-4313-b424-5d1580864207.png",
+    "ATK": 46,
+    "ATKIncrease": 4,
+    "secondary": {
+      "type": "HP",
+      "num": 10.8,
+      "increase": 0.44
+    },
+    "effect": {
+      "type": "healingBonus",
+      "num": 20
+    },
+    "id": "75aad318-5c88-44d7-a831-03f9fbdded72",
+    "status": 2,
+    "weight": 9,
+    "level": 1,
+    "rank": 1
+  },
+  {
+    "name": "薙草之稻光",
+    "star": 5,
+    "type": "polearm",
+    "introduction": "用于「斩草」的薙刀。对向此物之军势，也会如苇草般倒下吧…",
+    "material": "今昔剧画之一角",
+    "cover": "http://localhost:3000/images/d2a3bf86-3a92-49c2-a526-4d319b11e521.png",
+    "ATK": 46,
+    "ATKIncrease": 4,
+    "secondary": {
+      "type": "energyRecharge",
+      "num": 42,
+      "increase": 0.48
+    },
+    "effect": {
+      "type": "ATK",
+      "num": 50
+    },
+    "id": "3ce4d17c-e6e7-4579-8965-69a091346a1f",
+    "status": 2,
+    "weight": 8,
+    "level": 1,
+    "rank": 1
+  },
+  {
+    "name": "神乐之真意",
+    "star": 5,
+    "type": "catalyst",
+    "introduction": "表演神乐之舞时所用的神铃，为宫司所赐福。神樱之香萦绕其上。",
+    "material": "今昔剧画之一角",
+    "cover": "http://localhost:3000/images/c9c764c8-87f4-426c-bed6-319fea191549.png",
+    "ATK": 46,
+    "ATKIncrease": 4,
+    "secondary": {
+      "type": "CRITDMG",
+      "num": 14.4,
+      "increase": 0.58
+    },
+    "effect": {
+      "type": "elementDMGBonus",
+      "num": 40
+    },
+    "id": "70b90e89-0e48-4c61-9a20-702ffd3273fa",
+    "status": 2,
+    "weight": 9,
+    "level": 1,
+    "rank": 1
+  },
+  {
+    "name": "护摩之杖",
+    "star": 5,
+    "type": "polearm",
+    "introduction": "在早已失落的古老祭仪中，使用的朱赤「柴火杖」。",
+    "material": "漆黑陨铁的一角",
+    "cover": "http://localhost:3000/images/3f65eea1-1258-44eb-8d03-921c3dd7184f.png",
+    "ATK": 46,
+    "ATKIncrease": 4,
+    "secondary": {
+      "type": "CRITDMG",
+      "num": 14.4,
+      "increase": 0.58
+    },
+    "effect": {
+      "type": "ATK",
+      "num": 50
+    },
+    "id": "a88dc82c-4cdc-40a7-a6c9-d4a6c160feeb",
+    "status": 2,
+    "weight": 8,
+    "level": 1,
+    "rank": 1
+  },
+  {
+    "name": "飞雷之弦振",
+    "star": 5,
+    "type": "bow",
+    "introduction": "曾由将军御赐的长弓，闪烁着永不熄灭的雷光。",
+    "material": "鸣神御灵的亲爱",
+    "cover": "http://localhost:3000/images/bf56318d-eb82-4656-af5b-d580e9913081.png",
+    "ATK": 46,
+    "ATKIncrease": 4,
+    "secondary": {
+      "type": "CRITDMG",
+      "num": 14.4,
+      "increase": 0.58
+    },
+    "effect": {
+      "type": "elementDMGBonus",
+      "num": 40
+    },
+    "id": "62b67630-9b48-41d3-b1cc-5fa16d341296",
+    "status": 2,
+    "weight": 10,
+    "level": 1,
+    "rank": 1
+  },
+  {
+    "name": "赤角石溃杵",
+    "star": 5,
+    "type": "claymore",
+    "introduction": "依据过去的主人的说法，这是何等鬼怪精妖都能打跑的大杵「赤角石见石溃金涂金啮御狮子」。",
+    "material": "鸣神御灵的亲爱",
+    "cover": "http://localhost:3000/images/df3a7e36-2881-49b6-9f84-7932ed669d8d.png",
+    "ATK": 44,
+    "ATKIncrease": 3.47,
+    "secondary": {
+      "type": "CRITDMG",
+      "num": 19.2,
+      "increase": 0.77
+    },
+    "effect": {
+      "type": "elementDMGBonus",
+      "num": 40
+    },
+    "id": "2e101b00-7298-4822-bde7-9269569ae813",
+    "status": 2,
+    "weight": 7,
     "level": 1,
     "rank": 1
   }

@@ -9,6 +9,14 @@ export function addDomain(data) {
     });
 }
 
+export function getRewards(data) {
+    return request({
+        url: "/console/domains/get",
+        method: "post",
+        data,
+    });
+}
+
 export function selectDomain(data) {
     return request({
         url: "/console/domains/search",

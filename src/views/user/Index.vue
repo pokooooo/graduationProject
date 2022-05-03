@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <div class="index">
     <div class="header">
       <div class="list">
-        <div class="item" @click="toPath(item.path)" v-for="item in list">
-          {{item.label}}
+        <div class="item" @click="toPath(item.path)"  v-for="item in list" :key="item.path">
+          <img style="height: 50px;width: 66px;" :src="item.url" alt="">
         </div>
       </div>
       <div class="tag">
@@ -49,7 +49,9 @@
       </div>
       <el-dropdown placement="bottom" @command="toPath" :show-timeout="50">
         <span class="el-dropdown-link">
-          <img :src="!!$store.getters.getUserData.avatar ? $store.getters.getUserData.avatar : imgUrl" alt="">
+          <img style="  width: 40px;
+  height: 40px;
+  border-radius: 50px;" :src="!!$store.getters.getUserData.avatar ? $store.getters.getUserData.avatar : imgUrl" alt="">
         </span>
         <el-dropdown-menu slot="dropdown">
           <el-dropdown-item command="/user/center">个人中心</el-dropdown-item>
@@ -123,6 +125,7 @@ import {setUser,getUser} from "@/network/user"
 import {friendRequest,friendAccepted,getFriendData,deleteFriend} from "@/network/friend";
 import {getChatByAccount, newChat} from "@/network/chat";
 import {logout1} from "@/network/login";
+import {getMailByAccount} from "@/network/mail";
 
 export default {
   name: 'Index',
@@ -131,22 +134,28 @@ export default {
     return {
       list: [{
         label: '首页',
-        path: '/user/home'
+        path: '/user/home',
+        url: require('../../assets/image/prop/home.png')
       },{
         label: '商城',
-        path: '/user/store'
+        path: '/user/store',
+        url: require('../../assets/image/prop/store.png')
       },{
         label: '副本',
-        path: '/user/domain'
+        path: '/user/domain',
+        url: require('../../assets/image/prop/domain.png')
       },{
         label: '人物',
-        path: '/user/role'
+        path: '/user/role',
+        url: require('../../assets/image/prop/role.png')
       },{
         label: '仓库',
-        path: '/user/inventory'
+        path: '/user/inventory',
+        url: require('../../assets/image/prop/inventory.png')
       },{
         label: '祈愿',
-        path: '/user/event'
+        path: '/user/event',
+        url: require('../../assets/image/prop/event.png')
       },
 
       ],
@@ -282,6 +291,12 @@ export default {
         this.$store.commit('updata',res.data.data.data)
         this.getFriendData()
       })
+      getMailByAccount({account: this.$store.getters.getUserData.account}).then(res => {
+        this.$store.commit('updataMail',res.data.data.data)
+      })
+      getChatByAccount({account:this.$store.getters.getUserData.account}).then(res => {
+        this.$store.commit('updataChat',res.data.data.data)
+      })
     },5000)
   },
   destroyed() {
@@ -291,9 +306,13 @@ export default {
 </script>
 
 <style scoped>
+.index {
+  background: url("../../assets/image/prop/qiyuan.png") center no-repeat;
+}
+
 .header {
   margin: 0 auto;
-  background-color: rgb(96, 128, 136);
+  background-color: #596171;
   height: 55px;
   display: flex;
   align-items: center;
@@ -302,9 +321,7 @@ export default {
 }
 
 .header img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
+
 }
 
 .main {

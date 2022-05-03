@@ -4,6 +4,7 @@ const { Events } = require('../model/events')
 function searchEvents(pageIndex, pageSize, keyword) {
     let _all = Events
         .filter((item) => item.name.includes(keyword))
+        .sort((a, b) => b.weight - a.weight)
     return [
         pageIndex == 0 || pageSize == 0
             ? _all

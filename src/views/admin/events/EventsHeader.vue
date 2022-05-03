@@ -88,6 +88,7 @@ import {addEvent} from "@/network/events";
 
 import SelectInput from "../../../components/select/Input.vue"
 import {selectWeapon} from "@/network/weapons";
+import {selectRole} from "@/network/roles";
 
 
 
@@ -110,7 +111,6 @@ export default {
       addFormRules: {
         name: [{required: true, message: "请输入名称", trigger: "blur"},
           {min: 1, max: 20, message: '长度在 1 到 20 个字符', trigger: 'blur'}],
-
       },
       typeOptions: [{
         value: 'weapon',
@@ -153,7 +153,7 @@ export default {
           }
         }]
       },
-      rolesList: [],
+      roleList: [],
       weaponList: []
     }},
   methods: {
@@ -163,7 +163,7 @@ export default {
         this.setUPOptions(this.weaponList)
       } else {
         this.addForm.type = 'role'
-        this.setUPOptions(this.rolesList)
+        this.setUPOptions(this.roleList)
       }
     },
     closeForm() {
@@ -228,6 +228,14 @@ export default {
       this.addForm.type = 'weapon'
       this.setUPOptions(this.weaponList)
     })
+    selectRole({
+      pageIndex: 1,
+      pageSize: 999,
+      keyword: "",
+    }).then(res => {
+      console.log(res.data.data.items)
+      this.roleList = res.data.data.items
+    })
   }
 }
 </script>
@@ -252,7 +260,7 @@ export default {
   text-align: center;
 }
 .cover {
-  width: 178px;
+
   height: 178px;
   display: block;
 }
