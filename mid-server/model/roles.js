@@ -2,26 +2,26 @@ const { read, write } = require('../lib/read&write')
 
 const __Role = []
 const ROLEURL = '../data/roles.json'
-function setRole(rich) {
-  __Role.push(rich)
+function setRole(role) {
+  __Role.push(role)
   write(__Role, ROLEURL)
 }
 
-function editRole(rich) {
+function editRole(role) {
   __Role.splice(
-    __Role.findIndex((item) => item.id == rich.id),
+    __Role.findIndex((item) => item.id == role.id),
     1,
-    rich,
+    role,
   )
   write(__Role, ROLEURL)
 }
 
 function deleteRole(id) {
-  let rich = __Role.find((item) => item.id === id)
+  let role = __Role.find((item) => item.id === id)
   __Role.splice(
-    __Role.findIndex((item) => item.id == rich.id),
+    __Role.findIndex((item) => item.id == role.id),
     1,
-    { ...rich, status: -1 },
+    { ...role, status: -1 },
   )
   write(__Role, ROLEURL)
 }

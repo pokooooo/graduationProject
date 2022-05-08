@@ -55,7 +55,7 @@
     "diamond": 1000,
     "sendTime": 1650806888620,
     "id": "73e89b34-29f0-417d-ab92-b7f38e481375",
-    "isRead": false,
+    "isRead": true,
     "isReceive": false
   },
   {
@@ -95,7 +95,6 @@
         "purpose": "祈愿",
         "cover": "http://localhost:3000/images/ad0a5810-f1b7-4b0a-9e97-ab4f120cd517.png",
         "id": "e2e2bcb6-3bed-4034-8d62-7547139271c5",
-        "status": 2,
         "weight": 21,
         "num": 10
       }
@@ -104,8 +103,8 @@
     "diamond": 1000,
     "sendTime": 1650806888620,
     "id": "38b10220-a39e-4722-97ed-6eee9f4431ea",
-    "isRead": false,
-    "isReceive": false
+    "isRead": true,
+    "isReceive": true
   },
   {
     "sender": "PAIMON",
@@ -240,8 +239,8 @@
     "diamond": 0,
     "sendTime": 1650902415955,
     "id": "3df3bdff-c665-4737-b633-7003bdaf4cf4",
-    "isRead": false,
-    "isReceive": false
+    "isRead": true,
+    "isReceive": true
   },
   {
     "sender": "PAIMON",
@@ -355,18 +354,5 @@
     "id": "26330352-597b-4243-813f-621893809fcc",
     "isRead": true,
     "isReceive": true
-  },
-  {
-    "sendTime": 1651335195892,
-    "id": "03ec74ce-94ae-4970-a92d-e75549331b7f",
-    "isReceive": false,
-    "isRead": true,
-    "receiver": "player",
-    "sender": "PAIMON",
-    "title": "出售成功!",
-    "context": "您出售的雷云之笼已被player1购买!",
-    "materialsList": [],
-    "gold": 9999,
-    "diamond": 0
   }
 ]

@@ -1,5 +1,5 @@
 <template>
-  <div style="height: 785px">
+  <div style="height: 755px">
     <div class="header">
         <div style="margin-left: 20px;font-size: 24px">
             消息中心
@@ -62,7 +62,7 @@ export default {
 
 <style scoped>
 .header {
-  height: 100px;
+  height: 60px;
   display: flex;
   align-items: center;
 }

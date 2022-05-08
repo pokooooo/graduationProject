@@ -134,7 +134,7 @@ roles.post('/delete', async (ctx) => {
     check(!!token, 'Admin_Not_Login','管理员未登录')
     check(hasToken(token), 'Admin_Login_Outdate', '管理员登录过期')
     let { id } = ctx.request.body
-    check(hasOne(id), 'Roleer_Not_Found')
+    check(hasOne(id), 'Role_Not_Found')
     deleteRole(id)
     ctx.body = generateOk()
   } catch (err) {

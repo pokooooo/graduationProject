@@ -8,11 +8,12 @@
   <div v-if="type === 'weapon'" style="display: flex;height: 610px;width: 1300px;overflow-y:auto">
     <div  style="width: 905px;display: flex;flex-wrap:wrap;overflow-x:auto;height: fit-content;max-height: 610px">
       <div v-for="item in weaponList" :key="item.id" @click="weapon = item" :class="weapon.id === item.id ? 'active hover' : 'hover'"
-           style="width: 110px;height: 130px;padding: 10px;display: flex;flex-direction: column;align-items: center">
+           style="width: 110px;height: 130px;padding: 10px;display: flex;flex-direction: column;align-items: center;position: relative">
         <img style="width: 90px;height: 90px;border-radius: 8px 8px 0 0" :src="item.cover" alt="">
         <div style="height: 20px;width:100%;background-color: #E9E5DC;text-align: center;font-weight: 600;border-radius: 0 0 8px 8px">
           Lv.{{item.level}}
         </div>
+        <img style="position: absolute;top: 0;right: 0;width: 30px;border-radius: 50px" v-if="item.role.name !== ''" :src="item.role.cover" alt="">
       </div>
     </div>
     <div style="flex: 1;">
@@ -44,7 +45,11 @@
             </div>
           <div style="margin-top: 10px;color: #707580">{{weapon.introduction}}</div>
         </div>
-        <div v-if="weapon.role.name !== ''"  style="height: 50px;background-color: #FFE7BB;width: 100%">
+        <div style="height: 50px;background-color: #FFE7BB;width: 100%">
+          <div v-if="weapon.role.name !== ''" style="display: flex;align-items: center;height: 50px">
+            <img style="width: 40px;border-radius: 50px;margin-left: 20px" :src="weapon.role.cover" alt="">
+            <div style="margin-left: 20px;font-size: 18px;font-weight: 600;color: #707580">{{weapon.role.name}}已装备</div>
+          </div>
         </div>
       </div>
 
@@ -53,11 +58,12 @@
   <div v-if="type === 'artifact'" style="display: flex;height: 610px;width: 1300px;overflow-y:auto">
     <div  style="width: 905px;display: flex;flex-wrap:wrap;overflow-x:auto;height: fit-content;max-height: 610px">
       <div v-for="item in artifactList" :key="item.id" @click="artifact = item" :class="artifact.id === item.id ? 'active hover' : 'hover'"
-           style="width: 110px;height: 130px;padding: 10px;display: flex;flex-direction: column;align-items: center">
+           style="width: 110px;height: 130px;padding: 10px;display: flex;flex-direction: column;align-items: center;position: relative">
         <img style="width: 90px;height: 90px;border-radius: 8px 8px 0 0" :src="item.cover" alt="">
         <div style="height: 20px;width:100%;background-color: #E9E5DC;text-align: center;font-weight: 600;border-radius: 0 0 8px 8px">
           +{{item.level}}
         </div>
+        <img style="position: absolute;top: 0;right: 0;width: 30px;border-radius: 50px" v-if="item.role.name !== ''" :src="item.role.cover" alt="">
       </div>
     </div>
     <div style="flex: 1;">
@@ -85,7 +91,12 @@
           <div style="margin-top: 10px;color: #707580;margin-left: 20px">4件套: {{artifact.pieceSet.type | effectType}}提高{{artifact.pieceSet.num * 2}}</div>
           <div style="margin-top: 10px;color: #707580">{{artifact.introduction}}</div>
         </div>
-        <div v-if="artifact.role.name !== ''"  style="height: 40px;background-color: #FFE7BB;width: 100%"></div>
+        <div  style="height: 50px;background-color: #FFE7BB;width: 100%">
+          <div v-if="artifact.role.name !== ''" style="display: flex;align-items: center;height: 50px">
+            <img style="width: 40px;border-radius: 50px;margin-left: 20px" :src="artifact.role.cover" alt="">
+            <div style="margin-left: 20px;font-size: 18px;font-weight: 600;color: #707580">{{artifact.role.name}}已装备</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -127,10 +138,12 @@
   </div>
   <div style="height: 80px;width: 100%;display: flex;justify-content: space-between;align-items: center">
     <div>
-      123
+      .
     </div>
-    <div v-if="type === 'artifact'" style="margin-right: 10px">
-      <el-button @click="dialogVisible = true" style="width:120px;font-size: 18px;font-weight: 600;color: #000" type="warning" round>上架</el-button>
+    <div style="margin-right: 10px">
+      <el-button  v-if="type === 'weapon' && this.weapon.level !== 90"  @click="dialogVisible1 = true" style="width:120px;font-size: 18px;font-weight: 600;color: #000" type="warning" round>{{weapon.level === (weapon.rank - 1) * 10 + 40 ? '突破' : '强化'}}</el-button>
+      <el-button v-if="type === 'artifact' && this.artifact.level !== 20"  @click="dialogVisible2 = true" style="width:120px;font-size: 18px;font-weight: 600;color: #000" type="warning" round>强化</el-button>
+      <el-button  v-if="type === 'artifact' && this.artifact.role.name === ''" @click="dialogVisible = true" style="width:120px;font-size: 18px;font-weight: 600;color: #000" type="warning" round>上架</el-button>
     </div>
   </div>
   <el-dialog
@@ -144,6 +157,111 @@
       <el-button type="primary" @click="up">上 架</el-button>
       </span>
   </el-dialog>
+  <el-dialog
+      title="强化突破"
+      :visible.sync="dialogVisible1"
+      width="30%"
+  >
+    <div style="display: flex;flex-direction: column;align-items: center;font-size: 18px;font-weight: 600">
+      <div style="width: 90%">
+        Lv.{{weapon.level}}
+        <span v-if="weapon.level === (weapon.rank - 1) * 10 + 40">  / {{weapon.level}}<span class="add"> + 10</span></span>
+        <span v-else-if="num !== 0" class="add"> + {{num / 2}}</span>
+      </div>
+      <div style="display: flex;justify-content: space-between;align-items: center;width: 90%;margin-top: 10px">
+        <div>基础攻击力</div>
+        <div>{{weapon.ATK}}<span v-if="num !== 0 && !(weapon.level === (weapon.rank - 1) * 10 + 40)" class="add"> + {{Math.floor((weapon.ATKIncrease * num / 2))}}</span></div>
+      </div>
+      <div style="display: flex;justify-content: space-between;align-items: center;width: 90%;margin-top: 10px">
+        <div>{{weapon.secondary.type | effectType}}</div>
+        <div>{{weapon.secondary.num}}%<span v-if="num !== 0 && !(weapon.level === (weapon.rank - 1) * 10 + 40)" class="add"> + {{(weapon.secondary.increase * num / 2).toFixed(1)}}%</span></div>
+      </div>
+      <div v-if="!(weapon.level === (weapon.rank - 1) * 10 + 40)" style="width: 110px;height: 130px;padding: 10px;display: flex;flex-direction: column;align-items: center">
+        <img style="width: 90px;height: 90px;border-radius: 10px" :src="$store.getters.getUserData.inventory.materials.filter(item => item.name === '大英雄的经验')[0].cover" alt="">
+        <div style="height: 20px;line-height: 20px;width:100%;background-color: #E9E5DC;text-align: center;font-weight: 600;border-radius: 0 0 8px 8px">
+          {{$store.getters.getUserData.inventory.materials.filter(item => item.name === '大英雄的经验')[0].num}}
+        </div>
+      </div>
+      <div v-else>
+        武器突破所需素材
+      </div>
+      <div v-if="!(weapon.level === (weapon.rank - 1) * 10 + 40)" style="display: flex;align-items: center;width: 80%">
+        <div>使用数量</div>
+        <div style="flex: 1;margin: 0 20px">
+          <el-slider style="width: 100%"
+              :max="Math.min($store.getters.getUserData.inventory.materials.filter(item => item.name === '大英雄的经验')[0].num,
+              (40 + (weapon.rank - 1 ) * 10 - weapon.level) * 2)"
+              v-model="num"
+              :step="2">
+          </el-slider>
+        </div>
+        <div>{{num}}</div>
+      </div>
+      <div v-else style="width: 110px;height: 130px;padding: 10px;display: flex;flex-direction: column;align-items: center">
+        <img style="width: 90px;height: 90px;border-radius: 10px" :src="$store.getters.getUserData.inventory.materials.filter(item => item.name === weapon.material)[0].cover" alt="">
+        <div style="height: 20px;line-height: 20px;width:100%;background-color: #E9E5DC;text-align: center;font-weight: 600;border-radius: 0 0 8px 8px">
+          <span :class="$store.getters.getUserData.inventory.materials.filter(item => item.name === weapon.material)[0].num >= Math.pow(2,weapon.rank - 1) ? '' : 'no'">
+            {{$store.getters.getUserData.inventory.materials.filter(item => item.name === weapon.material)[0].num}}</span> / {{Math.pow(2,weapon.rank - 1)}}
+        </div>
+      </div>
+    </div>
+    <span slot="footer" class="dialog-footer">
+      <el-button  @click="dialogVisible1 = false">取 消</el-button>
+      <el-button v-if="!(weapon.level === (weapon.rank - 1) * 10 + 40)" type="primary" @click="enhance">强 化</el-button>
+      <el-button v-else-if="$store.getters.getUserData.inventory.materials.filter
+      (item => item.name === weapon.material)[0].num >= Math.pow(2,weapon.rank - 1)" type="primary" @click="ascend">突 破</el-button>
+      <el-button v-else disabled type="primary">素材不足</el-button>
+    </span>
+  </el-dialog>
+  <el-dialog
+      title="强化"
+      :visible.sync="dialogVisible2"
+      width="30%"
+  >
+    <div style="display: flex;flex-direction: column;align-items: center;font-size: 18px;font-weight: 600">
+      <div style="width: 90%">
+        + {{artifact.level}}
+        <span v-if="num !== 0" class="add"> + {{num / 3}}</span>
+      </div>
+      <div style="display: flex;justify-content: space-between;align-items: center;width: 90%;margin-top: 10px;margin-bottom: 10px">
+        <div>{{artifact.effect.type | effectType}}</div>
+        <div>{{artifact.effect.num}}%<span v-if="num !== 0" class="add"> + {{(artifact.effect.increase * num / 3)}}%</span></div>
+      </div>
+      <div v-if="artifact.effects.length !== 4 && add > 0" class="add" style="width: 90%" >
+        随机获得{{Math.min(add,4 - artifact.effects.length)}}条追加属性
+      </div>
+      <div v-if="add + artifact.effects.length - 4 > 0 " class="add" style="width: 90%;margin-top: 10px" >
+        随机提升{{add + artifact.effects.length - 4}}条追加属性
+      </div>
+      <div v-for="item in artifact.effects" :key="item.type" style="display: flex;justify-content: space-between;align-items: center;width: 90%;margin-top: 5px">
+        <div>{{item.type | effectType}}</div>
+        <div>{{item.num}}%</div>
+      </div>
+      <div style="width: 110px;height: 130px;padding: 10px;display: flex;flex-direction: column;align-items: center">
+        <img style="width: 90px;height: 90px;border-radius: 10px" :src="$store.getters.getUserData.inventory.materials.filter(item => item.name === '大英雄的经验')[0].cover" alt="">
+        <div style="height: 20px;line-height: 20px;width:100%;background-color: #E9E5DC;text-align: center;font-weight: 600;border-radius: 0 0 8px 8px">
+          {{$store.getters.getUserData.inventory.materials.filter(item => item.name === '大英雄的经验')[0].num}}
+        </div>
+      </div>
+      <div style="display: flex;align-items: center;width: 80%">
+        <div>使用数量</div>
+        <div style="flex: 1;margin: 0 20px">
+          <el-slider style="width: 100%"
+                     :max="Math.min($store.getters.getUserData.inventory.materials.filter(item => item.name === '大英雄的经验')[0].num,
+              (20 - artifact.level) * 3)"
+                     v-model="num"
+                     :step="3">
+          </el-slider>
+        </div>
+        <div>{{num}}</div>
+      </div>
+    </div>
+    <span slot="footer" class="dialog-footer">
+      <el-button  @click="dialogVisible2 = false">取 消</el-button>
+      <el-button  type="primary" @click="enhance1">强 化</el-button>
+
+    </span>
+  </el-dialog>
 </div>
 </template>
 
@@ -151,7 +269,7 @@
 
 
 import {upGoods} from "@/network/goods";
-import {getUser} from "@/network/user";
+import {getUser, setUser} from "@/network/user";
 
 export default {
   name: "Inventory",
@@ -159,10 +277,40 @@ export default {
     return {
       type: 'weapon',
       dialogVisible: false,
+      dialogVisible1: false,
+      dialogVisible2: false,
       weapon: {},
       material: {},
       artifact: {},
-      price: 0
+      price: 0,
+      num: 0,
+      addEffects: [
+        {
+          type: "ATK",
+          num: 5,
+          increase: 5
+        },  {
+          type: "HP",
+          num: 5,
+          increase: 5
+        },  {
+          type: "DEF",
+          num: 6.2,
+          increase: 6.2
+        },  {
+          type: "energyRecharge",
+          num: 5.5,
+          increase: 5.5
+        },  {
+          type: "CRITDMG",
+          num: 6.6,
+          increase: 6.6
+        },  {
+          type: "CRITRate",
+          num: 3.3,
+          increase: 3.3
+        },
+      ]
     }
   },
   methods: {
@@ -180,7 +328,93 @@ export default {
         })
 
       })
+    },
+    enhance() {
+      let add = this.num / 2
+      this.weapon.level += add
+      this.weapon.ATK += this.weapon.ATKIncrease * add
+      this.weapon.ATK = Math.floor(this.weapon.ATK)
+      this.weapon.secondary.num += this.weapon.secondary.increase * add
+      this.weapon.secondary.num = this.weapon.secondary.num.toFixed(1) * 1
+      let user = this.$store.getters.getUserData
+      user.inventory.weapons.splice(
+          user.inventory.weapons.findIndex((item) => item.id == this.weapon.id),
+          1,
+          this.weapon,
+      )
+      user.inventory.materials.filter(item => item.name === '大英雄的经验')[0].num += -this.num
+      if(this.weapon.role.name !== '') {
+        user.roles.filter(item => item.name === this.weapon.role.name)[0].weapon = this.weapon
+      }
+
+      this.dialogVisible1 = false
+      setUser(user).then(res => {
+        this.$store.commit('updata',res.data.data.data)
+        this.num = 0
+      })
+    },
+    enhance1() {
+      let up = this.num / 3
+      this.artifact.level += up
+      this.artifact.effect.num += this.artifact.effect.increase * up
+      this.artifact.effect.num = this.artifact.effect.num.toFixed(1) * 1
+      for (let i = 0; i < this.add; i++) {
+        this.artifact = this.addEffect(this.artifact)
+      }
+      let user = this.$store.getters.getUserData
+      user.inventory.artifacts.splice(
+          user.inventory.artifacts.findIndex((item) => item.id == this.artifact.id),
+          1,
+          this.artifact,
+      )
+      user.inventory.materials.filter(item => item.name === '大英雄的经验')[0].num += -this.num
+      if(this.artifact.role.name !== '') {
+        user.roles.filter(item => item.name === this.artifact.role.name)[0].artifacts[this.artifact.part] = this.artifact
+
+      }
+      this.dialogVisible2 = false
+      setUser(user).then(res => {
+        this.$store.commit('updata',res.data.data.data)
+        this.num = 0
+      })
+    },
+    ascend() {
+      let user = this.$store.getters.getUserData
+      user.inventory.materials.filter(item => item.name === this.weapon.material)[0].num += -Math.pow(2,this.weapon.rank - 1)
+      this.weapon.rank++
+      user.inventory.weapons.splice(
+          user.inventory.weapons.findIndex((item) => item.id == this.weapon.id),
+          1,
+          this.weapon,
+      )
+      if(this.weapon.role.name !== '') {
+        user.roles.filter(item => item.name === this.weapon.role.name)[0].weapon = this.weapon
+      }
+      this.dialogVisible1 = false
+      setUser(user).then(res => {
+        this.$store.commit('updata',res.data.data.data)
+
+      })
+
+    },
+    addEffect(artifact) {
+      if(artifact.effects.length < 4) {
+        let effects = this.addEffects.filter(item => {
+          let same = false
+          artifact.effects.map(item1 => {
+            if(item1.type === item.type) same = true
+          })
+          return !same
+        })
+        artifact.effects.push(effects[Math.floor(Math.random() * effects.length)])
+      } else {
+        let index = Math.floor(Math.random() * artifact.effects.length)
+        artifact.effects[index].num += artifact.effects[index].increase
+        artifact.effects[index].num = artifact.effects[index].num.toFixed(1) * 1
+      }
+      return artifact
     }
+
   },
   created() {
     this.weapon = this.$store.getters.getUserData.inventory.weapons.sort((a,b) => b.weight - a.weight)[0]
@@ -189,13 +423,22 @@ export default {
   },
   computed: {
     weaponList() {
-      return this.$store.getters.getUserData.inventory.weapons.sort((a,b) => b.weight - a.weight)
+      return this.$store.getters.getUserData.inventory.weapons.sort((a,b) => b.weight - a.weight).sort((a,b) => b.level - a.level)
     },
     materialList() {
       return this.$store.getters.getUserData.inventory.materials.sort((a,b) => b.weight - a.weight)
     },
     artifactList() {
       return this.$store.getters.getUserData.inventory.artifacts.sort((a,b) => b.level - a.level)
+    },
+    add() {
+      let add = 0
+      for (let i = this.artifact.level; i <= this.artifact.level + this.num / 3;i++) {
+        if(i !== 0 && i % 4 === 0) {
+          add++
+        }
+      }
+      return add
     }
   }
 
@@ -219,5 +462,13 @@ export default {
 }
 /deep/ input[type="number"] {
   -moz-appearance: textfield !important;
+}
+
+.add {
+  color: #FFCC32;
+}
+
+.no {
+  color: #FF5F40;
 }
 </style>

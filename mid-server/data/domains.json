@@ -688,5 +688,113 @@
     "id": "d3b6cc61-6101-49b5-bf2f-9cdb19615819",
     "status": 1,
     "cost": 20
+  },
+  {
+    "name": "深入风龙废墟",
+    "introduction": "高耸而破碎的尖塔无声地述说着哀痛的过往。盘踞其中的除了回忆与思念，还有狂啸的暴风…",
+    "type": "role",
+    "list": [
+      {
+        "name": "自在松石块",
+        "get": "深入风龙废墟",
+        "introduction": "「但风向是会转变的。\n「终有一天，会吹向更有光亮的方向。」",
+        "purpose": "角色突破素材",
+        "cover": "http://localhost:3000/images/c8aaae28-d35b-4d20-8afd-547260a602e0.png",
+        "id": "b6ff8daa-2f2e-4497-bf69-4ffc5833e755",
+        "status": 1,
+        "weight": 5
+      }
+    ],
+    "cover": "http://localhost:3000/images/c109caac-cd88-4d3d-a0ea-9f48d2a7f3dc.jpg",
+    "weight": 5,
+    "id": "54ba25d3-5992-417b-be77-1e457538bd69",
+    "status": 1,
+    "cost": 60
+  },
+  {
+    "name": "进入「黄金屋」",
+    "introduction": "一度笼罩璃月的疑云终于散开，胁迫这片土地的阴谋也因为七星、仙人与你的共同努力被粉碎。但在黄金屋的深处，与愚人众的「公子」交锋的记忆再次鲜明地浮现。在回忆中重新演练这场战斗，或许能有新的收获...",
+    "type": "role",
+    "list": [
+      {
+        "name": "涤净青金块",
+        "get": "进入「黄金屋」",
+        "introduction": "「我的理想之内并没有一丝污浊。\n「我要纠正你，在这里，人并不对神背负罪孽.......」",
+        "purpose": "角色突破素材",
+        "cover": "http://localhost:3000/images/93206fb0-93d9-43a5-9eb4-78b1cafdac55.png",
+        "id": "d4c6563b-3bac-4c0d-a7c8-0e1a93bf842f",
+        "status": 1,
+        "weight": 5
+      },
+      {
+        "name": "最胜紫晶块",
+        "get": "梦想乐土之殁",
+        "introduction": "「此身即是尘世最为殊胜尊贵之身。\n「应持天下之大权。」",
+        "purpose": "角色突破素材",
+        "cover": "http://localhost:3000/images/179d5614-0625-4e55-9a3c-b153d8c6e56a.png",
+        "id": "ac9b9852-a28e-4336-b135-858f2aea67c7",
+        "status": 1,
+        "weight": 5
+      }
+    ],
+    "cover": "http://localhost:3000/images/55b0d000-744a-46b9-8eda-81bf5798a27d.png",
+    "weight": 5,
+    "id": "3c00986c-d28c-45e4-a35a-91e2927e582a",
+    "status": 1,
+    "cost": 60
+  },
+  {
+    "name": "「伏龙树」之底",
+    "introduction": "在无比漫长的岁月中，如同棺柩般囚禁着若陀龙王的地心岩床。",
+    "type": "role",
+    "list": [
+      {
+        "name": "坚牢黄玉块",
+        "get": "「伏龙树」之底",
+        "introduction": "「大陆所流通的一切银钱皆是我的血肉。\n「我在以这样的方式，为人类一切的汗水、智慧和未来做担保。」",
+        "purpose": "角色突破素材",
+        "cover": "http://localhost:3000/images/82fde010-a97a-4c8f-9272-506aa7b3dc62.png",
+        "id": "05029476-ddac-421e-b37e-183f6f858a7f",
+        "status": 1,
+        "weight": 5
+      }
+    ],
+    "cover": "http://localhost:3000/images/c8453ad8-4a10-4227-9225-2916d819dcae.png",
+    "weight": 5,
+    "id": "e0961763-1f38-4e85-9140-ab78d7a57ebc",
+    "status": 1,
+    "cost": 60
+  },
+  {
+    "name": "鸣神岛·天守",
+    "introduction": "主宰稻妻的雷电将军的居所。也是进行「御前决斗」最为合适的场地。",
+    "type": "role",
+    "list": [
+      {
+        "name": "哀叙冰玉块",
+        "get": "进入「黄金屋」",
+        "introduction": "「...抱歉...\n「让你们一起和我背负了整个世界的哀思。」",
+        "purpose": "角色突破素材",
+        "cover": "http://localhost:3000/images/80b67778-ff82-4a7d-9eb4-39c0c51bd514.png",
+        "id": "97e1a9de-6986-414d-b2b7-2596275a5816",
+        "status": 1,
+        "weight": 5
+      },
+      {
+        "name": "燃愿玛瑙块",
+        "get": "鸣神岛·天守",
+        "introduction": "「为了愿望而步上巡礼，为了最强之名而云聚争斗...\n「最后为了梦在劫火中燃尽。」",
+        "purpose": "角色突破素材",
+        "cover": "http://localhost:3000/images/b5ba2946-25f7-48e8-970f-188c0158668b.png",
+        "id": "34541b67-a43d-46ad-b709-6aca9205c8b1",
+        "status": 1,
+        "weight": 5
+      }
+    ],
+    "cover": "http://localhost:3000/images/980cca5c-9e6f-4a16-9ef6-cbde3ee221b8.png",
+    "weight": 5,
+    "id": "96e5ff3a-d10f-4b38-ac0e-7b87b58905ca",
+    "status": 1,
+    "cost": 60
   }
 ]

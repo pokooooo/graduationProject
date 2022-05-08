@@ -46,6 +46,15 @@
               <img v-if="addForm.background" :src="addForm.background" class="avatar1"/>
               <i v-else class="el-icon-plus avatar-uploader-icon"></i>
             </el-upload>
+            <el-upload
+                class="avatar-uploader"
+                action="/api/console/form/upload_v2"
+                :show-file-list="false"
+                :on-change="handleChange2"
+            >
+              <img v-if="addForm.background1" :src="addForm.background1" class="avatar1"/>
+              <i v-else class="el-icon-plus avatar-uploader-icon"></i>
+            </el-upload>
           </el-tab-pane>
           <el-tab-pane label="基本资料" name="1">
             <el-form-item label="角色名称" >
@@ -87,22 +96,22 @@
           </el-tab-pane>
           <el-tab-pane label="基础属性" name="2">
             <el-form-item label="基础生命值" >
-              <el-input type="number" v-model.number="addForm.stats.ATk.basic"></el-input>
+              <el-input type="number" v-model.number="addForm.stats.basicHP.basic"></el-input>
             </el-form-item>
             <el-form-item label="生命值成长" >
-              <el-input type="number" v-model.number="addForm.stats.ATk.increase"></el-input>
+              <el-input type="number" v-model.number="addForm.stats.basicHP.increase"></el-input>
             </el-form-item>
             <el-form-item label="基础攻击力" >
-              <el-input type="number" v-model.number="addForm.stats.HP.basic"></el-input>
+              <el-input type="number" v-model.number="addForm.stats.basicATK.basic"></el-input>
             </el-form-item>
             <el-form-item label="攻击力成长" >
-              <el-input type="number" v-model.number="addForm.stats.HP.increase"></el-input>
+              <el-input type="number" v-model.number="addForm.stats.basicATK.increase"></el-input>
             </el-form-item>
             <el-form-item label="基础防御力" >
-              <el-input type="number" v-model.number="addForm.stats.DEF.basic"></el-input>
+              <el-input type="number" v-model.number="addForm.stats.basicDEF.basic"></el-input>
             </el-form-item>
             <el-form-item label="防御力成长" >
-              <el-input type="number" v-model.number="addForm.stats.DEF.increase"></el-input>
+              <el-input type="number" v-model.number="addForm.stats.basicDEF.increase"></el-input>
             </el-form-item>
           </el-tab-pane>
           <el-tab-pane label="角色突破" name="3">
@@ -173,18 +182,19 @@ export default {
         introduction: "",
         cover: "",
         background: "",
+        background1: "",
         stats: {
-          ATk: {
+          basicATK: {
             basic: 0,
             increase: 0,
             num: 0
           },
-          HP: {
+          basicHP: {
             basic: 0,
             increase: 0,
             num: 0
           },
-          DEF: {
+          basicDEF: {
             basic: 0,
             increase: 0,
             num: 0
@@ -309,6 +319,16 @@ export default {
         let avatar = info.response.data.file;
         avatar = "http://localhost:3000" + avatar;
         this.addForm.background = avatar;
+      }
+    },
+    handleChange2(info) {
+      if (info.status === "ready") {
+        return;
+      }
+      if (info.status === "success") {
+        let avatar = info.response.data.file;
+        avatar = "http://localhost:3000" + avatar;
+        this.addForm.background1 = avatar;
       }
     },
     addRole() {

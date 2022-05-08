@@ -46,6 +46,7 @@ function addWeapon(account, iid) {
     id: '',
     cover: ''
   }
+  weapon.experience = 0,
   user.inventory.weapons.push(weapon)
   editUser(user)
   return weapon
@@ -53,7 +54,7 @@ function addWeapon(account, iid) {
 
 function addRole(account, iid) {
   let user = getUser(account)
-  let {name,star,vision,type,introduction,cover,background,stats,ascend,weight} = getRole(iid)
+  let {name,star,vision,type,introduction,cover,background,background1,stats,ascend,weight} = getRole(iid)
   if (user.roles.findIndex((item) => item.name === name) >= 0){
     return {
       name: '无主的星辉',
@@ -62,13 +63,17 @@ function addRole(account, iid) {
     }
   }
 
-  let role = {name,star,vision,type,introduction,cover,background,stats,ascend,weight}
+  let role = {name,star,vision,type,introduction,cover,background,stats,ascend,weight,background1}
   role.stats = Object.assign(role.stats,{
+    HP: 0,
+    ATK: 0,
+    DEF: 0,
     CRITRate: 5,
     CRITDMG: 50,
     energyRecharge: 100,
     healingBonus: 0,
     shieldStrength: 0,
+    elementDMGBonus: 0,
     physicalDMGBonus: 0,
     pyroDMGBonus: 0,
     hydroDMGBonus: 0,
@@ -79,6 +84,7 @@ function addRole(account, iid) {
   })
   user.roles.push(Object.assign(role,{
     level: 1,
+    experience: 0,
     rank: 1,
     id: uuid.v4(),
     weapon: {},
@@ -94,6 +100,19 @@ function addRole(account, iid) {
   return role
 }
 
+function addEXP(account,experience) {
+  let up = false
+  let user = getUser(account)
+  if(experience + user.experience >= 2000) {
+    user.experience = user.experience + experience - 2000
+    user.level++
+    up = true
+  } else {
+    user.experience = user.experience + experience
+  }
+  editUser(user)
+  return up
+}
 
 let basicEffect = [
   {
@@ -220,6 +239,7 @@ function addEffect(artifact) {
   } else {
     let index = Math.floor(Math.random() * artifact.effects.length)
     artifact.effects[index].num += artifact.effects[index].increase
+    artifact.effects[index].num = artifact.effects[index].num.toFixed(1) * 1
   }
   return artifact
 }
@@ -281,6 +301,7 @@ module.exports = {
   addMaterial,
   addWeapon,
   addRole,
+  addEXP,
   addArtifact,
   deleteArtifact,
   addArtifact1,

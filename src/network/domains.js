@@ -1,6 +1,14 @@
 
 import {request} from "@/network/request";
 
+export function resin(data) {
+    return request({
+        url: "/console/domains/resin",
+        method: "post",
+        data,
+    });
+}
+
 export function addDomain(data) {
     return request({
         url: "/console/domains/add",

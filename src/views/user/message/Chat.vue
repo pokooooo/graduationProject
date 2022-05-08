@@ -1,7 +1,7 @@
 <template>
   <div>
     <el-container>
-      <el-aside width="300px" style="height:645px">
+      <el-aside width="300px" >
         <el-menu
             :default-active="index + ''"
             @select="select"
@@ -27,7 +27,7 @@
           <div style="height: 40px;text-align: end;margin-right: 20px">
             <el-button type="danger" @click="clearChat" plain>清除聊天记录</el-button>
           </div>
-          <div style="height: 440px;display: flex;flex-direction: column;overflow-y:auto">
+          <div style="height: 500px;display: flex;flex-direction: column;overflow-y:auto">
             <div v-for="item in chatData.list">
               <div v-if="$store.getters.getUserData.account === item.sender"  style="display: flex;height: 60px">
                 <div style="display: flex;align-items: center">

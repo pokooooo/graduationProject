@@ -26,6 +26,14 @@ Vue.filter('dataFormat',originVal => {
   return `${y}-${m}-${d} ${hh}:${mm}:${ss}`
 })
 
+Vue.filter('floor',num => {
+  return Math.floor(num)
+})
+
+Vue.filter('toFixed',num => {
+  return num.toFixed(1)
+})
+
 Vue.filter('weaponType', type => {
   if(type === 'bow') return '弓'
   if(type === 'catalyst') return '法器'

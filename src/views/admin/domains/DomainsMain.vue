@@ -1,7 +1,7 @@
 <template>
   <div>
     <el-table :data="domainsList" border stripe>
-      <el-table-column label="名称"  width="100" prop="name"></el-table-column>
+      <el-table-column label="名称"  width="120" prop="name"></el-table-column>
       <el-table-column label="类型" width="80">
         <template slot-scope="scope">
           {{scope.row.type | domainsType}}
@@ -21,7 +21,8 @@
       <el-table-column label="掉落"  prop="status">
         <template slot-scope="scope">
           <div style="display: flex">
-            <img style="width: 100px;margin-right: 20px;border-radius: 10px" :src="scope.row.type === 'artifact' ? item.parts[0].cover : item.cover" v-for="item in scope.row.list" :key="item.id" alt="">
+            <img style="width: 100px;margin-right: 20px;border-radius: 10px"
+                 :src="scope.row.type === 'artifact' ? item.parts[0].cover : item.cover" v-for="item in scope.row.list" :key="item.id" alt="">
           </div>
         </template>
       </el-table-column>
@@ -49,103 +50,108 @@
               icon="el-icon-delete"
               @click="remove(scope.row.id)"
           ></el-button>
-          <el-button
-              type="primary"
-              icon="el-icon-setting"
-              @click="setweight(scope.row)"
-          ></el-button>
         </template>
       </el-table-column>
     </el-table>
-<!--    <el-dialog title="编辑人物" :visible.sync="dialogVisible1" width="30%">-->
-<!--      <el-form-->
-<!--          :model="setForm"-->
-<!--          :rules="setFormRules"-->
-<!--          ref="setForm"-->
-<!--          label-width="80px"-->
-<!--      >-->
-<!--        <el-form-item prop="name" label="秘境名称">-->
-<!--          <el-input v-model="setForm.name"></el-input>-->
-<!--        </el-form-item>-->
-<!--        <el-form-item prop="introduction" label="秘境介绍">-->
-<!--          <el-input type="textarea" v-model="setForm.introduction"></el-input>-->
-<!--        </el-form-item>-->
-<!--        <el-form-item prop="HP" label="基准生命倍率">-->
-<!--          <el-input type="number" v-model.number="setForm.HP"></el-input>-->
-<!--        </el-form-item>-->
-<!--        <el-form-item prop="introduction" label="基准攻击倍率">-->
-<!--          <el-input type="number" v-model.number="setForm.AKT"></el-input>-->
-<!--        </el-form-item>-->
-<!--        <el-form-item label="秘境类型" >-->
-<!--          <el-select v-model="setForm.type" placeholder="请选择">-->
-<!--            <el-option-->
-<!--                v-for="item in typeOptions"-->
-<!--                :key="item.value"-->
-<!--                :label="item.label"-->
-<!--                :value="item.value">-->
-<!--            </el-option>-->
-<!--          </el-select>-->
-<!--        </el-form-item>-->
-<!--        <el-form-item label="秘境图像">-->
-<!--          <el-upload-->
-<!--              class="cover-uploader"-->
-<!--              action="/api/console/form/upload_v2"-->
-<!--              :show-file-list="false"-->
-<!--              :on-change="handleChange"-->
-<!--          >-->
-<!--            <img v-if="setForm.cover" :src="setForm.cover" class="cover" />-->
-<!--            <i v-else class="el-icon-plus cover-uploader-icon"></i>-->
-<!--          </el-upload>-->
-<!--        </el-form-item>-->
-<!--      </el-form>-->
-<!--      <span slot="footer" class="dialog-footer">-->
-<!--        <el-button @click="dialogVisible = false">取 消</el-button>-->
-<!--        <el-button type="primary" @click="commitSet">确 定</el-button>-->
-<!--      </span>-->
-<!--    </el-dialog>-->
+    <el-dialog
+        title="修改秘境"
+        :visible.sync="dialogVisible"
+        width="30%"
+
+    >
+      <el-form
+          :model="setForm"
+
+          ref="setForm"
+          label-width="80px"
+      >
+        <el-form-item prop="name" label="秘境名称">
+          <el-input v-model="setForm.name"></el-input>
+        </el-form-item>
+        <el-form-item prop="introduction" label="秘境介绍">
+          <el-input type="textarea" v-model="setForm.introduction"></el-input>
+        </el-form-item>
+        <el-form-item label="秘境类型" >
+          <el-select v-model="setForm.type" @change="change" placeholder="请选择">
+            <el-option
+                v-for="item in typeOptions"
+                :key="item.value"
+                :label="item.label"
+                :value="item.value">
+            </el-option>
+          </el-select>
+        </el-form-item>
+        <el-form-item label="掉落">
+          <el-select v-model="setForm.list" multiple placeholder="请选择">
+            <el-option
+                v-for="item in options"
+                :key="item.value"
+                :label="item.label"
+                :value="item.value">
+            </el-option>
+          </el-select>
+        </el-form-item>
+        <el-form-item label="秘境图像">
+          <el-upload
+              class="cover-uploader"
+              action="/api/console/form/upload_v2"
+              :show-file-list="false"
+              :on-change="handleChange"
+          >
+            <img v-if="setForm.cover" :src="setForm.cover" class="cover" />
+            <i v-else class="el-icon-plus cover-uploader-icon"></i>
+          </el-upload>
+        </el-form-item>
+      </el-form>
+      <span slot="footer" class="dialog-footer">
+        <el-button @click="dialogVisible = false">取 消</el-button>
+        <el-button type="primary" @click="commitSet">确 定</el-button>
+      </span>
+    </el-dialog>
   </div>
 </template>
 
 <script>
-import {deleteEnemie, upEnemie, downEnemie, setWeight, setEnemie} from "@/network/domains";
-import {downMaterial, upMaterial} from "@/network/materials";
+import {deleteDomain, upDomain, downDomain, setWeight, setDomain} from "@/network/domains";
+import {selectMaterial} from "@/network/materials";
+import {selectArtifact} from "@/network/artifacts";
+
 
 
 
 
 export default {
-  name: 'EnemiesMain',
+  name: 'DomainsMain',
 
   data() {
     return {
       dialogVisible: false,
+      options: [],
+      materialsList: [],
+      artifactsList: [],
       dialogVisible1: false,
       setForm: {
         name: "",
         introduction: "",
         type: "",
-        AKT: 0,
-        HP: 0,
+        list: [],
         cover: "",
-      },
-      setFormRules: {
-        name: [{ required: true, message: "请输入名称", trigger: "blur" },
-          { min: 1, max: 20, message: '长度在 1 到 20 个字符', trigger: 'blur' }],
-        introduction: [],
-        type: [{ required: true, message: "请输入类型", trigger: "blur" }],
-        ATK: [{ required: true, message: "请输入倍率", trigger: "blur" }],
-        HP: [{ required: true, message: "请输入倍率", trigger: "blur" }],
+        weight: 0
       },
       typeOptions:  [{
-        value: 'normal',
-        label: '普通'
+        value: 'artifact',
+        label: '圣遗物'
       }, {
-        value: 'elite',
-        label: '精英'
+        value: 'role',
+        label: '角色突破素材'
       }, {
-        value: 'boss',
-        label: '首领'
+        value: 'weapon',
+        label: '武器突破素材'
+      }, {
+        value: 'talent',
+        label: '角色天赋素材'
       }],
+
       weight: 0,
       id: ""
     }
@@ -161,12 +167,12 @@ export default {
 
   methods: {
     down(id) {
-      downMaterial({id});
+      downDomain({id});
       this.$message.success("下架成功!");
       this.$emit("refresh");
     },
     up(id) {
-      upMaterial({id});
+      upDomain({id});
       this.$message.success("上架成功!");
       this.$emit("refresh");
     },
@@ -188,7 +194,7 @@ export default {
         type: "warning",
       })
           .then(() => {
-            deleteEnemies({id}).then(() => {
+            deleteDomain({id}).then(() => {
               this.$message.success("删除成功!");
               this.$emit("refresh");
             });
@@ -201,7 +207,7 @@ export default {
           });
     },
     set(item) {
-      this.dialogVisible1 = true;
+      this.dialogVisible = true;
       this.setForm = item
     },
     handleChange(info) {
@@ -216,11 +222,40 @@ export default {
         this.setForm.name = info.name.slice(0, info.name.indexOf("."));
       }
     },
+    change(value) {
+      this.options = []
+      let type = 12
+      if(value === 'role') {
+        type = 5
+      } else if(value === 'weapon') {
+        type = 4
+      } else if(value === 'talent') {
+        type = 3
+      }
+      if(type === 12) {
+        this.artifactsList.map(item => {
+          this.options.push({
+            label: item.name,
+            value: item.id
+          })
+        })
+      } else {
+        this.materialsList.map(item => {
+          if(item.weight === type) {
+            this.options.push({
+              label: item.name,
+              value: item.id
+            })
+          }
+        })
+      }
+      this.setForm.weight = type
+    },
     commitSet() {
       this.$refs.setForm.validate((valid) => {
         if (valid) {
-          setEnemies(this.setForm).then((res) => {
-            this.dialogVisible1 = false;
+          setDomain(this.setForm).then((res) => {
+            this.dialogVisible = false;
             this.$emit("refresh");
             this.$message.success("编辑成功!");
           });
@@ -229,6 +264,22 @@ export default {
         }
       });
     }
+  },
+  created() {
+    selectMaterial({
+      pageIndex: 1,
+      pageSize: 999,
+      keyword: "",
+    }).then(res => {
+      this.materialsList = res.data.data.items
+    });
+    selectArtifact({
+      pageIndex: 1,
+      pageSize: 999,
+      keyword: "",
+    }).then(res => {
+      this.artifactsList = res.data.data.items
+    });
   }
 
 

@@ -126,6 +126,7 @@ import {friendRequest,friendAccepted,getFriendData,deleteFriend} from "@/network
 import {getChatByAccount, newChat} from "@/network/chat";
 import {logout1} from "@/network/login";
 import {getMailByAccount} from "@/network/mail";
+import {resin} from "@/network/domains";
 
 export default {
   name: 'Index',
@@ -268,18 +269,22 @@ export default {
       }
       let gold = 0;
       data.isSign = true;
-      data.diamond += 50
+      data.diamond += 100
       data.signDay += 1;
       if (data.signDay <= 7) {
-        gold = 1000 + data.signDay * 500
+        gold = 10000 + data.signDay * 5000
       } else {
-        gold = 5000
+        gold = 50000
       }
       data.gold += gold
       this.$store.dispatch('updata', data).then(res => {
+        resin({
+          account: data.account,
+          num: 3
+        })
         this.$notify({
           title: '签到成功',
-          message: `您已连续签到${data.signDay}天,获取${gold}摩拉和50原石！`,
+          message: `您已连续签到${data.signDay}天,获取${gold}摩拉，100结晶，3个脆弱树脂！`,
           type: 'success'
         });
       })

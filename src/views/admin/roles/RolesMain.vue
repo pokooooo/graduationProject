@@ -19,9 +19,9 @@
       </el-table-column>
       <el-table-column label="属性">
         <template slot-scope="scope">
-          <div>生命值：{{scope.row.stats.ATk.basic}} + {{scope.row.stats.ATk.increase}}</div>
-          <div>攻击力：{{scope.row.stats.HP.basic}} + {{scope.row.stats.HP.increase}}</div>
-          <div>防御力：{{scope.row.stats.DEF.basic}} + {{scope.row.stats.DEF.increase}}</div>
+          <div>生命值：{{scope.row.stats.basicATK.basic}} + {{scope.row.stats.basicATK.increase}}</div>
+          <div>攻击力：{{scope.row.stats.basicHP.basic}} + {{scope.row.stats.basicHP.increase}}</div>
+          <div>防御力：{{scope.row.stats.basicDEF.basic}} + {{scope.row.stats.basicDEF.increase}}</div>
         </template>
       </el-table-column>
       <el-table-column label="突破">

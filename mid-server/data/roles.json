@@ -8,17 +8,17 @@
     "cover": "http://localhost:3000/images/f2189bb6-d06f-4266-b20a-1de5e5105b48.png",
     "background": "http://localhost:3000/images/a6456710-1088-4a11-bacc-2259cb033605.png",
     "stats": {
-      "ATk": {
+      "basicHP": {
         "basic": 1001,
         "increase": 133,
         "num": 0
       },
-      "HP": {
+      "basicATK": {
         "basic": 27,
         "increase": 3.5,
         "num": 0
       },
-      "DEF": {
+      "basicDEF": {
         "basic": 61,
         "increase": 8.1,
         "num": 0
@@ -31,7 +31,8 @@
     },
     "id": "48a4e34d-02a4-4a3d-ba58-7018922226d8",
     "status": 2,
-    "weight": 10
+    "weight": 10,
+    "background1": "http://localhost:3000/images/e0839a98-21a1-4ffc-af68-0578ee380032.png"
   },
   {
     "name": "雷电将军",
@@ -42,17 +43,17 @@
     "cover": "http://localhost:3000/images/ec23b4f6-079c-4bda-a253-c965725079f1.png",
     "background": "http://localhost:3000/images/46441e32-2d4c-4295-9171-e0db895c69b3.png",
     "stats": {
-      "ATk": {
+      "basicHP": {
         "basic": 1007,
         "increase": 134,
         "num": 0
       },
-      "HP": {
+      "basicATK": {
         "basic": 26,
         "increase": 3.5,
         "num": 0
       },
-      "DEF": {
+      "basicDEF": {
         "basic": 61,
         "increase": 8.2,
         "num": 0
@@ -65,7 +66,8 @@
     },
     "id": "b12c6e25-e0e6-471d-8655-35dbeacc7709",
     "status": 2,
-    "weight": 9
+    "weight": 9,
+    "background1": "http://localhost:3000/images/b62fd227-b254-4d4f-babb-f298afe26592.jpg"
   },
   {
     "name": "琴",
@@ -76,17 +78,17 @@
     "cover": "http://localhost:3000/images/dd46685a-b124-44a4-8c82-1fd94be3b7f5.png",
     "background": "http://localhost:3000/images/d54c2864-da33-4e25-9eeb-b2c6e20eca70.png",
     "stats": {
-      "ATk": {
+      "basicHP": {
         "basic": 1144,
         "increase": 152,
         "num": 0
       },
-      "HP": {
+      "basicATK": {
         "basic": 19,
         "increase": 2.5,
         "num": 0
       },
-      "DEF": {
+      "basicDEF": {
         "basic": 60,
         "increase": 8,
         "num": 0
@@ -99,7 +101,8 @@
     },
     "id": "7fe4d4bf-0301-401c-a242-068cdf8bdee7",
     "status": 1,
-    "weight": 11
+    "weight": 11,
+    "background1": "http://localhost:3000/images/e93d93d4-1888-4c47-a871-9e4dc76ab249.png"
   },
   {
     "name": "莫娜",
@@ -110,17 +113,17 @@
     "cover": "http://localhost:3000/images/3a472b69-b050-4d53-a636-8794f75b7626.png",
     "background": "http://localhost:3000/images/9f76eaf3-62ad-4e06-ac31-55831df878c8.png",
     "stats": {
-      "ATk": {
+      "basicHP": {
         "basic": 810,
         "increase": 108,
         "num": 0
       },
-      "HP": {
+      "basicATK": {
         "basic": 23,
         "increase": 3,
         "num": 0
       },
-      "DEF": {
+      "basicDEF": {
         "basic": 51,
         "increase": 6.8,
         "num": 0
@@ -133,7 +136,8 @@
     },
     "id": "81052289-0475-4a0d-b838-d5e0600d160a",
     "status": 1,
-    "weight": 8
+    "weight": 8,
+    "background1": "http://localhost:3000/images/a6f7282a-2a23-4de6-ae13-dd67928018d1.jpg"
   },
   {
     "name": "刻晴",
@@ -144,17 +148,17 @@
     "cover": "http://localhost:3000/images/aec92e36-b7b1-41fa-b6ab-0af249b17978.png",
     "background": "http://localhost:3000/images/361b46d4-da5b-4176-8ae6-37a5e32129f8.png",
     "stats": {
-      "ATk": {
+      "basicHP": {
         "basic": 1020,
         "increase": 136,
         "num": 0
       },
-      "HP": {
+      "basicATK": {
         "basic": 25,
         "increase": 3.4,
         "num": 0
       },
-      "DEF": {
+      "basicDEF": {
         "basic": 62,
         "increase": 8.3,
         "num": 0
@@ -167,7 +171,8 @@
     },
     "id": "6e320958-10bf-4b72-ac18-92cdb7547879",
     "status": 1,
-    "weight": 9
+    "weight": 9,
+    "background1": "http://localhost:3000/images/e28d2785-d3fd-444e-9224-898579c40746.png"
   },
   {
     "name": "迪卢克",
@@ -178,17 +183,17 @@
     "cover": "http://localhost:3000/images/8dc60aed-1044-452d-aa05-faa19d983ae8.png",
     "background": "http://localhost:3000/images/8175f548-22fe-40c0-9f0d-6a75849bea9a.png",
     "stats": {
-      "ATk": {
+      "basicHP": {
         "basic": 1011,
         "increase": 134,
         "num": 0
       },
-      "HP": {
+      "basicATK": {
         "basic": 26,
         "increase": 3.5,
         "num": 0
       },
-      "DEF": {
+      "basicDEF": {
         "basic": 61,
         "increase": 8.1,
         "num": 0
@@ -201,7 +206,8 @@
     },
     "id": "f47ea33f-6551-44c3-8e3b-6113bc75fc7f",
     "status": 1,
-    "weight": 7
+    "weight": 7,
+    "background1": "http://localhost:3000/images/c55bc8bc-8395-427b-890b-c92da464861f.png"
   },
   {
     "name": "七七",
@@ -212,17 +218,17 @@
     "cover": "http://localhost:3000/images/523369b7-0426-4c77-bba7-0e3ebc1544c0.png",
     "background": "http://localhost:3000/images/73069bac-e7ff-4b7f-99ab-d20c7d62b461.png",
     "stats": {
-      "ATk": {
+      "basicHP": {
         "basic": 963,
         "increase": 128,
         "num": 0
       },
-      "HP": {
+      "basicATK": {
         "basic": 23,
         "increase": 3,
         "num": 0
       },
-      "DEF": {
+      "basicDEF": {
         "basic": 72,
         "increase": 9.6,
         "num": 0
@@ -235,7 +241,8 @@
     },
     "id": "3cfd0f7d-8e78-4846-962c-37f32f9a2093",
     "status": 1,
-    "weight": 10
+    "weight": 10,
+    "background1": "http://localhost:3000/images/ebb376b9-40c9-497c-a1fb-51c435f67a32.jpg"
   },
   {
     "name": "甘雨",
@@ -246,17 +253,17 @@
     "cover": "http://localhost:3000/images/f5e749f8-811c-4c63-a7d5-af42ced67811.png",
     "background": "http://localhost:3000/images/aa00498b-0015-45a4-9368-13d71272febc.png",
     "stats": {
-      "ATk": {
+      "basicHP": {
         "basic": 763,
         "increase": 102,
         "num": 0
       },
-      "HP": {
+      "basicATK": {
         "basic": 26,
         "increase": 3.5,
         "num": 0
       },
-      "DEF": {
+      "basicDEF": {
         "basic": 49,
         "increase": 6.5,
         "num": 0
@@ -269,7 +276,8 @@
     },
     "id": "045eb818-7142-4d49-95dd-d6b28a8bff8f",
     "status": 2,
-    "weight": 10
+    "weight": 10,
+    "background1": "http://localhost:3000/images/0d3df8b4-d39b-46de-abaf-d424caba2555.png"
   },
   {
     "name": "温蒂",
@@ -280,17 +288,17 @@
     "cover": "http://localhost:3000/images/db765eab-835d-4593-b8b3-882ba3eac866.png",
     "background": "http://localhost:3000/images/1e32de24-8b3b-46da-aeb2-22e5e1b2f190.png",
     "stats": {
-      "ATk": {
+      "basicHP": {
         "basic": 820,
         "increase": 99,
         "num": 0
       },
-      "HP": {
+      "basicATK": {
         "basic": 21,
         "increase": 2.7,
         "num": 0
       },
-      "DEF": {
+      "basicDEF": {
         "basic": 52,
         "increase": 7,
         "num": 0
@@ -303,7 +311,8 @@
     },
     "id": "09bc128c-d57e-4ffe-8c6f-0ff018727d07",
     "status": 2,
-    "weight": 11
+    "weight": 11,
+    "background1": "http://localhost:3000/images/c13b0d13-8b32-4451-a6d7-2cd5fd2b4e33.jpg"
   },
   {
     "name": "八重神子",
@@ -314,17 +323,17 @@
     "cover": "http://localhost:3000/images/cef19e7b-ec69-4b57-8984-74084d732d19.jpg",
     "background": "http://localhost:3000/images/045524be-0126-48a4-bf1b-11a834b125bf.png",
     "stats": {
-      "ATk": {
+      "basicHP": {
         "basic": 807,
         "increase": 107,
         "num": 0
       },
-      "HP": {
+      "basicATK": {
         "basic": 27,
         "increase": 3.5,
         "num": 0
       },
-      "DEF": {
+      "basicDEF": {
         "basic": 44,
         "increase": 6.3,
         "num": 0
@@ -348,17 +357,17 @@
     "cover": "http://localhost:3000/images/0a2051d8-39bc-48d1-a2cd-f832bcbd56db.png",
     "background": "http://localhost:3000/images/178fd0c1-63b3-4484-8da8-c24d2f0f4167.png",
     "stats": {
-      "ATk": {
+      "basicHP": {
         "basic": 1144,
         "increase": 152,
         "num": 0
       },
-      "HP": {
+      "basicATK": {
         "basic": 20,
         "increase": 2.6,
         "num": 0
       },
-      "DEF": {
+      "basicDEF": {
         "basic": 57,
         "increase": 7.7,
         "num": 0
@@ -371,7 +380,8 @@
     },
     "id": "0d3fd63d-4888-449c-a121-472fa6a3be58",
     "status": 2,
-    "weight": 12
+    "weight": 12,
+    "background1": "http://localhost:3000/images/ef4c885e-26bb-45b2-9340-1ae7cdd36250.jpg"
   },
   {
     "name": "香菱",
@@ -382,17 +392,17 @@
     "cover": "http://localhost:3000/images/69a39aa4-abb1-43a4-830b-312ce658448e.png",
     "background": "http://localhost:3000/images/48006e3f-a782-4d4d-99d6-6538385a90c2.png",
     "stats": {
-      "ATk": {
+      "basicHP": {
         "basic": 912,
         "increase": 112,
         "num": 0
       },
-      "HP": {
+      "basicATK": {
         "basic": 19,
         "increase": 2.3,
         "num": 0
       },
-      "DEF": {
+      "basicDEF": {
         "basic": 55,
         "increase": 6.9,
         "num": 0
@@ -405,7 +415,8 @@
     },
     "id": "c4737a81-a80c-4910-951f-74f0275b9caa",
     "status": 1,
-    "weight": 1
+    "weight": 1,
+    "background1": "http://localhost:3000/images/cf59d25d-cbdf-4eb5-b2bd-fc3970ead508.png"
   },
   {
     "name": "胡桃",
@@ -416,17 +427,17 @@
     "cover": "http://localhost:3000/images/088acfb2-68ab-4faf-9627-5bf06aca21a3.png",
     "background": "http://localhost:3000/images/23674c09-1975-4edb-a157-7fd1c3aa1579.png",
     "stats": {
-      "ATk": {
+      "basicHP": {
         "basic": 1211,
         "increase": 161,
         "num": 0
       },
-      "HP": {
+      "basicATK": {
         "basic": 9,
         "increase": 1.1,
         "num": 0
       },
-      "DEF": {
+      "basicDEF": {
         "basic": 68,
         "increase": 9.1,
         "num": 0
@@ -439,7 +450,8 @@
     },
     "id": "87468631-e596-48bf-8391-71143e1907e1",
     "status": 1,
-    "weight": 7
+    "weight": 7,
+    "background1": "http://localhost:3000/images/c1a48586-dc47-40f9-b365-fc57fa7693c9.png"
   },
   {
     "name": "九条裟罗",
@@ -450,17 +462,17 @@
     "cover": "http://localhost:3000/images/9a323ccb-cb37-4484-ac75-4503a9c2dcb6.png",
     "background": "http://localhost:3000/images/7bd457b0-a133-42f4-a655-bb91b00bf3a0.png",
     "stats": {
-      "ATk": {
+      "basicHP": {
         "basic": 802,
         "increase": 99,
         "num": 0
       },
-      "HP": {
+      "basicATK": {
         "basic": 16,
         "increase": 2,
         "num": 0
       },
-      "DEF": {
+      "basicDEF": {
         "basic": 53,
         "increase": 6.4,
         "num": 0
@@ -484,17 +496,17 @@
     "cover": "http://localhost:3000/images/c461c112-6ad5-4f07-a7cc-b74d29f42c78.png",
     "background": "http://localhost:3000/images/64b6ab9d-cb6a-4ac3-b114-b7f8e21c8963.png",
     "stats": {
-      "ATk": {
+      "basicHP": {
         "basic": 824,
         "increase": 101,
         "num": 0
       },
-      "HP": {
+      "basicATK": {
         "basic": 14,
         "increase": 1.6,
         "num": 0
       },
-      "DEF": {
+      "basicDEF": {
         "basic": 56,
         "increase": 6.9,
         "num": 0
@@ -507,7 +519,8 @@
     },
     "id": "11cd4bbf-5543-43f7-8ed1-c000fc27c11d",
     "status": 1,
-    "weight": 2
+    "weight": 2,
+    "background1": "http://localhost:3000/images/3e7f59d9-6b3a-45e0-b98b-873378d4ece1.png"
   },
   {
     "name": "重云",
@@ -518,17 +531,17 @@
     "cover": "http://localhost:3000/images/5ed7a18c-38b6-44d4-aa4c-522719b48a8b.png",
     "background": "http://localhost:3000/images/2622181a-48e3-46bc-952b-81ca437757b6.png",
     "stats": {
-      "ATk": {
+      "basicHP": {
         "basic": 921,
         "increase": 113,
         "num": 0
       },
-      "HP": {
+      "basicATK": {
         "basic": 19,
         "increase": 2.3,
         "num": 0
       },
-      "DEF": {
+      "basicDEF": {
         "basic": 54,
         "increase": 6.7,
         "num": 0
@@ -541,7 +554,8 @@
     },
     "id": "5bee69a3-ef6b-45a4-bc9f-b35d239bc3c6",
     "status": 1,
-    "weight": 4
+    "weight": 4,
+    "background1": "http://localhost:3000/images/dae9204a-97e5-4464-b3e0-5539909f79ff.png"
   },
   {
     "name": "烟绯",
@@ -552,17 +566,17 @@
     "cover": "http://localhost:3000/images/1cd397ba-5e2d-4e6c-9493-8a9613b2cdc6.png",
     "background": "http://localhost:3000/images/6032bdf9-c014-469b-bfa0-de44e7041ca4.png",
     "stats": {
-      "ATk": {
+      "basicHP": {
         "basic": 784,
         "increase": 96,
         "num": 0
       },
-      "HP": {
+      "basicATK": {
         "basic": 20,
         "increase": 2.5,
         "num": 0
       },
-      "DEF": {
+      "basicDEF": {
         "basic": 49,
         "increase": 6,
         "num": 0
@@ -575,7 +589,8 @@
     },
     "id": "3fe78e4b-7610-4e11-be8d-0567688c9ce0",
     "status": 1,
-    "weight": 1
+    "weight": 1,
+    "background1": "http://localhost:3000/images/cbb7040e-e942-4446-811b-86c581ad642f.png"
   },
   {
     "name": "凝光",
@@ -586,17 +601,17 @@
     "cover": "http://localhost:3000/images/086a3da2-02ac-496a-92de-ed95195f37e5.png",
     "background": "http://localhost:3000/images/e5edb595-9277-4bfc-8efe-a137964810d7.png",
     "stats": {
-      "ATk": {
+      "basicHP": {
         "basic": 821,
         "increase": 101,
         "num": 0
       },
-      "HP": {
+      "basicATK": {
         "basic": 18,
         "increase": 2.2,
         "num": 0
       },
-      "DEF": {
+      "basicDEF": {
         "basic": 48,
         "increase": 5.9,
         "num": 0
@@ -609,7 +624,8 @@
     },
     "id": "98c3cff9-d870-4737-9bac-8d8c5bb234ce",
     "status": 1,
-    "weight": 6
+    "weight": 6,
+    "background1": "http://localhost:3000/images/e78e5576-1d53-4ece-835e-b1938575dcfc.png"
   },
   {
     "name": "迪奥娜",
@@ -620,17 +636,17 @@
     "cover": "http://localhost:3000/images/90fabb87-afea-4305-a617-33c5a999f91a.png",
     "background": "http://localhost:3000/images/d27eaa4f-adc9-4a50-bf5d-92bdb513c649.png",
     "stats": {
-      "ATk": {
+      "basicHP": {
         "basic": 802,
         "increase": 99,
         "num": 0
       },
-      "HP": {
+      "basicATK": {
         "basic": 18,
         "increase": 2.2,
         "num": 0
       },
-      "DEF": {
+      "basicDEF": {
         "basic": 50,
         "increase": 6.2,
         "num": 0
@@ -643,7 +659,8 @@
     },
     "id": "fb59f5a5-83bd-4695-a632-6fced0859287",
     "status": 1,
-    "weight": 4
+    "weight": 4,
+    "background1": "http://localhost:3000/images/feb343bf-d2db-494a-9dc5-978b944cabe7.png"
   },
   {
     "name": "诺艾尔",
@@ -654,17 +671,17 @@
     "cover": "http://localhost:3000/images/a34ebf32-9440-4c3c-9344-bebbdccf0b1a.png",
     "background": "http://localhost:3000/images/e32cd250-edac-4c22-ad3d-4cc338db45d4.png",
     "stats": {
-      "ATk": {
+      "basicHP": {
         "basic": 1012,
         "increase": 124,
         "num": 0
       },
-      "HP": {
+      "basicATK": {
         "basic": 16,
         "increase": 2,
         "num": 0
       },
-      "DEF": {
+      "basicDEF": {
         "basic": 67,
         "increase": 8.2,
         "num": 0
@@ -677,7 +694,8 @@
     },
     "id": "8fed1761-7e3b-4f9a-869f-b3f322a6db41",
     "status": 1,
-    "weight": 6
+    "weight": 6,
+    "background1": "http://localhost:3000/images/8b0af109-06d6-4730-a592-fe2bd52f5101.png"
   },
   {
     "name": "砂糖",
@@ -688,17 +706,17 @@
     "cover": "http://localhost:3000/images/12cb2e64-27bc-4d61-ba37-f31738c90b8d.png",
     "background": "http://localhost:3000/images/de6717b5-18bb-48cc-ac6d-32b37b09b599.png",
     "stats": {
-      "ATk": {
+      "basicHP": {
         "basic": 775,
         "increase": 95,
         "num": 0
       },
-      "HP": {
+      "basicATK": {
         "basic": 14,
         "increase": 1.8,
         "num": 0
       },
-      "DEF": {
+      "basicDEF": {
         "basic": 59,
         "increase": 7.2,
         "num": 0
@@ -711,7 +729,8 @@
     },
     "id": "8952dda3-6182-4561-995e-bb6b27684056",
     "status": 1,
-    "weight": 5
+    "weight": 5,
+    "background1": "http://localhost:3000/images/2514f64c-cda4-4a0a-bf09-f896ac6f7cbb.png"
   },
   {
     "name": "雷泽",
@@ -722,17 +741,17 @@
     "cover": "http://localhost:3000/images/75e56ea5-b035-474e-b325-480454450a80.png",
     "background": "http://localhost:3000/images/da4f884c-b792-4563-adfe-695ab1234ee4.png",
     "stats": {
-      "ATk": {
+      "basicHP": {
         "basic": 1003,
         "increase": 123,
         "num": 0
       },
-      "HP": {
+      "basicATK": {
         "basic": 20,
         "increase": 2.4,
         "num": 0
       },
-      "DEF": {
+      "basicDEF": {
         "basic": 63,
         "increase": 7.7,
         "num": 0
@@ -745,7 +764,8 @@
     },
     "id": "df66b14b-6f2c-48be-b280-913820ac8b01",
     "status": 1,
-    "weight": 3
+    "weight": 3,
+    "background1": "http://localhost:3000/images/8712f24a-b5ad-4971-92a5-beecd4256ee9.png"
   },
   {
     "name": "行秋",
@@ -756,17 +776,17 @@
     "cover": "http://localhost:3000/images/4856bfa7-f72f-417f-898d-ef6180b9cf21.png",
     "background": "http://localhost:3000/images/52ca1b9f-a08d-4631-a41b-3d3e434cf391.png",
     "stats": {
-      "ATk": {
+      "basicHP": {
         "basic": 857,
         "increase": 105,
         "num": 0
       },
-      "HP": {
+      "basicATK": {
         "basic": 17,
         "increase": 2.1,
         "num": 0
       },
-      "DEF": {
+      "basicDEF": {
         "basic": 64,
         "increase": 7.8,
         "num": 0
@@ -779,6 +799,7 @@
     },
     "id": "628ee868-46f1-4432-a85f-411f50ee0eee",
     "status": 1,
-    "weight": 2
+    "weight": 2,
+    "background1": "http://localhost:3000/images/be6f639c-f5ff-427b-bc9b-f97a33c9b654.png"
   }
 ]

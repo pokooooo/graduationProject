@@ -11,8 +11,8 @@ const {
 const { hasToken } = require('../../model/token')
 const {getArtifacts} = require("../../model/artifacts");
 const {getMaterials} = require("../../model/materials");
-const {getUser} = require("../../model/users");
-const {addArtifact} = require("../../kit/users");
+const {getUser, editUser} = require("../../model/users");
+const {addArtifact, addMaterial, addEXP} = require("../../kit/users");
 let domains = new Router()
 let HP = [73,93,114,138,164,192,222,238,262,287,327,369,412,461,511,562,625,680,736,885,932,979,1024,
     1084,1145,1208,1272,1338,1405,1493,1555,1639,1708,2020,2089,2158,2253,2358,2464,2695,2825,2958,3084,
@@ -25,9 +25,7 @@ let ATK = [25,29,34,38,43,48,53,58,63,68,75,83,90,99,108,116,129,141,155,168,179
     1123,1158,1190,1224,1258,1294,1321,1359,1396,1424,1460,1496,1531,1575,1609,1641,1665,1689,1714,1741,1779,1819,1859,1904,1953,2005,2060,2130,2183,2200,2220,2384,2405,2463]
 domains.post('/search', async (ctx) => {
     try {
-        let token = ctx.cookies.get('token')
-        check(!!token, 'Admin_Not_Login','管理员未登录')
-        check(hasToken(token), 'Admin_Login_Outdate', '管理员登录过期')
+
         let { pageIndex, pageSize, keyword } = ctx.request.body
         check(pageIndex >= 0, 'Params_Is_Not_In_Rules')
         check(pageSize >= 0, 'Params_Is_Not_In_Rules')
@@ -66,18 +64,68 @@ domains.post('/add', async (ctx) => {
 
 domains.post('/get', async (ctx) => {
     try {
-        let {account,id,list,num} = ctx.request.body
-        let user = getUser(account)
+        let {account,id} = ctx.request.body
+
         let domain = getDomains(id)
         let rewards = []
-        list.map(item => {
-            if(domain.type === 'artifact') {
-                rewards.push(addArtifact(account,domain.list[item].id,num))
-            }
-        })
+        let gold = 20000
+        let EXP = 100
+        if(domain.type === 'artifact') {
+            let num = Math.floor(Math.random() * 3) + 1
+            let {name,cover} = addMaterial(account,'39414f02-33f6-4f6b-bf5e-c27582a13b86',num)
+            rewards.push({name,cover,num})
+            rewards.push(addArtifact(account,domain.list[Math.floor(Math.random() * domain.list.length)].id, Math.floor(Math.random() * 3) + 2))
+        } else if(domain.type === 'role') {
+            let num = Math.floor(Math.random() * 3) * 3 + 3
+            let {name,cover} = addMaterial(account,'39414f02-33f6-4f6b-bf5e-c27582a13b86',num)
+            rewards.push({name,cover,num})
+            gold += 40000
+            EXP += 200
+            num = Math.floor(Math.random() * 3) + 1
+             let data = addMaterial(account,domain.list[Math.floor(Math.random() * domain.list.length)].id, num)
+            name = data.name
+            cover = data.cover
+            rewards.push({name,cover,num})
+        } else {
+            let num = Math.floor(Math.random() * 3) +1
+            let {name,cover} = addMaterial(account,'39414f02-33f6-4f6b-bf5e-c27582a13b86',num)
+            rewards.push({name,cover,num})
+            num = Math.floor(Math.random() * 3) + 1
+            let data = addMaterial(account,domain.list[Math.floor(Math.random() * domain.list.length)].id, num)
+            name = data.name
+            cover = data.cover
+            rewards.push({name,cover,num})
+        }
+        let level = 0
+        if(addEXP(account,EXP)) {
+            level = getUser(account).level
+        }
+        let user = getUser(account)
+        user.gold += gold
+        user.resin = user.resin - gold / 1000
+        editUser(user)
         ctx.body = generateOk({
-            data: rewards
+            data: rewards,
+            gold,
+            EXP,
+            level
         })
+    } catch (err) {
+        catchError(err, ctx)
+    }
+})
+
+
+domains.post('/resin', async (ctx) => {
+    try {
+        let {account,num} = ctx.request.body
+        addMaterial(account,'b35af67b-f3f7-4441-8a46-aaa54da51f17',num)
+        if(num < 0) {
+            let user = getUser(account)
+            user.resin += -num * 60
+            editUser(user)
+        }
+        ctx.body = generateOk()
     } catch (err) {
         catchError(err, ctx)
     }
@@ -90,6 +138,10 @@ domains.post('/set', async (ctx) => {
         check(hasToken(token), 'Admin_Login_Outdate', '管理员登录过期')
         let data = ctx.request.body
         check(hasOne(data.id))
+        data.list = data.list.map(item => {
+            if(data.type === 'artifact') return getArtifacts(item)
+            else return getMaterials(item)
+        })
         editDomains(data)
         ctx.body = generateOk()
     } catch (err) {

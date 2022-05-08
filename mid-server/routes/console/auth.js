@@ -61,17 +61,24 @@ auth.post('/register', async (ctx) => {
       pwd,
       level: 1,
       experience: 0,
-      worldLevel: 1,
+      resin: 0,
       nickname: '',
       avatar: '',
-      diamond: 1000,
-      gold: 10000,
+      diamond: 0,
+      gold: 0,
       isSign: false,
       lastSign: 0,
       signDay: 0,
       friends: [],
       friendRequest: [],
-      isOnline: false
+      isOnline: false,
+      inventory: {
+        weapons: [],
+        artifacts: [],
+        materials: []
+      },
+      weaponEvent: [],
+      roleEvent: []
     }
     setUser(obj)
     ctx.body = generateOk({
