@@ -46,7 +46,6 @@
         "purpose": "祈愿",
         "cover": "http://localhost:3000/images/ad0a5810-f1b7-4b0a-9e97-ab4f120cd517.png",
         "id": "e2e2bcb6-3bed-4034-8d62-7547139271c5",
-        "status": 2,
         "weight": 21,
         "num": 10
       }
@@ -56,7 +55,7 @@
     "sendTime": 1650806888620,
     "id": "73e89b34-29f0-417d-ab92-b7f38e481375",
     "isRead": true,
-    "isReceive": false
+    "isReceive": true
   },
   {
     "sender": "PAIMON",
@@ -171,8 +170,8 @@
     "diamond": 0,
     "sendTime": 1650902415955,
     "id": "1ef1c7ae-b85a-49c4-b78d-81c795bafff8",
-    "isRead": false,
-    "isReceive": false
+    "isRead": true,
+    "isReceive": true
   },
   {
     "sender": "PAIMON",
@@ -352,6 +351,146 @@
     "diamond": 0,
     "sendTime": 1650968618193,
     "id": "26330352-597b-4243-813f-621893809fcc",
+    "isRead": true,
+    "isReceive": true
+  },
+  {
+    "sendTime": 1652080355878,
+    "id": "881fb793-0819-4cbb-869a-b65e3855fc5c",
+    "isReceive": false,
+    "isRead": true,
+    "receiver": "player",
+    "sender": "PAIMON",
+    "title": "等级奖励",
+    "context": "恭喜您升至7，这是您的升级奖励",
+    "materialsList": [],
+    "gold": 0,
+    "diamond": 500
+  },
+  {
+    "sendTime": 1652080471847,
+    "id": "d33b8521-42d0-4193-a709-29df01b7e7ea",
+    "isReceive": false,
+    "isRead": true,
+    "receiver": "player",
+    "sender": "PAIMON",
+    "title": "等级奖励",
+    "context": "恭喜您升至8级，这是您的升级奖励",
+    "materialsList": [],
+    "gold": 0,
+    "diamond": 500
+  },
+  {
+    "sendTime": 1652080475932,
+    "id": "2b627f0f-72d6-41a4-b0ff-a422a1811273",
+    "isReceive": true,
+    "isRead": true,
+    "receiver": "player",
+    "sender": "PAIMON",
+    "title": "等级奖励",
+    "context": "恭喜您升至9级，这是您的升级奖励",
+    "materialsList": [],
+    "gold": 0,
+    "diamond": 500
+  },
+  {
+    "sendTime": 1652080484295,
+    "id": "70f93cc5-ab43-4bf5-9eac-d18e0bd1fb26",
+    "isReceive": true,
+    "isRead": true,
+    "receiver": "player",
+    "sender": "PAIMON",
+    "title": "等级奖励",
+    "context": "恭喜您升至10级，这是您的升级奖励",
+    "materialsList": [
+      {
+        "name": "纠缠之缘",
+        "get": "游戏商城内兑换",
+        "introduction": "连结梦想的命运之种。缘石辉光能让本无交集的命运交错，让彼此的梦想相连，正如这种光辉将群星连成心之所向的图形。",
+        "purpose": "祈愿",
+        "cover": "http://localhost:3000/images/ad0a5810-f1b7-4b0a-9e97-ab4f120cd517.png",
+        "id": "e2e2bcb6-3bed-4034-8d62-7547139271c5",
+        "weight": 21,
+        "num": 5
+      }
+    ],
+    "gold": 0,
+    "diamond": 500
+  },
+  {
+    "sendTime": 1652109264884,
+    "id": "c30bb8df-d19b-4425-9364-58f6854e79a1",
+    "isReceive": true,
+    "isRead": true,
+    "receiver": "player",
+    "sender": "PAIMON",
+    "title": "等级奖励",
+    "context": "恭喜您升至11级，这是您的升级奖励",
+    "materialsList": [],
+    "gold": 0,
+    "diamond": 500
+  },
+  {
+    "sendTime": 1652109267740,
+    "id": "b2581e5a-0242-4dc8-bce6-1c21ac286613",
+    "isReceive": false,
+    "isRead": true,
+    "receiver": "player",
+    "sender": "PAIMON",
+    "title": "等级奖励",
+    "context": "恭喜您升至12级，这是您的升级奖励",
+    "materialsList": [],
+    "gold": 0,
+    "diamond": 500
+  },
+  {
+    "sendTime": 1652113141364,
+    "id": "75f4d725-6986-4a4b-9b69-86fcee5d3ade",
+    "isReceive": false,
+    "isRead": true,
+    "receiver": "player",
+    "sender": "PAIMON",
+    "title": "等级奖励",
+    "context": "恭喜您升至14级，这是您的升级奖励",
+    "materialsList": [],
+    "gold": 0,
+    "diamond": 500
+  },
+  {
+    "sendTime": 1652114387874,
+    "id": "d5a161b1-76bc-42c9-b1db-5825726f711e",
+    "isReceive": false,
+    "isRead": true,
+    "receiver": "player",
+    "sender": "PAIMON",
+    "title": "出售成功!",
+    "context": "您出售的切落之羽已被player2购买!",
+    "materialsList": [],
+    "gold": 10000,
+    "diamond": 0
+  },
+  {
+    "sender": "PAIMON",
+    "receiver": "player1",
+    "title": "11",
+    "context": "11",
+    "materialsList": [
+      {
+        "name": "纠缠之缘",
+        "get": "游戏商城内兑换",
+        "introduction": "连结梦想的命运之种。缘石辉光能让本无交集的命运交错，让彼此的梦想相连，正如这种光辉将群星连成心之所向的图形。",
+        "purpose": "祈愿",
+        "cover": "http://localhost:3000/images/ad0a5810-f1b7-4b0a-9e97-ab4f120cd517.png",
+        "id": "e2e2bcb6-3bed-4034-8d62-7547139271c5",
+        "weight": 21,
+        "status": 2,
+        "num": 100
+      }
+    ],
+    "gold": 1111,
+    "diamond": 11,
+    "sendTime": 1653880211076,
+    "id": "48b9a772-d7b1-4fb2-a5c6-1695e2c700f2",
     "isRead": true,
     "isReceive": true
   }

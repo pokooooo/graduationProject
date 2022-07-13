@@ -184,7 +184,7 @@
         "cover": "http://localhost:3000/images/12cb2e64-27bc-4d61-ba37-f31738c90b8d.png"
       }
     ],
-    "status": 2,
+    "status": 1,
     "weight": 2,
     "id": "ef0a733d-7d57-41ba-9b39-39c0d616844d"
   },
@@ -221,7 +221,7 @@
       }
     ],
     "weight": 2,
-    "status": 2,
+    "status": 1,
     "id": "11d1dbd8-2c7f-4986-bde9-78262c0b3de9"
   },
   {
@@ -257,7 +257,43 @@
       }
     ],
     "weight": 2,
-    "status": 2,
+    "status": 1,
     "id": "e1f2ebc5-9013-4489-934f-2e4cbf42d87a"
+  },
+  {
+    "name": "白鹭之庭",
+    "type": "role",
+    "cover": "http://localhost:3000/images/bc70487b-10ea-4a93-8954-cebe45e7c870.jpg",
+    "time": [
+      1653879931792,
+      1654484731792
+    ],
+    "star5": [
+      {
+        "id": "48a4e34d-02a4-4a3d-ba58-7018922226d8",
+        "name": "神里绫华",
+        "cover": "http://localhost:3000/images/f2189bb6-d06f-4266-b20a-1de5e5105b48.png"
+      }
+    ],
+    "star4": [
+      {
+        "id": "5bee69a3-ef6b-45a4-bc9f-b35d239bc3c6",
+        "name": "重云",
+        "cover": "http://localhost:3000/images/5ed7a18c-38b6-44d4-aa4c-522719b48a8b.png"
+      },
+      {
+        "id": "3fe78e4b-7610-4e11-be8d-0567688c9ce0",
+        "name": "烟绯",
+        "cover": "http://localhost:3000/images/1cd397ba-5e2d-4e6c-9493-8a9613b2cdc6.png"
+      },
+      {
+        "id": "98c3cff9-d870-4737-9bac-8d8c5bb234ce",
+        "name": "凝光",
+        "cover": "http://localhost:3000/images/086a3da2-02ac-496a-92de-ed95195f37e5.png"
+      }
+    ],
+    "weight": 2,
+    "status": 2,
+    "id": "7c0cafde-683b-4ee5-b0dd-34c77f58f3d6"
   }
 ]

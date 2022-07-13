@@ -65,7 +65,7 @@ mail.post('/receive', async (ctx) => {
     editUser(user)
     mail.materialsList.map(item => {
       delete item.status
-      addMaterial(user.account, item)
+      addMaterial(user.account, item.id, item.num)
     })
     ctx.body = generateOk({
       data: mail

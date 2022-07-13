@@ -23,11 +23,11 @@
           </el-badge>
         </span>
             <el-dropdown-menu slot="dropdown">
-              <el-dropdown-item command="/user/message/notice">
-                <el-badge :value="$store.getters.getNoticeList.filter(item => !item.isRead).length">
-                  通知
-                </el-badge>
-              </el-dropdown-item>
+<!--              <el-dropdown-item command="/user/message/notice">-->
+<!--                <el-badge :value="$store.getters.getNoticeList.filter(item => !item.isRead).length">-->
+<!--                  通知-->
+<!--                </el-badge>-->
+<!--              </el-dropdown-item>-->
               <el-dropdown-item command="/user/message/mail">
                 <el-badge :value="$store.getters.getMailList.filter(item => !item.isRead).length">
                   邮件
@@ -80,7 +80,7 @@
           </div>
           <div style="width: 80px" >
             <el-button v-if="item.twoWay" size="mini" @click="newChat(item.account,item.nickname,item.avatar)" type="success" icon="el-icon-chat-dot-round" circle></el-button>
-            <el-tooltip class="item" effect="dark" content="成为双向好友后解锁此功能" placement="top">
+            <el-tooltip  effect="dark" content="成为双向好友后解锁此功能" placement="top">
               <el-button v-if="!item.twoWay" size="mini" type="info" icon="el-icon-chat-dot-round" circle></el-button>
             </el-tooltip>
             <el-popconfirm
@@ -134,10 +134,6 @@ export default {
   data() {
     return {
       list: [{
-        label: '首页',
-        path: '/user/home',
-        url: require('../../assets/image/prop/home.png')
-      },{
         label: '商城',
         path: '/user/store',
         url: require('../../assets/image/prop/store.png')
@@ -302,7 +298,7 @@ export default {
       getChatByAccount({account:this.$store.getters.getUserData.account}).then(res => {
         this.$store.commit('updataChat',res.data.data.data)
       })
-    },5000)
+    },2000)
   },
   destroyed() {
     clearInterval(this.interval)

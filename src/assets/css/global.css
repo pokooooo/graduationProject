@@ -19,6 +19,11 @@ body,
     cursor:pointer
 }
 
+
+.el-menu-item {
+    background-color: rgba(0,0,0,0)!important;
+}
+
 .star5 {
     background-color: #B17029
 }

@@ -79,7 +79,7 @@ const routes = [
     children: [
       {
         path: "/",
-        redirect: "home",
+        redirect: "center",
       },
       {
         path: "home",

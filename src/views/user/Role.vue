@@ -2,7 +2,7 @@
 <div style="display: flex;flex-direction: column">
   <div  style="height: 73px;width: 1300px;display: flex;justify-content: center;align-items: center">
     <div style="height: 73px;display: flex;align-items: center;">
-      <img style="height: 60px;margin: 0 10px;border-radius: 50px" v-for="item in rolesList" :key="item.id" :src="item.cover" @click="role = item">
+      <img style="height: 60px;margin: 0 10px;border-radius: 50px" v-for="item in rolesList" :key="item.id" :src="item.cover" @click="role = item;type = 'base';type1 = 'base'">
     </div>
   </div>
   <div style="width: 1300px;height: 600px;position: relative">
@@ -54,7 +54,7 @@
         </div>
         <div  style="width: 100%;color: #fff;font-weight: 600;font-size: 24px">
           等级{{role.level}}
-          <span class="add" v-if="num > 0 && type1 === 'up'"> + {{num / 3}} </span>/ {{30 + role.rank * 10}}
+          <span class="add" v-if="(num > 0 && type1 === 'up') && role.level !== (role.rank - 1) * 10 + 40"> + {{num / 3}} </span>/ {{30 + role.rank * 10}}
           <span  v-if="role.level === (role.rank - 1) * 10 + 40 && type1 === 'up'" class="add"> + 10</span>
         </div>
         <div  style="margin-top: 10px;width: 100%;position: relative;height: 100%;color: #fff;font-weight: bold;font-size: 16px;padding: 0 5px;display: flex;flex-direction: column;">
@@ -64,7 +64,7 @@
               <div style="height: 25px;line-height: 25px">生命值</div>
             </div>
             <div>{{Math.floor(stats.HP)}}
-              <span class="add" v-if="num > 0 && type1 === 'up'"> + {{Math.floor(role.stats.basicHP.increase * stats.H * num / 3)}}</span></div>
+              <span class="add" v-if="(num > 0 && type1 === 'up') && role.level !== (role.rank - 1) * 10 + 40"> + {{Math.floor(role.stats.basicHP.increase * stats.H * num / 3)}}</span></div>
           </div>
           <div style="display: flex;justify-content: space-between;align-items: center;margin-top: 5px">
             <div style="height: 25px;display: flex;align-items: center">
@@ -72,7 +72,7 @@
               <div style="height: 25px;line-height: 25px">攻击力</div>
             </div>
             <div>{{Math.floor(stats.ATK)}}
-              <span class="add" v-if="num > 0 && type1 === 'up'"> + {{Math.floor(role.stats.basicATK.increase * stats.A * num / 3)}}</span></div>
+              <span class="add" v-if="(num > 0 && type1 === 'up') && role.level !== (role.rank - 1) * 10 + 40"> + {{Math.floor(role.stats.basicATK.increase * stats.A * num / 3)}}</span></div>
           </div>
           <div style="display: flex;justify-content: space-between;align-items: center;margin-top: 5px">
             <div style="height: 25px;display: flex;align-items: center">
@@ -80,7 +80,7 @@
               <div style="height: 25px;line-height: 25px">防御力</div>
             </div>
             <div>{{Math.floor(stats.DEF)}}
-              <span class="add" v-if="num > 0 && type1 === 'up'"> + {{Math.floor(role.stats.basicDEF.increase * stats.D * num / 3)}}</span></div>
+              <span class="add" v-if="(num > 0 && type1 === 'up') && role.level !== (role.rank - 1) * 10 + 40"> + {{Math.floor(role.stats.basicDEF.increase * stats.D * num / 3)}}</span></div>
           </div>
           <div v-if="type1 === 'base'" style="height: 100%">
             <div style="width: 100%;border-radius: 20px;background-color: rgba(255,255,255,0.2);height: 30px;line-height: 30px;
@@ -101,7 +101,7 @@
           </div>
           <div v-if="type1 === 'up'" style="height: 100%">
 
-            <div style="display: flex;justify-content: space-between;align-items: center;margin-top: 5px">
+            <div  v-if="role.level === (role.rank - 1) * 10 + 40" style="display: flex;justify-content: space-between;align-items: center;margin-top: 5px">
               <div style="height: 25px;display: flex;align-items: center">
 <!--                <img style="width: 20px;margin-right: 5px" :src="`../../assets/image/prop/CRITDMG.png`" alt="">-->
                 <div style="height: 25px;line-height: 25px">{{role.ascend.effect | effectType}}</div>
@@ -313,7 +313,7 @@
     <img style="width: 1300px;height: 600px" :src="role.background1" alt="">
   </div>
   <div style="height: 70px;display: flex;justify-content: space-between;align-items: center">
-    <div>123</div>
+    <div>.</div>
     <div>
       <div v-if="type === 'artifacts'" style="margin-right: 10px">
         <el-button v-if="artifact.role.name !== role.name" @click="equip(artifact.part)" style="width:120px;font-size: 18px;font-weight: 600;color: #000" type="warning" round>装备</el-button>

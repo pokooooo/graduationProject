@@ -50,5 +50,57 @@
     "price": 9999999,
     "time": 1651334551610,
     "id": "d4cdb498-0ac6-4d9f-a111-59e9600719f0"
+  },
+  {
+    "seller": "player",
+    "good": {
+      "pieceSet": {
+        "type": "cryoDMGBonus",
+        "num": 15
+      },
+      "get": "芬德尼尔之顶",
+      "part": "plume",
+      "name": "摧冰而行的执望",
+      "cover": "http://localhost:3000/images/0a85822f-bde3-43f9-b866-5f4b4dfcf5d4.jpg",
+      "introduction": "散布寒冬的鸟羽，仿佛能感受到猛禽在雪原与冰峰之上呼号翱翔的振翅之风。",
+      "effect": {
+        "type": "ATK",
+        "num": 47,
+        "increase": 2
+      },
+      "effects": [
+        {
+          "type": "DEF",
+          "num": 12.4,
+          "increase": 6.2
+        },
+        {
+          "type": "CRITDMG",
+          "num": 13.2,
+          "increase": 6.6
+        },
+        {
+          "type": "CRITRate",
+          "num": 6.6,
+          "increase": 3.3
+        },
+        {
+          "type": "ATK",
+          "num": 15,
+          "increase": 5
+        }
+      ],
+      "name1": "冰风迷途的勇士",
+      "id": "a2f24ae7-5607-4b45-8b9f-0f9b245a1fc2",
+      "role": {
+        "name": "",
+        "id": "",
+        "cover": ""
+      },
+      "level": 20
+    },
+    "price": 20000,
+    "time": 1653834844450,
+    "id": "c3c32a7e-6cfd-43e3-8610-2f47f1891ea5"
   }
 ]

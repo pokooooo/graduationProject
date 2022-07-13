@@ -19,6 +19,6 @@ export default {
 <style scoped>
 .login{
   height: 100vh;
-  background: url("../assets/image/miko.jpg") center no-repeat;
+  background: url("../assets/image/denglu.png") center no-repeat;
 }
 </style>

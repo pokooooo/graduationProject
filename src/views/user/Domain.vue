@@ -164,7 +164,7 @@ export default {
 
 
 .item:hover {
-  transform: scale(1.03);
+  transform: scale(1.02);
   background-color: rgba(255,255,255,0.2);
 }
 </style>

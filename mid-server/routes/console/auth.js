@@ -31,8 +31,9 @@ auth.post('/login', async (ctx) => {
         },
       })
     } else {
-      let data = getUser(account); 
-      check(account === data.account,'Password_Error','密码错误');
+      check(!hasUser(account),'Account_Not_Found','账号不存在')
+      let data = getUser(account);
+      check(pwd === data.pwd,'Password_Error','密码错误')
       if(new Date().toDateString() !== new Date(data.lastSign).toDateString()) {
         if(!data.isSign || new Date().getTime() - data.lastSign > 1000 * 60 * 60 * 24 ) data.signDay = 0
         data.isSign = false

@@ -34,7 +34,7 @@
       <el-table-column label="权重" width="80" prop="weight"></el-table-column>
       <el-table-column label="状态" width="100" prop="status">
         <template slot-scope="scope">
-          {{ scope.row.status === 2 ? "下架中" : "上架中" }}
+          {{ scope.row.status === 2 ? "不进入常驻" : "进入常驻" }}
         </template>
       </el-table-column>
       <el-table-column label="操作" width="280px">

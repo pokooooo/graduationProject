@@ -143,6 +143,7 @@ export default  {
   },
   login(username,password) {
         login(username, password).then((res) => {
+          console.log(res)
           if (res.data.stat === "ok") {
             this.$message.success("登录成功！");
             if (this.isSave) {
@@ -232,6 +233,7 @@ export default  {
   width: 300px;
   background-color: #fff;
   border-radius: 20px;
+  opacity: 0.8;
 }
 
 .cursor:hover {

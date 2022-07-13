@@ -7,7 +7,7 @@
         label-width="80px"
       >
         <el-form-item prop="nickname" label="昵称">
-          <el-input v-model="setForm.nickname"></el-input>
+          <el-input style="width: 180px" v-model="setForm.nickname"></el-input>
         </el-form-item>
         <el-form-item label="头像">
           <el-upload
@@ -21,7 +21,7 @@
           </el-upload>
         </el-form-item>
         <el-form-item prop="pwd" label="密码">
-          <el-input  show-password v-model="setForm.pwd"></el-input>
+          <el-input style="width: 180px"  show-password v-model="setForm.pwd"></el-input>
         </el-form-item>
         <el-form-item >
           <el-button type="primary" @click="commit">修改</el-button>

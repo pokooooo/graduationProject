@@ -15,7 +15,7 @@
       <el-table-column label="消耗"  width="80" prop="cost"></el-table-column>
       <el-table-column label="状态" width="100" prop="status">
         <template slot-scope="scope">
-          {{ scope.row.status === 2 ? "下架中" : "上架中" }}
+          {{ scope.row.status === 2 ? "不开放" : "开放" }}
         </template>
       </el-table-column>
       <el-table-column label="掉落"  prop="status">

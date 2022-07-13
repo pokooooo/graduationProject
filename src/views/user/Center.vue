@@ -5,7 +5,7 @@
       <div class="title">
         <div>{{$store.getters.getUserData.nickname}}</div>
         <div>
-          <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal"  @select="handleSelect">
+          <el-menu style="background-color: rgba(0,0,0,0)" :default-active="activeIndex" class="el-menu-demo" mode="horizontal"  @select="handleSelect" >
             <el-menu-item index="1">基本信息</el-menu-item>
             <el-menu-item index="2">资产信息</el-menu-item>
           </el-menu>
@@ -23,10 +23,22 @@
           </el-form-item>
           <el-form-item label="经验值:">
             <el-progress style="width: 200px;display:inline-block" text-inside :stroke-width="16"
-            :percentage="$store.getters.getUserData.experience / $store.getters.getUserData.level"></el-progress>
+            :percentage="$store.getters.getUserData.experience / 20"></el-progress>
             <span>
-                {{$store.getters.getUserData.experience}} / {{$store.getters.getUserData.level * 100}}
+                {{$store.getters.getUserData.experience}} / 2000
             </span>
+          </el-form-item>
+          <el-form-item label="连续登录天数:">
+            <span>{{$store.getters.getUserData.signDay}}</span>
+          </el-form-item>
+          <el-form-item label="拥有角色数:">
+            <span>{{$store.getters.getUserData.roles.length}}</span>
+          </el-form-item>
+          <el-form-item label="拥有武器数:">
+            <span>{{$store.getters.getUserData.inventory.weapons.length}}</span>
+          </el-form-item>
+          <el-form-item label="拥有圣遗物数:">
+            <span>{{$store.getters.getUserData.inventory.artifacts.length}}</span>
           </el-form-item>
         </el-form>
       </div>

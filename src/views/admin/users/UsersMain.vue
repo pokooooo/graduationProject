@@ -13,12 +13,17 @@
         </template>
       </el-table-column>
       <el-table-column label="等级" prop="level"></el-table-column>
+      <el-table-column label="是否在线">
+        <template slot-scope="scope">
+          {{scope.row.isOnline ? '在线' : '离线'}}
+        </template>
+      </el-table-column>
       <el-table-column label="上次登录时间">
         <template slot-scope="scope">
           {{scope.row.lastSign | dataFormat}}
         </template>
       </el-table-column>
-      <el-table-column label="原石" prop="diamond"></el-table-column>
+      <el-table-column label="结晶" prop="diamond"></el-table-column>
       <el-table-column label="摩拉" prop="gold"></el-table-column>
       <el-table-column label="操作" width="180px">
         <template slot-scope="scope">
@@ -54,7 +59,7 @@
         <el-form-item prop="gold" label="摩拉">
           <el-input v-model.number="mailForm.gold"></el-input>
         </el-form-item>
-        <el-form-item prop="diamond" label="原石">
+        <el-form-item prop="diamond" label="结晶">
           <el-input v-model.number="mailForm.diamond"></el-input>
         </el-form-item>
         <el-form-item label="附件">

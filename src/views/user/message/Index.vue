@@ -1,5 +1,5 @@
 <template>
-  <div style="height: 755px">
+  <div style="height: 755px;background-color: #fff;opacity: 0.8">
     <div class="header">
         <div style="margin-left: 20px;font-size: 24px">
             消息中心
@@ -7,7 +7,7 @@
     </div>
     <div class="main">
       <el-container style="height: 100%">
-        <el-aside width="200px">
+        <el-aside width="240px">
           <left-menu :backgroundColor="'#f7f7f7'" :pathList="pathList"></left-menu>
         </el-aside>
         <el-main>
@@ -30,11 +30,7 @@ export default {
   data() {
      return {
          pathList: [
-             {
-                 name: '通知',
-                 path: 'notice',
-                 icon: 'el-icon-bell'
-             },
+
                           {
                  name: '邮件',
                  path: 'mail',
@@ -62,6 +58,7 @@ export default {
 
 <style scoped>
 .header {
+
   height: 60px;
   display: flex;
   align-items: center;

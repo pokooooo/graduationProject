@@ -6,69 +6,51 @@
     "nickname2": "胡桃桃",
     "avatar1": "http://localhost:3000/images/3d704a47-de9f-4f73-8c7f-fa696400a8da.jpg",
     "avatar2": "http://localhost:3000/images/5290a189-f825-47ef-b576-1c6b3e2773c5.jpg",
+    "list": [],
+    "id": "1f1da8cf-f0e2-4140-8ec3-2b57c5b4a194",
+    "active": false
+  },
+  {
+    "account1": "player",
+    "account2": "player3",
+    "nickname1": "胡桃",
+    "nickname2": "西风骑士团代理团长",
+    "avatar1": "http://localhost:3000/images/3d704a47-de9f-4f73-8c7f-fa696400a8da.jpg",
+    "avatar2": "http://localhost:3000/images/49243052-a210-425b-adae-f3836f748faf.jpg",
+    "list": [],
+    "id": "0ad36897-5df7-4cb8-a20b-31b0fc0a1710",
+    "active": false
+  },
+  {
+    "account1": "player",
+    "account2": "player2",
+    "nickname1": "胡桃",
+    "nickname2": "王小美",
+    "avatar1": "http://localhost:3000/images/3d704a47-de9f-4f73-8c7f-fa696400a8da.jpg",
+    "avatar2": "http://localhost:3000/images/0c2a6dd7-90be-4e8d-9eee-7fa14e79d04d.jpg",
     "list": [
       {
         "sender": "player",
         "type": "text",
-        "context": "11"
+        "context": "你好啊"
+      },
+      {
+        "sender": "player2",
+        "type": "text",
+        "context": "你好，今天吃的什么"
       },
       {
         "sender": "player",
         "type": "text",
-        "context": ""
-      },
-      {
-        "sender": "player1",
-        "type": "text",
-        "context": "123"
-      },
-      {
-        "sender": "player1",
-        "type": "text",
-        "context": ""
-      },
-      {
-        "sender": "player1",
-        "type": "text",
-        "context": "1565"
+        "context": "金丝虾球捏"
       },
       {
         "sender": "player",
         "type": "text",
-        "context": "44"
-      },
-      {
-        "sender": "player1",
-        "type": "text",
-        "context": "555"
-      },
-      {
-        "sender": "player1",
-        "type": "text",
-        "context": "hello"
-      },
-      {
-        "sender": "player1",
-        "type": "text",
-        "context": "123"
-      },
-      {
-        "sender": "player",
-        "type": "text",
-        "context": "nmsl"
-      },
-      {
-        "sender": "player1",
-        "type": "text",
-        "context": "11"
-      },
-      {
-        "sender": "player",
-        "type": "text",
-        "context": "22"
+        "context": "=w="
       }
     ],
-    "id": "1f1da8cf-f0e2-4140-8ec3-2b57c5b4a194",
-    "active": true
+    "id": "7237590f-6768-4df9-b094-44f41483d3f8",
+    "active": false
   }
 ]

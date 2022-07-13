@@ -5,6 +5,7 @@ const {getRole} = require("../model/roles")
 const {getArtifacts} = require("../model/artifacts")
 const uuid = require('uuid')
 const {logger} = require("sequelize/lib/utils/logger");
+const {setMail} = require("../model/mail");
 
 
 function searchUsers(pageIndex, pageSize, keyword, type) {
@@ -107,6 +108,31 @@ function addEXP(account,experience) {
     user.experience = user.experience + experience - 2000
     user.level++
     up = true
+    setMail({
+      sendTime: new Date().getTime(),
+      id: uuid.v4(),
+      isReceive: false,
+      isRead: false,
+      receiver: account,
+      sender: 'PAIMON',
+      title: '等级奖励',
+      context: `恭喜您升至${user.level}级，这是您的升级奖励`,
+      materialsList: user.level % 5 === 0 ? [
+        {
+          "name": "纠缠之缘",
+          "get": "游戏商城内兑换",
+          "introduction": "连结梦想的命运之种。缘石辉光能让本无交集的命运交错，让彼此的梦想相连，正如这种光辉将群星连成心之所向的图形。",
+          "purpose": "祈愿",
+          "cover": "http://localhost:3000/images/ad0a5810-f1b7-4b0a-9e97-ab4f120cd517.png",
+          "id": "e2e2bcb6-3bed-4034-8d62-7547139271c5",
+          "status": 2,
+          "weight": 21,
+          "num": 5
+        }
+      ] : [],
+      gold: 0,
+      diamond: 500
+    })
   } else {
     user.experience = user.experience + experience
   }

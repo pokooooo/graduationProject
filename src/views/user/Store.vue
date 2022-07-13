@@ -6,10 +6,10 @@
           <img src="../../assets/image/prop/shangcheng.png" alt="">
           <img style="margin-top: 20px;" src="../../assets/image/prop/tuijian.png" alt="" @click="type = 'tuijian'">
           <img style="margin-top: 20px;" src="../../assets/image/prop/chenhui.png" alt="" @click="type = 'chenhui'">
-          <img style="margin-top: 20px;" src="../../assets/image/prop/jiejing.png" alt="" @click="type = 'jiejing'">
+<!--          <img style="margin-top: 20px;" src="../../assets/image/prop/jiejing.png" alt="" @click="type = 'jiejing'">-->
           <i v-if="type === 'tuijian'" class="el-icon-arrow-right i p1"></i>
           <i v-if="type === 'chenhui'" class="el-icon-arrow-right i p2"></i>
-          <i v-if="type === 'jiejing'" class="el-icon-arrow-right i p3"></i>
+<!--          <i v-if="type === 'jiejing'" class="el-icon-arrow-right i p3"></i>-->
         </div>
       </el-aside>
       <el-main style=";">

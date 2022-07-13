@@ -33,20 +33,20 @@
         <div style="font-size: 18px;color: #d2bba0;margin-bottom: 10px">时间 : {{mailData.sendTime | dataFormat}}</div>
         <div>{{mailData.context}}</div>
       </div>
-      <div style="display: flex;height: 60px">
-        <div v-for="item in mailData.materialsList" :key="item.id" style="margin-right: 10px;position: relative">
+      <div style="display: flex;flex-wrap: wrap">
+        <div v-for="item in mailData.materialsList" :key="item.id" style="margin-right: 10px;margin-bottom: 10px;height: 60px;position: relative">
           <img class="prop" :src="item.cover" alt="">
           <i v-if="mailData.isReceive" style="font-size: 40px;position: absolute;left: 10px;bottom: 13px;color: #72e772" class="iconfont icon-dui"></i>
           <div style="font-size: 14px;position: absolute;left: 0;bottom: 0;color: #fff;background: #544f4f;width: 60px;text-align: center;
           border-radius: 0 0 2px 2px">{{item.num}}</div>
         </div>
-        <div v-if="mailData.diamond !== 0" style="margin-right: 10px;position: relative">
+        <div v-if="mailData.diamond !== 0" style="margin-right: 10px;position: relative;height: 60px;">
           <img class="prop" src="../../../assets/image/prop/yuanshi.png" alt="">
           <i v-if="mailData.isReceive" style="font-size: 40px;position: absolute;left: 10px;bottom: 13px;color: #72e772" class="iconfont icon-dui"></i>
           <div style="font-size: 14px;position: absolute;left: 0;bottom: 0;color: #fff;background: #544f4f;width: 60px;text-align: center;
           border-radius: 0 0 2px 2px">{{mailData.diamond}}</div>
         </div>
-        <div  v-if="mailData.gold !== 0" style="position: relative">
+        <div  v-if="mailData.gold !== 0" style="position: relative;height: 60px;">
           <img  class="prop" src="../../../assets/image/prop/mola.png" alt="">
           <i v-if="mailData.isReceive" style="font-size: 40px;position: absolute;left: 10px;bottom: 13px;color: #72e772" class="iconfont icon-dui"></i>
           <div style="font-size: 14px;position: absolute;left: 0;bottom: 0;color: #fff;background: #544f4f;width: 60px;text-align: center;
